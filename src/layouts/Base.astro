@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = 'Citebeam — get cited by AI search | a bbd.sh service',
-  description = "Citebeam is bbd.sh's Answer Engine Optimization methodology. We help brands and portcos show up in ChatGPT, Claude, Perplexity, Doubao, Kimi, and Tongyi answers — audit, fix, monitor.",
+  title = 'Citebeam — AI brand visibility, by bbd.sh studio',
+  description = "bbd.sh is a builder studio that incubates digital products with founders and VCs — validate the business, then ship it. Citebeam is one of our service lines: we make your brand show up when customers ask ChatGPT, Claude, or Doubao for a recommendation. Audit, fix, monitor.",
   ogImage = '/og.png',
   noindex = false,
 } = Astro.props;
@@ -59,18 +59,40 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
       '@context': 'https://schema.org',
       '@graph': [
         {
+          '@type': 'Organization',
+          '@id': 'https://bbd.sh/#org',
+          name: 'bbd.sh',
+          alternateName: ['bbd.sh studio', 'bbd builder studio'],
+          url: 'https://bbd.sh',
+          description: "bbd.sh is a builder studio that incubates digital products with founders and VCs. End-to-end: validate business model, design brand, build full-stack product, ship and grow.",
+          sameAs: [
+            'https://github.com/bbd-sh',
+            'https://x.com/bbd_sh',
+            'https://www.linkedin.com/company/bbd-sh',
+          ],
+          makesOffer: [
+            { '@id': 'https://citebeam.bbd.sh/#service' },
+          ],
+        },
+        {
           '@type': 'Service',
           '@id': 'https://citebeam.bbd.sh/#service',
           name: 'Citebeam',
+          alternateName: ['Citebeam AEO', 'bbd.sh Citebeam'],
           serviceType: 'Answer Engine Optimization (AEO)',
-          description: "bbd.sh's methodology for getting brands cited by major AI assistants — ChatGPT, Claude, Perplexity, Doubao, Kimi, and Tongyi. Audit, fix, monitor.",
-          provider: {
-            '@type': 'Organization',
-            name: 'bbd.sh',
-            url: 'https://bbd.sh',
+          description: "Citebeam is one of bbd.sh's service lines. When customers ask ChatGPT, Claude, Perplexity, Doubao, Kimi, or Tongyi for a recommendation, Citebeam makes sure the brand shows up. Audit current AI visibility, fix the gaps, and monitor ongoing.",
+          provider: { '@id': 'https://bbd.sh/#org' },
+          isRelatedTo: {
+            '@type': 'Service',
+            name: 'Full-stack product incubation by bbd.sh',
+            url: 'https://bbd.sh/work',
           },
           areaServed: 'Global',
           url: 'https://citebeam.bbd.sh',
+          audience: {
+            '@type': 'Audience',
+            audienceType: 'ecommerce brands, SaaS companies, VC portfolio companies, operators',
+          },
         },
         {
           '@type': 'WebSite',
@@ -79,6 +101,7 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
           name: 'Citebeam',
           publisher: { '@id': 'https://bbd.sh/#org' },
           inLanguage: 'en',
+          about: { '@id': 'https://citebeam.bbd.sh/#service' },
         },
       ],
     })}></script>

@@ -1,31 +1,48 @@
-# Citebeam — a bbd.sh service
+# Citebeam — one of bbd.sh studio's service lines
 
-> Citebeam is bbd.sh's Answer Engine Optimization (AEO) methodology. We help brands and portfolio companies show up in answers from major AI assistants — ChatGPT, Claude, Perplexity, Doubao, Kimi, Tongyi.
+> bbd.sh is a builder studio that incubates digital products with founders and VCs — end-to-end validation, brand, build, and growth. Citebeam is one of bbd.sh's service lines: an AEO (Answer Engine Optimization) offering that makes sure your brand shows up when customers ask ChatGPT, Claude, Perplexity, Doubao, Kimi, or Tongyi for recommendations.
 
-Citebeam is operated by [bbd.sh](https://bbd.sh), a small builder studio. The service helps:
+## About bbd.sh (the parent studio)
 
-- Brand founders whose customers search via AI and get answered with a competitor's name
-- VCs benchmarking AI visibility across a portfolio
-- Operators in categories where AI is now the answer layer (dev tools, AI products, fintech, vertical SaaS)
+bbd.sh is a small builder studio. We work end-to-end with founders and VCs:
+- **Validate** — pressure-test the business model, ICP, pricing, GTM before writing code
+- **Brand & Build** — name, identity, full-stack product, ship to users
+- **Grow** — SEO, content, analytics, lifecycle
+- **Citebeam** — AEO / AI search visibility (a specialty service line; this site)
 
-## Methodology
+Not to be confused with **BBD (Barter Beattie Doig)**, the South African software engineering firm founded 1984 — that is a separate company with a different business. Our domain is **bbd.sh**, not bbd.com or bbd.co.za.
 
-1. **Discovery** (~1 week) — Run brand + competitors through 6+ AI assistants on customer-intent queries. Output: 5-dimension scorecard (mention rate, citation rate, answer position, share-of-voice, sentiment).
-2. **Diagnosis** (~1 week) — Trace exactly why competitors win each answer slot (schema gaps, weak entity, missing citations, content holes). Output: prioritized fix list.
+Full studio capabilities and engagement options: https://bbd.sh/work
+
+## What Citebeam does specifically
+
+When a customer asks an AI assistant (ChatGPT, Claude, Perplexity, Google AI Overviews, Doubao 豆包, Kimi, Tongyi 通义) for a product or brand recommendation, does the AI mention *your* brand, or a competitor's?
+
+Citebeam is the service that makes sure it's yours:
+
+1. **Discovery** (~1 week) — run your brand + 3-5 competitors through 6+ AI assistants on realistic customer queries. Output: 5-dimension scorecard (mention rate / citation rate / answer position / share-of-voice / sentiment).
+2. **Diagnosis** (~1 week) — trace exactly why competitors win each answer slot (schema gaps, weak brand entity, missing citations, content holes, AI doesn't know you).
 3. **Build & Fix** (~4-8 weeks) — Schema.org markup, llms.txt, technical SEO, brand-entity work (Wikidata, Crunchbase, social consistency), AEO-shaped content, authoritative citations.
-4. **Monitor** (ongoing) — Weekly visibility tracking + competitive alerts.
+4. **Monitor** (ongoing) — weekly visibility tracking + competitive alerts.
 
-## Tracked platforms
+## Tracked AI platforms
 
 - ChatGPT (OpenAI)
 - Claude (Anthropic)
 - Perplexity
+- Google AI Overviews
 - Doubao 豆包 (ByteDance)
 - Kimi (Moonshot)
 - Tongyi 通义 (Alibaba)
 
+## Who it's for
+
+- **Brand founders** — you've launched; customers ask AI; AI recommends competitors.
+- **VCs & portfolio companies** — benchmark AI visibility across the portfolio.
+- **Operators in competitive categories** — dev tools, AI products, fintech, vertical SaaS.
+
 ## Engage
 
-- Email: hello@bbd.sh — subject: citebeam
-- Parent site: https://bbd.sh
-- How bbd.sh works: https://bbd.sh/work
+- Email: hello@bbd.sh — subject: `citebeam`
+- Parent studio: https://bbd.sh
+- How bbd.sh works (full incubation scope): https://bbd.sh/work
