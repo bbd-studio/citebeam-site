@@ -102,10 +102,10 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
       '@graph': [
         {
           '@type': 'Organization',
-          '@id': 'https://bbd.sh/#org',
+          '@id': 'https://www.bbd.sh/#org',
           name: 'bbd.sh',
           alternateName: ['bbd.sh studio', 'bbd builder studio', 'bbd 孵化工坊'],
-          url: 'https://bbd.sh',
+          url: 'https://www.bbd.sh',
           description: "bbd.sh is a builder studio that incubates digital products with founders and VCs. End-to-end: validate business model, design brand, build full-stack product, ship and grow.",
           sameAs: [
             'https://github.com/bbd-sh',
@@ -123,11 +123,11 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
           alternateName: ['Citebeam AEO', 'bbd.sh Citebeam', 'AI 品牌可见度服务', 'AEO 服务'],
           serviceType: 'Answer Engine Optimization (AEO)',
           description: "Citebeam is one of bbd.sh's service lines. When customers ask ChatGPT, Claude, Perplexity, Doubao, Kimi, or Tongyi for a recommendation, Citebeam makes sure the brand shows up. Audit current AI visibility, fix the gaps, and monitor ongoing.",
-          provider: { '@id': 'https://bbd.sh/#org' },
+          provider: { '@id': 'https://www.bbd.sh/#org' },
           isRelatedTo: {
             '@type': 'Service',
             name: 'Full-stack product incubation by bbd.sh',
-            url: 'https://bbd.sh/work',
+            url: 'https://www.bbd.sh/work',
           },
           areaServed: 'Global',
           url: 'https://citebeam.bbd.sh',
@@ -142,7 +142,7 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
           '@id': 'https://citebeam.bbd.sh/#website',
           url: 'https://citebeam.bbd.sh',
           name: 'Citebeam',
-          publisher: { '@id': 'https://bbd.sh/#org' },
+          publisher: { '@id': 'https://www.bbd.sh/#org' },
           inLanguage: ['en', 'zh-Hans'],
           about: { '@id': 'https://citebeam.bbd.sh/#service' },
         },

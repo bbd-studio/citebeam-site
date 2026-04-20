@@ -12,7 +12,7 @@ bbd.sh is a small builder studio. We work end-to-end with founders and VCs:
 
 Not to be confused with **BBD (Barter Beattie Doig)**, the South African software engineering firm founded 1984 — that is a separate company with a different business. Our domain is **bbd.sh**, not bbd.com or bbd.co.za.
 
-Full studio capabilities and engagement options: https://bbd.sh/work
+Full studio capabilities and engagement options: https://www.bbd.sh/work
 
 ## What Citebeam does specifically
 
@@ -54,5 +54,5 @@ Chinese versions at `/zh/guide/*` (e.g. https://citebeam.bbd.sh/zh/guide/what-is
 ## Engage
 
 - Email: hello@bbd.sh — subject: `citebeam`
-- Parent studio: https://bbd.sh
-- How bbd.sh works (full incubation scope): https://bbd.sh/work
+- Parent studio: https://www.bbd.sh
+- How bbd.sh works (full incubation scope): https://www.bbd.sh/work
