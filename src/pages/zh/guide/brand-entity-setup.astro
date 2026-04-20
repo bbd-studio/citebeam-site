@@ -1,0 +1,178 @@
+---
+import GuideLayout from '../../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "品牌实体建设多久能见效？",
+    a: "Wikidata 变化 2-6 周能进入 AI 答复（检索系统频繁重读 Wikidata）。Wikipedia 慢一些（1-3 月）。Crunchbase / LinkedIn 的变化 1-4 周进入 AI 上下文，看 AI 的重爬频率。",
+  },
+  {
+    q: "需要请人改 Wikidata 吗？",
+    a: "不用。Wikidata 开放，任何人能建条目和改。但有惯例（Q-ID、带引用的声明、结构化断言）要 30-60 分钟学。大多数品牌自己做即可，我们也写了这份指南加速。",
+  },
+  {
+    q: "如果已有同名实体怎么办？",
+    a: "这是机会。消歧问题是 AI 混淆品牌的主要原因。带着独特标识属性（成立日期、国家、网站、logo）建你自己的条目，AI 就能可靠挑出正确的「你」。",
+  },
+  {
+    q: "只做 Wikidata 够吗？",
+    a: "Wikidata 是杠杆最大的单步，但不够。要至少 3 个：Wikidata / Crunchbase / LinkedIn Company Page / GitHub Org / X-Twitter 统一 bio。3+ 源一致 = AI 实体置信度高。",
+  },
+];
+---
+
+<GuideLayout
+  lang="zh"
+  title="品牌实体建设：Wikidata、Crunchbase、LinkedIn 做 AEO | Citebeam 指南"
+  description="AEO 最大杠杆是品牌实体强度。这篇走完建 Wikidata 条目、Crunchbase profile、LinkedIn Company Page，并把它们保持一致 —— 一步一步。"
+  h1="品牌实体建设：AEO 最大单一杠杆"
+  lead="AI 助手推荐的是它能自信识别的品牌。多数品牌跳过这一步，被对手抢走引用。这是一周能做完的手册。"
+  faq={faq}
+>
+
+  <h2>为什么实体工作比内容工作更优先</h2>
+
+  <p>只能做一个 AEO 杠杆，就选这个。</p>
+
+  <p>内容优化占 AEO 30%。实体权威占 40%。结构化数据占 20%。第三方信号占 10%。实体是最大单一杠杆，因为它<em>二元</em>：要么 AI 自信知道你是哪个品牌，要么不知道。不知道时，你的内容再完美也不会被引用。</p>
+
+  <p>机制：用户问"X 品类下最好的 Y"，AI 尝试检索候选实体并排序。存在于权威结构化源（Wikidata、Crunchbase）的实体被检索。不存在的 —— <em>可能</em>从模糊的训练记忆里召回、<em>可能</em>被同名混淆、<em>可能</em>被丢弃。你不希望"可能"。</p>
+
+  <h2>五源核对清单</h2>
+
+  <p>目标：五源一致。3 个以上对齐 = 实体强。</p>
+
+  <ul>
+    <li><strong>Wikidata</strong> —— AEO 影响 ⭐⭐⭐⭐⭐ · 耗时 1-2 小时 · 即时（自助）</li>
+    <li><strong>Crunchbase</strong> —— AEO 影响 ⭐⭐⭐⭐ · 耗时 30-60 分 · 几小时到几天（审核）</li>
+    <li><strong>LinkedIn Company Page</strong> —— AEO 影响 ⭐⭐⭐⭐ · 耗时 30 分 · 即时</li>
+    <li><strong>GitHub Org</strong> —— AEO 影响 ⭐⭐⭐ · 耗时 15 分 · 即时</li>
+    <li><strong>网站自身 Schema.org</strong> —— AEO 影响 ⭐⭐⭐⭐⭐ · 耗时 1-2 小时 · 即时（下次部署）</li>
+  </ul>
+
+  <p>Wikipedia 是拉高目标（⭐⭐⭐⭐⭐），但要够知名（媒体报道，通常运营多年）。不急着做。</p>
+
+  <h2>Step by step · Wikidata</h2>
+
+  <h3>1. 先查你的实体是否已存在</h3>
+
+  <p>到 <a href="https://www.wikidata.org" target="_blank" rel="noopener">wikidata.org</a> 搜你的品牌名。有就编辑；没有就新建。如果<em>别的</em>实体占了同名，记下它的 Q-ID —— 你要做消歧。</p>
+
+  <h3>2. 注册或登录</h3>
+
+  <p>建 Wikidata 账号（和 Wikipedia 同体系可直接登录）。验证邮箱。等几天再做大修改（反破坏启发式对新账号更警惕）。</p>
+
+  <h3>3. 创建 Item</h3>
+
+  <p>右上 → "Create a new Item"。填：</p>
+  <ul>
+    <li><strong>Label</strong> —— 品牌名精确</li>
+    <li><strong>Description</strong> —— 一句话，开头是品类（如 "builder studio 陪创始人和 VC 孵化数字产品"）</li>
+    <li><strong>Aliases</strong> —— 别名/不同拼写</li>
+  </ul>
+
+  <h3>4. 加核心 statements（每条带引用）</h3>
+
+  <p>至少加以下 statement，每条都指向 URL 引用（新闻、自己的 about 页、LinkedIn 等）：</p>
+
+  <ul>
+    <li><code>instance of</code> (P31) → 合适的类（business、软件公司、咨询）</li>
+    <li><code>country</code> (P17) → 你的国家</li>
+    <li><code>inception</code> (P571) → 成立日期</li>
+    <li><code>official website</code> (P856) → 你的 URL</li>
+    <li><code>industry</code> (P452) → 相关行业</li>
+    <li><code>founder</code> (P112) → 创始人名字</li>
+    <li><code>logo image</code> (P154) —— 先传 logo 到 Wikimedia Commons</li>
+  </ul>
+
+  <h3>5. 加 identifier statements</h3>
+
+  <p>跨数据库链接，让 AI 能跨源匹配实体：</p>
+
+  <ul>
+    <li><code>LinkedIn company ID</code> (P4264)</li>
+    <li><code>Crunchbase organization ID</code> (P2088)</li>
+    <li><code>GitHub username</code> (P2037) 你的 org</li>
+    <li><code>X (formerly Twitter) username</code> (P2002)</li>
+  </ul>
+
+  <h3>6. 不要过度编辑</h3>
+
+  <p>不要自我宣传。只放事实 + 引用。Wikidata 编辑会迅速删掉宣传性内容并标记你的账号。</p>
+
+  <h2>Step by step · Crunchbase</h2>
+
+  <ol>
+    <li>打开 <a href="https://www.crunchbase.com/add-new" target="_blank" rel="noopener">crunchbase.com/add-new</a>。</li>
+    <li>填：名字、描述（和 Wikidata 匹配）、成立日期、总部、网站、行业标签、公司类型。</li>
+    <li>添加创始人（作为 People，链回公司页）。</li>
+    <li>添加融资（有的话）—— 哪怕很小的天使轮也加分。</li>
+    <li>上传 logo，和 Wikidata 一致。</li>
+    <li>提交审核。通常 24-72 小时批。</li>
+  </ol>
+
+  <h2>Step by step · LinkedIn Company Page</h2>
+
+  <ol>
+    <li><a href="https://www.linkedin.com/company/setup/new/" target="_blank" rel="noopener">创建 Company Page</a>。</li>
+    <li>Tagline（和所有源的 1 句描述保持一致）。</li>
+    <li>About 展开到 2-3 段。讲清楚服务谁、交付什么、加必要的"不要和 XX 混淆"消歧。</li>
+    <li>网站 URL（canonical，不是 redirect）。</li>
+    <li>行业标签（要和 Wikidata / Crunchbase 的行业一致）。</li>
+    <li>上传 logo + banner。和其他源一致。</li>
+    <li>创始人 / 团队把 Company Page 设成 current employer —— 交叉链接身份。</li>
+  </ol>
+
+  <h2>Step by step · 网站 Schema.org Organization</h2>
+
+  <p>在站点 <code>&lt;head&gt;</code> 里：</p>
+
+  <pre><code set:html={`&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "你的品牌",
+  "alternateName": ["别名 1", "别名 2"],
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/logo.png",
+  "description": "和所有其他源一致的一句话描述。",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q12345678",
+    "https://www.crunchbase.com/organization/YOUR-BRAND",
+    "https://www.linkedin.com/company/YOUR-BRAND",
+    "https://github.com/YOUR-ORG",
+    "https://x.com/YOUR-HANDLE"
+  ]
+}
+&lt;/script&gt;`} /></pre>
+
+  <p><code>sameAs</code> 数组是把身份图显式串起来的关键，AI 通过这个跨源关联。</p>
+
+  <h2>一致性审计 · 单句测试</h2>
+
+  <p>挑一句描述你品牌的句子。原样放到五源里（Wikidata 描述、Crunchbase 描述、LinkedIn tagline、GitHub org 描述、Schema.org 描述）。尽可能一字不差。</p>
+
+  <p>AI 爬五源时看到同一句，这句被吸进你实体的嵌入知识的概率大增。每源写得不一样 → AI 要么 hedge 要么挑重复次数最多的 —— 未必是你想要的那句。</p>
+
+  <h2>设置完看什么</h2>
+
+  <p>实体建设后 4-6 周测：</p>
+
+  <ul>
+    <li><strong>Google Knowledge Panel</strong> —— Google 有时在右侧卡里显示你的品牌。显示 = Wikidata 生效了。</li>
+    <li><strong>ChatGPT（冷问）</strong> —— 直接问"告诉我关于 XX 的情况"。回答准确且匹配你的 Wikidata 描述 = 实体锚定了。</li>
+    <li><strong>Perplexity</strong> —— 同上。Perplexity 引用源可见，看你的 URL + Wikidata 有没有一起被引。</li>
+    <li><strong>Claude、Gemini、豆包</strong> —— 同上。</li>
+  </ul>
+
+  <p>5 家里 3 家准确且匹配你那句描述 → 实体工作到位。进内容阶段。</p>
+
+  <h2>延伸</h2>
+  <ul>
+    <li><a href="/zh/guide/what-is-aeo">什么是 AEO —— 完整视角</a></li>
+    <li><a href="/zh/guide/get-cited-by-chatgpt">ChatGPT 怎么决定推荐</a></li>
+    <li><a href="/zh/guide/aeo-vs-seo">AEO vs SEO</a></li>
+  </ul>
+
+</GuideLayout>

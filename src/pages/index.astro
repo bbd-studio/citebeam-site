@@ -1,8 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
+import LangSwitcher from '../components/LangSwitcher.astro';
 ---
 
-<Base>
+<Base lang="en">
+  <LangSwitcher current="en" />
   {/* ════════════════ HERO ════════════════ */}
   <section class="border-b border-ink/10">
     <div class="max-w-5xl mx-auto px-6 py-24 md:py-32">
@@ -234,6 +236,43 @@ import Base from '../layouts/Base.astro';
             (dev tools, AI products, fintech, vertical SaaS), AEO is the new oxygen.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ════════════════ GUIDES ════════════════ */}
+  <section class="border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">## guides</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">
+        Go deeper on AEO
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4 font-mono text-sm">
+        <a href="/guide/what-is-aeo" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// definition</p>
+          <p class="text-ink font-bold group-hover:text-electric">What is AEO?</p>
+          <p class="text-muted text-xs mt-1">Plain-English definition of Answer Engine Optimization and how it differs from SEO.</p>
+        </a>
+        <a href="/guide/aeo-vs-seo" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// comparison</p>
+          <p class="text-ink font-bold group-hover:text-electric">AEO vs SEO</p>
+          <p class="text-muted text-xs mt-1">Signal weights, time-to-impact, and which to invest in first.</p>
+        </a>
+        <a href="/guide/get-cited-by-chatgpt" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// platform</p>
+          <p class="text-ink font-bold group-hover:text-electric">Get cited by ChatGPT</p>
+          <p class="text-muted text-xs mt-1">How OpenAI's retrieval picks brands, and the four levers that affect citations.</p>
+        </a>
+        <a href="/guide/brand-entity-setup" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// entity</p>
+          <p class="text-ink font-bold group-hover:text-electric">Brand entity setup</p>
+          <p class="text-muted text-xs mt-1">Wikidata / Crunchbase / LinkedIn playbook — the biggest single AEO lever.</p>
+        </a>
+        <a href="/guide/ai-visibility-for-ecommerce" class="border border-ink/10 p-5 hover:border-electric group md:col-span-2">
+          <p class="text-electric text-xs mb-1">// vertical</p>
+          <p class="text-ink font-bold group-hover:text-electric">AI visibility for ecommerce</p>
+          <p class="text-muted text-xs mt-1">Product schema, review integration, cross-border considerations — specific to ecommerce AEO.</p>
+        </a>
       </div>
     </div>
   </section>

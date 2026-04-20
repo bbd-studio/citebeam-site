@@ -1,0 +1,110 @@
+---
+import GuideLayout from '../../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "AEO 和 LLMO、GEO、AI 搜索优化是一回事吗？",
+    a: "基本是近义词。<strong>AEO</strong>（Answer Engine Optimization）强调「答案层」；<strong>GEO</strong>（Generative Engine Optimization）强调生成模型；<strong>LLMO</strong>（LLM Optimization）强调大模型；<strong>AI 搜索优化</strong>是面向市场的通用说法。实际指的都是同一件事：让品牌出现在 AI 助手给用户的答复里。",
+  },
+  {
+    q: "还需要做传统 SEO 吗？",
+    a: "需要。大部分 AI 助手回答前会做 web 检索（基于 Google / Bing 索引），所以 SEO 基础（schema、sitemap、页面质量、反链）是 AEO 的<em>前置条件</em>，不是替代品。",
+  },
+  {
+    q: "AEO 多久能见效？",
+    a: "通常比 SEO 快。因为每个 query 的「搜索空间」极小（AI 引用 3-10 个源，而不是 10 页结果），内容质量或品牌实体的小提升就能在几周内翻转答案。Citebeam 项目里我们通常 4-8 周见到可测量的变化。",
+  },
+  {
+    q: "能自己做吗还是必须外包？",
+    a: "基础打法是公开的。难点在<em>测量</em>（在 6+ AI 平台上一致运行 prompt、跟踪提及/引用率、归因胜负）和<em>品牌实体</em>（Wikidata / Crunchbase / 结构化数据）。大部分团队能自己改内容，但测量 + 实体通常外包。",
+  },
+  {
+    q: "我最该关注哪些 AI 平台？",
+    a: "看你的市场。全球 B2B：ChatGPT、Claude、Perplexity、Google AI Overviews。中国：豆包、Kimi、通义、DeepSeek。日本：Rakuten / LINE 集成。Citebeam 默认覆盖 6+ 平台，按客户的市场增加专属平台。",
+  },
+];
+---
+
+<GuideLayout
+  lang="zh"
+  title="什么是 AEO（Answer Engine Optimization 答案引擎优化）？ | Citebeam 指南"
+  description="AEO 是让你的品牌在客户问 ChatGPT、Claude、豆包、Kimi 等 AI 助手时被推荐的方法论。这篇用大白话讲清楚 AEO 到底是什么、和 SEO 有什么不同、实际可行的打法。"
+  h1="什么是 AEO（Answer Engine Optimization）？"
+  lead="AEO 是让你的品牌在客户问 ChatGPT、Claude、Perplexity、豆包等 AI 助手要推荐时被提到的方法论。相当于 2003 年的 SEO —— 早期、快速演化，先动手的品牌会持续放大优势。"
+  faq={faq}
+>
+
+  <h2>一句话定义</h2>
+
+  <p><strong>AEO（Answer Engine Optimization，答案引擎优化）</strong>是构建你的品牌、内容、网络存在方式，使得当用户问 AI 助手某个问题时，AI 用<em>你</em>作为答案。</p>
+
+  <p>不是"在第一页排名靠前"。是<em>直接用你回答</em>。因为在 AI 搜索里，用户根本不会看第一页 —— 用户只看到答案。</p>
+
+  <h2>AEO 为什么现在才作为独立学科出现</h2>
+
+  <p>2023-2026 年间发生了三件事，让 AEO 从 SEO 里分离出来：</p>
+
+  <ol>
+    <li><strong>AI 对话界面吃掉了一部分"搜索"行为。</strong>ChatGPT、Claude、Perplexity、Google AI Overviews、豆包、Kimi —— 这些直接给答案。用户不再点到任何地方。传统 SEO 漏斗（排名 → 点击 → 转化）在"点击"这一步被打断。</li>
+    <li><strong>AI 助手会在回答里具体点名品牌。</strong>问 Perplexity "300 美元以内最好的降噪耳机"，它会给你三个具体品牌 + 理由。那三个品牌拿到转化。同品类另外 20 个品牌什么都没拿到。</li>
+    <li><strong>"被引用"的机制和"被排名"<em>不一样</em>。</strong>Google 排第一不等于 AI 会选你。AI 看实体权威度（Wikidata、Crunchbase）、检索质量（结构化数据、llms.txt）、内容格式（可抽取事实，不是营销文案）。新学科就这样诞生了。</li>
+  </ol>
+
+  <h2>AEO 和 SEO 的核心区别</h2>
+
+  <ul>
+    <li><strong>目标</strong> —— SEO：在 SERP 排名靠前。AEO：成为 AI 给出的答案。</li>
+    <li><strong>用户交互</strong> —— SEO：用户点击跳到你的页面。AEO：用户读 AI 的答复，可能永远不会访问你。</li>
+    <li><strong>关键信号</strong> —— SEO：反链 + 关键词 + 页面质量。AEO：品牌实体 + 结构化数据 + 值得引用的内容。</li>
+    <li><strong>测量</strong> —— SEO：关键词、曝光、点击。AEO：提及率、引用率、回答位置、SoV。</li>
+    <li><strong>竞争空间</strong> —— SEO：10 个结果每 query。AEO：3-10 个引用每 query。</li>
+    <li><strong>见效时间</strong> —— SEO：3-12 月。AEO：4-12 周（搜索空间小，反应快）。</li>
+  </ul>
+
+  <h2>让一个品牌 AI 可见的 4 件事</h2>
+
+  <h3>1. 品牌实体强度</h3>
+
+  <p>AI 在训练时通过权威结构化源学习品牌信息：Wikidata、Wikipedia、Crunchbase、GitHub、LinkedIn。如果你的品牌不在这些地方，AI 没有稳定锚点 —— 可能和同名实体混淆，或者干脆忽略你。这就是为什么 Citebeam 的第一步通常是<strong>品牌实体建设</strong>，而不是改内容。</p>
+
+  <h3>2. 网站的结构化数据</h3>
+
+  <p>Schema.org 标记（Organization、Service、Product、FAQPage）、<code>llms.txt</code>、干净的 sitemap、正确的 canonical。这些是检索系统挑选喂给 LLM 的信号。干净的结构化数据能大幅提升你被选为引用源的概率。</p>
+
+  <h3>3. 值得被引用的内容</h3>
+
+  <p>AI 偏好读起来像<em>答案</em>的内容：先给结论、带具体事实和数字、用陈述句、少营销废话。写"我们追求极致客户体验"的内容被忽略；写"我们的发货中位时间 42 小时"的内容被引用。</p>
+
+  <h3>4. 第三方信号</h3>
+
+  <p>反链仍重要 —— 对传统 SEO<em>也</em>对 AI 检索系统（它们把被链接的页面当上下文）。但 AEO 质量门槛更高：一条来自 AI 信任域名的引用（主流媒体、学术源、权威行业博客）顶 10 条低质目录链接。</p>
+
+  <h2>AEO <em>不是</em>什么</h2>
+
+  <ul>
+    <li><strong>不是 prompt 黑科技。</strong>你没法"骗"现代 LLM 提你 —— 它们对指令注入有防御。真正的 AEO 是让你成为 AI 合理会推荐的那一个。</li>
+    <li><strong>不是一次性工程。</strong>AI 模型会更新 training cutoff；检索系统会重新爬；竞品会调整。AEO 是长期项目，不是一次发布。</li>
+    <li><strong>不只是内容营销换皮。</strong>内容只是其中一层。品牌实体 + 结构化数据同样重要，大多数内容营销团队不做这两块。</li>
+  </ul>
+
+  <h2>真实 AEO 项目长什么样</h2>
+
+  <p>我们用 4 阶段跑 Citebeam（<a href="/zh/#how">首页看完整概览</a>）：</p>
+
+  <ol>
+    <li><strong>Discovery · 摸底</strong> —— 你的品牌 + 3-5 竞品在 6+ AI 助手上跑真实客户查询。产出：5 维评分卡，看你在哪里赢、竞品在哪里赢。</li>
+    <li><strong>Diagnosis · 诊断</strong> —— 精准定位<em>为什么</em>竞品赢下每一个回答位置。实体缺失？schema 错？内容洞？口吻不对？每种失败有特定的修复方式。</li>
+    <li><strong>Build &amp; Fix · 改</strong> —— 实施修复清单。品牌实体建设（Wikidata、Crunchbase）、Schema.org 部署、llms.txt、10-20 个高价值页面改写为"值得引用"格式。</li>
+    <li><strong>Monitor · 监测</strong> —— 每周重跑；竞品开始抢你位置时立刻告警。</li>
+  </ol>
+
+  <h2>下一步</h2>
+
+  <ul>
+    <li><a href="/zh/guide/aeo-vs-seo">AEO vs SEO —— 实际区别</a></li>
+    <li><a href="/zh/guide/get-cited-by-chatgpt">ChatGPT 怎么决定推荐哪些品牌</a></li>
+    <li><a href="/zh/guide/ai-visibility-for-ecommerce">电商品牌的 AEO</a></li>
+    <li><a href="/zh/guide/brand-entity-setup">品牌实体建设：Wikidata / Crunchbase / GitHub</a></li>
+  </ul>
+
+</GuideLayout>

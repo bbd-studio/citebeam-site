@@ -1,0 +1,301 @@
+---
+import Base from '../../layouts/Base.astro';
+import LangSwitcher from '../../components/LangSwitcher.astro';
+---
+
+<Base lang="zh">
+  <LangSwitcher current="zh" />
+
+  {/* ════════════════ HERO ════════════════ */}
+  <section class="border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-24 md:py-32">
+      <p class="font-mono text-sm text-muted mb-6">
+        <span class="text-electric">$</span> ./citebeam --help
+      </p>
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-4">
+        ## citebeam · <a href="https://bbd.sh" class="text-electric hover:underline">bbd.sh</a> 的其中一条服务线
+      </p>
+
+      <h1 class="font-display text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-8">
+        <span class="text-electric">Citebeam</span> · 让 AI<br />
+        在<span class="italic text-ember">关键时刻推荐</span><br />
+        你的品牌<span class="cursor-blink"></span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-ink/75 max-w-2xl leading-relaxed mb-6">
+        <a href="https://bbd.sh" class="underline decoration-electric decoration-2 underline-offset-4">bbd.sh</a>
+        是陪创始人和 VC 把 idea 孵化落地的 builder studio ——
+        先验证商业模式，再把产品 ship 出来。
+      </p>
+      <p class="text-lg md:text-xl text-ink/75 max-w-2xl leading-relaxed mb-10">
+        <strong>Citebeam</strong> 是我们其中一条服务线。
+        当你的客户问 ChatGPT、Claude、Perplexity、豆包、Kimi、通义要推荐时，
+        Citebeam 保证你的品牌会被提到。审计 · 修复 · 持续监测。
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <a
+          href="https://bbd.sh/contact?subject=citebeam"
+          class="px-6 py-3 bg-ink text-paper hover:bg-electric hover:text-ink transition-colors rounded font-mono text-sm font-bold"
+        >
+          给我的品牌跑一次 Citebeam →
+        </a>
+        <a
+          href="#how"
+          class="px-6 py-3 border border-ink/20 hover:border-electric hover:text-electric transition-colors rounded font-mono text-sm"
+        >
+          看怎么运作 ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ════════════════ bbd.sh 身份 + Citebeam 位置 ════════════════ */}
+  <section class="border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">
+        ## positioning.md
+      </p>
+      <h2 class="font-display text-2xl md:text-3xl font-bold leading-tight mb-6 max-w-3xl">
+        Citebeam 是 bbd.sh 处理 <span class="italic text-ember">AI 可见度</span>这一块的方式 ——
+        不是 bbd.sh 的全部。
+      </h2>
+      <p class="text-ink/75 leading-relaxed max-w-3xl mb-6">
+        <a href="https://bbd.sh" class="text-electric hover:underline">bbd.sh</a>
+        是一支小而精的 builder studio。我们陪创始人 / VC 走完整条链路：
+        <strong>验证</strong>商业模式 · <strong>打品牌 + 建产品</strong> · <strong>上线</strong> · <strong>持续增长</strong>。
+        AI 可见度是增长阶段的一个关键杠杆。如果客户的业务形态（电商、SaaS、垂直工具）对 AI 搜索敏感，
+        我们会把 Citebeam 作为整包孵化的一部分跑；如果客户只需要做 AEO，Citebeam 也可以单独售卖。
+      </p>
+      <div class="grid md:grid-cols-4 gap-4 font-mono text-xs mt-8">
+        <div class="border-l-2 border-ink/20 pl-3">
+          <p class="text-ink font-bold">验证 Validate</p>
+          <p class="text-muted mt-1">写代码之前先压测 ICP / 定价 / GTM</p>
+        </div>
+        <div class="border-l-2 border-ink/20 pl-3">
+          <p class="text-ink font-bold">品牌 + 产品</p>
+          <p class="text-muted mt-1">命名、视觉、全栈产品、上线到用户手里</p>
+        </div>
+        <div class="border-l-2 border-ink/20 pl-3">
+          <p class="text-ink font-bold">增长 Grow</p>
+          <p class="text-muted mt-1">SEO、内容、分析、生命周期</p>
+        </div>
+        <div class="border-l-2 border-electric pl-3">
+          <p class="text-ink font-bold">Citebeam · AEO</p>
+          <p class="text-muted mt-1">在 ChatGPT / Claude / 豆包 里被推荐 ← 你现在在这里</p>
+        </div>
+      </div>
+      <p class="mt-8 font-mono text-xs text-muted">
+        → 完整 studio 能力：
+        <a href="https://bbd.sh/work" class="text-electric hover:underline">bbd.sh/work</a>
+      </p>
+    </div>
+  </section>
+
+  {/* ════════════════ WHY IT MATTERS ════════════════ */}
+  <section class="border-b border-ink/10 bg-graphite text-paper">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-electric mb-2">
+        ## 为什么是现在
+      </p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-12 max-w-3xl">
+        AI 正在成为答案层。<br />
+        它不认识你 = 你<span class="text-ember">隐形</span>。
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 font-mono text-sm">
+        <div>
+          <p class="text-electric mb-3">// 正在发生的事</p>
+          <p class="text-paper/80 leading-relaxed">
+            越来越多的消费决策在 ChatGPT / Claude / 豆包 / Kimi / 通义 里就被答完了 ——
+            用户根本不会再点到你的网站。
+          </p>
+        </div>
+        <div>
+          <p class="text-electric mb-3">// 风险</p>
+          <p class="text-paper/80 leading-relaxed">
+            如果 AI 的回答里不提你 —— 或者更糟，推荐了竞品 ——
+            线索在 SEO 启动之前就漏光了。
+          </p>
+        </div>
+        <div>
+          <p class="text-electric mb-3">// 机会</p>
+          <p class="text-paper/80 leading-relaxed">
+            AEO（Answer Engine Optimization）现在相当于 2003 年的 SEO。
+            先动手的品牌会持续放大优势。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ════════════════ HOW CITEBEAM WORKS ════════════════ */}
+  <section id="how" class="border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">
+        ## ./citebeam --steps
+      </p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-12">
+        Citebeam 怎么跑
+      </h2>
+
+      <ol class="space-y-12">
+        <li class="grid md:grid-cols-[120px_1fr] gap-6">
+          <div class="font-mono text-sm">
+            <p class="text-electric font-bold">阶段 01</p>
+            <p class="text-muted text-xs mt-1">约 1 周</p>
+          </div>
+          <div>
+            <h3 class="font-display text-xl md:text-2xl font-bold mb-2">Discovery · 摸底</h3>
+            <p class="text-ink/75 leading-relaxed max-w-2xl">
+              你的品牌 + 3-5 个指定竞品，在 6+ 主流 AI 助手里跑一圈你客户真实会问的问题。
+              产出 5 维评分卡：提及率、引用率、回答位置、SoV、情感倾向。
+            </p>
+          </div>
+        </li>
+        <li class="grid md:grid-cols-[120px_1fr] gap-6">
+          <div class="font-mono text-sm">
+            <p class="text-electric font-bold">阶段 02</p>
+            <p class="text-muted text-xs mt-1">约 1 周</p>
+          </div>
+          <div>
+            <h3 class="font-display text-xl md:text-2xl font-bold mb-2">Diagnosis · 诊断</h3>
+            <p class="text-ink/75 leading-relaxed max-w-2xl">
+              我们精准定位<strong>为什么</strong>竞品赢下每一个回答位置 ——
+              schema 缺失、品牌实体弱、引用源空白、内容洞、
+              或者 AI 压根不知道你存在。产出：按优先级排序的修复清单。
+            </p>
+          </div>
+        </li>
+        <li class="grid md:grid-cols-[120px_1fr] gap-6">
+          <div class="font-mono text-sm">
+            <p class="text-electric font-bold">阶段 03</p>
+            <p class="text-muted text-xs mt-1">约 4-8 周</p>
+          </div>
+          <div>
+            <h3 class="font-display text-xl md:text-2xl font-bold mb-2">Build &amp; Fix · 改</h3>
+            <p class="text-ink/75 leading-relaxed max-w-2xl">
+              Schema.org 标记、llms.txt、技术 SEO、品牌实体建设
+              (Wikidata / Crunchbase / 社媒一致性)、AEO 优化内容、权威引用 ——
+              bbd.sh 的全栈团队直接建到你网站里，和其他产品工作同一拨人做。
+            </p>
+          </div>
+        </li>
+        <li class="grid md:grid-cols-[120px_1fr] gap-6">
+          <div class="font-mono text-sm">
+            <p class="text-electric font-bold">阶段 04</p>
+            <p class="text-muted text-xs mt-1">持续</p>
+          </div>
+          <div>
+            <h3 class="font-display text-xl md:text-2xl font-bold mb-2">Monitor · 监测</h3>
+            <p class="text-ink/75 leading-relaxed max-w-2xl">
+              每周可见度追踪 + 竞品警报。
+              当某个竞品开始抢走你原来占的回答位置，你会在线索泄露之前就收到提醒。
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  {/* ════════════════ WHO IT'S FOR ════════════════ */}
+  <section class="border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">
+        ## fit.md
+      </p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-12">
+        Citebeam 适合谁
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6 font-mono text-sm">
+        <div class="border border-ink/10 p-6">
+          <p class="text-electric mb-3">// 品牌创始人</p>
+          <p class="text-ink/80 leading-relaxed">
+            你已经上线了。客户在搜索。AI 却推荐了别家的名字。
+            Citebeam 负责把这个缺口补上。
+          </p>
+        </div>
+        <div class="border border-ink/10 p-6">
+          <p class="text-electric mb-3">// VC &amp; 投后</p>
+          <p class="text-ink/80 leading-relaxed">
+            把 Citebeam 铺到整个 portfolio。看清哪些被投在 AI 里可见、
+            哪些需要补齐，并对标品类 benchmark。
+          </p>
+        </div>
+        <div class="border border-ink/10 p-6">
+          <p class="text-electric mb-3">// 热门赛道的 operator</p>
+          <p class="text-ink/80 leading-relaxed">
+            如果你的品类是"客户先问 AI 再问 Google"
+            （开发者工具、AI 产品、金融、垂直 SaaS），
+            AEO 就是新的氧气。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ════════════════ GUIDES ════════════════ */}
+  <section class="border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">## 深度指南</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">
+        AEO 深入
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4 font-mono text-sm">
+        <a href="/zh/guide/what-is-aeo" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// 定义</p>
+          <p class="text-ink font-bold group-hover:text-electric">什么是 AEO？</p>
+          <p class="text-muted text-xs mt-1">大白话讲清楚答案引擎优化是什么，和 SEO 的区别。</p>
+        </a>
+        <a href="/zh/guide/aeo-vs-seo" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// 对比</p>
+          <p class="text-ink font-bold group-hover:text-electric">AEO vs SEO</p>
+          <p class="text-muted text-xs mt-1">信号权重、见效时间、先投哪个。</p>
+        </a>
+        <a href="/zh/guide/get-cited-by-chatgpt" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// 平台</p>
+          <p class="text-ink font-bold group-hover:text-electric">被 ChatGPT 引用</p>
+          <p class="text-muted text-xs mt-1">OpenAI 的检索怎么选品牌，影响引用的 4 个杠杆。</p>
+        </a>
+        <a href="/zh/guide/brand-entity-setup" class="border border-ink/10 p-5 hover:border-electric group">
+          <p class="text-electric text-xs mb-1">// 实体</p>
+          <p class="text-ink font-bold group-hover:text-electric">品牌实体建设</p>
+          <p class="text-muted text-xs mt-1">Wikidata / Crunchbase / LinkedIn 手册 —— AEO 最大杠杆。</p>
+        </a>
+        <a href="/zh/guide/ai-visibility-for-ecommerce" class="border border-ink/10 p-5 hover:border-electric group md:col-span-2">
+          <p class="text-electric text-xs mb-1">// 垂直</p>
+          <p class="text-ink font-bold group-hover:text-electric">电商 AEO</p>
+          <p class="text-muted text-xs mt-1">Product schema、测评集成、跨境考虑 —— 电商专属。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ════════════════ FINAL CTA ════════════════ */}
+  <section class="bg-ink text-paper">
+    <div class="max-w-5xl mx-auto px-6 py-32 text-center">
+      <p class="font-mono text-xs uppercase tracking-widest text-electric mb-6">
+        # ready_to_audit
+      </p>
+      <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-8">
+        看一下 AI 是怎么谈你的 ——<br />
+        <span class="italic text-electric">趁竞品还没看到。</span>
+      </h2>
+      <a
+        href="https://bbd.sh/contact?subject=citebeam"
+        class="inline-block px-8 py-4 bg-electric text-ink hover:bg-paper transition-colors rounded font-mono text-base font-bold"
+      >
+        $ ./citebeam --start →
+      </a>
+      <p class="mt-6 font-mono text-xs text-paper/50">
+        hello@bbd.sh · 邮件主题写 citebeam
+      </p>
+      <p class="mt-10 font-mono text-xs text-paper/40">
+        Citebeam 是
+        <a href="https://bbd.sh" class="text-electric hover:underline">bbd.sh</a>
+        若干服务线之一 —— 陪 founder 和 VC 把 idea 孵化落地的 builder studio。
+      </p>
+    </div>
+  </section>
+</Base>

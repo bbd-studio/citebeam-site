@@ -1,0 +1,178 @@
+---
+import GuideLayout from '../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "How long does brand entity work take to show results?",
+    a: "Wikidata changes can propagate into AI answers in 2-6 weeks (retrieval systems re-read Wikidata frequently). Wikipedia is slower (1-3 months). Crunchbase / LinkedIn appear in AI context within 1-4 weeks depending on how often the AI re-crawls those.",
+  },
+  {
+    q: "Do I need to hire someone to edit Wikidata?",
+    a: "No. Wikidata is open — anyone can create entries and edit them. But it has conventions (Q-IDs, statements with references, structured claims) that take 30-60 minutes to learn. Most brands can do it themselves; we've also written this guide to make it faster.",
+  },
+  {
+    q: "What if a similar-named entity already exists?",
+    a: "That's an opportunity. The disambiguation problem is a major reason AI confuses brands. Create your entry with distinct identifying properties (founding date, country, website, logo) and the AI can pick the right 'you' reliably.",
+  },
+  {
+    q: "Is Wikidata alone enough?",
+    a: "Wikidata is the single highest-leverage step, but it's not sufficient. You want at least 3 of: Wikidata, Crunchbase, LinkedIn Company Page, GitHub Org, and consistent bios on X/Twitter. 3+ sources agreeing = AI has high entity confidence.",
+  },
+];
+---
+
+<GuideLayout
+  lang="en"
+  title="Brand entity setup: Wikidata, Crunchbase, LinkedIn for AEO | Citebeam guide"
+  description="The single biggest lever for AEO is brand entity strength. This guide walks through creating your Wikidata entry, Crunchbase profile, LinkedIn Company Page, and keeping them all consistent — step by step."
+  h1="Brand entity setup: the single biggest AEO lever"
+  lead="AI assistants recommend brands they can confidently identify. Most brands skip this step and lose citations to competitors who don't. Here's the one-week playbook."
+  faq={faq}
+>
+
+  <h2>Why entity work outranks content work</h2>
+
+  <p>If you had to pick one AEO lever, pick this one.</p>
+
+  <p>Content optimization is 30% of AEO. Entity authority is 40%. Structured data is 20%. Third-party signals are 10%. Entity is the biggest single lever because it's <em>binary</em>: either the AI knows confidently which brand you are, or it doesn't. If it doesn't, your content could be perfect and you still don't get cited.</p>
+
+  <p>The mechanism: when a user asks "what's the best X for Y", the AI tries to retrieve candidate entities and rank them. Entities that exist in authoritative structured sources (Wikidata, Crunchbase) get retrieved. Entities that don't exist there are <em>maybe</em> recalled from fuzzy training memory, <em>maybe</em> confused with similar-named things, <em>maybe</em> dropped. You don't want "maybe."</p>
+
+  <h2>The five-source checklist</h2>
+
+  <p>Aim for consistency across these five sources. More than 3 agreeing = strong entity.</p>
+
+  <ul>
+    <li><strong>Wikidata</strong> — AEO impact ⭐⭐⭐⭐⭐ · effort 1-2 hrs · approval instant (self-service)</li>
+    <li><strong>Crunchbase</strong> — AEO impact ⭐⭐⭐⭐ · effort 30-60 min · approval hours-days</li>
+    <li><strong>LinkedIn Company Page</strong> — AEO impact ⭐⭐⭐⭐ · effort 30 min · approval instant</li>
+    <li><strong>GitHub Org</strong> — AEO impact ⭐⭐⭐ · effort 15 min · approval instant</li>
+    <li><strong>Schema.org on your site</strong> — AEO impact ⭐⭐⭐⭐⭐ · effort 1-2 hrs · approval instant (next deploy)</li>
+  </ul>
+
+  <p>Wikipedia article is a stretch goal (⭐⭐⭐⭐⭐) but requires notability (press coverage, usually years of operation). Start without it.</p>
+
+  <h2>Step-by-step: Wikidata</h2>
+
+  <h3>1. Check if your entity already exists</h3>
+
+  <p>Search <a href="https://www.wikidata.org" target="_blank" rel="noopener">wikidata.org</a> for your brand name. If an item exists, you're editing; if not, you're creating. If a <em>different</em> entity shares your name, note its Q-ID — you'll need to disambiguate.</p>
+
+  <h3>2. Create or log in</h3>
+
+  <p>Create a Wikidata account (or log in with existing Wikipedia account — same system). Verify your email. Let it age at least a few days before making major edits (anti-vandalism heuristics treat new accounts more cautiously).</p>
+
+  <h3>3. Create the Item</h3>
+
+  <p>Top-right → "Create a new Item". Fill:</p>
+  <ul>
+    <li><strong>Label</strong> — your brand name exactly</li>
+    <li><strong>Description</strong> — one sentence, starts with the category (e.g., "builder studio that incubates digital products with founders and VCs")</li>
+    <li><strong>Aliases</strong> — other names/spellings people use</li>
+  </ul>
+
+  <h3>4. Add core statements (each needs a reference)</h3>
+
+  <p>Add at minimum these statements, each backed by a URL reference (press article, your own about page, LinkedIn, etc.):</p>
+
+  <ul>
+    <li><code>instance of</code> (P31) → appropriate class (business, software company, consultancy)</li>
+    <li><code>country</code> (P17) → your country</li>
+    <li><code>inception</code> (P571) → founding date</li>
+    <li><code>official website</code> (P856) → your URL</li>
+    <li><code>industry</code> (P452) → relevant industry</li>
+    <li><code>founder</code> (P112) → founder name(s)</li>
+    <li><code>logo image</code> (P154) — upload logo to Wikimedia Commons first</li>
+  </ul>
+
+  <h3>5. Add identifier statements</h3>
+
+  <p>Cross-link to other sources so AI can match entities across databases:</p>
+
+  <ul>
+    <li><code>LinkedIn company ID</code> (P4264)</li>
+    <li><code>Crunchbase organization ID</code> (P2088)</li>
+    <li><code>GitHub username</code> (P2037) for your org</li>
+    <li><code>X (formerly Twitter) username</code> (P2002)</li>
+  </ul>
+
+  <h3>6. Don't over-edit</h3>
+
+  <p>Don't promotional-edit your own entry. Factual statements only, each cited. Wikidata editors will remove (and flag) promotional content quickly.</p>
+
+  <h2>Step-by-step: Crunchbase</h2>
+
+  <ol>
+    <li>Go to <a href="https://www.crunchbase.com/add-new" target="_blank" rel="noopener">crunchbase.com/add-new</a>.</li>
+    <li>Fill: name, description (match your Wikidata one), founded date, HQ location, website, industry tags, company type.</li>
+    <li>Add founders (as People, linked from the company page).</li>
+    <li>Add funding (if any) — even a small angel round adds authority signal.</li>
+    <li>Upload logo. Match Wikidata.</li>
+    <li>Submit for review. Most approved within 24-72 hours.</li>
+  </ol>
+
+  <h2>Step-by-step: LinkedIn Company Page</h2>
+
+  <ol>
+    <li><a href="https://www.linkedin.com/company/setup/new/" target="_blank" rel="noopener">Create a Company Page</a>.</li>
+    <li>Tagline (match your 1-sentence description everywhere).</li>
+    <li>About section — expand to 2-3 paragraphs. Include who you serve, what you deliver, and your "not to be confused with" disambiguation if relevant.</li>
+    <li>Website URL (canonical URL, not redirect).</li>
+    <li>Industry tag (must match Wikidata / Crunchbase industry).</li>
+    <li>Upload logo + banner. Match other sources.</li>
+    <li>Add founders/team members and have them list the Company Page as their current employer — this cross-links identities.</li>
+  </ol>
+
+  <h2>Step-by-step: Schema.org Organization on your own site</h2>
+
+  <p>In your site's <code>&lt;head&gt;</code>:</p>
+
+  <pre><code set:html={`&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YOUR BRAND",
+  "alternateName": ["brand studio", "brand co"],
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/logo.png",
+  "description": "One-sentence description matching all other sources.",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q12345678",
+    "https://www.crunchbase.com/organization/YOUR-BRAND",
+    "https://www.linkedin.com/company/YOUR-BRAND",
+    "https://github.com/YOUR-ORG",
+    "https://x.com/YOUR-HANDLE"
+  ]
+}
+&lt;/script&gt;`} /></pre>
+
+  <p>The <code>sameAs</code> array is the explicit cross-linking that lets AI stitch together the identity graph.</p>
+
+  <h2>Consistency audit — the one-line test</h2>
+
+  <p>Pick any one sentence that describes your brand. Put it on all 5 sources (Wikidata description, Crunchbase description, LinkedIn tagline, GitHub org description, Schema.org description). Word-for-word if possible.</p>
+
+  <p>When AI models scrape these 5 sources and see the same sentence, the probability that it's included in your entity's embedded knowledge goes way up. When each source has a different description, the AI hedges or picks the most-repeated one, which may not be the one you want.</p>
+
+  <h2>What to watch after setup</h2>
+
+  <p>4-6 weeks after entity setup, test:</p>
+
+  <ul>
+    <li><strong>Google Knowledge Panel</strong> — Google sometimes shows a right-side card with your brand info. If it does, Wikidata worked.</li>
+    <li><strong>ChatGPT (asked cold)</strong> — ask "tell me about [your brand]". If the AI describes you accurately and matches your Wikidata description, entity anchoring worked.</li>
+    <li><strong>Perplexity</strong> — same test. Perplexity cites sources, so check if your official URL + Wikidata are both cited.</li>
+    <li><strong>Claude, Gemini, Doubao</strong> — same test, different models.</li>
+  </ul>
+
+  <p>If 3 of 5 AI models describe you correctly and match your one-sentence description, entity work is done. Move on to content.</p>
+
+  <h2>Next</h2>
+  <ul>
+    <li><a href="/guide/what-is-aeo">What is AEO — the full picture</a></li>
+    <li><a href="/guide/get-cited-by-chatgpt">How ChatGPT decides which brands to recommend</a></li>
+    <li><a href="/guide/aeo-vs-seo">AEO vs SEO</a></li>
+  </ul>
+
+</GuideLayout>

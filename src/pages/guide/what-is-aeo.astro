@@ -1,0 +1,110 @@
+---
+import GuideLayout from '../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "Is AEO the same as LLMO, GEO, or AI search optimization?",
+    a: "Roughly yes — they're near-synonyms. <strong>AEO</strong> (Answer Engine Optimization) emphasizes the answer layer. <strong>GEO</strong> (Generative Engine Optimization) and <strong>LLMO</strong> (LLM Optimization) emphasize the model generating the answer. <strong>AI search optimization</strong> is the marketing-friendly umbrella term. In practice all four describe the same work: making your brand show up in what an AI assistant tells a user.",
+  },
+  {
+    q: "Do I still need traditional SEO?",
+    a: "Yes. Most AI assistants retrieve from the web before answering, and what they retrieve comes from Google / Bing style indexes. Strong SEO fundamentals (schema, sitemap, page quality, backlinks) are <em>prerequisites</em> for AEO — not alternatives to it.",
+  },
+  {
+    q: "How fast does AEO work show results?",
+    a: "Faster than SEO, usually. Because the search space per query is tiny (AI picks 3-10 citations, not 10 pages of results), small moves in content quality or brand entity strength can flip answers within weeks. We typically see measurable change in 4-8 weeks on Citebeam engagements.",
+  },
+  {
+    q: "Can I do AEO on my own?",
+    a: "Yes — the fundamentals are public. The hard part is <em>measuring</em> (running prompts across 6+ AI platforms consistently, tracking mention/citation rates over time, attributing wins) and <em>brand entity work</em> (Wikidata / Crunchbase / structured data). Most teams can implement the content changes themselves but outsource the measurement + entity work.",
+  },
+  {
+    q: "Which AI platforms matter most?",
+    a: "Depends on your market. Global B2B: ChatGPT, Claude, Perplexity, Google AI Overviews. China: Doubao (豆包), Kimi, Tongyi (通义), DeepSeek. Japan: adds Rakuten / LINE integrations. Citebeam covers 6+ platforms by default; we add market-specific ones per client.",
+  },
+];
+---
+
+<GuideLayout
+  lang="en"
+  title="What is AEO (Answer Engine Optimization)? | Citebeam guide"
+  description="AEO is the discipline of getting your brand mentioned when customers ask AI assistants like ChatGPT, Claude, or Perplexity for a recommendation. A plain-English guide covering the mechanics, how it's different from SEO, and what actually works."
+  h1="What is AEO (Answer Engine Optimization)?"
+  lead="AEO is the discipline of making your brand show up when a buyer asks ChatGPT, Claude, Perplexity, Doubao, or other AI assistants for a recommendation. It's what SEO looked like in 2003 — early, fast-moving, and the brands who start now will compound the lead."
+  faq={faq}
+>
+
+  <h2>The one-sentence definition</h2>
+
+  <p><strong>AEO (Answer Engine Optimization)</strong> is the practice of structuring your brand, content, and presence so that when a customer asks an AI assistant a question, that AI answers with <em>you</em>.</p>
+
+  <p>Not "ranks you on page 1." <em>Answers</em> with you. Because in AI search, the user never sees page 1 — they just see the answer.</p>
+
+  <h2>Why AEO exists as a category now</h2>
+
+  <p>Three things happened between 2023 and 2026 that created AEO as a distinct discipline:</p>
+
+  <ol>
+    <li><strong>AI chat interfaces ate a slice of "search" behavior.</strong> ChatGPT, Claude, Perplexity, Google AI Overviews, Doubao, Kimi — these answer questions directly. The user doesn't click through anywhere. The traditional SEO funnel (rank → click → convert) is broken when step 1 doesn't happen.</li>
+    <li><strong>AI assistants cite specific brands in their answers.</strong> Ask Perplexity "best noise-cancelling headphones under $300" and you get three named brands with reasoning. Those three brands got the conversion. The other 20 brands in the category got nothing.</li>
+    <li><strong>The mechanics of being cited are <em>different</em> from being ranked.</strong> Ranking #1 on Google doesn't guarantee the AI picks you. The AI looks at entity authority (Wikidata, Crunchbase), retrieval quality (structured data, llms.txt), and content format (extractable facts, not marketing copy). A new discipline emerged.</li>
+  </ol>
+
+  <h2>How AEO differs from SEO</h2>
+
+  <ul>
+    <li><strong>Goal</strong> — SEO: rank high on SERP · AEO: be the answer the AI gives</li>
+    <li><strong>User interaction</strong> — SEO: user clicks through · AEO: user reads AI's answer, may never visit</li>
+    <li><strong>Key signal</strong> — SEO: backlinks + keywords + page quality · AEO: brand entity + structured data + citation-worthy content</li>
+    <li><strong>Measurement</strong> — SEO: keywords / impressions / clicks · AEO: mention rate / citation rate / answer position / share-of-voice</li>
+    <li><strong>Competitive space</strong> — SEO: 10 results per query · AEO: 3-10 citations per query</li>
+    <li><strong>Time to visible impact</strong> — SEO: 3-12 months · AEO: 4-12 weeks (smaller search space moves faster)</li>
+  </ul>
+
+  <h2>The four things that make a brand AI-visible</h2>
+
+  <h3>1. Brand entity strength</h3>
+
+  <p>AI models learn about brands during training from authoritative structured sources: Wikidata, Wikipedia, Crunchbase, GitHub, LinkedIn. If your brand doesn't exist in these, the AI has nothing stable to anchor to and may confuse you with a similarly-named entity — or omit you entirely. This is why Citebeam's first fix is usually <strong>brand entity setup</strong>, not content.</p>
+
+  <h3>2. Structured data on your site</h3>
+
+  <p>Schema.org markup (Organization, Service, Product, FAQPage), <code>llms.txt</code>, clean sitemap, proper canonical tags. These are the signals retrieval systems use to pick what content to feed the LLM. Clean structured data multiplies your chance of being selected as a citation.</p>
+
+  <h3>3. Citation-worthy content</h3>
+
+  <p>AI models prefer content that reads like an <em>answer</em>: lead with the conclusion, include concrete facts and numbers, use declarative sentences, avoid marketing fluff. Content that says "we're passionate about customer success" gets ignored. Content that says "our median order ships in 42 hours" gets cited.</p>
+
+  <h3>4. Third-party signals</h3>
+
+  <p>Backlinks still matter — both for traditional SEO <em>and</em> because AI retrieval systems use linked pages as context. But for AEO, the quality bar is higher: one citation from a domain the AI trusts (major publication, academic source, authoritative industry blog) is worth more than ten low-quality directory links.</p>
+
+  <h2>What AEO is <em>not</em></h2>
+
+  <ul>
+    <li><strong>Not prompt hacking.</strong> You can't "trick" a modern LLM into mentioning you — they've been hardened against instruction injection. Legitimate AEO is about being the thing the AI would legitimately recommend.</li>
+    <li><strong>Not a one-time project.</strong> AI models update their training cutoffs; retrieval systems re-crawl; your competitors adapt. AEO is an ongoing program, not a one-shot launch.</li>
+    <li><strong>Not just content marketing with a new name.</strong> Content is one layer. Brand entity work and structured data are at least as important, and most content marketing teams don't do them.</li>
+  </ul>
+
+  <h2>What a real AEO engagement looks like</h2>
+
+  <p>We run Citebeam in four phases (<a href="/#how">see the overview</a>):</p>
+
+  <ol>
+    <li><strong>Discovery</strong> — run your brand plus 3-5 competitors through 6+ AI assistants on realistic customer queries. Output: 5-dimension scorecard showing where you win, where competitors win.</li>
+    <li><strong>Diagnosis</strong> — trace exactly <em>why</em> competitors win each answer slot. Missing entity? Wrong schema? Content hole? Wrong tone? Every failure mode has a specific fix.</li>
+    <li><strong>Build &amp; Fix</strong> — implement the fix list. Brand entity setup (Wikidata, Crunchbase), Schema.org deployment, llms.txt, rewrite of 10-20 highest-impact pages into citation-worthy format.</li>
+    <li><strong>Monitor</strong> — weekly re-runs; competitive alerts when someone starts winning slots you used to own.</li>
+  </ol>
+
+  <h2>Next steps</h2>
+
+  <ul>
+    <li><a href="/guide/aeo-vs-seo">AEO vs SEO — the practical differences</a></li>
+    <li><a href="/guide/get-cited-by-chatgpt">How ChatGPT picks which brands to recommend</a></li>
+    <li><a href="/guide/ai-visibility-for-ecommerce">AEO for ecommerce brands</a></li>
+    <li><a href="/guide/brand-entity-setup">Brand entity setup: Wikidata, Crunchbase, GitHub</a></li>
+  </ul>
+
+</GuideLayout>

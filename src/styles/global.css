@@ -16,6 +16,10 @@
 }
 
 @layer utilities {
+  .font-cn {
+    font-family: 'Noto Sans SC', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  }
+
   .cursor-blink::after {
     content: '▋';
     @apply text-electric ml-1;

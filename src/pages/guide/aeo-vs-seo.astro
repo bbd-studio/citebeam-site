@@ -1,0 +1,112 @@
+---
+import GuideLayout from '../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "If I do SEO well, do I automatically do AEO well?",
+    a: "Partially. Good SEO usually means good crawlability, decent content, and some backlinks — all of which help AEO too. But AEO adds layers SEO doesn't need: brand entity work (Wikidata, Crunchbase), llms.txt, citation-optimized content format. Most SEO-strong brands are only 30-50% AEO-ready.",
+  },
+  {
+    q: "Should I stop doing SEO and just focus on AEO?",
+    a: "No. AI retrieval systems lean heavily on traditional web indexes, so losing SEO footing hurts AEO too. The pragmatic answer: keep SEO as your floor, add AEO as your ceiling.",
+  },
+  {
+    q: "Which pays off faster right now?",
+    a: "AEO usually pays off faster in 2026 because the field is less saturated. New entrants can rank #1 in AI answers within 1-3 months; reaching #1 in Google SERP for a competitive keyword takes 6-18 months. The compounding advantage for SEO is bigger long-term, but AEO has better short-term ROI.",
+  },
+  {
+    q: "Do the same best practices (page speed, mobile-friendly) matter for AEO?",
+    a: "Yes, but less directly. Slow sites hurt AI retrieval (crawlers time out), but the primary AEO levers are different: entity authority and content format dominate. Fixing Core Web Vitals gives you maybe 5% of AEO upside; fixing brand entity gives you 40%.",
+  },
+];
+---
+
+<GuideLayout
+  lang="en"
+  title="AEO vs SEO: what's the difference and which matters more in 2026? | Citebeam"
+  description="AEO (Answer Engine Optimization) and SEO both want your brand found. They optimize for different search modes. Here's how they differ mechanically, which pays off faster, and whether you can do one without the other."
+  h1="AEO vs SEO — the practical differences"
+  lead="SEO gets you ranked. AEO gets you quoted. They're different disciplines with different levers, but you can't skip SEO to do AEO — it's the foundation AEO is built on."
+  faq={faq}
+>
+
+  <h2>TL;DR</h2>
+
+  <p><strong>SEO</strong> optimizes for <em>being found by a human clicking results</em>. <strong>AEO</strong> optimizes for <em>being quoted by an AI answering a question</em>.</p>
+
+  <p>Same end goal (user discovers your brand). Different mechanics. AEO is not "new SEO" — it's a <em>layer on top</em>. You need both.</p>
+
+  <h2>The core difference in one diagram</h2>
+
+  <pre><code>Traditional search (SEO):
+  Query → SERP (10 results) → User clicks → Your site → Convert
+
+AI search (AEO):
+  Query → LLM generates answer → Answer names 3 brands → Decision made
+                                  ↑
+                            you're either here or nowhere</code></pre>
+
+  <p>In SEO you have 10 slots per query. In AEO you have 3-5 citation slots. The competition per query is actually <em>tighter</em> in AEO — but there are fewer queries that need winning because the AI can answer a wider variety from the same brand knowledge.</p>
+
+  <h2>Signal comparison</h2>
+
+  <ul>
+    <li>Backlinks from high-DA sites — SEO ⭐⭐⭐⭐⭐ · AEO ⭐⭐⭐</li>
+    <li>Keyword targeting in title / H1 — SEO ⭐⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>Page speed / Core Web Vitals — SEO ⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>Internal linking — SEO ⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>Schema.org markup — SEO ⭐⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li><code>llms.txt</code> + <code>robots.txt</code> for AI crawlers — SEO ⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>Wikidata + Crunchbase entity — SEO ⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>Content written as declarative answers (not marketing prose) — SEO ⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>Structured FAQ on key pages — SEO ⭐⭐⭐ · AEO ⭐⭐⭐⭐</li>
+    <li>Social consistency (X / LinkedIn / GitHub match) — SEO ⭐ · AEO ⭐⭐⭐⭐</li>
+  </ul>
+
+  <h2>When SEO is enough</h2>
+
+  <p>You're already winning SEO when:</p>
+  <ul>
+    <li>Your customers don't use AI chatbots for research (e.g., senior demographics, regulated industries where AI advice isn't trusted)</li>
+    <li>Your category is transactional, not informational (e.g., "pizza near me" — people don't ask ChatGPT, they use maps)</li>
+    <li>Your brand has no direct competitors for its specific niche (monopoly position → you show up in both SEO and AEO by default)</li>
+  </ul>
+
+  <h2>When AEO matters more than SEO</h2>
+
+  <p>AEO becomes critical when:</p>
+  <ul>
+    <li>Your target customer is an <strong>early adopter</strong> (devs, founders, AI-curious consumers) — they use ChatGPT/Claude for recommendations at higher rates than the general population</li>
+    <li>Your category is <strong>informational</strong> or <strong>comparison-heavy</strong> ("best CRM for Shopify stores", "which AI coding assistant for large teams") — AI is natively good at these</li>
+    <li>Your <strong>competitors are already in the AI answers</strong> and you're not — every day that passes compounds your disadvantage</li>
+    <li>You're a <strong>new entrant</strong> trying to break into a category where SEO will take 18 months — AEO is a faster wedge</li>
+  </ul>
+
+  <h2>Can you do AEO without good SEO?</h2>
+
+  <p>Short answer: <strong>no, but you don't need category-winning SEO either</strong>.</p>
+
+  <p>AI retrieval systems use web search indexes. If your site isn't crawlable, if your pages are 404ing, if you have no canonical URLs — AI can't find you either. But AEO doesn't require you to be <em>ranking #1</em> for your keywords. It requires your site to be <em>findable, parseable, and entity-consistent</em>.</p>
+
+  <p>We've run Citebeam on brands with mediocre SEO who jumped to #1 in Perplexity citations within 6 weeks. The catch: their core SEO fundamentals (sitemap, schema, no technical errors) were already in place. We didn't fix their SEO — we added the AEO layer on top.</p>
+
+  <h2>If you're going to do one first, do SEO</h2>
+
+  <p>Counterintuitively — even though AEO is the new sexy thing — if you have to pick one to do first, pick SEO. Reason: AEO without SEO fundamentals is building on sand. But 80% of good SEO practices are also AEO prerequisites.</p>
+
+  <p>The practical sequence we recommend on Citebeam engagements:</p>
+  <ol>
+    <li><strong>Week 1</strong> — audit both. Most brands have one glaring SEO gap (missing schema, broken sitemap, canonical issues) and 3-5 AEO gaps (no llms.txt, weak brand entity, marketing-copy content).</li>
+    <li><strong>Week 2-3</strong> — fix the SEO blockers (these also fix 50% of AEO).</li>
+    <li><strong>Week 4-8</strong> — add the AEO-specific layer: brand entity work, content rewrites, monitoring setup.</li>
+  </ol>
+
+  <h2>Next</h2>
+
+  <ul>
+    <li><a href="/guide/what-is-aeo">What is AEO — full definition</a></li>
+    <li><a href="/guide/get-cited-by-chatgpt">How ChatGPT picks which brands to recommend</a></li>
+    <li><a href="/guide/brand-entity-setup">Brand entity setup: the single biggest AEO lever</a></li>
+  </ul>
+
+</GuideLayout>

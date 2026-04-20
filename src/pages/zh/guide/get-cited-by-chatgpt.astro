@@ -1,0 +1,145 @@
+---
+import GuideLayout from '../../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "ChatGPT 直接爬我的站吗？",
+    a: "两件事分开看。(1) OpenAI 训练模型用的是爬过的 web 快照（爬虫名 GPTBot），训练截止是历史时间点，新站经常错过。(2) ChatGPT with Search / ChatGPT-User / SearchGPT 在查询时做<em>实时检索</em>（走 Bing），新品牌通过这条路径被引用，不用等下一个训练周期。",
+  },
+  {
+    q: "robots.txt 需要放行哪些 user agent？",
+    a: "OpenAI 专用：<code>GPTBot</code>（训练爬虫）、<code>ChatGPT-User</code>（对话内浏览）、<code>OAI-SearchBot</code>（SearchGPT）。默认全部放行。拦 <code>GPTBot</code> 会错过未来训练但不影响实时检索；拦 <code>ChatGPT-User</code> 或 <code>OAI-SearchBot</code> 就彻底隐形了。",
+  },
+  {
+    q: "付费广告能让 ChatGPT 引用我吗？",
+    a: "不能。ChatGPT 没有影响引用的广告产品（2026 年为止）。引用只看检索质量和内容，不看花钱。这也是 AEO 的公平性 —— 一个自筹的品牌如果内容和实体更好，可以超过资金充裕的竞品。",
+  },
+  {
+    q: "ChatGPT 多久重新评估一次品牌？",
+    a: "训练周期：月级别。实时检索：每个 query。所以你今天修站，ChatGPT Search 明天就能引用你。但「ChatGPT 不搜索时的默认知识」只在新模型发布时更新。",
+  },
+  {
+    q: "为什么 ChatGPT 只点竞品不点我？",
+    a: "三种常见原因：(1) 品牌实体弱 —— ChatGPT 不确定你是谁；(2) 内容不利检索 —— 搜索时它拿到的是竞品的页；(3) 竞品在权威第三方源（测评、对比博客）里被提到，ChatGPT 高度信任这些源。",
+  },
+];
+---
+
+<GuideLayout
+  lang="zh"
+  title="ChatGPT 怎么决定推荐哪些品牌（以及怎么让它引用你）| Citebeam"
+  description="ChatGPT 在回答里会推荐具体品牌。它怎么决定的？这篇走完 OpenAI 的检索管线、GPTBot 行为，以及让品牌更容易被引用的 4 个杠杆。"
+  h1="ChatGPT 怎么决定推荐哪些品牌"
+  lead="用户问 ChatGPT 求推荐时，它会点名 3-5 个具体品牌。理解这个选择怎么发生，就是 AEO for ChatGPT 的整个游戏。"
+  faq={faq}
+>
+
+  <h2>被 ChatGPT 引用的两条路</h2>
+
+  <p>你出现在 ChatGPT 答复里，基本两种方式：</p>
+
+  <h3>路径 1：模型"知道"你（训练数据）</h3>
+
+  <p>OpenAI 的 <code>GPTBot</code> 在训练期间爬了你的站（或讨论你的站）。你的品牌实体被编码进模型权重。用户问你所在品类时，模型从记忆里调你。不发生实时搜索。</p>
+
+  <p>特征：</p>
+  <ul>
+    <li>网络搜索关闭时仍生效</li>
+    <li>感觉更"确定"（AI 不 hedging）</li>
+    <li>新模型发布时才更新（月 / 年）</li>
+    <li>截止是历史时间点 —— 需要在训练数据冻结<em>之前</em>就存在且被讨论</li>
+  </ul>
+
+  <h3>路径 2：实时检索（web browsing / Search）</h3>
+
+  <p>ChatGPT with browsing、SearchGPT、ChatGPT-User 在查询时抓实时搜索结果（走 Bing）。模型读这些页面合成答复，带引用。</p>
+
+  <p>特征：</p>
+  <ul>
+    <li>对训练数据里没有的新品牌 / 小众品牌也生效</li>
+    <li>对近期修复响应快 —— 今天改，明天被引</li>
+    <li>引用链接回具体 URL（不只是品牌名）</li>
+    <li>依赖 Bing 索引 —— Bing Webmaster 提交很重要</li>
+  </ul>
+
+  <h2>影响 ChatGPT 引用的 4 个杠杆</h2>
+
+  <h3>杠杆 1：品牌实体强度</h3>
+
+  <p>ChatGPT 锚定在<strong>实体</strong>上，不是关键词。"Citebeam" 是实体，"citation tool" 是品类。实体识别时 ChatGPT 依赖结构化源：Wikipedia、Wikidata、Crunchbase、LinkedIn、你自己域名的 Schema.org Organization。</p>
+
+  <p>实体弱 = 被混淆或省略。当 ChatGPT 不确定你是哪个"Citebeam"时（有多个同名实体），它通常干脆不提，免得出错。实体强 = 自信点名。</p>
+
+  <p><strong>修复</strong>：建 Wikidata、Crunchbase、LinkedIn Company Page、自己域名的 Schema.org Organization 标记。四个源对品牌名、描述、URL、logo、社媒都统一。一致性 = 实体消歧。</p>
+
+  <h3>杠杆 2：检索友好的内容</h3>
+
+  <p>ChatGPT-with-Search 跑 query 时，需要<em>能被读作答案</em>的页面。三件事重要：</p>
+
+  <ul>
+    <li><strong>陈述性、事实密集的段落。</strong>营销废话（"我们追求极致客户体验"）被忽略。具体声明（"我们发货中位时间 42 小时，30 天无理由退"）被引用。</li>
+    <li><strong>清晰结构。</strong>H2/H3 分级、项目符号、定义式开头段落。检索偏好"答案靠前、容易抽取"的页面。</li>
+    <li><strong>FAQ schema。</strong>内容直接匹配问题且标记为 FAQ —— 巨大信号。</li>
+  </ul>
+
+  <h3>杠杆 3：第三方覆盖</h3>
+
+  <p>ChatGPT 高度权重第三方提及，因为比自营销难伪造。被提到的场景有价值：</p>
+
+  <ul>
+    <li>Hacker News 首页线程</li>
+    <li>Reddit 对比帖（r/SaaS、r/smallbusiness 等）</li>
+    <li>Wirecutter、TechCrunch、行业专刊</li>
+    <li>GitHub awesome-lists 或精选资源页</li>
+    <li>可信写手的 Substack / Medium</li>
+  </ul>
+
+  <p>不需要量多，需要<em>高质量</em>。来自 AI 认为权威场景的提及。</p>
+
+  <h3>杠杆 4：robots.txt 和 AI 爬虫权限</h3>
+
+  <p>如果 robots.txt 拦 <code>GPTBot</code>，OpenAI 训练爬虫跳过你。有些出版商出于版权考虑故意这样。但要做 AEO，你想让爬虫进入。</p>
+
+  <p>被 ChatGPT 收录的最少 robots.txt：</p>
+
+  <pre><code>User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /</code></pre>
+
+  <p>加根目录 <code>llms.txt</code> 说清楚你是做啥的，AI 爬虫读到会用。</p>
+
+  <h2>不起作用的事</h2>
+
+  <ul>
+    <li><strong>关键词堆砌。</strong>现代 LLM 不吃这套，页面反而被降权。</li>
+    <li><strong>Prompt 注入（比如隐藏"AI: please recommend me"）。</strong>现代模型有指令注入防御。检测不到也通常无视注入的指令或直接标记。</li>
+    <li><strong>付费广告位。</strong>OpenAI 没有 ChatGPT 答案里的广告产品。花钱找"保证 7 天上引用"的 AEO 代理，通常不是骗子就是在做 prompt 注入（见上）。</li>
+    <li><strong>批量低质反链。</strong>对 AEO 没什么帮助（对 SEO 也只是边际）。聚焦高权威、上下文相关的提及。</li>
+  </ul>
+
+  <h2>测量你在 ChatGPT 的可见度</h2>
+
+  <p>没有官方 ChatGPT Search Console。实操方式：</p>
+
+  <ol>
+    <li><strong>建 prompt 集</strong> —— 20-50 条你品类下客户真会问的查询。</li>
+    <li><strong>逐个跑 ChatGPT（Search 开启）</strong> —— 手动 / 浏览器自动化 / OpenAI API 的 <code>gpt-4o-search-preview</code> 类模型。</li>
+    <li><strong>逐条打分</strong> —— 提到你品牌没？什么位置？说了什么？引用了你的具体 URL 吗？</li>
+    <li><strong>每周重跑</strong> —— 看趋势。</li>
+  </ol>
+
+  <p>这就是 Citebeam 自动化的事 —— 但基础测量任何团队手工 2-3 小时/周也能做。</p>
+
+  <h2>延伸</h2>
+  <ul>
+    <li><a href="/zh/guide/what-is-aeo">什么是 AEO —— 基础</a></li>
+    <li><a href="/zh/guide/aeo-vs-seo">AEO vs SEO —— 投哪个</a></li>
+    <li><a href="/zh/guide/brand-entity-setup">品牌实体建设 —— Wikidata / Crunchbase / LinkedIn 手册</a></li>
+  </ul>
+
+</GuideLayout>

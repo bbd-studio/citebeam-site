@@ -1,0 +1,139 @@
+---
+import GuideLayout from '../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "Does AEO work for Shopify / BigCommerce stores?",
+    a: "Yes — and Shopify stores have a specific advantage: Shopify auto-generates decent Schema.org product markup. You still need to add Organization, Review, and FAQPage schema, but the Product schema is handled. We've run Citebeam on multiple Shopify stores with strong results.",
+  },
+  {
+    q: "I sell on Amazon / Tmall / Temu, not my own site. Can I still do AEO?",
+    a: "Partially. You can optimize your brand's <em>own</em> presence (brand website, Wikidata, reviews in external sources), which affects how AI describes your brand in general. But AI assistants rarely cite specific product listings on marketplaces — they cite <em>brand</em> pages. If marketplaces are your only presence, AEO impact is limited.",
+  },
+  {
+    q: "What about cross-border sellers (China brand → US/EU market)?",
+    a: "Cross-border is where AEO has the biggest leverage. Your target customers (US, EU) use ChatGPT/Claude heavily. Chinese sellers often have weak brand entities in English-speaking AI (poor Wikidata presence, no Crunchbase, marketing site in both English and Chinese but with inconsistent messaging). Fixing these is a fast path to visibility.",
+  },
+  {
+    q: "How much AEO moves the needle for high-intent queries like 'best running shoes under $150'?",
+    a: "Significantly. These comparison-intent queries are where AI assistants shine — they synthesize reviews, specs, and brand credibility into specific recommendations. Small differences in brand authority and review quality translate directly to being mentioned or not.",
+  },
+];
+---
+
+<GuideLayout
+  lang="en"
+  title="AEO for ecommerce brands: get your products recommended by AI | Citebeam"
+  description="Ecommerce customers increasingly ask ChatGPT, Claude, and Perplexity 'what should I buy?' This guide walks through how AEO works specifically for ecommerce — product schema, review integration, cross-border considerations."
+  h1="AEO for ecommerce: get your products recommended by AI"
+  lead="Ecommerce is where AI search hits conversion fastest. When a customer asks 'best noise-cancelling headphones under $300', ChatGPT names three brands. Those three get the sale. Here's how to be one of them."
+  faq={faq}
+>
+
+  <h2>Why ecommerce is uniquely AEO-sensitive</h2>
+
+  <p>Three structural reasons ecommerce is where AEO matters most:</p>
+
+  <ol>
+    <li><strong>Customer queries are naturally comparison-shaped.</strong> "Best X for Y" / "X vs Y" / "under $Z" — these are what AI is good at and what customers actually ask.</li>
+    <li><strong>The decision completes inside the AI conversation.</strong> Unlike research for a B2B purchase (weeks of evaluation), ecommerce decisions are 2-5 minutes. If the AI recommends three brands, the user picks one before you have a chance to re-enter the conversation.</li>
+    <li><strong>Marketplace saturation has reached SEO's limit.</strong> On Amazon / Google Shopping, 100 brands compete for 10 slots. On ChatGPT "best X" answers, 3-5 brands get named. Concentration has intensified.</li>
+  </ol>
+
+  <h2>What ecommerce brands need beyond generic AEO</h2>
+
+  <h3>1. Product schema (Schema.org/Product)</h3>
+
+  <p>Basic Organization + WebSite schema is table stakes. For ecommerce, add <code>Product</code> with:</p>
+
+  <ul>
+    <li><code>name</code>, <code>description</code>, <code>sku</code></li>
+    <li><code>brand</code> (as Organization entity)</li>
+    <li><code>offers.price</code>, <code>offers.priceCurrency</code>, <code>offers.availability</code></li>
+    <li><code>aggregateRating</code> (if you have reviews — required for rich snippets and AI scoring)</li>
+    <li><code>image</code> array (high-res product images)</li>
+  </ul>
+
+  <p>Shopify / BigCommerce / WooCommerce auto-generate most of this. Custom sites need manual implementation.</p>
+
+  <h3>2. Review aggregation and sentiment signals</h3>
+
+  <p>AI loves <em>quantifiable social proof</em>. "3,247 reviews, 4.7 stars" is a retrievable fact. "Loved by our customers" is marketing fluff AI ignores. Make sure:</p>
+
+  <ul>
+    <li>Reviews appear <em>on your own site</em> (not just on Amazon/Tmall), marked up with <code>Review</code> schema</li>
+    <li>Total review count and average rating use <code>AggregateRating</code> schema</li>
+    <li>Specific review text is accessible to crawlers (not behind JS that AI crawlers can't execute)</li>
+  </ul>
+
+  <h3>3. Third-party review citations</h3>
+
+  <p>AI weighs third-party review sites heavily: Trustpilot, G2, Wirecutter, Consumer Reports, niche-specific review sites. A single Wirecutter mention = thousands of Trustpilot reviews in AI trust scoring. Strategy:</p>
+
+  <ul>
+    <li><strong>Apply to relevant curated lists</strong> (Wirecutter product submissions, niche "best of" posts)</li>
+    <li><strong>Build Trustpilot / G2 presence</strong> with verified reviews — these are retrieved directly by AI</li>
+    <li><strong>Encourage YouTube reviews</strong> — AI increasingly indexes video transcripts</li>
+  </ul>
+
+  <h3>4. Category and comparison pages</h3>
+
+  <p>AI loves comparison content. If your brand page has a "how we compare" section with honest specs vs. 2-3 named competitors, that content gets cited far more than pure product marketing.</p>
+
+  <p>Example: if you sell noise-cancelling headphones, have a page titled "X Pro vs Sony WH-1000XM6 vs Bose QC Ultra" that lists specs honestly. Yes, it acknowledges competitors exist. Yes, it still gets you cited — often <em>more</em> than marketing pages, because AI treats comparison content as higher-authority.</p>
+
+  <h3>5. Return/shipping/policy transparency</h3>
+
+  <p>AI increasingly surfaces policy info in recommendations ("has free returns", "ships in 2 days"). Make these <em>explicit and structured</em> on your site:</p>
+
+  <ul>
+    <li>FAQ schema with policy Q&amp;As</li>
+    <li>Schema.org <code>MerchantReturnPolicy</code> if you have a clear policy</li>
+    <li>Explicit "ships from", "delivery time", "return window" in machine-readable format</li>
+  </ul>
+
+  <h2>Cross-border ecommerce playbook</h2>
+
+  <p>Cross-border (e.g., Chinese brand selling to US via Amazon or DTC) has the biggest AEO upside and biggest gap.</p>
+
+  <p>Common gaps we see:</p>
+
+  <ul>
+    <li>No English-language Wikidata entry (only Chinese, which ChatGPT in English contexts doesn't retrieve well)</li>
+    <li>Crunchbase entry missing or very thin</li>
+    <li>Marketing site has two languages but different messaging in each (entity confusion)</li>
+    <li>Founder story absent in English (loses a major "brand humanity" signal)</li>
+    <li>Reviews only on Tmall/JD, not on Trustpilot or Amazon</li>
+  </ul>
+
+  <p>Fix sequence for cross-border:</p>
+
+  <ol>
+    <li>Create English Wikidata entry (not translate Chinese one — create fresh, or add English labels to existing Chinese one)</li>
+    <li>Register Crunchbase with English-market framing</li>
+    <li>Align site's English and Chinese content so descriptions match (AI detects inconsistency)</li>
+    <li>Build Trustpilot / G2 presence in English</li>
+    <li>Encourage English-language YouTube / TikTok reviews (creators, not ads)</li>
+  </ol>
+
+  <h2>What the Citebeam ecommerce engagement looks like</h2>
+
+  <p>A typical 8-week engagement for a mid-sized ecommerce brand (5-50M annual revenue):</p>
+
+  <ul>
+    <li><strong>Week 1-2</strong> — Discovery: run your brand + 5 competitors through 6+ AI assistants on 50-100 real customer queries (sourced from your support logs and search data).</li>
+    <li><strong>Week 3</strong> — Diagnosis: identify the 10-15 specific gaps (weak entity / missing Product schema / review scarcity / etc.) with priority ordering.</li>
+    <li><strong>Week 4-7</strong> — Build &amp; Fix: implement the fixes. Product schema rollout, Wikidata / Crunchbase setup, review strategy, comparison page creation, FAQ schema, llms.txt.</li>
+    <li><strong>Week 8+</strong> — Monitor: re-run the Discovery queries weekly; show trend; alert on competitor movements.</li>
+  </ul>
+
+  <p>Deliverables typically: 15-30% increase in mention rate across tracked AI platforms within 8 weeks, measurable improvement on 5-8 specific high-value queries.</p>
+
+  <h2>Next</h2>
+  <ul>
+    <li><a href="/guide/what-is-aeo">What is AEO (foundational)</a></li>
+    <li><a href="/guide/brand-entity-setup">Brand entity setup — the cross-border #1 priority</a></li>
+    <li><a href="/guide/get-cited-by-chatgpt">How ChatGPT decides which brands to recommend</a></li>
+  </ul>
+
+</GuideLayout>

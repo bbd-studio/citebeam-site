@@ -1,0 +1,36 @@
+---
+interface Props {
+  current: 'en' | 'zh';
+}
+const { current } = Astro.props;
+
+// Derive the "other language" URL from the current pathname.
+// /foo       → /zh/foo
+// /zh/foo    → /foo
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+let enPath: string;
+let zhPath: string;
+if (path.startsWith('/zh/') || path === '/zh') {
+  enPath = path === '/zh' ? '/' : path.replace(/^\/zh/, '');
+  zhPath = path;
+} else {
+  enPath = path;
+  zhPath = path === '/' ? '/zh/' : `/zh${path}`;
+}
+---
+
+<div class="fixed top-4 right-4 z-50 font-mono text-xs flex gap-1 bg-paper/80 backdrop-blur border border-ink/10 rounded px-2 py-1">
+  <a
+    href={enPath}
+    class={current === 'en' ? 'text-ink font-bold' : 'text-muted hover:text-electric'}
+    aria-current={current === 'en' ? 'page' : undefined}
+    hreflang="en"
+  >EN</a>
+  <span class="text-muted">·</span>
+  <a
+    href={zhPath}
+    class={current === 'zh' ? 'text-ink font-bold' : 'text-muted hover:text-electric'}
+    aria-current={current === 'zh' ? 'page' : undefined}
+    hreflang="zh"
+  >中文</a>
+</div>

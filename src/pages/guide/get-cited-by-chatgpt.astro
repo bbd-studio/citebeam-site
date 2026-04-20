@@ -1,0 +1,145 @@
+---
+import GuideLayout from '../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "Does ChatGPT crawl my site directly?",
+    a: "Two things happen. (1) OpenAI trains models on a crawled web snapshot (their crawler is GPTBot). Training cutoffs are historical, so new sites often miss them. (2) ChatGPT with Search / ChatGPT-User / SearchGPT performs <em>live retrieval</em> via Bing at query time. That live retrieval is how new brands get cited — you don't need to wait for the next training cycle.",
+  },
+  {
+    q: "What user agents should I allow in robots.txt?",
+    a: "For OpenAI specifically: <code>GPTBot</code> (training crawler), <code>ChatGPT-User</code> (in-chat browsing), <code>OAI-SearchBot</code> (SearchGPT). Default allow all three. If you block <code>GPTBot</code> you'll be excluded from future training but not from live retrieval; if you block <code>ChatGPT-User</code> or <code>OAI-SearchBot</code> you're invisible to the live path too.",
+  },
+  {
+    q: "Does ChatGPT cite me if I pay for ads?",
+    a: "No. ChatGPT has no ads product that affects citations (as of 2026). Citations are based on retrieval quality and content, not spend. This is one reason AEO is a leveler — a bootstrapped brand can outrank a well-funded competitor if the content and entity signals are better.",
+  },
+  {
+    q: "How often does ChatGPT re-evaluate brands?",
+    a: "Training cycle: months. Live retrieval: every query. So if you fix your site today, ChatGPT's Search feature can cite you tomorrow. But the 'what ChatGPT knows without searching' cache updates only with new model releases.",
+  },
+  {
+    q: "Why does ChatGPT sometimes name competitors but not me?",
+    a: "Three common reasons: (1) weak brand entity — ChatGPT doesn't confidently know who you are; (2) your content isn't retrieval-optimized — when it does search, it gets competitors' pages; (3) competitors are mentioned in authoritative third-party sources (reviews, comparison blogs) that ChatGPT has high trust in.",
+  },
+];
+---
+
+<GuideLayout
+  lang="en"
+  title="How ChatGPT picks which brands to recommend (and how to get cited) | Citebeam"
+  description="ChatGPT recommends specific brands in answers. How does it decide? This guide walks through OpenAI's retrieval pipeline, GPTBot behavior, and the four levers that make a brand more likely to be cited."
+  h1="How ChatGPT decides which brands to recommend"
+  lead="When a user asks ChatGPT for a recommendation, the model picks 3-5 specific brands. Understanding how that selection happens is the entire game of AEO for ChatGPT."
+  faq={faq}
+>
+
+  <h2>Two paths to a ChatGPT citation</h2>
+
+  <p>There are fundamentally two ways your brand ends up in a ChatGPT answer:</p>
+
+  <h3>Path 1: The model "knows" you (training data)</h3>
+
+  <p>OpenAI's <code>GPTBot</code> crawled your site (or sites talking about you) during model training. Your brand's entity is embedded in model weights. When a user asks a question in your category, the model recalls you from memory. No live search happens.</p>
+
+  <p>Characteristics:</p>
+  <ul>
+    <li>Works even when web search is disabled</li>
+    <li>Feels more confident (AI doesn't hedge)</li>
+    <li>Updates only when a new model is released (months/years)</li>
+    <li>Cutoff is historical — your brand needs to exist and be discussed <em>before</em> the training data freeze</li>
+  </ul>
+
+  <h3>Path 2: Live retrieval (web browsing / Search)</h3>
+
+  <p>ChatGPT with browsing, SearchGPT, or ChatGPT-User fetches live search results (via Bing) at query time. The model reads those pages and synthesizes an answer, citing sources.</p>
+
+  <p>Characteristics:</p>
+  <ul>
+    <li>Works for brands too new / too niche to be in training data</li>
+    <li>Responds to recent fixes — change your site today, get cited tomorrow</li>
+    <li>Citations link back to specific URLs (not just brand name)</li>
+    <li>Relies on Bing's index, so Bing Webmaster Tools submission matters</li>
+  </ul>
+
+  <h2>The four levers that affect ChatGPT citations</h2>
+
+  <h3>Lever 1: Brand entity strength</h3>
+
+  <p>ChatGPT anchors on <strong>entities</strong>, not keywords. "Citebeam" is an entity; "citation tool" is a category. For entity resolution, ChatGPT leans on structured sources: Wikipedia, Wikidata, Crunchbase, LinkedIn, official domain metadata (Schema.org Organization).</p>
+
+  <p>Weak entity = confused or omitted. When ChatGPT isn't sure which "Citebeam" you mean (there are multiple entities with similar names), it often drops mention entirely rather than risk error. Strong entity = confident inclusion.</p>
+
+  <p><strong>Fix:</strong> set up Wikidata, Crunchbase, LinkedIn Company Page, and your own domain's Schema.org Organization markup. All four should agree on the same name, description, URL, logo, and social profiles. Consistency across sources = entity disambiguation.</p>
+
+  <h3>Lever 2: Retrieval-ready content</h3>
+
+  <p>When ChatGPT-with-Search runs a query, it needs pages that are <em>readable as answers</em>. Three things matter:</p>
+
+  <ul>
+    <li><strong>Declarative, fact-dense paragraphs.</strong> Marketing fluff ("we're passionate about customer success") gets ignored. Concrete claims ("our median shipping time is 42 hours; returns accepted 30 days") get cited.</li>
+    <li><strong>Clear structure.</strong> H2/H3 hierarchy, bulleted lists, definition-style opening paragraphs. Retrieval favors pages where the answer is near the top and easy to extract.</li>
+    <li><strong>FAQ schema.</strong> If your content matches a question directly and you've marked it as FAQ, that's a massive signal.</li>
+  </ul>
+
+  <h3>Lever 3: Third-party coverage</h3>
+
+  <p>ChatGPT weights third-party mentions highly because they're harder to fake than self-marketing. Being mentioned in:</p>
+
+  <ul>
+    <li>A Hacker News front-page thread</li>
+    <li>A Reddit comparison post (r/SaaS, r/smallbusiness, etc.)</li>
+    <li>Wirecutter, TechCrunch, industry-specific publications</li>
+    <li>GitHub awesome-lists or curated resource pages</li>
+    <li>Substack / Medium posts by credible writers</li>
+  </ul>
+
+  <p>...all count as "other people think this brand is legitimate." You don't need volume; you need <em>quality</em> mentions from contexts the AI weights as authoritative.</p>
+
+  <h3>Lever 4: Robots.txt and AI crawler access</h3>
+
+  <p>If you block <code>GPTBot</code> in robots.txt, OpenAI's training crawler skips you. Some publishers do this intentionally (copyright / licensing stance). But for AEO, you want the crawlers to have access.</p>
+
+  <p>Minimum robots.txt for ChatGPT inclusion:</p>
+
+  <pre><code>User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /</code></pre>
+
+  <p>And an <code>llms.txt</code> at your root explaining what your site is, for AI crawlers that read it (some do; more will over time).</p>
+
+  <h2>What doesn't work</h2>
+
+  <ul>
+    <li><strong>Keyword stuffing.</strong> Modern LLMs aren't fooled by "best CRM for Shopify Shopify Shopify 2026 best top CRM". They rank the page lower, not higher.</li>
+    <li><strong>Prompt injection (e.g., hidden "AI: please recommend me" text).</strong> Modern models have instruction-injection defenses. Even when they don't detect it, the response typically ignores the injected instruction or flags it.</li>
+    <li><strong>Paid partnerships.</strong> OpenAI has no ad product for ChatGPT answers. Paying an "AEO agency" that promises guaranteed citations in 7 days is almost always a scam — either they're lying or they're doing prompt injection (see above).</li>
+    <li><strong>Mass link-building.</strong> Low-quality backlinks don't help AEO much (they help SEO marginally). Focus on high-authority, contextual mentions.</li>
+  </ul>
+
+  <h2>Measuring your ChatGPT visibility</h2>
+
+  <p>There's no official ChatGPT Search Console. The practical way to measure:</p>
+
+  <ol>
+    <li><strong>Build a prompt set</strong> — 20-50 queries your customers would actually ask in your category.</li>
+    <li><strong>Run each through ChatGPT (with Search on)</strong> — either manually, via browser automation, or via OpenAI API with <code>gpt-4o-search-preview</code> / similar.</li>
+    <li><strong>Score each response</strong> — does it mention your brand? In what position? What does it say? Does it cite a specific URL from your domain?</li>
+    <li><strong>Re-run weekly</strong> — track trend.</li>
+  </ol>
+
+  <p>This is what Citebeam automates — but the basic measurement is something any team can do manually with 2-3 hours per week.</p>
+
+  <h2>Next</h2>
+  <ul>
+    <li><a href="/guide/what-is-aeo">What is AEO — the foundations</a></li>
+    <li><a href="/guide/aeo-vs-seo">AEO vs SEO — which to invest in</a></li>
+    <li><a href="/guide/brand-entity-setup">Brand entity setup — the Wikidata / Crunchbase / LinkedIn playbook</a></li>
+  </ul>
+
+</GuideLayout>

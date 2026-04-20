@@ -1,0 +1,139 @@
+---
+import GuideLayout from '../../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "AEO 对 Shopify / BigCommerce 店家生效吗？",
+    a: "生效。Shopify 店有个特定优势：它自动生成还可以的 Schema.org Product 标记。你还是要加 Organization、Review、FAQPage schema，但 Product 部分帮你做好了。我们在多个 Shopify 店跑过 Citebeam，效果都不错。",
+  },
+  {
+    q: "我只在淘宝 / 天猫 / Temu 卖，没有自己站。能做 AEO 吗？",
+    a: "部分能。可以优化品牌<em>自己的</em>存在（品牌官网、Wikidata、第三方测评），影响 AI 怎么描述你的品牌整体。但 AI 助手很少引用具体的商品详情页 —— 它们引用<em>品牌</em>页。如果平台是你唯一存在，AEO 影响有限。",
+  },
+  {
+    q: "跨境卖家（中国品牌 → 美/欧市场）呢？",
+    a: "跨境是 AEO 杠杆最大的场景。目标客户（美国、欧洲）重度用 ChatGPT/Claude。中国卖家在英文 AI 里品牌实体往往很弱（Wikidata 英文覆盖差、没 Crunchbase、营销站中英文混乱）。修这些是快速提可见度的路径。",
+  },
+  {
+    q: "对'150 美元内最好的跑鞋'这类高意图查询，AEO 影响多大？",
+    a: "非常大。这类对比型查询正是 AI 擅长 —— 合成测评、规格、品牌可信度成具体推荐。品牌权威和测评质量的细微差别直接决定被不被提到。",
+  },
+];
+---
+
+<GuideLayout
+  lang="zh"
+  title="电商品牌 AEO：让 AI 推荐你的商品 | Citebeam"
+  description="电商客户越来越多问 ChatGPT、Claude、Perplexity '我该买什么'。这篇讲清楚 AEO 怎么专门作用于电商 —— product schema、测评集成、跨境考虑。"
+  h1="电商 AEO：让 AI 推荐你的商品"
+  lead="电商是 AI 搜索最快转化的场景。客户问'300 美元内最好的降噪耳机'，ChatGPT 给 3 个品牌，这 3 个拿到订单。这篇讲怎么做到是其中之一。"
+  faq={faq}
+>
+
+  <h2>为什么电商对 AEO 特别敏感</h2>
+
+  <p>三个结构性原因 —— 电商是 AEO 最相关的场景：</p>
+
+  <ol>
+    <li><strong>客户 query 天然是对比型。</strong>"X 品类最好的 Y"、"X vs Y"、"Z 美元内"—— AI 擅长这些，客户也真的这样问。</li>
+    <li><strong>决策在 AI 对话里完成。</strong>和 B2B 采购（几周评估）不同，电商决策 2-5 分钟。AI 给 3 个品牌，客户在你有机会再出现在对话里之前已经挑完了。</li>
+    <li><strong>平台饱和让 SEO 收益到顶。</strong>亚马逊 / Google Shopping 里 100 个品牌抢 10 个位置。ChatGPT "最佳 X" 回答里只有 3-5 个品牌。集中度更高。</li>
+  </ol>
+
+  <h2>电商除了通用 AEO 还需要啥</h2>
+
+  <h3>1. Product schema（Schema.org/Product）</h3>
+
+  <p>Organization + WebSite schema 是底线。电商还要加 <code>Product</code>：</p>
+
+  <ul>
+    <li><code>name</code>、<code>description</code>、<code>sku</code></li>
+    <li><code>brand</code>（作为 Organization 实体）</li>
+    <li><code>offers.price</code>、<code>offers.priceCurrency</code>、<code>offers.availability</code></li>
+    <li><code>aggregateRating</code>（有测评时 —— rich snippet 和 AI 打分都需要）</li>
+    <li><code>image</code> 数组（高分辨率商品图）</li>
+  </ul>
+
+  <p>Shopify / BigCommerce / WooCommerce 大部分自动生成。自研站要手工实现。</p>
+
+  <h3>2. 测评聚合和情感信号</h3>
+
+  <p>AI 喜欢<em>可量化的社会证明</em>。"3,247 条测评，4.7 星"是可检索的事实；"深受客户喜爱"是被忽略的营销废话。确保：</p>
+
+  <ul>
+    <li>测评出现在<em>你自己站</em>（不只是淘宝/亚马逊），带 <code>Review</code> schema</li>
+    <li>总条数 + 平均分用 <code>AggregateRating</code> schema</li>
+    <li>具体测评文字对爬虫可访问（不在 JS 背后）</li>
+  </ul>
+
+  <h3>3. 第三方测评引用</h3>
+
+  <p>AI 对第三方测评站权重很高：小红书、什么值得买、Trustpilot、G2、Wirecutter、Consumer Reports、垂直测评站。一条 Wirecutter 提及 = AI 信任评分里几千条 Trustpilot。策略：</p>
+
+  <ul>
+    <li><strong>申请相关精选榜单</strong>（Wirecutter 商品提交、小红书种草榜）</li>
+    <li><strong>积累 Trustpilot / G2 真实测评</strong> —— AI 直接检索这些</li>
+    <li><strong>鼓励 YouTube / B 站测评</strong> —— AI 越来越多索引视频转录</li>
+  </ul>
+
+  <h3>4. 品类和对比页</h3>
+
+  <p>AI 喜欢对比内容。品牌页有"和竞品对比"段落 + 诚实写出 2-3 个竞品规格，这内容被引用远多于纯营销页。</p>
+
+  <p>例：卖降噪耳机，有一页标题"X Pro vs Sony WH-1000XM6 vs Bose QC Ultra"，诚实列规格。是的，承认竞品存在。是的，你仍然被引用 —— 甚至比营销页<em>更多</em>，因为 AI 把对比内容视为更高权威。</p>
+
+  <h3>5. 退货 / 物流 / 政策透明度</h3>
+
+  <p>AI 越来越多在推荐里带政策信息（"免费退货"、"2 天送达"）。把这些做成站内<em>明确、结构化</em>：</p>
+
+  <ul>
+    <li>带 FAQ schema 的政策问答</li>
+    <li>有明确政策则用 Schema.org <code>MerchantReturnPolicy</code></li>
+    <li>"发货地"、"送达时间"、"退货窗口" 机器可读</li>
+  </ul>
+
+  <h2>跨境电商专属手册</h2>
+
+  <p>跨境（中国品牌经亚马逊或独立站卖美国）是 AEO 上行空间最大、当前缺口最大的场景。</p>
+
+  <p>我们常见的缺口：</p>
+
+  <ul>
+    <li>没有英文 Wikidata 条目（只有中文，英文 ChatGPT 上下文检索不到）</li>
+    <li>Crunchbase 条目缺失或很单薄</li>
+    <li>营销站中英双语但信息不一致（实体混乱）</li>
+    <li>英文版没有创始人故事（丢了一个关键"品牌人性化"信号）</li>
+    <li>测评只在天猫 / 京东，不在 Trustpilot 或亚马逊</li>
+  </ul>
+
+  <p>跨境修复顺序：</p>
+
+  <ol>
+    <li>建英文 Wikidata 条目（不翻译中文 —— 新建，或在现有中文条目加英文 label）</li>
+    <li>注册 Crunchbase，以英文市场视角</li>
+    <li>中英文内容对齐（AI 能检测不一致）</li>
+    <li>积累英文 Trustpilot / G2 存在</li>
+    <li>鼓励英文 YouTube / TikTok 测评（真实创作者，不是广告）</li>
+  </ol>
+
+  <h2>Citebeam 电商项目长啥样</h2>
+
+  <p>中型电商品牌（年营收 5M-50M USD）典型 8 周项目：</p>
+
+  <ul>
+    <li><strong>第 1-2 周</strong> —— Discovery：你的品牌 + 5 竞品在 6+ AI 助手上跑 50-100 条真实客户查询（来自你的客服日志和搜索数据）。</li>
+    <li><strong>第 3 周</strong> —— Diagnosis：识别 10-15 个具体缺口（实体弱 / Product schema 缺 / 测评少 等），按优先级排序。</li>
+    <li><strong>第 4-7 周</strong> —— Build &amp; Fix：实施修复。Product schema 铺开、Wikidata / Crunchbase 建设、测评策略、对比页、FAQ schema、llms.txt。</li>
+    <li><strong>第 8 周+</strong> —— Monitor：每周重跑 Discovery 查询；看趋势；竞品动态告警。</li>
+  </ul>
+
+  <p>典型交付：跟踪 AI 平台的提及率 8 周内提升 15-30%，5-8 个高价值查询有可测量改善。</p>
+
+  <h2>延伸</h2>
+  <ul>
+    <li><a href="/zh/guide/what-is-aeo">什么是 AEO（基础）</a></li>
+    <li><a href="/zh/guide/brand-entity-setup">品牌实体建设 —— 跨境#1 优先</a></li>
+    <li><a href="/zh/guide/get-cited-by-chatgpt">ChatGPT 怎么决定推荐</a></li>
+  </ul>
+
+</GuideLayout>

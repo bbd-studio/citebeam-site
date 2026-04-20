@@ -1,0 +1,111 @@
+---
+import GuideLayout from '../../../components/GuideLayout.astro';
+
+const faq = [
+  {
+    q: "SEO 做得好就自动 AEO 做得好吗？",
+    a: "部分成立。好 SEO 通常意味着可爬性、内容尚可、有一些反链 —— 这些对 AEO 也有帮助。但 AEO 多了 SEO 不需要的几层：品牌实体（Wikidata、Crunchbase）、llms.txt、引用优化的内容格式。大多数 SEO 做得不错的品牌，AEO 就绪度也就 30-50%。",
+  },
+  {
+    q: "应不应该放弃 SEO 全力做 AEO？",
+    a: "不。AI 检索系统严重依赖传统 web 索引，SEO 塌了 AEO 也受伤。务实答案：SEO 是地板，AEO 是天花板，两个都要。",
+  },
+  {
+    q: "现在哪个见效更快？",
+    a: "2026 年 AEO 通常更快见效，因为赛道还没饱和。新玩家能在 1-3 月内在 AI 答案里排第一；Google 竞争关键词冲到第一需要 6-18 月。SEO 的长期复利优势更大，AEO 短期 ROI 更好。",
+  },
+  {
+    q: "页面速度 / 移动友好这些 SEO 最佳实践对 AEO 也重要吗？",
+    a: "重要但更间接。慢站伤 AI 检索（爬虫超时），但 AEO 的主要杠杆不一样：实体权威和内容格式占大头。修 Core Web Vitals 给 AEO 提升约 5%；修品牌实体给 40%。",
+  },
+];
+---
+
+<GuideLayout
+  lang="zh"
+  title="AEO vs SEO: 区别是什么，2026 年哪个更重要？ | Citebeam"
+  description="AEO（答案引擎优化）和 SEO 都要让你的品牌被找到。优化的是不同的搜索模式。这篇讲清楚它们机制上的不同、哪个见效更快、能不能只做一个。"
+  h1="AEO vs SEO —— 实际区别"
+  lead="SEO 让你被排名。AEO 让你被引用。是两套不同的学科、不同的杠杆，但不能跳过 SEO 直接做 AEO —— 它是 AEO 的地基。"
+  faq={faq}
+>
+
+  <h2>TL;DR</h2>
+
+  <p><strong>SEO</strong> 优化的是"<em>被人点击搜索结果找到</em>"。<strong>AEO</strong> 优化的是"<em>被 AI 回答时引用</em>"。</p>
+
+  <p>最终目标相同（用户发现你的品牌）。机制不同。AEO 不是"新 SEO" —— 它是 SEO 之上的<em>一层</em>。两个都要。</p>
+
+  <h2>核心区别，一张图说清</h2>
+
+  <pre><code>传统搜索 (SEO):
+  Query → SERP (10 个结果) → 用户点击 → 你的网站 → 转化
+
+AI 搜索 (AEO):
+  Query → LLM 生成回答 → 回答里点名 3 个品牌 → 决策完成
+                         ↑
+                   要么你在里头要么你不存在</code></pre>
+
+  <p>SEO 每个 query 有 10 个位置，AEO 有 3-5 个引用位置。单 query 的竞争在 AEO 里<em>更激烈</em> —— 但不需要赢下所有 query，因为 AI 能用同一份品牌知识回答很多相近查询。</p>
+
+  <h2>信号权重对比</h2>
+
+  <ul>
+    <li>来自高 DA 站的反链 —— SEO ⭐⭐⭐⭐⭐ · AEO ⭐⭐⭐</li>
+    <li>Title / H1 的关键词 —— SEO ⭐⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>页面速度 / Core Web Vitals —— SEO ⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>内部链接 —— SEO ⭐⭐⭐⭐ · AEO ⭐⭐</li>
+    <li>Schema.org 标记 —— SEO ⭐⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li><code>llms.txt</code> + AI 爬虫 <code>robots.txt</code> —— SEO ⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>Wikidata + Crunchbase 实体 —— SEO ⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>内容写成陈述性答案（非营销文案）—— SEO ⭐⭐ · AEO ⭐⭐⭐⭐⭐</li>
+    <li>关键页面的 FAQ 结构化 —— SEO ⭐⭐⭐ · AEO ⭐⭐⭐⭐</li>
+    <li>社媒一致性（X / LinkedIn / GitHub 对齐）—— SEO ⭐ · AEO ⭐⭐⭐⭐</li>
+  </ul>
+
+  <h2>只做 SEO 够用的场景</h2>
+
+  <ul>
+    <li>你的客户不用 AI 聊天做调研（比如高龄层、对 AI 不信任的强监管行业）</li>
+    <li>你的品类是交易型、不是信息型（比如"附近的披萨"—— 人们用地图，不问 ChatGPT）</li>
+    <li>你的品牌在该细分里没有直接竞品（垄断位置 → SEO 和 AEO 都默认你赢）</li>
+  </ul>
+
+  <h2>AEO 比 SEO 更重要的场景</h2>
+
+  <ul>
+    <li>目标客户是<strong>早期采用者</strong>（开发者、founder、AI 爱好消费者）—— 他们用 ChatGPT/Claude 找推荐的比例远高于普通人群</li>
+    <li>品类是<strong>信息型</strong>或<strong>对比型</strong>（"Shopify 店家最好的 CRM"、"大团队用哪个 AI 编码助手"）—— AI 在这些 query 上天然强</li>
+    <li><strong>竞品已经在 AI 回答里</strong>你没有 —— 每多一天差距都在复利放大</li>
+    <li>你是<strong>新进入者</strong>，SEO 要 18 月 —— AEO 是更快的切入楔子</li>
+  </ul>
+
+  <h2>能不做 SEO 只做 AEO 吗？</h2>
+
+  <p>短答：<strong>不能，但也不需要"品类第一"级别的 SEO</strong>。</p>
+
+  <p>AI 检索系统用 web 搜索索引。如果你的站不可爬、页面 404、没有 canonical —— AI 也找不到你。但 AEO 不要求你在关键词上<em>排第一</em>，只要求你<em>可发现、可解析、实体一致</em>。</p>
+
+  <p>我们在 Citebeam 项目里见过 SEO 平平但 6 周内冲到 Perplexity 引用第一的品牌。前提：核心 SEO 基础（sitemap、schema、无技术错误）已到位。我们没改他们的 SEO —— 我们在上面加了 AEO 层。</p>
+
+  <h2>如果只能先做一个，做 SEO</h2>
+
+  <p>反直觉 —— AEO 是新风口 —— 但如果只能先做一个，先做 SEO。原因：没 SEO 基础的 AEO 是沙上筑楼。而好的 SEO 实践 80% 也是 AEO 的前置条件。</p>
+
+  <p>我们在 Citebeam 项目里推荐的顺序：</p>
+
+  <ol>
+    <li><strong>第 1 周</strong> —— 两边都审计。大部分品牌都有 1 个显眼的 SEO 缺口（schema 缺失、sitemap 坏、canonical 乱）和 3-5 个 AEO 缺口（没 llms.txt、品牌实体弱、营销文案化内容）。</li>
+    <li><strong>第 2-3 周</strong> —— 修 SEO 阻塞（这也顺带修好 50% 的 AEO）。</li>
+    <li><strong>第 4-8 周</strong> —— 加 AEO 专属层：品牌实体、内容改写、监测。</li>
+  </ol>
+
+  <h2>延伸</h2>
+
+  <ul>
+    <li><a href="/zh/guide/what-is-aeo">什么是 AEO —— 完整定义</a></li>
+    <li><a href="/zh/guide/get-cited-by-chatgpt">ChatGPT 怎么决定推荐哪些品牌</a></li>
+    <li><a href="/zh/guide/brand-entity-setup">品牌实体建设 —— AEO 单一最大杠杆</a></li>
+  </ul>
+
+</GuideLayout>

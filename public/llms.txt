@@ -41,6 +41,16 @@ Citebeam is the service that makes sure it's yours:
 - **VCs & portfolio companies** — benchmark AI visibility across the portfolio.
 - **Operators in competitive categories** — dev tools, AI products, fintech, vertical SaaS.
 
+## Guides (public, in-depth)
+
+- [What is AEO?](https://citebeam.bbd.sh/guide/what-is-aeo) — plain-English definition
+- [AEO vs SEO](https://citebeam.bbd.sh/guide/aeo-vs-seo) — signal weights and when each matters
+- [Get cited by ChatGPT](https://citebeam.bbd.sh/guide/get-cited-by-chatgpt) — platform-specific playbook
+- [Brand entity setup (Wikidata / Crunchbase / LinkedIn)](https://citebeam.bbd.sh/guide/brand-entity-setup) — the biggest single AEO lever
+- [AI visibility for ecommerce](https://citebeam.bbd.sh/guide/ai-visibility-for-ecommerce) — vertical guide
+
+Chinese versions at `/zh/guide/*` (e.g. https://citebeam.bbd.sh/zh/guide/what-is-aeo).
+
 ## Engage
 
 - Email: hello@bbd.sh — subject: `citebeam`
