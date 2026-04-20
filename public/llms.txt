@@ -1,0 +1,31 @@
+# Citebeam — a bbd.sh service
+
+> Citebeam is bbd.sh's Answer Engine Optimization (AEO) methodology. We help brands and portfolio companies show up in answers from major AI assistants — ChatGPT, Claude, Perplexity, Doubao, Kimi, Tongyi.
+
+Citebeam is operated by [bbd.sh](https://bbd.sh), a small builder studio. The service helps:
+
+- Brand founders whose customers search via AI and get answered with a competitor's name
+- VCs benchmarking AI visibility across a portfolio
+- Operators in categories where AI is now the answer layer (dev tools, AI products, fintech, vertical SaaS)
+
+## Methodology
+
+1. **Discovery** (~1 week) — Run brand + competitors through 6+ AI assistants on customer-intent queries. Output: 5-dimension scorecard (mention rate, citation rate, answer position, share-of-voice, sentiment).
+2. **Diagnosis** (~1 week) — Trace exactly why competitors win each answer slot (schema gaps, weak entity, missing citations, content holes). Output: prioritized fix list.
+3. **Build & Fix** (~4-8 weeks) — Schema.org markup, llms.txt, technical SEO, brand-entity work (Wikidata, Crunchbase, social consistency), AEO-shaped content, authoritative citations.
+4. **Monitor** (ongoing) — Weekly visibility tracking + competitive alerts.
+
+## Tracked platforms
+
+- ChatGPT (OpenAI)
+- Claude (Anthropic)
+- Perplexity
+- Doubao 豆包 (ByteDance)
+- Kimi (Moonshot)
+- Tongyi 通义 (Alibaba)
+
+## Engage
+
+- Email: hello@bbd.sh — subject: citebeam
+- Parent site: https://bbd.sh
+- How bbd.sh works: https://bbd.sh/work

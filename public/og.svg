@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid background (subtle) -->
+  <g stroke="#00ff88" stroke-width="0.5" opacity="0.08">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- Prompt line -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" fill="#6b6b6b" font-size="20">
+    <text x="80" y="100">
+      <tspan fill="#00ff88">$</tspan> ./citebeam --help
+    </text>
+  </g>
+
+  <!-- Main headline -->
+  <g font-family="'Fraunces', 'Playfair Display', Georgia, serif" fill="#fafaf7" font-weight="700">
+    <text x="80" y="220" font-size="84">Get cited by the AI</text>
+    <text x="80" y="320" font-size="84" fill="#ff5e3a" font-style="italic">that answers</text>
+    <text x="80" y="420" font-size="84">your <tspan fill="#00ff88">customer</tspan>.</text>
+  </g>
+
+  <!-- Beam graphic, right side -->
+  <g transform="translate(960, 120)" stroke="#00ff88" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 150 L60 150 L90 80 L120 220 L150 150 L210 150"/>
+    <circle cx="210" cy="150" r="8" fill="#00ff88"/>
+  </g>
+
+  <!-- Meta footer -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" fill="#6b6b6b" font-size="22">
+    <text x="80" y="540">
+      <tspan fill="#00ff88">##</tspan> a bbd.sh service
+    </text>
+    <text x="80" y="575" fill="#fafaf7" font-weight="600" font-size="26">citebeam.bbd.sh</text>
+  </g>
+
+  <!-- bbd.sh mark bottom right -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="18">
+    <text x="1120" y="575" text-anchor="end" fill="#6b6b6b">
+      <tspan fill="#00ff88">$</tspan> bbd.sh
+    </text>
+  </g>
+</svg>

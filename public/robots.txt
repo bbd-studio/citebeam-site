@@ -1,0 +1,40 @@
+# citebeam.bbd.sh — a bbd.sh service
+# https://citebeam.bbd.sh
+#
+# Citebeam is bbd.sh's Answer Engine Optimization (AEO) service.
+# We welcome search and AI crawlers — index freely.
+
+User-agent: *
+Allow: /
+
+# AI training / retrieval crawlers — explicitly allowed (we want them to find this)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: PetalBot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://citebeam.bbd.sh/sitemap-index.xml
