@@ -19,7 +19,10 @@ if (path.startsWith('/zh/') || path === '/zh') {
 }
 ---
 
-<div class="fixed top-4 right-4 z-50 font-mono text-xs flex gap-1 bg-paper/80 backdrop-blur border border-ink/10 rounded px-2 py-1">
+<div
+  class="fixed z-50 font-mono text-xs flex gap-1 bg-paper/80 backdrop-blur border border-ink/10 rounded px-2 py-1"
+  style="top: max(1rem, env(safe-area-inset-top) + 0.5rem); right: max(1rem, env(safe-area-inset-right) + 0.5rem);"
+>
   <a
     href={enPath}
     class={current === 'en' ? 'text-ink font-bold' : 'text-muted hover:text-electric'}

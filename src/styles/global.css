@@ -15,6 +15,31 @@
   }
 }
 
+@layer base {
+  /* 手机端防御：代码块允许内部横滚，不挤爆外容器 */
+  pre {
+    overflow-x: auto;
+    max-width: 100%;
+    word-wrap: normal;
+    white-space: pre;
+  }
+  pre code {
+    white-space: inherit;
+  }
+  /* 防止长 URL 撑爆行宽 */
+  .prose a[href] {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  /* 小屏 H1 稍微缩一点 */
+  @media (max-width: 400px) {
+    h1.font-display {
+      font-size: 2.25rem !important;
+      line-height: 1.1 !important;
+    }
+  }
+}
+
 @layer utilities {
   .font-cn {
     font-family: 'Noto Sans SC', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
