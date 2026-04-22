@@ -1,0 +1,2 @@
+# Redirect default sitemap.xml to our real sitemap index
+/sitemap.xml     /sitemap-index.xml    301
