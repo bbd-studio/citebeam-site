@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OG image 1200x630 — Citebeam / bbd.sh. Aligned with final brand system.
+     Evolved from original: upgraded right-side pulse to match new icon
+     (peak highlight + fading token stream), switched headline font to Inter
+     Black (Fraunces fallback for when serif isn't available), added scope
+     corner ticks for brand cohesion. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Graticule grid -->
+  <g stroke="#00ff88" stroke-width="0.5" opacity="0.08">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- Scope viewport corner ticks — brand cohesion with icon -->
+  <g stroke="#00ff88" stroke-width="3" stroke-linecap="round" opacity="0.45" fill="none">
+    <path d="M 60 90 L 60 60 L 90 60"/>
+    <path d="M 1140 60 L 1110 60"/>
+    <path d="M 1140 60 L 1140 90"/>
+    <path d="M 60 570 L 60 600 L 90 600"/>
+    <path d="M 1140 600 L 1110 600"/>
+    <path d="M 1140 600 L 1140 570"/>
+  </g>
+
+  <!-- Prompt line (matches bbd-site aesthetic) -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="20">
+    <text x="80" y="110" fill="#6b6b6b">
+      <tspan fill="#00ff88">$</tspan> ./citebeam --help
+    </text>
+  </g>
+
+  <!-- Main headline — Inter Black (with Fraunces kept as first choice for
+       browsers/renderers that have it) -->
+  <g font-family="'Fraunces', 'Inter', Georgia, serif" fill="#fafaf7" font-weight="900">
+    <text x="80" y="230" font-size="84">Get cited by the AI</text>
+    <text x="80" y="330" font-size="84" fill="#ff5e3a" font-style="italic" font-weight="700">that answers</text>
+    <text x="80" y="430" font-size="84">your <tspan fill="#00ff88">customer</tspan>.</text>
+  </g>
+
+  <!-- Pulse graphic (right) — full AI-scope motif: pulse + peak highlight +
+       token stream fade. Matches the app icon. -->
+  <g transform="translate(860, 160)">
+    <!-- Baseline -->
+    <line x1="0" y1="150" x2="280" y2="150"
+          stroke="#00ff88" stroke-width="1.5" opacity="0.35"/>
+
+    <!-- Main pulse -->
+    <path d="M 0 150 L 70 150 L 90 150 L 110 60 L 136 250 L 158 150 L 180 150 L 230 150"
+          stroke="#00ff88" stroke-width="8" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Peak highlight -->
+    <circle cx="110" cy="60" r="5" fill="#fafaf7"/>
+
+    <!-- Token stream fade -->
+    <g fill="#00ff88">
+      <circle cx="250" cy="150" r="5"/>
+      <circle cx="268" cy="150" r="5" opacity="0.75"/>
+      <circle cx="286" cy="150" r="4" opacity="0.5"/>
+      <circle cx="302" cy="150" r="3.5" opacity="0.3"/>
+    </g>
+
+    <!-- thinking... label above pulse, tiny mono -->
+    <text x="0" y="30" font-family="'JetBrains Mono', Menlo, monospace"
+          font-size="14" fill="#00ff88" opacity="0.75">$ thinking...</text>
+  </g>
+
+  <!-- Footer meta -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" fill="#6b6b6b" font-size="22">
+    <text x="80" y="540">
+      <tspan fill="#00ff88">##</tspan> a bbd.sh service
+    </text>
+    <text x="80" y="578" fill="#fafaf7" font-weight="600" font-size="26">citebeam.bbd.sh</text>
+  </g>
+
+  <!-- bbd.sh tag bottom right -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="18">
+    <text x="1120" y="578" text-anchor="end" fill="#6b6b6b">
+      <tspan fill="#00ff88">$</tspan> bbd.sh
+    </text>
+  </g>
+</svg>

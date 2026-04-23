@@ -1,41 +1,36 @@
-# citebeam.bbd.sh
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**Citebeam** is the AEO (Answer Engine Optimization) service line of [bbd.sh studio](https://www.bbd.sh). This repo is the source for https://citebeam.bbd.sh.
+## Getting Started
 
-> When a customer asks an AI assistant for a product recommendation, does the AI mention your brand — or a competitor's? Citebeam is the service that makes sure it's yours.
-
-## What's inside
-
-- **Astro 5** static site, deployed via Cloudflare Pages
-- **Tailwind CSS** + Typography plugin
-- **i18n**: English at `/`, Chinese at `/zh/` (not a runtime abstraction — each page is written/rewritten per language)
-- **Schema.org** Organization + Service + WebSite markup, `sameAs` cross-linking to bbd.sh parent
-- **Guides**: 5 long-form AEO primers (EN + ZH each)
-
-## Tracked AI platforms
-
-ChatGPT · Claude · Perplexity · Google AI Overviews · Doubao 豆包 · Kimi · Tongyi 通义
-
-## Local development
+First, run the development server:
 
 ```bash
-pnpm install
-pnpm dev        # http://localhost:4321
-pnpm build      # static build → dist/
-pnpm preview    # preview built site
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Deploy
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Cloudflare Pages builds from `main` branch, publishes to `citebeam.bbd.sh`. Preview deploys on every branch/PR.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Related
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Parent studio**: https://www.bbd.sh
-- **Methodology docs** (private): `/home/ubuntu/winless/CITEBEAM_PLAYBOOK.md`
-- **Brand entity pack**: `BRAND_ENTITY_PACK.md` in parent repo
-- **Brand assets**: `/home/ubuntu/winless/bbd-brand-assets/`
+## Learn More
 
-## License
+To learn more about Next.js, take a look at the following resources:
 
-Source code is not open for reuse at this time. Content (guide essays, playbook methodology) is ours. This repo is public for transparency and as an example of our engineering practice.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
