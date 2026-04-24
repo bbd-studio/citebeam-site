@@ -36,8 +36,8 @@ export default function UnileverDashboard() {
           联合利华 · AI 搜索可见度
         </h1>
         <p className="text-neutral-400 text-sm max-w-3xl">
-          监测 4 家 AI 平台（豆包 / 智谱 GLM / Kimi / MiniMax）对联合利华 6 个自有品牌 +
-          17 个竞品的推荐情况。
+          监测 {report.meta.platforms.length} 家 AI 平台（{report.meta.platforms.join(" / ")}）
+          对联合利华 6 个自有品牌 + 17 个竞品的推荐情况。
           <span className="text-neutral-500 ml-1">
             · 最后更新 {report.meta.generated_at?.slice(0, 10) ?? "—"}
           </span>

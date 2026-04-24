@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 // Static import — bundled at build time. Works on CF Pages edge runtime.
 import summary from "../../../../public/data/unilever-summary.json";
+import { AGENT_CASCADE, PROVIDER_ENDPOINTS, PROVIDER_ENV_VARS } from "@/lib/agent-config";
 
 export const runtime = "edge";
 export const dynamic = "force-dynamic";
@@ -62,27 +63,28 @@ export async function POST(req: NextRequest) {
   const reportJson = JSON.stringify(summary);
   const systemContent = SYSTEM_TEMPLATE.replace("{{REPORT_JSON}}", reportJson);
 
-  // Chat agent — prefer clean non-thinking models for good streaming UX.
-  // Order: DeepSeek (clean, fast 0.7s, cheap) → Zhipu GLM-4.5-air (clean) → Anthropic.
-  // MiniMax-M2 skipped for chat because it emits <think>…</think> and strip_think
-  // is not implemented in the edge-runtime stream parser.
-  const deepseekKey = process.env.DEEPSEEK_API_KEY;
-  const zhipuKey = process.env.ZHIPU_API_KEY;
-
-  let upstreamUrl = "";
+  // Pick first cascade entry whose env var is set. Avoids hardcoding —
+  // swap the primary by editing AGENT_CASCADE in src/lib/agent-config.ts.
+  let chosen: { key: string; model: string; displayName: string } | null = null;
   let apiKey = "";
-  let modelName = "";
-  if (deepseekKey) {
-    upstreamUrl = "https://api.deepseek.com/v1/chat/completions";
-    apiKey = deepseekKey;
-    modelName = "deepseek-chat";  // V3.2 / V4 non-thinking
-  } else if (zhipuKey) {
-    upstreamUrl = "https://open.bigmodel.cn/api/coding/paas/v4/chat/completions";
-    apiKey = zhipuKey;
-    modelName = "GLM-4.5-air";
-  } else {
-    return new Response("No LLM key configured (need DEEPSEEK_API_KEY or ZHIPU_API_KEY).", { status: 500 });
+  for (const entry of AGENT_CASCADE) {
+    const envVar = PROVIDER_ENV_VARS[entry.key];
+    const k = envVar ? process.env[envVar] : undefined;
+    if (k) {
+      chosen = entry;
+      apiKey = k;
+      break;
+    }
   }
+  if (!chosen) {
+    return new Response(
+      "No LLM key configured. Need one of: " +
+      AGENT_CASCADE.map((e) => PROVIDER_ENV_VARS[e.key]).join(" / "),
+      { status: 500 }
+    );
+  }
+  const upstreamUrl = PROVIDER_ENDPOINTS[chosen.key];
+  const modelName = chosen.model;
 
   const upstream = await fetch(upstreamUrl, {
     method: "POST",
@@ -163,6 +165,11 @@ export async function POST(req: NextRequest) {
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-store",
       Connection: "keep-alive",
+      // Tell the frontend which model actually answered, so the UI footer
+      // stays truthful when we swap cascade order.
+      "X-Agent-Provider": chosen.key,
+      "X-Agent-Model": chosen.model,
+      "X-Agent-Display": chosen.displayName,
     },
   });
 }

@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 type Msg = { role: "user" | "assistant"; content: string };
+type Bundle = { meta?: { platforms?: string[] } };
 
 const SEED_SUGGESTIONS = [
   "多芬在沐浴露的强项场景有哪些？劣项被谁抢走？",
@@ -16,18 +17,42 @@ const SEED_SUGGESTIONS = [
   "夏士莲为什么零提及？",
 ];
 
-const GREETING: Msg = {
-  role: "assistant",
-  content:
-    "我是 citebeam 的分析助手，手上有联合利华 6 个自有品牌 + 17 个竞品在 **7 家**中国主流 AI 助手（豆包 / 智谱 / Kimi / MiniMax / DeepSeek / 通义 / 文心）上的完整监测数据。\n\n问我具体的「为什么」，比如：\n\n- 为什么多芬在沐浴露领先但在身体乳落后？\n- 清扬被哪些竞品吃掉了？各平台偏好差在哪？\n- 凡士林劣项场景的共性是什么？\n- 哪些 prompt 是所有平台都推竞品？\n\n📌 回答只来自数据，没有的维度（真实销量、投放归因）我会直说。",
-};
+function makeGreeting(platforms: string[]): Msg {
+  const n = platforms.length || 7;
+  const list = platforms.length ? platforms.join(" / ") : "加载中…";
+  return {
+    role: "assistant",
+    content:
+      `我是 citebeam 的分析助手，手上有联合利华 6 个自有品牌 + 17 个竞品在 **${n} 家**中国主流 AI 助手（${list}）上的完整监测数据。\n\n问我具体的「为什么」，比如：\n\n- 为什么多芬在沐浴露领先但在身体乳落后？\n- 清扬被哪些竞品吃掉了？各平台偏好差在哪？\n- 凡士林劣项场景的共性是什么？\n- 哪些 prompt 是所有平台都推竞品？\n\n📌 回答只来自数据，没有的维度（真实销量、投放归因）我会直说。`,
+  };
+}
 
 export default function UnileverChatPage() {
-  const [messages, setMessages] = useState<Msg[]>([GREETING]);
+  const [platforms, setPlatforms] = useState<string[]>([]);
+  const [messages, setMessages] = useState<Msg[]>([makeGreeting([])]);
   const [input, setInput] = useState("");
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // Track what model actually answered (from X-Agent-Display response header).
+  const [agentLabel, setAgentLabel] = useState<string>("");
   const endRef = useRef<HTMLDivElement>(null);
+
+  // Load platform list from bundle once on mount; update greeting when known.
+  useEffect(() => {
+    fetch("/data/unilever-summary.json")
+      .then((r) => r.json())
+      .then((d: Bundle) => {
+        const p = d.meta?.platforms ?? [];
+        setPlatforms(p);
+        setMessages((prev) => {
+          if (prev.length === 1 && prev[0].role === "assistant") {
+            return [makeGreeting(p)];
+          }
+          return prev;
+        });
+      })
+      .catch(() => {/* greeting stays with "加载中" */});
+  }, []);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -46,14 +71,17 @@ export default function UnileverChatPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          // Strip the hard-coded greeting from the server-side context
-          messages: nextMsgs.filter((m) => m !== GREETING),
+          // Strip the greeting (first assistant message) from server-side context
+          messages: nextMsgs.slice(1),
         }),
       });
       if (!res.ok || !res.body) {
         const detail = await res.text().catch(() => "");
         throw new Error(`HTTP ${res.status}: ${detail.slice(0, 200)}`);
       }
+      // Capture actual model used (from X-Agent-Display header) for truthful footer.
+      const agentDisplay = res.headers.get("X-Agent-Display");
+      if (agentDisplay) setAgentLabel(agentDisplay);
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -205,7 +233,7 @@ export default function UnileverChatPage() {
           </button>
         </div>
         <div className="max-w-3xl mx-auto mt-2 font-mono text-[10px] text-neutral-600 flex items-center justify-between">
-          <span>via 智谱 GLM-4.5-air · streaming SSE</span>
+          <span>{agentLabel ? `via ${agentLabel}` : "via AI"} · streaming SSE</span>
           <Link href="/unilever" className="hover:text-[#00FF88]">
             ← 回图表看板
           </Link>
