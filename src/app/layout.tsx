@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Citebeam — know what AI is saying about your brand",
   description:
-    "Citebeam monitors your brand across 7 Chinese AI assistants (豆包 / 智谱 GLM / Kimi / MiniMax / DeepSeek / 通义 / 文心). Chat-first, never burying you in dashboards. A bbd.sh studio service.",
+    "Citebeam monitors your brand across 8 Chinese AI assistants (豆包 / GLM / Kimi / MiniMax / DeepSeek / 夸克 / 文心 / 元宝). Chat-first, never burying you in dashboards. A bbd.sh studio service.",
   metadataBase: new URL("https://citebeam.bbd.sh"),
   openGraph: {
     title: "Citebeam — know what AI is saying about your brand",

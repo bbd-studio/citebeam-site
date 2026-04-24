@@ -1,23 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-04-24T09:18:11.277578+00:00Z",
+    "generated_at": "2026-04-24T09:58:41.551185+00:00Z",
     "source": "db",
-    "total_queries": 1144,
+    "total_queries": 1147,
     "total_errors": 0,
     "platforms": [
       "DeepSeek",
+      "GLM",
       "Kimi",
       "MiniMax",
+      "元宝",
+      "夸克",
       "文心",
-      "智谱 GLM",
-      "豆包",
-      "通义"
+      "豆包"
     ],
     "customer": "unilever"
   },
   "categories": {
     "沐浴露": {
-      "n_queries": 868,
+      "n_queries": 871,
       "n_errors": 0,
       "unilever_brands": [
         {
@@ -28,11 +29,11 @@
           "mentions": 202,
           "per_platform": {
             "豆包": 13,
-            "智谱 GLM": 15,
+            "GLM": 15,
             "MiniMax": 82,
             "Kimi": 11,
             "DeepSeek": 41,
-            "通义": 40
+            "夸克": 40
           },
           "sample_answers": [
             {
@@ -42,7 +43,7 @@
             },
             {
               "prompt": "诉求：去体味（汗味、海边潮湿异味）",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "推荐使用止汗喷雾如舒耐或多芬，能有效抑制汗腺分泌。出门前可备日本Rexona走珠，持久清爽。海边潮湿后可用衣物除味喷雾如奥妙或滴露，杀菌去异味。随身携带日本狮王湿巾，随时清洁。这些产品针对异味根源，方便实用。"
             },
             {
@@ -51,20 +52,21 @@
               "answer": "**去体味实战方案：**\n\n1. **清洁到位**：推荐【舒肤佳纯白香皂】或【多芬柔肤乳霜沐浴露】，每天重点清洁腋下、私密部位，用温水冲洗干净。\n\n2. **止汗抑菌**：推荐【妮维雅止汗走珠】（蓝色经典款），含活性成分持续抑菌，一整天干爽，几十块能用两个月。\n\n3. **衣物除味**：推荐【小林制药衣物除臭喷雾】或【Fresh清新衣物香氛喷雾】，喷在衣服、鞋子、衣柜里，海边潮湿晒不干的衣服喷完直接穿没问题。\n\n4. **随身备选**：小支【免洗洗手液】或【酒精湿巾】，出汗后临时擦拭腋下应急。\n\n**关键点**：出汗后一定要及时擦干、换衣，保持干燥才是根本。海边回来衣服要彻底晾干再穿，防止霉味残留。"
             }
           ],
-          "mention_rate": 0.2327
+          "mention_rate": 0.2319
         },
         {
           "key": "lux",
           "display": "力士 Lux",
           "tier": "大众",
           "is_client": true,
-          "mentions": 17,
+          "mentions": 18,
           "per_platform": {
             "Kimi": 2,
             "豆包": 1,
             "DeepSeek": 7,
-            "通义": 5,
-            "智谱 GLM": 2
+            "夸克": 5,
+            "GLM": 2,
+            "元宝": 1
           },
           "sample_answers": [
             {
@@ -83,7 +85,7 @@
               "answer": "推荐4款便宜又能洗防晒的沐浴露：  \n1. 六神清凉沐浴露（约12元/750ml）：便宜大碗，清洁力够，洗掉普通防晒无压力，还清爽降温；  \n2. 舒肤佳纯白清香沐浴露（约15元/500ml）：性价比高，泡沫丰富，能有效清洁防晒残留，还带除菌效果；  \n3. 力士幽莲魅肤沐浴露（活动价约18元/720ml）：香味持久，清洁力强，防水防晒也能洗干净；  \n4. 多芬深层营润沐浴露（约16元/500ml）：滋润不紧绷，温和清洁防晒，适合敏感肌。  \n\n这些都在20元内，洗防晒够用~"
             }
           ],
-          "mention_rate": 0.0196
+          "mention_rate": 0.0207
         },
         {
           "key": "kuyura",
@@ -122,15 +124,16 @@
           "display": "舒肤佳 Safeguard",
           "tier": "低价",
           "is_client": false,
-          "mentions": 118,
+          "mentions": 119,
           "per_platform": {
             "Kimi": 7,
             "MiniMax": 36,
             "豆包": 3,
-            "智谱 GLM": 24,
+            "GLM": 24,
             "DeepSeek": 31,
-            "通义": 16,
-            "文心": 1
+            "夸克": 16,
+            "文心": 1,
+            "元宝": 1
           },
           "sample_answers": [
             {
@@ -149,7 +152,7 @@
               "answer": "推荐几款：\n\n1. **露得清深层净化沐浴露** — 含水杨酸，控油效果好配方也干净超市就有\n2. **资生堂可悠然沐浴露** — 日本开架款，泡沫丰富洗得干净不紧绷\n3. **多芬温和净肤沐浴露** — 配方简单无刺激，清洁力适中偏控油\n4. **舒肤佳健康柔肤系列** — 除菌配方+温和清洁，便宜大碗\n\n如果皮肤偏敏感或想要更天然的，可以试试**德国世家律动沐浴露**，成分很干净但清洁力也够。\n\n建议选的时候注意看配方表，避开含太多香精、酒精的就好。一般含茶树油、炭粉或水杨酸的都偏控油。"
             }
           ],
-          "mention_rate": 0.1359
+          "mention_rate": 0.1366
         },
         {
           "key": "loccitane",
@@ -158,17 +161,17 @@
           "is_client": false,
           "mentions": 115,
           "per_platform": {
-            "智谱 GLM": 34,
+            "GLM": 34,
             "Kimi": 2,
             "豆包": 5,
             "MiniMax": 43,
             "DeepSeek": 26,
-            "通义": 5
+            "夸克": 5
           },
           "sample_answers": [
             {
               "prompt": "健身后出汗多，求推荐温和不刺激的沐浴露",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "健身后出汗多，推荐温和不刺激的沐浴露：\n\n1. 多芬滋润美肤沐浴乳 - 温和清洁同时保湿，不破坏皮肤屏障\n2. 欧舒丹甜杏仁沐浴露 - 天然成分，温和不紧绷，适合敏感肌\n3. 珂润润浸保湿沐浴露 - 含有神经酰胺，专为敏感肌设计\n4. 薇诺娜舒敏保湿沐浴露 - 专为亚洲敏感肌研发，低刺激配方\n\n这些产品均无刺激性防腐剂和皂基，温和清洁的同时保护皮肤屏障，适合健身后频繁使用。"
             },
             {
@@ -182,7 +185,7 @@
               "answer": "用户是学生党，预算有限，油头星人（头皮出油多，但问的是沐浴露，注意区分）。需要小众、平价、适合油皮的沐浴露推荐。\n\n关键点：\n1. 油头星人 - 通常指头发出油多，但这里明确说“沐浴露”，所以是针对身体皮肤也偏油，或者用户可能混淆了概念。但按用户问题回答沐浴露。\n2. 小众平价 - 不能太常见（如舒肤佳、力士等超市开架常见款可能不算小众），价格要便宜，适合学生党。\n3. 推荐2-5款具体商品，讲明原因。\n4. 200字以内。\n5. 口语化中文。\n\n候选产品：\n- 澳雪（Accen）沐浴露：国货，便宜大桶，有些款控油不错，但可能不够小众。\n- 威露士佛手柑/茶树沐浴露：性价比高，控油清爽，不算太小众但还行。\n- 多芬磨砂膏？不是沐浴露。\n- 摇滚动物园？不算太平价。\n- 上水和肌果酸沐浴露？小众但可能超学生党预算（60+）。\n- 且初果酸沐浴露？也是30-40。\n- 六神清爽型：太大众。\n- 采乐？康王？那是洗头的。\n- 螨婷？太小众。\n- 卫宝沐浴露？\n- 欧舒丹？太贵。\n- 德国进口的一些，如ISANA？不一定好买。\n- 韩国LG ON：便宜大碗。\n- 悦诗风吟绿茶沐浴露？可能稍贵。"
             }
           ],
-          "mention_rate": 0.1325
+          "mention_rate": 0.132
         },
         {
           "key": "aesop",
@@ -194,8 +197,8 @@
             "Kimi": 3,
             "MiniMax": 8,
             "DeepSeek": 23,
-            "通义": 28,
-            "智谱 GLM": 3
+            "夸克": 28,
+            "GLM": 3
           },
           "sample_answers": [
             {
@@ -214,21 +217,22 @@
               "answer": "健身出汗后用的话，推荐这几款：\n\n1. **祖玛珑 鼠尾草与海盐沐浴露** 💰500左右\n   - 清新海洋调香味，好闻不甜腻，清洁力足够洗掉汗味，洗完皮肤不紧绷\n\n2. **欧舒丹 甜扁桃沐浴油** 💰300左右（可以买两瓶或搭配身体乳）\n   - 精油配方，滋润度高，运动后皮肤容易干燥这款很适合\n\n3. **Aesop 天竺葵叶肉桂沐浴露** 💰400左右\n   - 草本植物香，清洁力强但温和澳洲高端品牌，送礼有面子\n\n建议选**祖玛珑**或者**Aesop**，香味高级、清洁到位，老婆健身后用完香香的，心情也好！"
             }
           ],
-          "mention_rate": 0.0749
+          "mention_rate": 0.0746
         },
         {
           "key": "liushen",
           "display": "六神 Liushen",
           "tier": "低价",
           "is_client": false,
-          "mentions": 42,
+          "mentions": 43,
           "per_platform": {
             "Kimi": 3,
             "MiniMax": 12,
-            "智谱 GLM": 6,
+            "GLM": 6,
             "豆包": 3,
             "DeepSeek": 16,
-            "通义": 2
+            "夸克": 2,
+            "元宝": 1
           },
           "sample_answers": [
             {
@@ -243,11 +247,11 @@
             },
             {
               "prompt": "孕妇用的沐浴露哪个香？便宜点的有吗",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "推荐强生婴儿润肤沐浴露，约40元/瓶，天然温和，淡雅清香；亲润孕妇专用沐浴露约65元，含橄榄油成分，温和滋润；六神无香型沐浴露约35元，价格实惠无刺激。孕妇建议选择无香精、低敏成分的产品，香味太浓可能引起不适。强生性价比最高，成分安全放心。"
             }
           ],
-          "mention_rate": 0.0484
+          "mention_rate": 0.0494
         },
         {
           "key": "adolph",
@@ -256,15 +260,15 @@
           "is_client": false,
           "mentions": 19,
           "per_platform": {
-            "智谱 GLM": 13,
+            "GLM": 13,
             "DeepSeek": 3,
-            "通义": 2,
+            "夸克": 2,
             "MiniMax": 1
           },
           "sample_answers": [
             {
               "prompt": "哺乳期能用控油沐浴露吗？怕成分不安全",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "哺乳期可用控油沐浴露，建议选择成分温和、无刺激的产品。推荐：\n1. 妙思乐孕妇沐浴露：无香精、色素，pH值接近皮肤，温和控油\n2. 亲润孕妇沐浴露：含有茶树精油，天然控油成分，安全可靠\n3. 阿道夫无硅油沐浴露：含天然植物精华，无刺激，控油效果佳\n使用前可先在小面积皮肤测试，观察是否有不适反应。避免选择含有酒精、香精和强效表面活性剂的产品。"
             },
             {
@@ -278,7 +282,7 @@
               "answer": "这个价位（通常指50-100元）的国货沐浴露性价比很高，值得入手。推荐几款：**六神清爽沐浴露**（约35元），清爽不黏腻，适合夏天；**舒肤佳白茶沐浴露**（约40元），温和洁净，白茶味好闻；**阿道夫精油沐浴露**（约60元），滋润保湿，适合干性皮肤。如果预算稍高，**半亩花田氨基酸沐浴露**（约80元）添加烟酰胺，提亮效果不错。建议根据肤质和香味偏好选，注意避开含SLS/SLES的刺激性成分。"
             }
           ],
-          "mention_rate": 0.0219
+          "mention_rate": 0.0218
         },
         {
           "key": "olay",
@@ -288,7 +292,7 @@
           "mentions": 8,
           "per_platform": {
             "MiniMax": 7,
-            "通义": 1
+            "夸克": 1
           },
           "sample_answers": [
             {
@@ -298,7 +302,7 @@
             },
             {
               "prompt": "给小孩洗完澡 自己也想用美白的 便宜点的有吗",
-              "platform": "通义",
+              "platform": "夸克",
               "answer": "小朋友用的沐浴露通常温和无刺激，但**不美白**（也不建议给小孩用美白产品）。如果你自己想美白+便宜，推荐这几款平价又有效的：\n\n✅ **露得清细白焕采沐浴露（维C款）**：约35元/400ml，含烟酰胺+维C衍生物，坚持用肤色提亮明显；  \n✅ **多芬美白滋养沐浴露（樱花香型）**：约28元/600ml，含Niacinamide（烟酰胺），滋润不假滑；  \n✅ **旁氏烟酰胺沐浴露**：约19元/500ml，国货性价比之王，成分干净，适合日常淡斑提亮。\n\n⚠️注意：沐浴露美白效果有限，搭配防晒+身体乳（如Olay玉兰油小白瓶身体乳）效果更好。别给孩子用哦～"
             },
             {
@@ -319,6 +323,13 @@
           "mention_rate": 0.4183
         },
         {
+          "platform": "GLM",
+          "total": 186,
+          "errors": 0,
+          "avg_latency_ms": 10344.0,
+          "mention_rate": 0.3871
+        },
+        {
           "platform": "Kimi",
           "total": 36,
           "errors": 0,
@@ -333,6 +344,20 @@
           "mention_rate": 0.586
         },
         {
+          "platform": "元宝",
+          "total": 3,
+          "errors": 0,
+          "avg_latency_ms": 3346.0,
+          "mention_rate": 0.3333
+        },
+        {
+          "platform": "夸克",
+          "total": 203,
+          "errors": 0,
+          "avg_latency_ms": 5105.0,
+          "mention_rate": 0.3547
+        },
+        {
           "platform": "文心",
           "total": 3,
           "errors": 0,
@@ -340,25 +365,11 @@
           "mention_rate": 0.3333
         },
         {
-          "platform": "智谱 GLM",
-          "total": 186,
-          "errors": 0,
-          "avg_latency_ms": 10344.0,
-          "mention_rate": 0.3871
-        },
-        {
           "platform": "豆包",
           "total": 46,
           "errors": 0,
           "avg_latency_ms": 16937.0,
           "mention_rate": 0.3478
-        },
-        {
-          "platform": "通义",
-          "total": 203,
-          "errors": 0,
-          "avg_latency_ms": 5105.0,
-          "mention_rate": 0.3547
         }
       ],
       "failed_prompts": [
@@ -409,12 +420,12 @@
           "prompt": "想给我老婆买瓶好点的沐浴露 健身出汗后用的 预算五百以上有好的吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -489,12 +500,12 @@
           "prompt": "染烫后头发毛躁有没有高端精油洗护推荐",
           "pushed_brands": [
             {
-              "key": "adolph",
-              "display": "阿道夫 Adolph"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "adolph",
+              "display": "阿道夫 Adolph"
             }
           ]
         },
@@ -506,16 +517,16 @@
           "prompt": "国产哪个牌子的沐浴露去油效果好，适合老年人用",
           "pushed_brands": [
             {
-              "key": "olay",
-              "display": "玉兰油 OLAY"
-            },
-            {
               "key": "liushen",
               "display": "六神 Liushen"
             },
             {
               "key": "safeguard",
               "display": "舒肤佳 Safeguard"
+            },
+            {
+              "key": "olay",
+              "display": "玉兰油 OLAY"
             }
           ]
         },
@@ -523,12 +534,12 @@
           "prompt": "运动完骑行回来想洗个澡，这种小众高端的沐浴露洗得干净吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -553,12 +564,12 @@
           "prompt": "出国旅游想带小样沐浴露，有啥安全的有机推荐吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -579,12 +590,12 @@
           "prompt": "想入一款无皂基的沐浴露，汗味重的皮肤适合吗，五百以上的有推荐吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -672,12 +683,12 @@
           "prompt": "老婆生日送沐浴露合适吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -689,12 +700,12 @@
           "prompt": "过生日送老婆沐浴露有啥推荐吗 敏感肌能用就行",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -788,12 +799,12 @@
           "prompt": "油皮夏天用有机沐浴露能去汗味吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -801,12 +812,12 @@
           "prompt": "大牌有出旅行套装吗 精油的那种",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -827,12 +838,12 @@
           "prompt": "有没有纯天然配方的男士沐浴露推荐，哺乳期用也不怕",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -882,12 +893,12 @@
           "prompt": "混油皮夏天出汗味道大，出国10天带的奢华沐浴露小样要敏感肌友好的，哪个合适？",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -912,12 +923,12 @@
           "prompt": "求问500以上的无硅油无硫酸盐沐浴露真的有效果吗😭",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -929,12 +940,12 @@
           "prompt": "夏天跟团出国10天，混油皮汗臭重，敏感肌能用的奢华沐浴露小样有吗？",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -942,12 +953,12 @@
           "prompt": "体味重但是想变白有没有贵妇级别的沐浴露能同时搞定",
           "pushed_brands": [
             {
-              "key": "olay",
-              "display": "玉兰油 OLAY"
-            },
-            {
               "key": "aesop",
               "display": "伊索 Aesop"
+            },
+            {
+              "key": "olay",
+              "display": "玉兰油 OLAY"
             }
           ]
         },
@@ -968,12 +979,12 @@
           "prompt": "我混合皮用天然成分的奢华沐浴露可以吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1019,12 +1030,12 @@
           "prompt": "几百块的男士沐浴露哪个洗完更清爽啊",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1052,12 +1063,12 @@
           "prompt": "哪个牌子的沐浴露洗完头发能蓬松点 想体验沙龙级的",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1124,12 +1135,12 @@
           "prompt": "闺蜜乔迁送沐浴露合适吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1195,12 +1206,12 @@
           "prompt": "想带出国留学，这种便携装的小众沐浴露靠谱吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1353,7 +1364,7 @@
                 }
               }
             ],
-            "overall_rate": 0.2327
+            "overall_rate": 0.2319
           },
           "persona": {
             "strong": [
@@ -1470,30 +1481,19 @@
                 }
               }
             ],
-            "overall_rate": 0.2327
+            "overall_rate": 0.2319
           },
           "attribute": {
             "strong": [
               {
                 "value": "香氛持久",
                 "hits": 16,
-                "total": 35,
-                "rate": 0.4571,
+                "total": 36,
+                "rate": 0.4444,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
                   "hits": 10
-                }
-              },
-              {
-                "value": "去体味",
-                "hits": 21,
-                "total": 47,
-                "rate": 0.4468,
-                "top_competitor": {
-                  "key": "safeguard",
-                  "display": "舒肤佳 Safeguard",
-                  "hits": 20
                 }
               },
               {
@@ -1508,10 +1508,21 @@
                 }
               },
               {
+                "value": "去体味",
+                "hits": 21,
+                "total": 48,
+                "rate": 0.4375,
+                "top_competitor": {
+                  "key": "safeguard",
+                  "display": "舒肤佳 Safeguard",
+                  "hits": 21
+                }
+              },
+              {
                 "value": "医学护肤",
                 "hits": 14,
-                "total": 39,
-                "rate": 0.359,
+                "total": 40,
+                "rate": 0.35,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -1587,15 +1598,15 @@
                 }
               }
             ],
-            "overall_rate": 0.2327
+            "overall_rate": 0.2319
           },
           "price_tier": {
             "strong": [
               {
                 "value": "低价 (<50)",
                 "hits": 44,
-                "total": 144,
-                "rate": 0.3056,
+                "total": 145,
+                "rate": 0.3034,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -1605,12 +1616,12 @@
               {
                 "value": "不限",
                 "hits": 46,
-                "total": 159,
-                "rate": 0.2893,
+                "total": 160,
+                "rate": 0.2875,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               },
               {
@@ -1627,8 +1638,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 27,
-                "total": 137,
-                "rate": 0.1971,
+                "total": 138,
+                "rate": 0.1957,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -1662,8 +1673,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 27,
-                "total": 137,
-                "rate": 0.1971,
+                "total": 138,
+                "rate": 0.1957,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -1684,19 +1695,19 @@
               {
                 "value": "不限",
                 "hits": 46,
-                "total": 159,
-                "rate": 0.2893,
+                "total": 160,
+                "rate": 0.2875,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               },
               {
                 "value": "低价 (<50)",
                 "hits": 44,
-                "total": 144,
-                "rate": 0.3056,
+                "total": 145,
+                "rate": 0.3034,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -1704,19 +1715,19 @@
                 }
               }
             ],
-            "overall_rate": 0.2327
+            "overall_rate": 0.2319
           },
           "intent": {
             "strong": [
               {
                 "value": "discovery",
                 "hits": 47,
-                "total": 170,
-                "rate": 0.2765,
+                "total": 171,
+                "rate": 0.2749,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 27
+                  "hits": 28
                 }
               },
               {
@@ -1744,8 +1755,8 @@
               {
                 "value": "validation",
                 "hits": 49,
-                "total": 223,
-                "rate": 0.2197,
+                "total": 225,
+                "rate": 0.2178,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -1779,8 +1790,8 @@
               {
                 "value": "validation",
                 "hits": 49,
-                "total": 223,
-                "rate": 0.2197,
+                "total": 225,
+                "rate": 0.2178,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -1812,16 +1823,16 @@
               {
                 "value": "discovery",
                 "hits": 47,
-                "total": 170,
-                "rate": 0.2765,
+                "total": 171,
+                "rate": 0.2749,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 27
+                  "hits": 28
                 }
               }
             ],
-            "overall_rate": 0.2327
+            "overall_rate": 0.2319
           }
         },
         "lux": {
@@ -1898,7 +1909,7 @@
               {
                 "value": "跟团出国 10 天小样",
                 "hits": 0,
-                "total": 41,
+                "total": 42,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "loccitane",
@@ -1940,7 +1951,7 @@
                 }
               }
             ],
-            "overall_rate": 0.0196
+            "overall_rate": 0.0207
           },
           "persona": {
             "strong": [
@@ -1991,8 +2002,8 @@
               {
                 "value": "国货党 支持国产",
                 "hits": 2,
-                "total": 34,
-                "rate": 0.0588,
+                "total": 35,
+                "rate": 0.0571,
                 "top_competitor": {
                   "key": "liushen",
                   "display": "六神 Liushen",
@@ -2035,37 +2046,37 @@
                 }
               },
               {
-                "value": "28 岁互联网男 油性头皮",
-                "hits": 0,
-                "total": 42,
-                "rate": 0.0,
-                "top_competitor": {
-                  "key": "safeguard",
-                  "display": "舒肤佳 Safeguard",
-                  "hits": 10
-                }
-              },
-              {
                 "value": "日常档 50-100 元",
                 "hits": 0,
-                "total": 36,
+                "total": 37,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
                   "hits": 9
                 }
+              },
+              {
+                "value": "留学生 要带出国 便携装",
+                "hits": 0,
+                "total": 33,
+                "rate": 0.0,
+                "top_competitor": {
+                  "key": "loccitane",
+                  "display": "欧舒丹 L'Occitane",
+                  "hits": 10
+                }
               }
             ],
-            "overall_rate": 0.0196
+            "overall_rate": 0.0207
           },
           "attribute": {
             "strong": [
               {
                 "value": "香氛持久",
                 "hits": 4,
-                "total": 35,
-                "rate": 0.1143,
+                "total": 36,
+                "rate": 0.1111,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2081,6 +2092,17 @@
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
                   "hits": 9
+                }
+              },
+              {
+                "value": "去体味",
+                "hits": 3,
+                "total": 48,
+                "rate": 0.0625,
+                "top_competitor": {
+                  "key": "safeguard",
+                  "display": "舒肤佳 Safeguard",
+                  "hits": 21
                 }
               },
               {
@@ -2103,17 +2125,6 @@
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
                   "hits": 12
-                }
-              },
-              {
-                "value": "去体味",
-                "hits": 2,
-                "total": 47,
-                "rate": 0.0426,
-                "top_competitor": {
-                  "key": "safeguard",
-                  "display": "舒肤佳 Safeguard",
-                  "hits": 20
                 }
               }
             ],
@@ -2165,7 +2176,7 @@
               {
                 "value": "医学护肤",
                 "hits": 0,
-                "total": 39,
+                "total": 40,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "safeguard",
@@ -2174,15 +2185,15 @@
                 }
               }
             ],
-            "overall_rate": 0.0196
+            "overall_rate": 0.0207
           },
           "price_tier": {
             "strong": [
               {
                 "value": "低价 (<50)",
                 "hits": 7,
-                "total": 144,
-                "rate": 0.0486,
+                "total": 145,
+                "rate": 0.0483,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2191,13 +2202,13 @@
               },
               {
                 "value": "不限",
-                "hits": 5,
-                "total": 159,
-                "rate": 0.0314,
+                "hits": 6,
+                "total": 160,
+                "rate": 0.0375,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               },
               {
@@ -2214,8 +2225,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 1,
-                "total": 137,
-                "rate": 0.0073,
+                "total": 138,
+                "rate": 0.0072,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2249,8 +2260,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 1,
-                "total": 137,
-                "rate": 0.0073,
+                "total": 138,
+                "rate": 0.0072,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2270,20 +2281,20 @@
               },
               {
                 "value": "不限",
-                "hits": 5,
-                "total": 159,
-                "rate": 0.0314,
+                "hits": 6,
+                "total": 160,
+                "rate": 0.0375,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               },
               {
                 "value": "低价 (<50)",
                 "hits": 7,
-                "total": 144,
-                "rate": 0.0486,
+                "total": 145,
+                "rate": 0.0483,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2291,15 +2302,26 @@
                 }
               }
             ],
-            "overall_rate": 0.0196
+            "overall_rate": 0.0207
           },
           "intent": {
             "strong": [
               {
+                "value": "discovery",
+                "hits": 4,
+                "total": 171,
+                "rate": 0.0234,
+                "top_competitor": {
+                  "key": "safeguard",
+                  "display": "舒肤佳 Safeguard",
+                  "hits": 28
+                }
+              },
+              {
                 "value": "validation",
                 "hits": 5,
-                "total": 223,
-                "rate": 0.0224,
+                "total": 225,
+                "rate": 0.0222,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2337,33 +2359,11 @@
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
                   "hits": 24
-                }
-              },
-              {
-                "value": "discovery",
-                "hits": 3,
-                "total": 170,
-                "rate": 0.0176,
-                "top_competitor": {
-                  "key": "safeguard",
-                  "display": "舒肤佳 Safeguard",
-                  "hits": 27
                 }
               }
             ],
             "weak": [
               {
-                "value": "discovery",
-                "hits": 3,
-                "total": 170,
-                "rate": 0.0176,
-                "top_competitor": {
-                  "key": "safeguard",
-                  "display": "舒肤佳 Safeguard",
-                  "hits": 27
-                }
-              },
-              {
                 "value": "transactional",
                 "hits": 3,
                 "total": 166,
@@ -2399,16 +2399,27 @@
               {
                 "value": "validation",
                 "hits": 5,
-                "total": 223,
-                "rate": 0.0224,
+                "total": 225,
+                "rate": 0.0222,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
                   "hits": 30
                 }
+              },
+              {
+                "value": "discovery",
+                "hits": 4,
+                "total": 171,
+                "rate": 0.0234,
+                "top_competitor": {
+                  "key": "safeguard",
+                  "display": "舒肤佳 Safeguard",
+                  "hits": 28
+                }
               }
             ],
-            "overall_rate": 0.0196
+            "overall_rate": 0.0207
           }
         },
         "kuyura": {
@@ -2485,7 +2496,7 @@
               {
                 "value": "孕期洗护 全套换安全的",
                 "hits": 0,
-                "total": 61,
+                "total": 62,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "loccitane",
@@ -2496,7 +2507,7 @@
               {
                 "value": "跟团出国 10 天小样",
                 "hits": 0,
-                "total": 41,
+                "total": 42,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "loccitane",
@@ -2578,12 +2589,12 @@
               {
                 "value": "28 岁互联网男 油性头皮",
                 "hits": 2,
-                "total": 42,
-                "rate": 0.0476,
+                "total": 43,
+                "rate": 0.0465,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 10
+                  "hits": 11
                 }
               }
             ],
@@ -2613,7 +2624,7 @@
               {
                 "value": "日常档 50-100 元",
                 "hits": 0,
-                "total": 36,
+                "total": 37,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "loccitane",
@@ -2624,7 +2635,7 @@
               {
                 "value": "国货党 支持国产",
                 "hits": 0,
-                "total": 34,
+                "total": 35,
                 "rate": 0.0,
                 "top_competitor": {
                   "key": "liushen",
@@ -2651,8 +2662,8 @@
               {
                 "value": "医学护肤",
                 "hits": 3,
-                "total": 39,
-                "rate": 0.0769,
+                "total": 40,
+                "rate": 0.075,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2768,12 +2779,12 @@
               {
                 "value": "不限",
                 "hits": 5,
-                "total": 159,
-                "rate": 0.0314,
+                "total": 160,
+                "rate": 0.0312,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               },
               {
@@ -2790,8 +2801,8 @@
               {
                 "value": "低价 (<50)",
                 "hits": 3,
-                "total": 144,
-                "rate": 0.0208,
+                "total": 145,
+                "rate": 0.0207,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2801,8 +2812,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 1,
-                "total": 137,
-                "rate": 0.0073,
+                "total": 138,
+                "rate": 0.0072,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2836,8 +2847,8 @@
               {
                 "value": "高端 (150-500)",
                 "hits": 1,
-                "total": 137,
-                "rate": 0.0073,
+                "total": 138,
+                "rate": 0.0072,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2847,8 +2858,8 @@
               {
                 "value": "低价 (<50)",
                 "hits": 3,
-                "total": 144,
-                "rate": 0.0208,
+                "total": 145,
+                "rate": 0.0207,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
@@ -2869,12 +2880,12 @@
               {
                 "value": "不限",
                 "hits": 5,
-                "total": 159,
-                "rate": 0.0314,
+                "total": 160,
+                "rate": 0.0312,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 29
+                  "hits": 30
                 }
               }
             ],
@@ -2885,19 +2896,19 @@
               {
                 "value": "discovery",
                 "hits": 8,
-                "total": 170,
-                "rate": 0.0471,
+                "total": 171,
+                "rate": 0.0468,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 27
+                  "hits": 28
                 }
               },
               {
                 "value": "validation",
                 "hits": 3,
-                "total": 223,
-                "rate": 0.0135,
+                "total": 225,
+                "rate": 0.0133,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2975,8 +2986,8 @@
               {
                 "value": "validation",
                 "hits": 3,
-                "total": 223,
-                "rate": 0.0135,
+                "total": 225,
+                "rate": 0.0133,
                 "top_competitor": {
                   "key": "loccitane",
                   "display": "欧舒丹 L'Occitane",
@@ -2986,12 +2997,12 @@
               {
                 "value": "discovery",
                 "hits": 8,
-                "total": 170,
-                "rate": 0.0471,
+                "total": 171,
+                "rate": 0.0468,
                 "top_competitor": {
                   "key": "safeguard",
                   "display": "舒肤佳 Safeguard",
-                  "hits": 27
+                  "hits": 28
                 }
               }
             ],
@@ -3011,14 +3022,14 @@
           "is_client": true,
           "mentions": 14,
           "per_platform": {
-            "智谱 GLM": 5,
+            "GLM": 5,
             "Kimi": 5,
             "MiniMax": 4
           },
           "sample_answers": [
             {
               "prompt": "\"健身完一头汗头发塌死了 二三十块的洗发水能洗蓬松吗\" - 24字，符合",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "二三十块的洗发水确实有蓬松效果的，推荐几款：\n\n1. 蜂花无硅油洗发水：约20元，无硅油配方洗完发根立挺，适合油扁发质\n\n2. 清扬男士活力洗发水：约30元，专为运动后设计，清爽控油蓬松效果不错\n\n3. 诗裴丝蓬松洗发水：约35元，含微米蛋白技术，专门针对扁塌发质\n\n便宜洗发水蓬松效果够用，但持久度不如贵价产品，健身后可配合吹风机倒吹发根增加蓬松感。"
             },
             {
@@ -3028,7 +3039,7 @@
             },
             {
               "prompt": "无硅油洗发水是不是对头皮屑有用啊",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "无硅油洗发水本身不一定能直接解决头屑问题。头屑主要是头皮真菌和油脂分泌导致。建议选择同时含去屑成分的无硅油产品，推荐：1)海飞丝去屑无硅油(含ZPT成分)；2)清扬无硅油去屑洗发水(含吡啶硫酮锌)；3)露得清T/Sal洗发露(含水杨酸)。这些产品既能减少头皮负担，又能有效去除头屑。"
             }
           ],
@@ -3053,7 +3064,7 @@
           "is_client": false,
           "mentions": 27,
           "per_platform": {
-            "智谱 GLM": 6,
+            "GLM": 6,
             "MiniMax": 10,
             "豆包": 3,
             "Kimi": 8
@@ -3061,7 +3072,7 @@
           "sample_answers": [
             {
               "prompt": "油头皮冬天用无香洗发水洗完还会痒吗",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "可能还是会痒。冬季头皮更干燥，建议选择温和型且含水杨酸的洗发水，既能控油又能舒缓头皮。推荐露得清T/Sal洗发水，含3%水杨酸去油止痒；资生堂Fino无香洗发水，温和不刺激洗后不紧绷；或海飞丝无香去屑款，减少头皮刺激。洗头水温不要过高，洗发水彻底冲洗干净，可搭配头皮精华缓解瘙痒。"
             },
             {
@@ -3087,7 +3098,7 @@
             "Kimi": 8,
             "MiniMax": 6,
             "豆包": 4,
-            "智谱 GLM": 2
+            "GLM": 2
           },
           "sample_answers": [
             {
@@ -3116,7 +3127,7 @@
           "mentions": 17,
           "per_platform": {
             "豆包": 5,
-            "智谱 GLM": 5,
+            "GLM": 5,
             "Kimi": 5,
             "MiniMax": 2
           },
@@ -3128,7 +3139,7 @@
             },
             {
               "prompt": "\"健身完一头汗头发塌死了 二三十块的洗发水能洗蓬松吗\" - 24字，符合",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "二三十块的洗发水确实有蓬松效果的，推荐几款：\n\n1. 蜂花无硅油洗发水：约20元，无硅油配方洗完发根立挺，适合油扁发质\n\n2. 清扬男士活力洗发水：约30元，专为运动后设计，清爽控油蓬松效果不错\n\n3. 诗裴丝蓬松洗发水：约35元，含微米蛋白技术，专门针对扁塌发质\n\n便宜洗发水蓬松效果够用，但持久度不如贵价产品，健身后可配合吹风机倒吹发根增加蓬松感。"
             },
             {
@@ -3147,7 +3158,7 @@
           "mentions": 9,
           "per_platform": {
             "Kimi": 8,
-            "智谱 GLM": 1
+            "GLM": 1
           },
           "sample_answers": [
             {
@@ -3231,6 +3242,13 @@
           "mention_rate": 0.0
         },
         {
+          "platform": "GLM",
+          "total": 35,
+          "errors": 0,
+          "avg_latency_ms": 13613.0,
+          "mention_rate": 0.4571
+        },
+        {
           "platform": "Kimi",
           "total": 35,
           "errors": 0,
@@ -3245,6 +3263,20 @@
           "mention_rate": 0.5143
         },
         {
+          "platform": "元宝",
+          "total": 0,
+          "errors": 0,
+          "avg_latency_ms": 0.0,
+          "mention_rate": 0.0
+        },
+        {
+          "platform": "夸克",
+          "total": 0,
+          "errors": 0,
+          "avg_latency_ms": 0.0,
+          "mention_rate": 0.0
+        },
+        {
           "platform": "文心",
           "total": 0,
           "errors": 0,
@@ -3252,25 +3284,11 @@
           "mention_rate": 0.0
         },
         {
-          "platform": "智谱 GLM",
-          "total": 35,
-          "errors": 0,
-          "avg_latency_ms": 13613.0,
-          "mention_rate": 0.4571
-        },
-        {
           "platform": "豆包",
           "total": 35,
           "errors": 0,
           "avg_latency_ms": 16442.0,
           "mention_rate": 0.3143
-        },
-        {
-          "platform": "通义",
-          "total": 0,
-          "errors": 0,
-          "avg_latency_ms": 0.0,
-          "mention_rate": 0.0
         }
       ],
       "failed_prompts": [
@@ -3381,12 +3399,12 @@
               "display": "蜂花 Bee & Flower"
             },
             {
-              "key": "head_shoulders",
-              "display": "海飞丝 Head & Shoulders"
-            },
-            {
               "key": "vichy",
               "display": "薇姿 VICHY"
+            },
+            {
+              "key": "head_shoulders",
+              "display": "海飞丝 Head & Shoulders"
             }
           ]
         },
@@ -3466,12 +3484,12 @@
               "display": "蜂花 Bee & Flower"
             },
             {
-              "key": "kerastase",
-              "display": "卡诗 KERASTASE"
-            },
-            {
               "key": "ryo",
               "display": "吕 Ryo"
+            },
+            {
+              "key": "kerastase",
+              "display": "卡诗 KERASTASE"
             }
           ]
         },
@@ -3496,12 +3514,12 @@
           "prompt": "头皮油还掉发厉害有啥洗发水好用",
           "pushed_brands": [
             {
-              "key": "head_shoulders",
-              "display": "海飞丝 Head & Shoulders"
-            },
-            {
               "key": "kerastase",
               "display": "卡诗 KERASTASE"
+            },
+            {
+              "key": "head_shoulders",
+              "display": "海飞丝 Head & Shoulders"
             }
           ]
         }
@@ -4684,7 +4702,7 @@
           "mentions": 28,
           "per_platform": {
             "豆包": 9,
-            "智谱 GLM": 6,
+            "GLM": 6,
             "Kimi": 6,
             "MiniMax": 7
           },
@@ -4696,7 +4714,7 @@
             },
             {
               "prompt": "几十块的身体乳真的能用吗",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "几十块的身体乳能用，但要注意选择。推荐几款口碑好的平价产品：\n\n1. 美加净身体乳：基础保湿效果不错，国货性价比高\n2. 凡士林身体乳：经典锁水配方，适合干燥肌肤\n3. 蜂花身体乳：温和不刺激，适合日常护理\n\n这些产品能满足基本保湿需求，但相比高价产品，可能在持久度、特殊功效上稍逊一筹。如果你是普通肌肤，日常保湿完全够用。"
             },
             {
@@ -4748,7 +4766,7 @@
             "MiniMax": 16,
             "豆包": 8,
             "Kimi": 7,
-            "智谱 GLM": 3
+            "GLM": 3
           },
           "sample_answers": [
             {
@@ -4779,7 +4797,7 @@
             "豆包": 7,
             "MiniMax": 4,
             "Kimi": 5,
-            "智谱 GLM": 5
+            "GLM": 5
           },
           "sample_answers": [
             {
@@ -4809,7 +4827,7 @@
           "per_platform": {
             "豆包": 2,
             "Kimi": 5,
-            "智谱 GLM": 3
+            "GLM": 3
           },
           "sample_answers": [
             {
@@ -4824,7 +4842,7 @@
             },
             {
               "prompt": "秋冬干敏皮总起屑，有没有平价大罐的身体乳可以用？",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "秋冬干敏皮推荐CeraVe修护润肤露(400ml约80元)，含神经酰胺修复屏障，无香精，温和保湿；Aveeno燕麦身体乳(354ml约90元)，燕麦成分舒缓干燥，持久锁水；妮维雅经典滋润型"
             }
           ],
@@ -4837,18 +4855,18 @@
           "is_client": false,
           "mentions": 4,
           "per_platform": {
-            "智谱 GLM": 3,
+            "GLM": 3,
             "豆包": 1
           },
           "sample_answers": [
             {
               "prompt": "有没有那种无香精的儿童身体乳用了能促进发量阿",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "没有直接促进发量的身体乳，但以下几款无香精儿童身体乳温和滋润，对头皮健康也有帮助：\n\n1. 艾惟诺婴儿燕麦身体乳 - 无香精，含天然燕麦成分，温和舒缓，适合敏感肌\n2. 妙思乐婴儿润肤露 - 无香精添加，专为婴儿设计，保湿效果好\n3. 隆力奇婴儿草本润肤露 - 无香精，草本配方，温和安全\n\n注意：头发主要受遗传和营养影响，想要头发浓密应确保营养均衡，特别是蛋白质、铁和锌的摄入。"
             },
             {
               "prompt": "\"宝妈敏感肌用的无防腐剂身体乳，几十块跟一百多的差别大吗\"",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "\n用户询问宝妈敏感肌使用的无防腐剂身体乳，价格在几十块到一百多之间是否有大差别。这个问题涉及到化妆品/护肤品价格与质量的关系，特别针对敏感肌这一特殊肌肤类型，以及无防腐剂这一特殊要求。我需要从消费者的角度，提供实用、具体的建议，并推荐几款适合的产品。\n\n首先，我需要分析几十块到一百多价位无防腐剂身体乳的可能区别：\n\n1. **成分差异**：\n   - 低价产品可能使用基础保湿成分，活性物含量较低\n   - 高价产品可能添加更多有效修复成分、天然植物提取物等\n\n2. **生产工艺**：\n   - 高端品牌通常有更严格的生产工艺和质检标准\n   - 可能采用更先进的保存技术，无需防腐剂也能保证安全性\n\n3. **研发投入**：\n   - 大品牌可能有更多研发投入，针对敏感肌有更专研的配方\n   - 低价产品可能是基础配方，针对性不强\n\n4. **使用体验**：\n   - 高端产品通常质地更细腻，吸收更好，肤感更舒适\n   - 低价产品可能质地较厚重或稀薄，肤感一般\n\n5. **安全性**：\n   - 大品牌通常有更严格的安全测试和临床验证\n   - 低价产品可能在成分纯净度上有差异\n\n接下"
             },
             {
@@ -4895,17 +4913,17 @@
           "is_client": false,
           "mentions": 2,
           "per_platform": {
-            "智谱 GLM": 2
+            "GLM": 2
           },
           "sample_answers": [
             {
               "prompt": "混合皮夏天用婴儿适用的身体乳，有没有便宜点不黏腻的呀？",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "推荐几款适合夏天的婴儿身体乳：\n\n1. 美加净婴儿润肤露：价格便宜约20元，质地清爽，易吸收，不黏腻，适合混合皮。\n\n2. 郁美净儿童霜：国货经典，30元左右，质地轻薄，保湿不油腻，夏天用很舒服。\n\n3. 芙儿蜜婴儿身体乳：平价选择，水润质地，吸收快，不油腻，成分温和。\n\n这几款都是性价比高的选择，适合混合皮夏季使用，不会感到黏腻。"
             },
             {
               "prompt": "几十块的身体乳真的能用吗",
-              "platform": "智谱 GLM",
+              "platform": "GLM",
               "answer": "几十块的身体乳能用，但要注意选择。推荐几款口碑好的平价产品：\n\n1. 美加净身体乳：基础保湿效果不错，国货性价比高\n2. 凡士林身体乳：经典锁水配方，适合干燥肌肤\n3. 蜂花身体乳：温和不刺激，适合日常护理\n\n这些产品能满足基本保湿需求，但相比高价产品，可能在持久度、特殊功效上稍逊一筹。如果你是普通肌肤，日常保湿完全够用。"
             }
           ],
@@ -4919,6 +4937,13 @@
           "errors": 0,
           "avg_latency_ms": 0.0,
           "mention_rate": 0.0
+        },
+        {
+          "platform": "GLM",
+          "total": 34,
+          "errors": 0,
+          "avg_latency_ms": 5836.0,
+          "mention_rate": 0.4412
         },
         {
           "platform": "Kimi",
@@ -4935,6 +4960,20 @@
           "mention_rate": 0.6765
         },
         {
+          "platform": "元宝",
+          "total": 0,
+          "errors": 0,
+          "avg_latency_ms": 0.0,
+          "mention_rate": 0.0
+        },
+        {
+          "platform": "夸克",
+          "total": 0,
+          "errors": 0,
+          "avg_latency_ms": 0.0,
+          "mention_rate": 0.0
+        },
+        {
           "platform": "文心",
           "total": 0,
           "errors": 0,
@@ -4942,25 +4981,11 @@
           "mention_rate": 0.0
         },
         {
-          "platform": "智谱 GLM",
-          "total": 34,
-          "errors": 0,
-          "avg_latency_ms": 5836.0,
-          "mention_rate": 0.4412
-        },
-        {
           "platform": "豆包",
           "total": 34,
           "errors": 0,
           "avg_latency_ms": 16132.0,
           "mention_rate": 0.5882
-        },
-        {
-          "platform": "通义",
-          "total": 0,
-          "errors": 0,
-          "avg_latency_ms": 0.0,
-          "mention_rate": 0.0
         }
       ],
       "failed_prompts": [
@@ -5007,12 +5032,12 @@
           "prompt": "油性皮肤适合哪种男士身体乳啊 稍微贵点的",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -5020,12 +5045,12 @@
           "prompt": "有没有那种无香精的儿童身体乳用了能促进发量阿",
           "pushed_brands": [
             {
-              "key": "cetaphil",
-              "display": "丝塔芙 Cetaphil"
-            },
-            {
               "key": "longrich",
               "display": "隆力奇 Longrich"
+            },
+            {
+              "key": "cetaphil",
+              "display": "丝塔芙 Cetaphil"
             }
           ]
         },
@@ -5041,12 +5066,12 @@
           "prompt": "\"想给爸妈买去体味的身体乳，夏天用，要宝宝也能蹭的，贵点没事\"",
           "pushed_brands": [
             {
-              "key": "cetaphil",
-              "display": "丝塔芙 Cetaphil"
-            },
-            {
               "key": "aesop",
               "display": "伊索 Aesop"
+            },
+            {
+              "key": "cetaphil",
+              "display": "丝塔芙 Cetaphil"
             }
           ]
         },
@@ -5071,12 +5096,12 @@
           "prompt": "\"宝妈敏感肌用的无防腐剂身体乳，几十块跟一百多的差别大吗\"",
           "pushed_brands": [
             {
-              "key": "cetaphil",
-              "display": "丝塔芙 Cetaphil"
-            },
-            {
               "key": "longrich",
               "display": "隆力奇 Longrich"
+            },
+            {
+              "key": "cetaphil",
+              "display": "丝塔芙 Cetaphil"
             }
           ]
         },

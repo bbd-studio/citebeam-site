@@ -13,8 +13,8 @@ export default function HomePage() {
           <span className="ml-1 inline-block w-3 h-12 bg-[#00FF88] align-middle animate-pulse" />
         </h1>
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl leading-relaxed mb-10">
-          Citebeam monitors your brand across <span className="text-[#00FF88]">7 Chinese AI assistants</span>
-          {" "}(豆包 · 智谱 GLM · Kimi · MiniMax · DeepSeek · 通义 · 文心) —
+          Citebeam monitors your brand across <span className="text-[#00FF88]">8 Chinese AI assistants</span>
+          {" "}(豆包 · GLM · Kimi · MiniMax · DeepSeek · 夸克 · 文心 · 元宝) —
           and answers your questions about the data via chat,
           never by burying you in dashboards.
         </p>
