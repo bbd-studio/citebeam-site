@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-24T10:25:29.399352+00:00Z",
+    "generated_at": "2026-04-24T10:50:56.170251+00:00Z",
     "source": "db",
     "total_queries": 1392,
     "total_errors": 60,
@@ -428,12 +428,12 @@
           "prompt": "想给我老婆买瓶好点的沐浴露 健身出汗后用的 预算五百以上有好的吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -508,12 +508,12 @@
           "prompt": "染烫后头发毛躁有没有高端精油洗护推荐",
           "pushed_brands": [
             {
-              "key": "adolph",
-              "display": "阿道夫 Adolph"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "adolph",
+              "display": "阿道夫 Adolph"
             }
           ]
         },
@@ -525,12 +525,12 @@
           "prompt": "国产哪个牌子的沐浴露去油效果好，适合老年人用",
           "pushed_brands": [
             {
-              "key": "olay",
-              "display": "玉兰油 OLAY"
-            },
-            {
               "key": "safeguard",
               "display": "舒肤佳 Safeguard"
+            },
+            {
+              "key": "olay",
+              "display": "玉兰油 OLAY"
             },
             {
               "key": "liushen",
@@ -542,12 +542,12 @@
           "prompt": "运动完骑行回来想洗个澡，这种小众高端的沐浴露洗得干净吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -572,12 +572,12 @@
           "prompt": "出国旅游想带小样沐浴露，有啥安全的有机推荐吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -598,12 +598,12 @@
           "prompt": "想入一款无皂基的沐浴露，汗味重的皮肤适合吗，五百以上的有推荐吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -691,12 +691,12 @@
           "prompt": "老婆生日送沐浴露合适吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -708,12 +708,12 @@
           "prompt": "过生日送老婆沐浴露有啥推荐吗 敏感肌能用就行",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -807,12 +807,12 @@
           "prompt": "油皮夏天用有机沐浴露能去汗味吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -820,12 +820,12 @@
           "prompt": "大牌有出旅行套装吗 精油的那种",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -846,12 +846,12 @@
           "prompt": "有没有纯天然配方的男士沐浴露推荐，哺乳期用也不怕",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -868,12 +868,12 @@
           "prompt": "产后掉头发太夸张了，有啥高端沐浴露能改善吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -910,12 +910,12 @@
           "prompt": "混油皮夏天出汗味道大，出国10天带的奢华沐浴露小样要敏感肌友好的，哪个合适？",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -940,12 +940,12 @@
           "prompt": "求问500以上的无硅油无硫酸盐沐浴露真的有效果吗😭",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -957,12 +957,12 @@
           "prompt": "夏天跟团出国10天，混油皮汗臭重，敏感肌能用的奢华沐浴露小样有吗？",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -970,12 +970,12 @@
           "prompt": "体味重但是想变白有没有贵妇级别的沐浴露能同时搞定",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "olay",
               "display": "玉兰油 OLAY"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -996,12 +996,12 @@
           "prompt": "我混合皮用天然成分的奢华沐浴露可以吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1047,12 +1047,12 @@
           "prompt": "几百块的男士沐浴露哪个洗完更清爽啊",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1080,12 +1080,12 @@
           "prompt": "哪个牌子的沐浴露洗完头发能蓬松点 想体验沙龙级的",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1109,12 +1109,12 @@
           "prompt": "露营回来身上全是土，敏感肌能用香氛持久点的沐浴露吗",
           "pushed_brands": [
             {
-              "key": "safeguard",
-              "display": "舒肤佳 Safeguard"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "safeguard",
+              "display": "舒肤佳 Safeguard"
             }
           ]
         },
@@ -1152,12 +1152,12 @@
           "prompt": "闺蜜乔迁送沐浴露合适吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -1223,12 +1223,12 @@
           "prompt": "想带出国留学，这种便携装的小众沐浴露靠谱吗",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -3097,7 +3097,69 @@
             "overall_rate": 0.0168
           }
         }
-      }
+      },
+      "dark_horse_competitors": [
+        {
+          "name": "Aveeno",
+          "mentions": 41
+        },
+        {
+          "name": "珂润",
+          "mentions": 39
+        },
+        {
+          "name": "CeraVe",
+          "mentions": 39
+        },
+        {
+          "name": "强生",
+          "mentions": 31
+        },
+        {
+          "name": "贝亲",
+          "mentions": 26
+        },
+        {
+          "name": "理肤泉",
+          "mentions": 22
+        },
+        {
+          "name": "雅漾",
+          "mentions": 20
+        },
+        {
+          "name": "露得清",
+          "mentions": 15
+        },
+        {
+          "name": "适乐肤",
+          "mentions": 15
+        },
+        {
+          "name": "薇诺娜",
+          "mentions": 14
+        },
+        {
+          "name": "妙思乐",
+          "mentions": 14
+        },
+        {
+          "name": "启初",
+          "mentions": 13
+        },
+        {
+          "name": "玉泽",
+          "mentions": 12
+        },
+        {
+          "name": "艾维诺",
+          "mentions": 12
+        },
+        {
+          "name": "艾惟诺",
+          "mentions": 12
+        }
+      ]
     },
     "洗发水": {
       "n_queries": 225,
@@ -3573,12 +3635,12 @@
               "display": "蜂花 Bee & Flower"
             },
             {
-              "key": "kerastase",
-              "display": "卡诗 KERASTASE"
-            },
-            {
               "key": "head_shoulders",
               "display": "海飞丝 Head & Shoulders"
+            },
+            {
+              "key": "kerastase",
+              "display": "卡诗 KERASTASE"
             }
           ]
         },
@@ -3599,12 +3661,12 @@
               "display": "蜂花 Bee & Flower"
             },
             {
-              "key": "ryo",
-              "display": "吕 Ryo"
-            },
-            {
               "key": "kerastase",
               "display": "卡诗 KERASTASE"
+            },
+            {
+              "key": "ryo",
+              "display": "吕 Ryo"
             }
           ]
         },
@@ -4951,7 +5013,69 @@
             "overall_rate": 0.0
           }
         }
-      }
+      },
+      "dark_horse_competitors": [
+        {
+          "name": "霸王",
+          "mentions": 15
+        },
+        {
+          "name": "欧莱雅",
+          "mentions": 10
+        },
+        {
+          "name": "施华蔻",
+          "mentions": 9
+        },
+        {
+          "name": "潘婷",
+          "mentions": 8
+        },
+        {
+          "name": "馥绿德雅",
+          "mentions": 8
+        },
+        {
+          "name": "施巴",
+          "mentions": 6
+        },
+        {
+          "name": "滋源",
+          "mentions": 6
+        },
+        {
+          "name": "珂润",
+          "mentions": 4
+        },
+        {
+          "name": "露得清",
+          "mentions": 4
+        },
+        {
+          "name": "资生堂",
+          "mentions": 3
+        },
+        {
+          "name": "飘柔",
+          "mentions": 3
+        },
+        {
+          "name": "沙宣",
+          "mentions": 3
+        },
+        {
+          "name": "贝亲",
+          "mentions": 3
+        },
+        {
+          "name": "妙思乐",
+          "mentions": 3
+        },
+        {
+          "name": "强生",
+          "mentions": 3
+        }
+      ]
     },
     "身体乳": {
       "n_queries": 214,
@@ -5265,12 +5389,12 @@
           "prompt": "混合皮夏天用婴儿适用的身体乳，有没有便宜点不黏腻的呀？",
           "pushed_brands": [
             {
-              "key": "maxam",
-              "display": "美加净 Maxam"
-            },
-            {
               "key": "cetaphil",
               "display": "丝塔芙 Cetaphil"
+            },
+            {
+              "key": "maxam",
+              "display": "美加净 Maxam"
             }
           ]
         },
@@ -5304,12 +5428,12 @@
           "prompt": "油性皮肤适合哪种男士身体乳啊 稍微贵点的",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "loccitane",
               "display": "欧舒丹 L'Occitane"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -5338,12 +5462,12 @@
           "prompt": "\"想给爸妈买去体味的身体乳，夏天用，要宝宝也能蹭的，贵点没事\"",
           "pushed_brands": [
             {
-              "key": "aesop",
-              "display": "伊索 Aesop"
-            },
-            {
               "key": "cetaphil",
               "display": "丝塔芙 Cetaphil"
+            },
+            {
+              "key": "aesop",
+              "display": "伊索 Aesop"
             }
           ]
         },
@@ -6637,7 +6761,69 @@
             "overall_rate": 0.2523
           }
         }
-      }
+      },
+      "dark_horse_competitors": [
+        {
+          "name": "科颜氏",
+          "mentions": 9
+        },
+        {
+          "name": "雅漾",
+          "mentions": 9
+        },
+        {
+          "name": "CeraVe",
+          "mentions": 8
+        },
+        {
+          "name": "玉泽",
+          "mentions": 8
+        },
+        {
+          "name": "理肤泉",
+          "mentions": 8
+        },
+        {
+          "name": "贝亲",
+          "mentions": 6
+        },
+        {
+          "name": "适乐肤",
+          "mentions": 6
+        },
+        {
+          "name": "郁美净",
+          "mentions": 5
+        },
+        {
+          "name": "悦诗风吟",
+          "mentions": 5
+        },
+        {
+          "name": "启初",
+          "mentions": 4
+        },
+        {
+          "name": "Aveeno",
+          "mentions": 4
+        },
+        {
+          "name": "艾惟诺",
+          "mentions": 4
+        },
+        {
+          "name": "珂润",
+          "mentions": 3
+        },
+        {
+          "name": "艾维诺",
+          "mentions": 3
+        },
+        {
+          "name": "妙思乐",
+          "mentions": 3
+        }
+      ]
     }
   }
 }

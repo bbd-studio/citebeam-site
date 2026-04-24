@@ -47,6 +47,8 @@ export type BrandSW = Partial<Record<
   DimAnalysis
 >>;
 
+export type DarkHorseCompetitor = { name: string; mentions: number };
+
 export type CategoryReport = {
   n_queries: number;
   n_errors: number;
@@ -56,6 +58,7 @@ export type CategoryReport = {
   platform_stats: PlatformStat[];
   failed_prompts: FailedPrompt[];
   strengths_weaknesses: Record<string, BrandSW>;
+  dark_horse_competitors?: DarkHorseCompetitor[];
 };
 
 export type UnileverReport = {

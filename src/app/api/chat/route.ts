@@ -51,6 +51,12 @@ const SYSTEM_TEMPLATE = `你是 citebeam 的分析助手，帮客户理解他们
 
 其他字段（scenario / persona / attribute / price_tier 的值）原本就是中文，直接用。
 
+## 重要字段：\`dark_horse_competitors\`
+
+每个品类可能带 \`dark_horse_competitors\` 数组 —— 这些是**LLM 从真实答案里抽取、但不在联合利华品牌表里的品牌**。用户的 \`competitors\` 是预先手工标记的竞品（17 个），但 AI 实际推荐里出现的品牌往往**远不止这些**。dark horse 就是"未追踪但值得警觉"的对手，按答案提及次数排序。
+
+用户问"哪些竞品我们没在监测"、"黑马"、"还有谁在抢"、"漏掉的对手"、"values we should be watching" 时直接从这里答。每条只有 name + mentions，没有按平台/场景细分（未来 v2 再做）。
+
 字段含义：
 - \`strong\`: 该维度下提及率最高的 5 个值（品牌在这些场景/诉求下 AI 愿意推荐）
 - \`weak\`: 提及率最低的 5 个值（品牌在这些场景下不被推荐）

@@ -173,6 +173,41 @@ export function CategoryPanel({ cat, r }: { cat: string; r: CategoryReport }) {
         </div>
       </div>
 
+      {/* Dark horse competitors (LLM-extracted from answers, NOT in brand table) */}
+      {r.dark_horse_competitors && r.dark_horse_competitors.length > 0 && (
+        <div className="rounded border border-[#FFD166]/40 bg-[#1a1406] p-3 md:p-4">
+          <h3 className="font-mono text-xs uppercase tracking-wider text-[#FFD166] mb-2">
+            🐎 值得提防的新对手（未在品牌库中）
+          </h3>
+          <p className="text-xs text-neutral-500 mb-3">
+            AI 回答里频繁推荐但联合利华品牌库里**没追踪**的品牌 —— 按提及次数排序。
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+            {r.dark_horse_competitors.slice(0, 10).map((dh, i) => (
+              <div
+                key={i}
+                className="flex items-baseline justify-between border border-neutral-800 bg-[#0F0F0F] rounded px-3 py-2"
+              >
+                <span className="text-sm text-neutral-200 truncate">{dh.name}</span>
+                <span className="font-mono text-xs text-[#FFD166] shrink-0 ml-2">
+                  {dh.mentions}x
+                </span>
+              </div>
+            ))}
+          </div>
+          {r.dark_horse_competitors.length > 10 && (
+            <details className="mt-3">
+              <summary className="text-xs text-neutral-500 cursor-pointer hover:text-[#FFD166]">
+                还有 {r.dark_horse_competitors.length - 10} 个较少提及的
+              </summary>
+              <div className="mt-2 text-xs text-neutral-500 font-mono">
+                {r.dark_horse_competitors.slice(10).map((dh) => `${dh.name}(${dh.mentions}x)`).join(" · ")}
+              </div>
+            </details>
+          )}
+        </div>
+      )}
+
       {/* Strengths / weaknesses by dimension —
           key={cat} forces remount on tab switch so internal activeBrand state
           resets instead of referencing a brand from the previous category. */}
