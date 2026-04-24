@@ -12,6 +12,24 @@ const DIM_LABELS: Record<string, string> = {
 };
 const DIM_ORDER = ["scenario", "attribute", "price_tier", "persona", "intent"] as const;
 
+// Translate English code values to Chinese (normalized in DB as English)
+const VALUE_TRANSLATIONS: Record<string, string> = {
+  // intent
+  discovery: "发现型（我想找）",
+  comparison: "比较型（两个选哪个）",
+  problem_solving: "解决型（我遇到问题）",
+  validation: "验证型（XX 靠谱吗）",
+  transactional: "交易型（准备买）",
+  // journey
+  awareness: "认知期",
+  consideration: "考虑期",
+  decision: "决策期",
+};
+
+function translate(s: string): string {
+  return VALUE_TRANSLATIONS[s] ?? s;
+}
+
 export function StrengthsWeaknesses({
   cat,
   brands,
@@ -58,7 +76,7 @@ export function StrengthsWeaknesses({
           return (
             <div key={dim}>
               <div className="font-mono text-[11px] uppercase tracking-wider text-neutral-500 mb-2">
-                by {DIM_LABELS[dim]}
+                按{DIM_LABELS[dim]}
               </div>
               <div className="grid md:grid-cols-2 gap-3">
                 <DimColumn
@@ -109,7 +127,7 @@ function DimColumn({
                 className="flex items-start justify-between gap-2 text-xs py-1.5 border-b border-neutral-900 last:border-0"
               >
                 <div className="flex-1 min-w-0">
-                  <div className="text-neutral-200 break-words">{e.value}</div>
+                  <div className="text-neutral-200 break-words">{translate(e.value)}</div>
                   {showComp && comp && (
                     <div className="text-[10px] text-neutral-500 mt-0.5">
                       被 <span className="text-[#FFD166]">{comp.display.split(" ")[0]}</span>{" "}

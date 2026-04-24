@@ -178,25 +178,31 @@ function Overview({ report }: { report: UnileverReport }) {
           快速解读
         </div>
         <ul className="space-y-2 text-neutral-300">
-          <li>
-            <span className="text-[#00FF88] mr-2">●</span>
-            <b>沐浴露</b>：多芬提及率领先（22.5%），但失守 prompt 过半 —
-            敏感肌 / 孕期场景全被舒肤佳 + L'Occitane 吃掉。
-          </li>
-          <li>
-            <span className="text-[#FFD166] mr-2">●</span>
-            <b>洗发水</b>：清扬被海飞丝 + 卡诗双压，失守率高达 80%，
-            需要重点优化。夏士莲零提及。
-          </li>
-          <li>
-            <span className="text-red-400 mr-2">●</span>
-            <b>身体乳</b>：凡士林被丝塔芙反超（25.8% vs 23.3%）—
-            敏感肌 / 屏障修护话题几乎全被丝塔芙占据。
-          </li>
-          <li>
+          {CATEGORIES.map((cat) => {
+            const r = report.categories[cat];
+            if (!r) return null;
+            const top = r.unilever_brands[0];
+            const topComp = r.competitors[0];
+            const failRate = r.unique_prompts > 0 ? r.failed_prompts.length / r.unique_prompts : 0;
+            const isWinning = !!top && !!topComp && top.mention_rate >= topComp.mention_rate;
+            const color = isWinning ? "text-[#00FF88]" : failRate > 0.6 ? "text-red-400" : "text-[#FFD166]";
+            const topName = top?.display.split(" ")[0] ?? "—";
+            const compName = topComp?.display.split(" ")[0] ?? "—";
+            return (
+              <li key={cat}>
+                <span className={`${color} mr-2`}>●</span>
+                <b>{cat}</b>：联合利华{isWinning ? "领先" : "落后"} —
+                {" "}{topName} <b>{((top?.mention_rate ?? 0) * 100).toFixed(1)}%</b>
+                {" vs "}
+                竞品冠军 {compName} <b>{((topComp?.mention_rate ?? 0) * 100).toFixed(1)}%</b>。
+                失守率 {(failRate * 100).toFixed(0)}%（{r.failed_prompts.length}/{r.unique_prompts} prompt
+                所有平台都没推联合利华）。
+              </li>
+            );
+          })}
+          <li className="pt-2 border-t border-neutral-800">
             <span className="text-neutral-500 mr-2">●</span>
-            <b>平台偏好</b>：豆包偏国货，Kimi 偏高端沙龙，MiniMax 偏丝塔芙，
-            智谱 GLM 对多芬异常低提（值得深究）。
+            <b>看平台差异</b>：点开各品类 tab 的「平台表现」表看 {report.meta.platforms.length} 家平台对同一品牌的态度差异，以及「品牌场景优劣」看哪个竞品在哪些场景里抢走了联合利华。
           </li>
         </ul>
       </div>
