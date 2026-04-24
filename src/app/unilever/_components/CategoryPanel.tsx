@@ -173,9 +173,12 @@ export function CategoryPanel({ cat, r }: { cat: string; r: CategoryReport }) {
         </div>
       </div>
 
-      {/* Strengths / weaknesses by dimension */}
+      {/* Strengths / weaknesses by dimension —
+          key={cat} forces remount on tab switch so internal activeBrand state
+          resets instead of referencing a brand from the previous category. */}
       {r.strengths_weaknesses && (
         <StrengthsWeaknesses
+          key={cat}
           cat={cat}
           brands={r.unilever_brands}
           sw={r.strengths_weaknesses}
