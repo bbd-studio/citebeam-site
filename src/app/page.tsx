@@ -20,16 +20,16 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <Link
-            href="/chat"
+            href="/unilever"
             className="px-6 py-3 bg-[#00FF88] text-[#0A0A0A] hover:opacity-90 rounded font-mono text-sm font-bold transition-opacity"
           >
-            open the agent →
+            see live demo — Unilever →
           </Link>
           <Link
-            href="#how"
+            href="/chat"
             className="px-6 py-3 border border-neutral-700 hover:border-[#00FF88] hover:text-[#00FF88] rounded font-mono text-sm transition-colors"
           >
-            see how it works ↓
+            talk to the agent ↓
           </Link>
         </div>
       </section>
