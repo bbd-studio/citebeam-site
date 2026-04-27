@@ -423,6 +423,9 @@ function QuotaCard({ platform, quota }: { platform: string; quota: QuotaWindow[]
           );
           const pct = w.percent_used;
           const barColor = pct > 80 ? "#EF476F" : pct > 50 ? "#FFD166" : "#00FF88";
+          // Unit hint based on platform — 智谱 GLM is "次"(call count),
+          // Kimi LEVEL_BASIC is also call count, MiniMax codeplan is messages.
+          const unitHint = w.total > 50000 ? "msgs" : "次";
           return (
             <li key={i}>
               <div className="flex items-center justify-between text-xs mb-1">
@@ -431,7 +434,7 @@ function QuotaCard({ platform, quota }: { platform: string; quota: QuotaWindow[]
                   {w.model_label}
                 </span>
                 <span className="font-mono text-neutral-400">
-                  {w.used.toLocaleString()} / {w.total.toLocaleString()}
+                  {w.used.toLocaleString()} / {w.total.toLocaleString()} {unitHint}
                   <span className="text-neutral-600 ml-1">({pct.toFixed(1)}%)</span>
                 </span>
               </div>
