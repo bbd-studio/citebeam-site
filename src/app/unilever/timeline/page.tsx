@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
-  CartesianGrid, Legend,
+  CartesianGrid, Legend, Cell,
 } from "recharts";
 import type {
   TimelineBundle, TimelinePair, UnileverReport,
@@ -19,9 +19,34 @@ type BrandDiff = {
   key: string;
   display: string;
   type: BrandType;
-  before: number;   // 训练数据视角命中数
-  after: number;    // 联网后视角命中数
+  before: number;   // AI 凭记忆（训练数据）命中数
+  after: number;    // AI 实时联网命中数
   delta: number;    // after - before
+};
+
+// Citation source classification — group domains by content type so
+// users can see "AI 是从公众号 / 媒体 / 电商 / 评测 哪类网站学到的"
+type SourceType = "media" | "ugc" | "ecom" | "review" | "official" | "other";
+const SOURCE_RULES: Array<{ test: RegExp; type: SourceType; label: string }> = [
+  { test: /(weixin|sohu|163|qq\.com|sina|xinhuanet|ifeng|thepaper|jiemian|36kr|huanqiu|cctv|people\.cn|chinanews|cnr|gmw|nbd|cls|caixin|toutiao|baidu|news\.)/i, type: "media", label: "媒体 / 资讯" },
+  { test: /(zhihu|xiaohongshu|xhslink|weibo|douyin|bilibili|jianshu|douban)/i, type: "ugc", label: "UGC / 社区" },
+  { test: /(taobao|tmall|jd\.com|pinduoduo|suning|vipshop|jumei|kaola|mia|amazon|aliexpress)/i, type: "ecom", label: "电商" },
+  { test: /(smzdm|zhizhizhi|pcbaby|pcauto|zol|expreview|expert|review|测评|pingce|fenghuangwang)/i, type: "review", label: "评测 / 比价" },
+  { test: /(\.gov\.|\.edu\.|cma\.gov|nmpa|baike|wikipedia)/i, type: "official", label: "官方 / 百科" },
+];
+function classifyDomain(domain: string): { type: SourceType; label: string } {
+  for (const r of SOURCE_RULES) {
+    if (r.test.test(domain)) return { type: r.type, label: r.label };
+  }
+  return { type: "other", label: "其他" };
+}
+const SOURCE_COLOR: Record<SourceType, string> = {
+  media: "#FFD166",
+  ugc: "#06D6A0",
+  ecom: "#EF476F",
+  review: "#118AB2",
+  official: "#9D8DF1",
+  other: "#666",
 };
 
 function buildBrandIndex(report: UnileverReport): BrandIndex {
@@ -115,13 +140,13 @@ export default function TimelinePage() {
     [brandDiffs]
   );
 
-  // bar chart：取前 12 个变化大的（含 type 用于上色 fallback，但 recharts 直接读 dataKey）
+  // bar chart：取前 12 个变化大的
   const chartData = useMemo(
     () => brandDiffs.slice(0, 12).map((b) => ({
       name: b.display.split(" ")[0],
       type: b.type,
-      训练数据: b.before,
-      联网后: b.after,
+      "AI 凭记忆": b.before,
+      "AI 实时联网": b.after,
     })),
     [brandDiffs]
   );
@@ -134,6 +159,35 @@ export default function TimelinePage() {
       return true;
     });
   }, [data, filterPlatform, filterCategory]);
+
+  // Aggregate citation domains across all pairs' L2 (the "AI 联网"
+  // answers). Returns top N + per-source-type breakdown.
+  const citationStats = useMemo(() => {
+    if (!data) return { topDomains: [], bySource: [], total: 0 };
+    const byDomain = new Map<string, number>();
+    const bySource = new Map<SourceType, { type: SourceType; label: string; count: number }>();
+    for (const p of data.pairs) {
+      for (const c of p.l2.citations ?? []) {
+        if (!c.domain) continue;
+        byDomain.set(c.domain, (byDomain.get(c.domain) ?? 0) + 1);
+        const cls = classifyDomain(c.domain);
+        const cur = bySource.get(cls.type) ?? { type: cls.type, label: cls.label, count: 0 };
+        cur.count++;
+        bySource.set(cls.type, cur);
+      }
+    }
+    const total = Array.from(byDomain.values()).reduce((a, b) => a + b, 0);
+    const topDomains = Array.from(byDomain.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12)
+      .map(([domain, count]) => {
+        const cls = classifyDomain(domain);
+        return { domain, count, type: cls.type, label: cls.label };
+      });
+    const sourceList = Array.from(bySource.values())
+      .sort((a, b) => b.count - a.count);
+    return { topDomains, bySource: sourceList, total };
+  }, [data]);
 
   if (err) return <div className="p-8 text-red-400">加载失败：{err}</div>;
   if (!data || !report) return <div className="p-8 text-neutral-500 font-mono text-sm">loading...</div>;
@@ -155,7 +209,7 @@ export default function TimelinePage() {
           <div>
             <Link href="/unilever" className="hover:text-[#00FF88]">← 主仪表盘</Link>
             <span className="mx-2 text-neutral-700">/</span>
-            <span className="text-[#00FF88]">$</span> 联网前后 · 品牌可见度变化
+            <span className="text-[#00FF88]">$</span> AI 凭记忆 vs AI 实时查
           </div>
           <Link
             href="/unilever/chat"
@@ -165,16 +219,21 @@ export default function TimelinePage() {
           </Link>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
-          AI 联网前后 · 品牌可见度变化
+          AI 凭记忆推荐 vs AI 实时查最新
         </h1>
         <p className="text-neutral-400 text-sm md:text-base max-w-3xl leading-relaxed">
-          AI 助手默认调用时基于<span className="text-neutral-200">训练数据</span>给推荐；
-          用户开启<span className="text-[#00FF88]">实时联网</span>后，AI 会去网上抓最新内容再答。
-          这页对比同一条 prompt 在两种模式下，
-          <span className="text-neutral-200">推荐了哪些品牌、有什么变化</span>。
-          <span className="text-neutral-500 ml-1">
-            · 数据时间 {m.first_sample?.slice(0, 10)} → {m.last_sample?.slice(0, 10)}
-          </span>
+          AI 助手平时回答靠它的<span className="text-neutral-200">"内置记忆"</span>
+          —— 也就是它训练时存进去的知识，
+          <span className="text-orange-300">通常停留在约 2024 年的快照</span>，
+          离今天 (2026-04) 大约 <b className="text-orange-300">18 个月</b>前。
+          一旦用户打开<span className="text-[#00FF88]">"实时联网"</span>，
+          AI 会现去网上搜最新内容再答。
+          这页对比同一条 prompt 在两种模式下，AI 推荐了哪些品牌、引用了哪些网页。
+        </p>
+        <p className="text-xs text-neutral-500 mt-2">
+          数据采集 {m.first_sample?.slice(0, 10)} → {m.last_sample?.slice(0, 10)}
+          ｜ 已接通"实时联网"的平台：
+          <span className="text-[#00FF88]">{m.platforms_with_l2.join(" · ") || "—"}</span>
         </p>
       </div>
 
@@ -187,25 +246,27 @@ export default function TimelinePage() {
           hi
         />
         <Kpi
+          label="AI 知识时间差"
+          value="~18 个月"
+          sub="训练快照 (~2024) → 今天 (2026-04)"
+        />
+        <Kpi
           label="实际推荐过的品牌"
           value={brandDiffs.length.toString()}
           sub={`${unileverInBoth} 联合利华 / ${competitorInBoth} 竞品 / ${darkInBoth} 黑马`}
         />
         <Kpi
-          label="已接通联网的平台"
-          value={`${m.platforms_with_l2.length} / ${allPlatforms.length}`}
-          sub={m.platforms_with_l2.join(" · ") || "尚无"}
-        />
-        <Kpi
-          label="联网后引用的网页"
+          label="AI 实时引用的网页"
           value={m.total_citations.toLocaleString()}
-          sub="可点击追溯到原文"
+          sub={`来自 ${citationStats.topDomains.length > 0 ? citationStats.bySource.length : 0} 类内容来源 · 可追溯`}
         />
       </div>
 
       {/* Brand change bar chart */}
       <section className="mb-10">
-        <h2 className="text-lg md:text-xl font-bold mb-1">品牌可见度 · 联网前 vs 后</h2>
+        <h2 className="text-lg md:text-xl font-bold mb-1">
+          品牌可见度变化 · AI 凭记忆 vs AI 实时联网
+        </h2>
         <p className="text-sm text-neutral-400 mb-4">
           按"两种模式命中差最大"排序。
           <span className="text-[#00FF88] mx-1">●</span>=联合利华自有品牌
@@ -227,8 +288,8 @@ export default function TimelinePage() {
                   formatter={(v, name) => [`${v} 次命中`, name]}
                 />
                 <Legend wrapperStyle={{ fontSize: 12, color: "#ccc" }} />
-                <Bar dataKey="训练数据" fill="#666" radius={[0, 4, 4, 0]} />
-                <Bar dataKey="联网后" fill="#00FF88" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="AI 凭记忆" fill="#666" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="AI 实时联网" fill="#00FF88" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           )}
@@ -253,7 +314,7 @@ export default function TimelinePage() {
                     <span className={`${TYPE_COLOR[b.type]} font-bold mr-2`}>●</span>
                     <span className="font-bold">{b.display.split(" ")[0]}</span>
                     <span className="text-neutral-500 mx-1">({TYPE_LABEL[b.type]})</span>
-                    ：训练数据 <b>{b.before}</b> 次 → 联网后 <b>{b.after}</b> 次
+                    ：AI 凭记忆推 <b>{b.before}</b> 次 → 联网后推 <b>{b.after}</b> 次
                     <span className={`ml-2 font-mono ${arrowColor}`}>
                       {arrow} {Math.abs(b.delta)}
                     </span>
@@ -269,23 +330,115 @@ export default function TimelinePage() {
       {(onlyAfter.length > 0 || onlyBefore.length > 0) && (
         <section className="mb-10 grid md:grid-cols-2 gap-4">
           <BrandColumn
-            title="联网后冒出的品牌"
+            title="AI 联网后才推的品牌"
             arrow="⤴"
             arrowColor="text-[#00FF88]"
             countColor="text-[#00FF88]"
             count={onlyAfter.length}
-            note="训练数据里 AI 不会推，但联网后开始推 — 来自外部内容（评测 / 电商 / 媒体）的影响"
+            note="AI 凭记忆不会推这些品牌（训练数据里没记 / 排不上）— 但联网搜最新内容后开始推。意味着这些品牌近期在网上声量起来了。"
             items={onlyAfter.map((b) => ({ key: b.key, display: b.display, type: b.type, n: b.after, sign: "+" }))}
           />
           <BrandColumn
-            title="联网后消失的品牌"
+            title="AI 联网后不再推的品牌"
             arrow="⤵"
             arrowColor="text-orange-400"
             countColor="text-orange-400"
             count={onlyBefore.length}
-            note="训练数据里被推过，但联网后 AI 转头推别的 — 网上声量没跟上的品牌"
+            note="AI 凭记忆会推这些品牌，但联网查最新后转头推别的。意味着这些品牌过往有积累，但近期网上声量没跟上。"
             items={onlyBefore.map((b) => ({ key: b.key, display: b.display, type: b.type, n: b.before, sign: "-" }))}
           />
+        </section>
+      )}
+
+      {/* AI 引用网页分布 */}
+      {citationStats.total > 0 && (
+        <section className="mb-10">
+          <h2 className="text-lg md:text-xl font-bold mb-1">AI 实时联网时引用了哪些网页</h2>
+          <p className="text-sm text-neutral-400 mb-4">
+            AI 在"实时联网"模式下回答前会去网上搜内容、抓真实 URL 当依据。
+            这里聚合了所有联网答案引用过的网页，按出现次数排前 12 名。
+            <span className="text-neutral-500 ml-1">→ 想让 AI 推你的品牌，就要让你的内容能被这些网站收录。</span>
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            {/* Source-type breakdown (left col, 1/3) */}
+            <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-4">
+              <div className="font-mono text-xs uppercase tracking-wider text-neutral-500 mb-3">
+                按内容类型
+              </div>
+              <ul className="space-y-2 text-sm">
+                {citationStats.bySource.map((s) => {
+                  const pct = (s.count / citationStats.total) * 100;
+                  return (
+                    <li key={s.type}>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-neutral-200">
+                          <span
+                            className="inline-block w-2.5 h-2.5 rounded-sm mr-2 align-middle"
+                            style={{ background: SOURCE_COLOR[s.type] }}
+                          />
+                          {s.label}
+                        </span>
+                        <span className="font-mono text-xs text-neutral-400">
+                          {s.count} <span className="text-neutral-600">({pct.toFixed(0)}%)</span>
+                        </span>
+                      </div>
+                      <div className="h-1 bg-neutral-900 rounded overflow-hidden">
+                        <div
+                          className="h-full rounded"
+                          style={{ width: `${pct}%`, background: SOURCE_COLOR[s.type] }}
+                        />
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+              <p className="text-[11px] text-neutral-500 mt-4 leading-relaxed">
+                品牌在哪类网站出现得多，AI 就更可能在联网答案里引用 → 推你。
+              </p>
+            </div>
+
+            {/* Top domains bar chart (right col, 2/3) */}
+            <div className="md:col-span-2 rounded border border-neutral-800 bg-[#0F0F0F] p-3 md:p-4">
+              <div className="font-mono text-xs uppercase tracking-wider text-neutral-500 mb-3">
+                Top 12 引用网站
+              </div>
+              <ResponsiveContainer width="100%" height={Math.max(280, 32 * citationStats.topDomains.length)}>
+                <BarChart
+                  data={citationStats.topDomains}
+                  layout="vertical"
+                  margin={{ left: 8, right: 30, top: 4, bottom: 4 }}
+                >
+                  <CartesianGrid stroke="#222" strokeDasharray="3 3" />
+                  <XAxis type="number" stroke="#666" fontSize={11} allowDecimals={false} />
+                  <YAxis
+                    dataKey="domain"
+                    type="category"
+                    stroke="#ccc"
+                    fontSize={12}
+                    width={155}
+                    tick={{ fill: "#ccc" }}
+                  />
+                  <Tooltip
+                    cursor={{ fill: "#1a1a1a" }}
+                    contentStyle={{ background: "#111", border: "1px solid #333", color: "#fff" }}
+                    formatter={(v, _n, item) => {
+                      const p = item?.payload as { label?: string };
+                      return [`${v} 次引用`, p?.label || "网页"];
+                    }}
+                  />
+                  <Bar dataKey="count" radius={[0, 4, 4, 0]}>
+                    {citationStats.topDomains.map((d, i) => (
+                      <Cell key={i} fill={SOURCE_COLOR[d.type]} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+              <p className="text-[11px] text-neutral-500 mt-2">
+                颜色对应左侧的内容类型分类。点击右侧"配对答案证据"展开看具体引用 URL。
+              </p>
+            </div>
+          </div>
         </section>
       )}
 
@@ -523,8 +676,8 @@ function PairCard({ pair, brandIndex }: { pair: TimelinePair; brandIndex: BrandI
         {/* Default (was L1) */}
         <div className="p-4 md:border-r border-b md:border-b-0 border-neutral-800">
           <div className="mb-2 text-xs font-mono text-neutral-400">
-            <span className="px-1.5 py-0.5 rounded bg-neutral-800 text-neutral-300 mr-2">默认</span>
-            AI 默认回答（基于训练数据）
+            <span className="px-1.5 py-0.5 rounded bg-neutral-800 text-neutral-300 mr-2">凭记忆</span>
+            AI 默认回答（约 2024 年训练快照）
           </div>
           <p className="text-neutral-300 text-sm leading-relaxed whitespace-pre-wrap">
             {pair.l1.excerpt || "(无答案)"}
@@ -534,8 +687,8 @@ function PairCard({ pair, brandIndex }: { pair: TimelinePair; brandIndex: BrandI
         {/* Web (was L2) */}
         <div className="p-4">
           <div className="mb-2 text-xs font-mono text-[#00FF88]">
-            <span className="px-1.5 py-0.5 rounded bg-[#00FF88]/15 text-[#00FF88] mr-2">联网</span>
-            AI 联网后回答（带实时网页）
+            <span className="px-1.5 py-0.5 rounded bg-[#00FF88]/15 text-[#00FF88] mr-2">实时</span>
+            AI 联网查最新（2026-04 实时网页）
           </div>
           <p className="text-neutral-300 text-sm leading-relaxed whitespace-pre-wrap">
             {pair.l2.excerpt || "(无答案)"}
