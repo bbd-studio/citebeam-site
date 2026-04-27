@@ -1,10 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T10:10:52.448377+00:00Z",
+    "generated_at": "2026-04-27T13:16:03.129913+00:00Z",
     "customer": "unilever",
     "n_series": 322,
     "n_brands": 23,
-    "n_posts": 454,
+    "n_posts": 549,
+    "n_authors": 500,
     "channels": [
       "B 站",
       "抖音"
@@ -9104,6 +9105,17 @@
           "url": "http://www.bilibili.com/video/av116398395232619"
         },
         {
+          "title": "【广告】力士桃气疗愈香氛瓶",
+          "author": "宝岛广告网",
+          "pubdate": "2026-04-06",
+          "plays": 509,
+          "likes": 9,
+          "comments": 5,
+          "shares": null,
+          "favorites": 5,
+          "url": "http://www.bilibili.com/video/av116357861545874"
+        },
+        {
           "title": "1996年北京电视台电视广告（节目结束后）",
           "author": "狂三酱传媒",
           "pubdate": "2026-04-26",
@@ -9113,17 +9125,6 @@
           "shares": null,
           "favorites": 13,
           "url": "http://www.bilibili.com/video/av116471611004777"
-        },
-        {
-          "title": "2000年张柏芝全新力士柔亮洗发水广告2",
-          "author": "爱凯四叶草怡儿",
-          "pubdate": "2026-04-15",
-          "plays": 372,
-          "likes": 9,
-          "comments": 1,
-          "shares": null,
-          "favorites": 4,
-          "url": "http://www.bilibili.com/video/av116406817396829"
         }
       ]
     },
@@ -9131,6 +9132,17 @@
       "brand": "可悠然 Kuyura",
       "channel": "B 站",
       "posts": [
+        {
+          "title": "谁推的",
+          "author": "橘小狗_",
+          "pubdate": "2026-04-27",
+          "plays": 7397,
+          "likes": 1436,
+          "comments": 28,
+          "shares": null,
+          "favorites": 728,
+          "url": "http://www.bilibili.com/video/av116474530241365"
+        },
         {
           "title": "测评",
           "author": "白儿White1",
@@ -9152,17 +9164,6 @@
           "shares": null,
           "favorites": 17,
           "url": "http://www.bilibili.com/video/av116380795929205"
-        },
-        {
-          "title": "丁禹兮 20260410 可悠然 直播回放",
-          "author": "Crystal_Lake",
-          "pubdate": "2026-04-10",
-          "plays": 327,
-          "likes": 18,
-          "comments": 1,
-          "shares": null,
-          "favorites": 14,
-          "url": "http://www.bilibili.com/video/av116380309396958"
         }
       ]
     },
@@ -9171,37 +9172,37 @@
       "channel": "B 站",
       "posts": [
         {
-          "title": "[2026广告]清扬男士洗发水",
-          "author": "-星空下被删除的记忆-",
-          "pubdate": "2026-04-22",
-          "plays": 409,
-          "likes": 12,
-          "comments": 0,
-          "shares": null,
-          "favorites": 8,
-          "url": "http://www.bilibili.com/video/av116449482054249"
-        },
-        {
-          "title": "清扬去屑洗发露 无屑可击 30s（小S）",
-          "author": "相约新世界",
+          "title": "【2026年4月洗发水推荐】全程无广，热门洗发水评价从夯到很普通，看看你的洗发水有没有入选？海飞丝/清扬/吕/卡诗/欧莱雅/EHD二硫化硒洗发/海洋至尊洗发水",
+          "author": "洗护用品推荐",
           "pubdate": "2026-04-25",
-          "plays": 395,
-          "likes": 17,
-          "comments": 14,
+          "plays": 9322,
+          "likes": 143,
+          "comments": 67,
           "shares": null,
-          "favorites": 8,
-          "url": "http://www.bilibili.com/video/av116464296202716"
+          "favorites": 36,
+          "url": "http://www.bilibili.com/video/av116464514436310"
         },
         {
-          "title": "2026年C罗第四代清扬男士头皮护理活力运动薄荷香型去屑洗发露广告",
-          "author": "爱凯四叶草怡儿",
-          "pubdate": "2026-04-19",
-          "plays": 337,
-          "likes": 6,
-          "comments": 1,
+          "title": "【洗发水是智商税吗】男士洗发水怎么选？2026洗发水避坑指南！洗发水红黑榜！0-500价位全覆盖！洗发水测评/洗发水推荐/控油去屑/蓬松高颅顶/防脱/二硫化硒",
+          "author": "洗发水测评狂魔阿强",
+          "pubdate": "2026-04-24",
+          "plays": 4931,
+          "likes": 311,
+          "comments": 38,
           "shares": null,
-          "favorites": 5,
-          "url": "http://www.bilibili.com/video/av116430708218559"
+          "favorites": 498,
+          "url": "http://www.bilibili.com/video/av116458407399914"
+        },
+        {
+          "title": "清扬男士洗发水2026年广告  呼吸篇  15秒  京东版本  现已全面升级",
+          "author": "虎刘",
+          "pubdate": "2026-04-18",
+          "plays": 658,
+          "likes": 13,
+          "comments": 6,
+          "shares": null,
+          "favorites": 15,
+          "url": "http://www.bilibili.com/video/av116426027303610"
         }
       ]
     },
@@ -9269,6 +9270,17 @@
           "shares": null,
           "favorites": 7,
           "url": "http://www.bilibili.com/video/av116469446743951"
+        },
+        {
+          "title": "凡士林神仙用法，改善眼纹",
+          "author": "皮肤科医生彬华",
+          "pubdate": "2026-04-24",
+          "plays": 143,
+          "likes": 11,
+          "comments": 1,
+          "shares": null,
+          "favorites": 1,
+          "url": "http://www.bilibili.com/video/av116459481072785"
         }
       ]
     },
@@ -9325,6 +9337,28 @@
           "shares": null,
           "favorites": 302,
           "url": "http://www.bilibili.com/video/av116403193646184"
+        },
+        {
+          "title": "伊索身体护理套装，磨砂精油柔滑嫩肤",
+          "author": "精致生活有好物",
+          "pubdate": "2026-04-25",
+          "plays": 4,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116466930293595"
+        },
+        {
+          "title": "伊索Aesop艾莉奥斯身体洁肤乳",
+          "author": "闲时好物慰人心",
+          "pubdate": "2026-04-26",
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116472248538340"
         }
       ]
     },
@@ -9489,6 +9523,28 @@
       "channel": "B 站",
       "posts": [
         {
+          "title": "洗完自带体香阿道夫这瓶我能回购一辈子",
+          "author": "严选好物-董枫鳳",
+          "pubdate": "2026-04-20",
+          "plays": 30,
+          "likes": 1,
+          "comments": 2,
+          "shares": null,
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116438442448316"
+        },
+        {
+          "title": "想不到阿道夫洗发水也有活动了！",
+          "author": "挖宝小能手-孟夢固",
+          "pubdate": "2026-04-20",
+          "plays": 19,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116436143969496"
+        },
+        {
           "title": "阿道夫天然香植物香氛洗发露头皮控油祛屑洗护套装 祛屑洗护沐套装618ml*3",
           "author": "小圆对比好物C3",
           "pubdate": "2026-04-25",
@@ -9498,28 +9554,6 @@
           "shares": null,
           "favorites": 2,
           "url": "http://www.bilibili.com/video/av116467215373701"
-        },
-        {
-          "title": "想不到阿道夫洗发水也有活动了！",
-          "author": "孙军388547",
-          "pubdate": "2026-04-07",
-          "plays": 4,
-          "likes": 2,
-          "comments": 1,
-          "shares": null,
-          "favorites": 2,
-          "url": "http://www.bilibili.com/video/av116361804120245"
-        },
-        {
-          "title": "阿道夫去油蓬松香氛干发喷雾150ml 免洗发水控油 护头皮高颅顶不留白",
-          "author": "好物种草官微生绫",
-          "pubdate": "2026-04-21",
-          "plays": 4,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 2,
-          "url": "http://www.bilibili.com/video/av116442435492444"
         }
       ]
     },
@@ -9606,6 +9640,17 @@
           "url": "http://www.bilibili.com/video/av116468121345333"
         },
         {
+          "title": "跟风孙颖莎入坑妮维雅！冠军同款身体乳，到底什么Level？",
+          "author": "小淳的好物分享记",
+          "pubdate": "2026-04-27",
+          "plays": 10,
+          "likes": 11,
+          "comments": 0,
+          "shares": null,
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116475486537375"
+        },
+        {
           "title": "妮维雅（NIVEA）孙颖莎同款保湿防干燥身体乳男士女士深润滋养乳液400ml母亲节",
           "author": "星芒未眠ovo",
           "pubdate": "2026-04-25",
@@ -9615,17 +9660,6 @@
           "shares": null,
           "favorites": 0,
           "url": "http://www.bilibili.com/video/av116464161980971"
-        },
-        {
-          "title": "妮维雅（NIVEA）孙颖莎同款丝滑莹润双管身体精华乳女士200ml*2护肤礼物送妈妈",
-          "author": "把思念种成树",
-          "pubdate": "2026-04-25",
-          "plays": 1,
-          "likes": 1,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "url": "http://www.bilibili.com/video/av116463423788846"
         }
       ]
     },
@@ -9790,15 +9824,15 @@
           "url": "http://www.bilibili.com/video/av116460336715235"
         },
         {
-          "title": "头油头痒的都去用这款隆力奇洗发水隆力奇焕活洗发水.883029",
-          "author": "心想青",
-          "pubdate": "2026-04-01",
-          "plays": 5,
+          "title": "隆力奇蛇油凝时润肤膏颈纹棒体验感很好使用感很舒服 1144605280",
+          "author": "鑫源小铺34473",
+          "pubdate": "2026-04-24",
+          "plays": 95,
           "likes": 0,
           "comments": 1,
           "shares": null,
           "favorites": 0,
-          "url": "http://www.bilibili.com/video/av116327377273932"
+          "url": "http://www.bilibili.com/video/av116460655549120"
         }
       ]
     }

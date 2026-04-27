@@ -1,10 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T10:10:52.448377+00:00Z",
+    "generated_at": "2026-04-27T13:16:03.129913+00:00Z",
     "customer": "unilever",
     "n_series": 322,
     "n_brands": 23,
-    "n_posts": 454,
+    "n_posts": 549,
+    "n_authors": 500,
     "channels": [
       "B 站",
       "抖音"
@@ -17509,6 +17510,21 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/19d09e9c880fcc5b123e370b5bde9ef00fd80b4f.jpg"
         },
         {
+          "post_id": "BV15WSfB1EHa",
+          "url": "http://www.bilibili.com/video/av116357861545874",
+          "title": "【广告】力士桃气疗愈香氛瓶",
+          "author": "宝岛广告网",
+          "pubdate": "2026-04-06",
+          "duration_s": 15,
+          "plays": 509,
+          "likes": 9,
+          "comments": 5,
+          "shares": null,
+          "favorites": 5,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/55d66facfb45c0aef91172a37fa1a9502e3618af.jpg"
+        },
+        {
           "post_id": "BV1sEovBjEpd",
           "url": "http://www.bilibili.com/video/av116471611004777",
           "title": "1996年北京电视台电视广告（节目结束后）",
@@ -17537,6 +17553,21 @@
           "favorites": 4,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/391db6e1d76ba261572c98d6acd0bed5858b7cbc.jpg"
+        },
+        {
+          "post_id": "BV1xdQsBkEEJ",
+          "url": "http://www.bilibili.com/video/av116395375335592",
+          "title": "【广告】力士小气泡爽肤沐浴露",
+          "author": "宝岛广告网",
+          "pubdate": "2026-04-13",
+          "duration_s": 15,
+          "plays": 348,
+          "likes": 3,
+          "comments": 0,
+          "shares": null,
+          "favorites": 3,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/3942f4d8bec61fdadd4faa8fedac4dc1d0984371.jpg"
         },
         {
           "post_id": "BV1uEQJBYEni",
@@ -17582,36 +17613,6 @@
           "favorites": 0,
           "danmaku": 0,
           "cover_url": "//i1.hdslb.com/bfs/archive/473b3ba00f010e674b4b72a931b950aca0aac95e.jpg"
-        },
-        {
-          "post_id": "BV1nJohBFEhd",
-          "url": "http://www.bilibili.com/video/av116452484977113",
-          "title": "力士沐浴露！洗完自带伪体香，好闻爆了",
-          "author": "随心而行无归期",
-          "pubdate": "2026-04-23",
-          "duration_s": 39,
-          "plays": 23,
-          "likes": 1,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/a76296c4cf88b0c51fafd5e7392c43f4c51769ae.jpg"
-        },
-        {
-          "post_id": "BV1FCQYB9Ecy",
-          "url": "http://www.bilibili.com/video/av116400995767550",
-          "title": "力士（LUX）沐浴露套装幽莲魅肤680G+恒久嫩肤680G 持久留香72小时香体乳液",
-          "author": "姜惠欣",
-          "pubdate": "2026-04-14",
-          "duration_s": 56,
-          "plays": 17,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/e0e62b2a6f47a448950a6e0a0629b2b9ccc84e30.jpg"
         }
       ]
     },
@@ -17619,6 +17620,21 @@
       "brand": "可悠然 Kuyura",
       "channel": "B 站",
       "posts": [
+        {
+          "post_id": "BV1oHo6BUEQd",
+          "url": "http://www.bilibili.com/video/av116474530241365",
+          "title": "谁推的",
+          "author": "橘小狗_",
+          "pubdate": "2026-04-27",
+          "duration_s": 8,
+          "plays": 7397,
+          "likes": 1436,
+          "comments": 28,
+          "shares": null,
+          "favorites": 728,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/55a497af36747f32ab2176c36e32b1d5c1f9fd43.jpg"
+        },
         {
           "post_id": "BV152ozBCEDU",
           "url": "http://www.bilibili.com/video/av116475184550266",
@@ -17723,21 +17739,6 @@
           "favorites": 0,
           "danmaku": 0,
           "cover_url": "//i0.hdslb.com/bfs/archive/63032b169b3a6e14fdaf750ce3521e832b12fd9a.jpg"
-        },
-        {
-          "post_id": "BV1LeXkByEKC",
-          "url": "http://www.bilibili.com/video/av116324642589329",
-          "title": "可悠然沐浴露大黄瓶550ml 美肌香氛持久留香滋润保湿恬静清香男女士专用",
-          "author": "补补好物推荐",
-          "pubdate": "2026-03-31",
-          "duration_s": 31,
-          "plays": 26,
-          "likes": 2,
-          "comments": 0,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/239d26bd4c0cb281380a32f0d8e2e94577269eb6.jpg"
         }
       ]
     },
@@ -17745,6 +17746,66 @@
       "brand": "清扬 Clear",
       "channel": "B 站",
       "posts": [
+        {
+          "post_id": "BV1THoXBuErk",
+          "url": "http://www.bilibili.com/video/av116464514436310",
+          "title": "【2026年4月洗发水推荐】全程无广，热门洗发水评价从夯到很普通，看看你的洗发水有没有入选？海飞丝/清扬/吕/卡诗/欧莱雅/EHD二硫化硒洗发/海洋至尊洗发水",
+          "author": "洗护用品推荐",
+          "pubdate": "2026-04-25",
+          "duration_s": 90,
+          "plays": 9322,
+          "likes": 143,
+          "comments": 67,
+          "shares": null,
+          "favorites": 36,
+          "danmaku": 79,
+          "cover_url": "//i1.hdslb.com/bfs/archive/536fe88251c3131c2644ce7b3a9ecf2bccfbad79.jpg"
+        },
+        {
+          "post_id": "BV1gQo5BPEaA",
+          "url": "http://www.bilibili.com/video/av116458407399914",
+          "title": "【洗发水是智商税吗】男士洗发水怎么选？2026洗发水避坑指南！洗发水红黑榜！0-500价位全覆盖！洗发水测评/洗发水推荐/控油去屑/蓬松高颅顶/防脱/二硫化硒",
+          "author": "洗发水测评狂魔阿强",
+          "pubdate": "2026-04-24",
+          "duration_s": 394,
+          "plays": 4931,
+          "likes": 311,
+          "comments": 38,
+          "shares": null,
+          "favorites": 498,
+          "danmaku": 85,
+          "cover_url": "//i0.hdslb.com/bfs/archive/a3de247573676a074c292bebab734bcc07db67c3.jpg"
+        },
+        {
+          "post_id": "BV1JndsB3EAL",
+          "url": "http://www.bilibili.com/video/av116426027303610",
+          "title": "清扬男士洗发水2026年广告  呼吸篇  15秒  京东版本  现已全面升级",
+          "author": "虎刘",
+          "pubdate": "2026-04-18",
+          "duration_s": 16,
+          "plays": 658,
+          "likes": 13,
+          "comments": 6,
+          "shares": null,
+          "favorites": 15,
+          "danmaku": 3,
+          "cover_url": "//i2.hdslb.com/bfs/archive/8f92bc5f3911c235a9264294fc0790896fc8341d.jpg"
+        },
+        {
+          "post_id": "BV1J8oUBjEzL",
+          "url": "http://www.bilibili.com/video/av116462685588124",
+          "title": "【洗发水推荐2026】2026年男士洗发水怎么选？含控油/去屑/防脱固发洗发水推荐，学生党必看！全价位各大品牌对比！看完闭眼入不踩坑！建议收藏！！！",
+          "author": "s怪兽实验室",
+          "pubdate": "2026-04-25",
+          "duration_s": 313,
+          "plays": 621,
+          "likes": 12,
+          "comments": 61,
+          "shares": null,
+          "favorites": 5,
+          "danmaku": 40,
+          "cover_url": "//i0.hdslb.com/bfs/archive/31f36b586959c817fdd73f6b802bcf21b068d3c2.jpg"
+        },
         {
           "post_id": "BV154obBmERr",
           "url": "http://www.bilibili.com/video/av116449482054249",
@@ -17791,79 +17852,19 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/886ee67ff5626f82a7e4359bb7aecc9f028479b4.jpg"
         },
         {
-          "post_id": "BV16sovBGED1",
-          "url": "http://www.bilibili.com/video/av116471275520121",
-          "title": "[放送文化]联合利华  清扬去屑洗发露2026年广告  压力篇  15秒  易烊千玺代言",
-          "author": "虎刘",
-          "pubdate": "2026-04-26",
-          "duration_s": 15,
-          "plays": 143,
-          "likes": 4,
-          "comments": 2,
-          "shares": null,
-          "favorites": 3,
-          "danmaku": 2,
-          "cover_url": "//i1.hdslb.com/bfs/archive/45c3e59b19369a7447c7870d95220fe32889ea00.jpg"
-        },
-        {
-          "post_id": "BV1YkdbBkEvt",
-          "url": "http://www.bilibili.com/video/av116412152616220",
-          "title": "Y26 清扬发水FIFA POSM-普通地堆+抬头板",
-          "author": "bili_49206749463",
-          "pubdate": "2026-04-16",
-          "duration_s": 108,
-          "plays": 143,
-          "likes": 1,
-          "comments": 0,
+          "post_id": "BV1VVoXBCEPY",
+          "url": "http://www.bilibili.com/video/av116464598126983",
+          "title": "【洗发水推荐】2026年4月超全选购攻略：从19元到500元全价位避坑指南，看看你的洗发水有没有入选？控油/去屑/防脱/海飞丝/清扬//EHD/海洋至尊",
+          "author": "学医的辰辰",
+          "pubdate": "2026-04-25",
+          "duration_s": 92,
+          "plays": 188,
+          "likes": 0,
+          "comments": 51,
           "shares": null,
           "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e8eafb8358ff1ed960fd685993c6588697a407b9.jpg"
-        },
-        {
-          "post_id": "BV1hrdfBREjk",
-          "url": "http://www.bilibili.com/video/av116431849068466",
-          "title": "清扬男士最新广告路特斯F1车队篇",
-          "author": "TVWATCH0826",
-          "pubdate": "2026-04-19",
-          "duration_s": 32,
-          "plays": 131,
-          "likes": 3,
-          "comments": 0,
-          "shares": null,
-          "favorites": 1,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/19a701faac59fc1e7e60b94594bf933493a66205.jpg"
-        },
-        {
-          "post_id": "BV1nGo7BtEJz",
-          "url": "http://www.bilibili.com/video/av116459279877319",
-          "title": "湖南卫视播出是C罗代言第四代清扬男士头皮护理活力运动薄荷香型去屑洗发露500克焕新升级呼吸篇2026电视广告5",
-          "author": "欧阳勇爸爸320",
-          "pubdate": "2026-04-24",
-          "duration_s": 22,
-          "plays": 131,
-          "likes": 3,
-          "comments": 0,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/73ff1d56b3cf4f4f04db04cda459d695f7095812.jpg"
-        },
-        {
-          "post_id": "BV1rgo7BZEe9",
-          "url": "http://www.bilibili.com/video/av116459296522837",
-          "title": "湖南卫视播出是C罗代言第四代清扬男士头皮护理活力运动薄荷香型去屑洗发露500克焕新升级呼吸篇2026电视广告6",
-          "author": "欧阳勇爸爸320",
-          "pubdate": "2026-04-24",
-          "duration_s": 22,
-          "plays": 131,
-          "likes": 1,
-          "comments": 0,
-          "shares": null,
-          "favorites": 1,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/f3c4d47eca2908d63c11535c53ce1cfd3ba8642c.jpg"
+          "danmaku": 36,
+          "cover_url": "//i2.hdslb.com/bfs/archive/53a4f327c109d418c27fa35656eedd73327c9e38.jpg"
         }
       ]
     },
@@ -18026,6 +18027,96 @@
           "favorites": 7,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/98b25915ca5eab5019f25308f7eefc747bea76e0.jpg"
+        },
+        {
+          "post_id": "BV1cbojBoEbd",
+          "url": "http://www.bilibili.com/video/av116459481072785",
+          "title": "凡士林神仙用法，改善眼纹",
+          "author": "皮肤科医生彬华",
+          "pubdate": "2026-04-24",
+          "duration_s": 66,
+          "plays": 143,
+          "likes": 11,
+          "comments": 1,
+          "shares": null,
+          "favorites": 1,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/5e8007e71c6923f51edc79fe8bf04aedbb15d3be.jpg"
+        },
+        {
+          "post_id": "BV1MxoRBVER8",
+          "url": "http://www.bilibili.com/video/av116467651581164",
+          "title": "凡士林【龚俊推荐】雪融霜身体乳360g雪松苍兰香特润修护舒缓保湿身体霜",
+          "author": "小蝶的推荐",
+          "pubdate": "2026-04-25",
+          "duration_s": 57,
+          "plays": 72,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/9ef024414e0676f39ee1212262a3990907431e99.jpg"
+        },
+        {
+          "post_id": "BV18VQKBbE4c",
+          "url": "http://www.bilibili.com/video/av116383765501234",
+          "title": "凡士林这种大牌竟然也这么离谱？",
+          "author": "家居好物端木哲",
+          "pubdate": "2026-04-11",
+          "duration_s": 29,
+          "plays": 23,
+          "likes": 1,
+          "comments": 2,
+          "shares": null,
+          "favorites": 1,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/ee54bf0da5068a9c0291a3da6f17b16108f454dd.jpg"
+        },
+        {
+          "post_id": "BV16Jo9BtEhP",
+          "url": "http://www.bilibili.com/video/av116466225518767",
+          "title": "1000原料筛选！泛红痒就用凡士林雪融霜大白罐",
+          "author": "沉思好物推荐",
+          "pubdate": "2026-04-25",
+          "duration_s": 68,
+          "plays": 7,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/2982fcde88a63ade702cc0b11f23b566103cf4d7.jpg"
+        },
+        {
+          "post_id": "BV14NohBzEN7",
+          "url": "http://www.bilibili.com/video/av116450555600320",
+          "title": "凡士林身体乳，真的太太太好用了！",
+          "author": "徐敏388560",
+          "pubdate": "2026-04-22",
+          "duration_s": 22,
+          "plays": 0,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/3ff3265cf0b53b63120138ed6d78f2ccd6ae6145.jpg"
+        },
+        {
+          "post_id": "BV1GrovBhE33",
+          "url": "http://www.bilibili.com/video/av116471426450482",
+          "title": "一罐全身都能用，这个冬天囤一瓶凡士林就够了",
+          "author": "种草君-施琳萱",
+          "pubdate": "2026-04-26",
+          "duration_s": 50,
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/78060e033e5ea5b329d7726c162bd881a44bd193.jpg"
         }
       ]
     },
@@ -18173,6 +18264,51 @@
           "favorites": 302,
           "danmaku": 11,
           "cover_url": "//i1.hdslb.com/bfs/archive/9c503b3bf50d8b228d29e857004a6733629f0c5b.jpg"
+        },
+        {
+          "post_id": "BV1xVodB3EY9",
+          "url": "http://www.bilibili.com/video/av116466930293595",
+          "title": "伊索身体护理套装，磨砂精油柔滑嫩肤",
+          "author": "精致生活有好物",
+          "pubdate": "2026-04-25",
+          "duration_s": 29,
+          "plays": 4,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/a1ffaddf27db29161a6a6077cfe9e6bef6a6e8eb.jpg"
+        },
+        {
+          "post_id": "BV15koqBBEqT",
+          "url": "http://www.bilibili.com/video/av116472248538340",
+          "title": "伊索Aesop艾莉奥斯身体洁肤乳",
+          "author": "闲时好物慰人心",
+          "pubdate": "2026-04-26",
+          "duration_s": 19,
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/bf75e14c80d9cab4e94c976908b9bf63f813f18e.jpg"
+        },
+        {
+          "post_id": "BV1gUoqBeECL",
+          "url": "http://www.bilibili.com/video/av116472181425672",
+          "title": "伊索Aesop艾莉奥斯身体洁肤乳",
+          "author": "盖浇饭拌着真香",
+          "pubdate": "2026-04-26",
+          "duration_s": 19,
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/bf75e14c80d9cab4e94c976908b9bf63f813f18e.jpg"
         }
       ]
     },
@@ -18226,6 +18362,36 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/07f05fe797102393e7c9adfcd534b40e9ee34707.jpg"
         },
         {
+          "post_id": "BV1BSopBqEBf",
+          "url": "http://www.bilibili.com/video/av116446998959540",
+          "title": "薇姿绿标去屑洗发水最近一直回购的去屑洗发水分享给你们",
+          "author": "好物甄选-许碧轩",
+          "pubdate": "2026-04-22",
+          "duration_s": 55,
+          "plays": 10,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/065b1ae34aabd982e3a65b9d431f26f4f407cfc3.jpg"
+        },
+        {
+          "post_id": "BV1JRo7BZELn",
+          "url": "http://www.bilibili.com/video/av116460957467853",
+          "title": "头上爱下雪的又油又痒的赶紧跟我一起试试这款薇姿的洗发水吧一次就爱上",
+          "author": "好物甄选-庞思茉",
+          "pubdate": "2026-04-24",
+          "duration_s": 66,
+          "plays": 8,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/48b2fcdfa3b4db257a7010693e1a6820a68d32f1.jpg"
+        },
+        {
           "post_id": "BV1gsooBQEUc",
           "url": "http://www.bilibili.com/video/av116468289116708",
           "title": "新洗发水试用：薇姿德科丝去屑清爽洗发水",
@@ -18256,49 +18422,19 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/9b55c3866498e09b1bef74b95c75f169b46e1968.jpg"
         },
         {
-          "post_id": "BV1fXofBgEsB",
-          "url": "http://www.bilibili.com/video/av116468825988578",
-          "title": "不接受反驳就是很难用，我没招了#薇姿绿标洗发水#薇姿绿标#洗发水#避雷-7609354445935489192",
-          "author": "楠楠爱哈酒",
-          "pubdate": "2026-04-26",
-          "duration_s": 41,
-          "plays": 6,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/3f67507aa0b635f4583ee723ea667a3c65c40f29.jpg"
-        },
-        {
-          "post_id": "BV1gwodBUE7n",
-          "url": "http://www.bilibili.com/video/av116466980552725",
-          "title": "薇姿（VICHY）【马柏全同款】去屑洗发水390ml绿标1二硫化硒控油缓解头痒2",
-          "author": "好物推荐-独孤善",
+          "post_id": "BV1yLoZB2EZz",
+          "url": "http://www.bilibili.com/video/av116467735463105",
+          "title": "薇姿（VICHY）去油青标洗发水男士女士控油洗发水无硅油清爽洗发露200ml",
+          "author": "从来不喝可口可乐",
           "pubdate": "2026-04-25",
-          "duration_s": 79,
-          "plays": 6,
+          "duration_s": 44,
+          "plays": 8,
           "likes": 0,
           "comments": 1,
           "shares": null,
           "favorites": 0,
           "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/d7e528cf4424327aa003108d099bab7e5f9a5bcd.jpg"
-        },
-        {
-          "post_id": "BV1i7ofBNErT",
-          "url": "http://www.bilibili.com/video/av116469480364128",
-          "title": "锐评热门二硫化硒洗发水全程无广，涉及薇姿、赛逸、质润、康王等多个二硫化硒洗发水，#洗发水测评-7580315125530289134",
-          "author": "弛淘狗粮Gh0",
-          "pubdate": "2026-04-26",
-          "duration_s": 88,
-          "plays": 3,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/dc6018d0ca61e5bb2f548a6a6d9b2704e6deb8f4.jpg"
+          "cover_url": "//i1.hdslb.com/bfs/archive/843d441cb046d875775a0a94208f4619bb4c8990.jpg"
         }
       ]
     },
@@ -18350,6 +18486,21 @@
           "favorites": 18,
           "danmaku": 2,
           "cover_url": "//i0.hdslb.com/bfs/archive/3d8274c4432935b31a1f5ad46a67ece331303a95.jpg"
+        },
+        {
+          "post_id": "BV147dhBqEsY",
+          "url": "http://www.bilibili.com/video/av116413326957427",
+          "title": "张元英 260416 淡粉裙装点缀宝格丽珠宝 卡诗Kérastase 站台活动",
+          "author": "派大星的大比兜",
+          "pubdate": "2026-04-16",
+          "duration_s": 358,
+          "plays": 1776,
+          "likes": 166,
+          "comments": 4,
+          "shares": null,
+          "favorites": 97,
+          "danmaku": 6,
+          "cover_url": "//i2.hdslb.com/bfs/archive/80d91a9fbfad4ec981217865cd308d1211d4b6ee.jpg"
         },
         {
           "post_id": "BV1QhdeBsEzm",
@@ -18410,21 +18561,6 @@
           "favorites": 0,
           "danmaku": 0,
           "cover_url": "//i0.hdslb.com/bfs/archive/cfdf4502200043b4f993cf763e149154323f014c.jpg"
-        },
-        {
-          "post_id": "BV16CDbBVEY4",
-          "url": "http://www.bilibili.com/video/av116359891520101",
-          "title": "卡诗元气姜洗发水体验高端奢养洗发体验",
-          "author": "严选好物-尹期星",
-          "pubdate": "2026-04-06",
-          "duration_s": 33,
-          "plays": 31,
-          "likes": 1,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/4d29f8c80665e8e896b1af4854efc830509ccce6.jpg"
         }
       ]
     },
@@ -18610,6 +18746,36 @@
       "channel": "B 站",
       "posts": [
         {
+          "post_id": "BV1LFdkBUEqy",
+          "url": "http://www.bilibili.com/video/av116438442448316",
+          "title": "洗完自带体香阿道夫这瓶我能回购一辈子",
+          "author": "严选好物-董枫鳳",
+          "pubdate": "2026-04-20",
+          "duration_s": 76,
+          "plays": 30,
+          "likes": 1,
+          "comments": 2,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/27c71ea9cc73ce9815399c6d5fe603e185ef0931.jpg"
+        },
+        {
+          "post_id": "BV1F5oKB4ErA",
+          "url": "http://www.bilibili.com/video/av116436143969496",
+          "title": "想不到阿道夫洗发水也有活动了！",
+          "author": "挖宝小能手-孟夢固",
+          "pubdate": "2026-04-20",
+          "duration_s": 67,
+          "plays": 19,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/cd762c8bd451549aa86868fd27e7e7456dc92500.jpg"
+        },
+        {
           "post_id": "BV1Z2oRBZEos",
           "url": "http://www.bilibili.com/video/av116467215373701",
           "title": "阿道夫天然香植物香氛洗发露头皮控油祛屑洗护套装 祛屑洗护沐套装618ml*3",
@@ -18623,6 +18789,21 @@
           "favorites": 2,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/b020256e15160c51bf8a072d4c5c73c62dba7962.jpg"
+        },
+        {
+          "post_id": "BV1WudsBUEm9",
+          "url": "http://www.bilibili.com/video/av116425943418399",
+          "title": "告别炸毛与扁塌，从这瓶阿道夫精油洗发水开始！",
+          "author": "优选馆江昕定",
+          "pubdate": "2026-04-18",
+          "duration_s": 45,
+          "plays": 5,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/c7381909548506192ee35d54d25dcb1f67310c42.jpg"
         },
         {
           "post_id": "BV12zDYBaEpz",
@@ -18683,51 +18864,6 @@
           "favorites": 0,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/8d06d3601bbaf591c339f64a83f711165fc96cea.jpg"
-        },
-        {
-          "post_id": "BV1XKd9BVEvk",
-          "url": "http://www.bilibili.com/video/av116444113147946",
-          "title": "阿道夫净澈清爽洗发水420ml 控油蓬松 精油香氛洗发露官方正品",
-          "author": "好物种草官呼延澈",
-          "pubdate": "2026-04-21",
-          "duration_s": 103,
-          "plays": 2,
-          "likes": 4,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/a39081dc25ce809775b63ae3c0c2f021c952b28a.jpg"
-        },
-        {
-          "post_id": "BV1CfdSBHEgT",
-          "url": "http://www.bilibili.com/video/av116442066387664",
-          "title": "阿道夫防脱固发洗发水800g 控油蓬松生姜强韧发根洗发露侧柏叶男女士",
-          "author": "硬核选品官丫",
-          "pubdate": "2026-04-21",
-          "duration_s": 35,
-          "plays": 1,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 2,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/a189ba2a686e2aba52924f5a45fa3a34615ad3fc.jpg"
-        },
-        {
-          "post_id": "BV1JGo4BEEkd",
-          "url": "http://www.bilibili.com/video/av116449079204839",
-          "title": "阿道夫柔顺丝滑洗发水680ml 抚顺毛躁 精油香氛洗发露洗头膏官方正品",
-          "author": "好嘛好物",
-          "pubdate": "2026-04-22",
-          "duration_s": 33,
-          "plays": 1,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/ffa02e9d7faac8603e93bf1646f3be4312543d1b.jpg"
         }
       ]
     },
@@ -18913,6 +19049,21 @@
           "cover_url": "//i1.hdslb.com/bfs/archive/ecfe8e9d14f08d4ae2361b292c82e93519a1c05f.jpg"
         },
         {
+          "post_id": "BV1KNokBuEyp",
+          "url": "http://www.bilibili.com/video/av116475486537375",
+          "title": "跟风孙颖莎入坑妮维雅！冠军同款身体乳，到底什么Level？",
+          "author": "小淳的好物分享记",
+          "pubdate": "2026-04-27",
+          "duration_s": 29,
+          "plays": 10,
+          "likes": 11,
+          "comments": 0,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/23409f92d36e3881e39e06262864067be2eaabfa.jpg"
+        },
+        {
           "post_id": "BV1zdoSB7ENm",
           "url": "http://www.bilibili.com/video/av116464161980971",
           "title": "妮维雅（NIVEA）孙颖莎同款保湿防干燥身体乳男士女士深润滋养乳液400ml母亲节",
@@ -18958,64 +19109,49 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/402fe993cb5cac31d9a5adb248c6d15fc31c1dff.jpg"
         },
         {
-          "post_id": "BV1EqoDBJEBJ",
-          "url": "http://www.bilibili.com/video/av116463507669710",
+          "post_id": "BV1V4oSBME4W",
+          "url": "http://www.bilibili.com/video/av116464212385076",
+          "title": "妮维雅（NIVEA）孙颖莎同款天然VC美白女士温润透白润肤乳液400ml*2母亲节礼物",
+          "author": "林砺騏",
+          "pubdate": "2026-04-25",
+          "duration_s": 18,
+          "plays": 1,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/79c53c39938ebb650aaf8ad3956e41072226be81.jpg"
+        },
+        {
+          "post_id": "BV1Z6oDBjE9j",
+          "url": "http://www.bilibili.com/video/av116463406944595",
           "title": "妮维雅（NIVEA）孙颖莎同款丝滑莹润双管身体精华乳女士200ml*2护肤礼物送妈妈",
-          "author": "d54psa",
+          "author": "枕着山海经睡觉",
           "pubdate": "2026-04-25",
-          "duration_s": 47,
-          "plays": 0,
+          "duration_s": 46,
+          "plays": 1,
           "likes": 0,
           "comments": 1,
           "shares": null,
           "favorites": 0,
           "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/e9ea9e8af7dfed6a92328c2a415a894e4981c881.jpg"
+          "cover_url": "//i1.hdslb.com/bfs/archive/fc11d8481ab12b012dc06b52bec0a6df615bf2b4.jpg"
         },
         {
-          "post_id": "BV1FaoDBXEDD",
-          "url": "http://www.bilibili.com/video/av116463490827464",
+          "post_id": "BV16eoDBHE2i",
+          "url": "http://www.bilibili.com/video/av116463474187730",
           "title": "妮维雅（NIVEA）孙颖莎同款丝滑莹润双管身体精华乳200ml*3果酸保湿沁香母亲节",
-          "author": "久旱逢霖有福",
+          "author": "凤鸣岐山遥",
           "pubdate": "2026-04-25",
-          "duration_s": 264,
+          "duration_s": 35,
           "plays": 0,
           "likes": 0,
           "comments": 1,
           "shares": null,
           "favorites": 0,
           "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/5a7259c3e69ae0d1b694f70d04f15271466d386c.jpg"
-        },
-        {
-          "post_id": "BV1FqoDBJE3W",
-          "url": "http://www.bilibili.com/video/av116463507609462",
-          "title": "妮维雅（NIVEA）孙颖莎同款丝滑莹润双管身体精华乳女士200ml*2护肤礼物送妈妈",
-          "author": "梅梢喜鹊",
-          "pubdate": "2026-04-25",
-          "duration_s": 31,
-          "plays": 0,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/7a99acecf471ef2fa3ef0620fb90c44d861ad661.jpg"
-        },
-        {
-          "post_id": "BV1RCoDB5ELN",
-          "url": "http://www.bilibili.com/video/av116463440497748",
-          "title": "妮维雅（NIVEA）孙颖莎同款丝滑莹润双管身体精华乳200ml*3果酸保湿沁香母亲节",
-          "author": "山眠雪呻",
-          "pubdate": "2026-04-25",
-          "duration_s": 217,
-          "plays": 0,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/fae1fa20fffded06ae31c48b99393f52555bbd69.jpg"
+          "cover_url": "//i2.hdslb.com/bfs/archive/10f0fdacafcf9d1ae8a5dcdbc355b04fb2797b71.jpg"
         }
       ]
     },
@@ -19453,6 +19589,21 @@
           "cover_url": "//i1.hdslb.com/bfs/archive/07d481ca3eb4c07748e8d2093a304bb024063726.jpg"
         },
         {
+          "post_id": "BV18joEBCEyf",
+          "url": "http://www.bilibili.com/video/av116460655549120",
+          "title": "隆力奇蛇油凝时润肤膏颈纹棒体验感很好使用感很舒服 1144605280",
+          "author": "鑫源小铺34473",
+          "pubdate": "2026-04-24",
+          "duration_s": 21,
+          "plays": 95,
+          "likes": 0,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/ccfdf1caeeac2c63e4d91bfef37d3fe2612820c1.jpg"
+        },
+        {
           "post_id": "BV1DW9LB8EM3",
           "url": "http://www.bilibili.com/video/av116327377273932",
           "title": "头油头痒的都去用这款隆力奇洗发水隆力奇焕活洗发水.883029",
@@ -19483,6 +19634,21 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/1bba798c1b2167ad0c1219b9c3ff7e06c3a6fd85.jpg"
         },
         {
+          "post_id": "BV1T4onByEsn",
+          "url": "http://www.bilibili.com/video/av116461444011075",
+          "title": "隆力奇蛇油棒，干裂救星，一抹润到心坎！",
+          "author": "云朵限定糖",
+          "pubdate": "2026-04-24",
+          "duration_s": 44,
+          "plays": 3,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/235de184e509b7214fa48144f37c6ebe13f85a02.jpg"
+        },
+        {
           "post_id": "BV1d7DMB6E77",
           "url": "http://www.bilibili.com/video/av116345312187824",
           "title": "再穷也要买隆力奇颈霜太好用了别让脖子的纹路暴露你的年龄",
@@ -19505,36 +19671,6 @@
           "pubdate": "2026-04-11",
           "duration_s": 156,
           "plays": 1,
-          "likes": 0,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/1bba798c1b2167ad0c1219b9c3ff7e06c3a6fd85.jpg"
-        },
-        {
-          "post_id": "BV1CBoiBHEZd",
-          "url": "http://www.bilibili.com/video/av116472617634909",
-          "title": "大油头细软塌的姐妹都去用隆力奇这款洗发水",
-          "author": "治愈生活好物集",
-          "pubdate": "2026-04-26",
-          "duration_s": 20,
-          "plays": 0,
-          "likes": 1,
-          "comments": 1,
-          "shares": null,
-          "favorites": 0,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/41b37636176125dd03b32db287a47c4cf5a68839.jpg"
-        },
-        {
-          "post_id": "BV1LrdYBfEid",
-          "url": "http://www.bilibili.com/video/av116415977753203",
-          "title": "隆力奇竟然还在啊还弄了个这么好用的小东西",
-          "author": "严选好物-程醇聃",
-          "pubdate": "2026-04-16",
-          "duration_s": 156,
-          "plays": 0,
           "likes": 0,
           "comments": 1,
           "shares": null,
@@ -20321,5 +20457,848 @@
         }
       ]
     }
-  ]
+  ],
+  "top_kols": [
+    {
+      "author": "爱熬夜的西瓜在摸鱼",
+      "videos": 2,
+      "plays": 20118,
+      "likes": 4581,
+      "comments": 109,
+      "favorites": 1504,
+      "shares": 0,
+      "danmaku": 45,
+      "engagement": 6194,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-24"
+    },
+    {
+      "author": "拾拾拾拾拾年_",
+      "videos": 1,
+      "plays": 11757,
+      "likes": 1562,
+      "comments": 81,
+      "favorites": 1002,
+      "shares": 0,
+      "danmaku": 592,
+      "engagement": 2645,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "橘小狗_",
+      "videos": 1,
+      "plays": 7397,
+      "likes": 1436,
+      "comments": 28,
+      "favorites": 728,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 2192,
+      "brands_unilever": [
+        "可悠然"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-27"
+    },
+    {
+      "author": "央视频",
+      "videos": 1,
+      "plays": 47651,
+      "likes": 587,
+      "comments": 8,
+      "favorites": 204,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 799,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-24"
+    },
+    {
+      "author": "洗护用品推荐",
+      "videos": 3,
+      "plays": 27978,
+      "likes": 429,
+      "comments": 201,
+      "favorites": 108,
+      "shares": 0,
+      "danmaku": 237,
+      "engagement": 738,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [
+        "卡诗",
+        "海飞丝"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "小空试香水",
+      "videos": 1,
+      "plays": 9390,
+      "likes": 603,
+      "comments": 113,
+      "favorites": 302,
+      "shares": 0,
+      "danmaku": 11,
+      "engagement": 1018,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "伊索"
+      ],
+      "latest_pubdate": "2026-04-14"
+    },
+    {
+      "author": "洗发水测评狂魔阿强",
+      "videos": 1,
+      "plays": 4931,
+      "likes": 311,
+      "comments": 38,
+      "favorites": 498,
+      "shares": 0,
+      "danmaku": 85,
+      "engagement": 847,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-24"
+    },
+    {
+      "author": "张元英_ForeverYoung",
+      "videos": 1,
+      "plays": 4404,
+      "likes": 554,
+      "comments": 12,
+      "favorites": 277,
+      "shares": 0,
+      "danmaku": 4,
+      "engagement": 843,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "卡诗"
+      ],
+      "latest_pubdate": "2026-04-16"
+    },
+    {
+      "author": "SG_小熊抱月",
+      "videos": 1,
+      "plays": 3451,
+      "likes": 543,
+      "comments": 19,
+      "favorites": 172,
+      "shares": 0,
+      "danmaku": 12,
+      "engagement": 734,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "洒家肚子饿了",
+      "videos": 1,
+      "plays": 4883,
+      "likes": 405,
+      "comments": 17,
+      "favorites": 146,
+      "shares": 0,
+      "danmaku": 102,
+      "engagement": 568,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "青提气泡水儿",
+      "videos": 1,
+      "plays": 3214,
+      "likes": 319,
+      "comments": 12,
+      "favorites": 188,
+      "shares": 0,
+      "danmaku": 9,
+      "engagement": 519,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "艾-迪迪",
+      "videos": 1,
+      "plays": 2183,
+      "likes": 190,
+      "comments": 19,
+      "favorites": 135,
+      "shares": 0,
+      "danmaku": 8,
+      "engagement": 344,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "孙颖莎的成长记录",
+      "videos": 2,
+      "plays": 2158,
+      "likes": 258,
+      "comments": 3,
+      "favorites": 81,
+      "shares": 0,
+      "danmaku": 1,
+      "engagement": 342,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "丝塔芙"
+      ],
+      "latest_pubdate": "2026-04-24"
+    },
+    {
+      "author": "相约新世界",
+      "videos": 8,
+      "plays": 4354,
+      "likes": 125,
+      "comments": 61,
+      "favorites": 63,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 249,
+      "brands_unilever": [
+        "清扬",
+        "夏士莲"
+      ],
+      "brands_competitor": [
+        "玉兰油"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "小熊不可熬月亮",
+      "videos": 1,
+      "plays": 1878,
+      "likes": 191,
+      "comments": 5,
+      "favorites": 117,
+      "shares": 0,
+      "danmaku": 3,
+      "engagement": 313,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "攘初",
+      "videos": 1,
+      "plays": 1991,
+      "likes": 192,
+      "comments": 2,
+      "favorites": 108,
+      "shares": 0,
+      "danmaku": 5,
+      "engagement": 302,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "白儿White1",
+      "videos": 1,
+      "plays": 1275,
+      "likes": 201,
+      "comments": 6,
+      "favorites": 107,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 314,
+      "brands_unilever": [
+        "可悠然"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-27"
+    },
+    {
+      "author": "爱凯四叶草怡儿",
+      "videos": 6,
+      "plays": 3577,
+      "likes": 132,
+      "comments": 31,
+      "favorites": 53,
+      "shares": 0,
+      "danmaku": 12,
+      "engagement": 216,
+      "brands_unilever": [
+        "力士",
+        "清扬"
+      ],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-19"
+    },
+    {
+      "author": "派大星的大比兜",
+      "videos": 1,
+      "plays": 1776,
+      "likes": 166,
+      "comments": 4,
+      "favorites": 97,
+      "shares": 0,
+      "danmaku": 6,
+      "engagement": 267,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "卡诗"
+      ],
+      "latest_pubdate": "2026-04-16"
+    },
+    {
+      "author": "洗头研究所",
+      "videos": 1,
+      "plays": 2749,
+      "likes": 191,
+      "comments": 19,
+      "favorites": 18,
+      "shares": 0,
+      "danmaku": 2,
+      "engagement": 228,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "卡诗"
+      ],
+      "latest_pubdate": "2026-04-17"
+    },
+    {
+      "author": "XXXErase",
+      "videos": 1,
+      "plays": 1708,
+      "likes": 133,
+      "comments": 2,
+      "favorites": 124,
+      "shares": 0,
+      "danmaku": 1,
+      "engagement": 259,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "卡诗"
+      ],
+      "latest_pubdate": "2026-04-16"
+    },
+    {
+      "author": "李干嘛Soap-time",
+      "videos": 1,
+      "plays": 2666,
+      "likes": 165,
+      "comments": 4,
+      "favorites": 25,
+      "shares": 0,
+      "danmaku": 2,
+      "engagement": 194,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-09"
+    },
+    {
+      "author": "大枣爱莎莎",
+      "videos": 1,
+      "plays": 1843,
+      "likes": 155,
+      "comments": 3,
+      "favorites": 34,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 192,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "丝塔芙"
+      ],
+      "latest_pubdate": "2026-04-20"
+    },
+    {
+      "author": "_真的不源_",
+      "videos": 1,
+      "plays": 1234,
+      "likes": 96,
+      "comments": 9,
+      "favorites": 66,
+      "shares": 0,
+      "danmaku": 7,
+      "engagement": 171,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "林小槿_见过再就业版",
+      "videos": 2,
+      "plays": 1301,
+      "likes": 93,
+      "comments": 6,
+      "favorites": 64,
+      "shares": 0,
+      "danmaku": 1,
+      "engagement": 163,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "齐岱竹蜻蜓",
+      "videos": 1,
+      "plays": 949,
+      "likes": 98,
+      "comments": 9,
+      "favorites": 66,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 173,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "虎刘",
+      "videos": 3,
+      "plays": 3100,
+      "likes": 26,
+      "comments": 18,
+      "favorites": 36,
+      "shares": 0,
+      "danmaku": 11,
+      "engagement": 80,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "铁血小飞侠0号",
+      "videos": 1,
+      "plays": 1160,
+      "likes": 116,
+      "comments": 6,
+      "favorites": 17,
+      "shares": 0,
+      "danmaku": 2,
+      "engagement": 139,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-09"
+    },
+    {
+      "author": "三更天M",
+      "videos": 1,
+      "plays": 825,
+      "likes": 105,
+      "comments": 2,
+      "favorites": 26,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 133,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "怪怪老婆",
+      "videos": 2,
+      "plays": 883,
+      "likes": 83,
+      "comments": 5,
+      "favorites": 41,
+      "shares": 0,
+      "danmaku": 2,
+      "engagement": 129,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "日天王月",
+      "videos": 1,
+      "plays": 898,
+      "likes": 78,
+      "comments": 1,
+      "favorites": 38,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 117,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "还有钱吗你就买",
+      "videos": 1,
+      "plays": 899,
+      "likes": 99,
+      "comments": 4,
+      "favorites": 11,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 114,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "-拾年是十年-",
+      "videos": 1,
+      "plays": 1031,
+      "likes": 74,
+      "comments": 7,
+      "favorites": 25,
+      "shares": 0,
+      "danmaku": 4,
+      "engagement": 106,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "MIC-莫芜菲",
+      "videos": 1,
+      "plays": 1226,
+      "likes": 58,
+      "comments": 2,
+      "favorites": 34,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 94,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "大力小力连连看",
+      "videos": 1,
+      "plays": 1313,
+      "likes": 52,
+      "comments": 12,
+      "favorites": 17,
+      "shares": 0,
+      "danmaku": 11,
+      "engagement": 81,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-17"
+    },
+    {
+      "author": "喃心的小花园",
+      "videos": 1,
+      "plays": 1023,
+      "likes": 74,
+      "comments": 4,
+      "favorites": 10,
+      "shares": 0,
+      "danmaku": 1,
+      "engagement": 88,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "学医的辰辰",
+      "videos": 2,
+      "plays": 376,
+      "likes": 0,
+      "comments": 102,
+      "favorites": 0,
+      "shares": 0,
+      "danmaku": 72,
+      "engagement": 102,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [
+        "海飞丝"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "ASDKKe",
+      "videos": 1,
+      "plays": 459,
+      "likes": 57,
+      "comments": 0,
+      "favorites": 41,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 98,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "s怪兽实验室",
+      "videos": 1,
+      "plays": 621,
+      "likes": 12,
+      "comments": 61,
+      "favorites": 5,
+      "shares": 0,
+      "danmaku": 40,
+      "engagement": 78,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "-星空下被删除的记忆-",
+      "videos": 2,
+      "plays": 1288,
+      "likes": 23,
+      "comments": 6,
+      "favorites": 18,
+      "shares": 0,
+      "danmaku": 6,
+      "engagement": 47,
+      "brands_unilever": [
+        "清扬"
+      ],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-22"
+    },
+    {
+      "author": "钦钦小豆包zjy",
+      "videos": 1,
+      "plays": 708,
+      "likes": 41,
+      "comments": 3,
+      "favorites": 18,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 62,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "丝塔芙"
+      ],
+      "latest_pubdate": "2026-04-24"
+    },
+    {
+      "author": "缘缘测评",
+      "videos": 1,
+      "plays": 1398,
+      "likes": 11,
+      "comments": 15,
+      "favorites": 13,
+      "shares": 0,
+      "danmaku": 21,
+      "engagement": 39,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-21"
+    },
+    {
+      "author": "在活中",
+      "videos": 1,
+      "plays": 400,
+      "likes": 30,
+      "comments": 1,
+      "favorites": 37,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 68,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "卡诗"
+      ],
+      "latest_pubdate": "2026-04-15"
+    },
+    {
+      "author": "关注你900年了",
+      "videos": 1,
+      "plays": 704,
+      "likes": 21,
+      "comments": 6,
+      "favorites": 30,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 57,
+      "brands_unilever": [
+        "多芬"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-04"
+    },
+    {
+      "author": "黑化的钮祜禄上仙竹",
+      "videos": 1,
+      "plays": 511,
+      "likes": 31,
+      "comments": 0,
+      "favorites": 32,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 63,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-26"
+    },
+    {
+      "author": "薄荷糖糖糖糖糖呀",
+      "videos": 1,
+      "plays": 453,
+      "likes": 45,
+      "comments": 1,
+      "favorites": 17,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 63,
+      "brands_unilever": [
+        "可悠然"
+      ],
+      "brands_competitor": [],
+      "latest_pubdate": "2026-04-10"
+    },
+    {
+      "author": "-titisiwat",
+      "videos": 1,
+      "plays": 282,
+      "likes": 52,
+      "comments": 2,
+      "favorites": 14,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 68,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-09"
+    },
+    {
+      "author": "棠絮吖",
+      "videos": 1,
+      "plays": 566,
+      "likes": 29,
+      "comments": 0,
+      "favorites": 25,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 54,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "Crystal_Lake",
+      "videos": 2,
+      "plays": 559,
+      "likes": 30,
+      "comments": 2,
+      "favorites": 22,
+      "shares": 0,
+      "danmaku": 0,
+      "engagement": 54,
+      "brands_unilever": [
+        "可悠然"
+      ],
+      "brands_competitor": [
+        "舒肤佳"
+      ],
+      "latest_pubdate": "2026-04-25"
+    },
+    {
+      "author": "美食鉴赏频道",
+      "videos": 1,
+      "plays": 1303,
+      "likes": 21,
+      "comments": 4,
+      "favorites": 2,
+      "shares": 0,
+      "danmaku": 1,
+      "engagement": 27,
+      "brands_unilever": [],
+      "brands_competitor": [
+        "六神"
+      ],
+      "latest_pubdate": "2026-04-23"
+    }
+  ],
+  "compare_unilever_vs_competitor": {
+    "unilever": {
+      "videos": 161,
+      "plays": 39255,
+      "likes": 2577,
+      "comments": 469,
+      "favorites": 1625,
+      "avg_plays": 243.8198757763975,
+      "avg_likes": 16.006211180124225,
+      "avg_comments": 2.9130434782608696,
+      "engagement_rate": 0.11899121131066107
+    },
+    "competitor": {
+      "videos": 388,
+      "plays": 178818,
+      "likes": 13251,
+      "comments": 1104,
+      "favorites": 5489,
+      "avg_plays": 460.87113402061857,
+      "avg_likes": 34.152061855670105,
+      "avg_comments": 2.845360824742268,
+      "engagement_rate": 0.1109731682492814
+    }
+  }
 }

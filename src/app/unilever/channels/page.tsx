@@ -72,13 +72,40 @@ type CategoryOverview = {
   top_queries: CategoryQuery[];
   dark_horses: { brand: string; mentions: number }[];
 };
+type Kol = {
+  author: string;
+  videos: number;
+  plays: number;
+  likes: number;
+  comments: number;
+  favorites: number;
+  shares: number;
+  danmaku: number;
+  engagement: number;
+  brands_unilever: string[];
+  brands_competitor: string[];
+  latest_pubdate: string | null;
+};
+type CompareEntry = {
+  videos: number;
+  plays: number;
+  likes: number;
+  comments: number;
+  favorites: number;
+  avg_plays: number;
+  avg_likes: number;
+  avg_comments: number;
+  engagement_rate: number;
+};
 type ChannelsBundle = {
-  meta: { generated_at: string; n_series: number; n_brands: number; channels: string[]; n_posts?: number };
+  meta: { generated_at: string; n_series: number; n_brands: number; channels: string[]; n_posts?: number; n_authors?: number };
   series: ChannelSeries[];
   per_brand: { brand: string; brand_type: string; channels: Record<string, { latest: number; latest_date: string; mean: number; peak: number; n_points: number }> }[];
   per_channel: Record<string, { n_brands: number; n_metrics: number; n_points: number; sources: string[] }>;
   top_posts?: { brand: string; channel: string; posts: TopPost[] }[];
   category_overview?: CategoryOverview[];
+  top_kols?: Kol[];
+  compare_unilever_vs_competitor?: { unilever: CompareEntry; competitor: CompareEntry };
 };
 
 function fmtN(n: number | null | undefined): string {
@@ -312,6 +339,135 @@ export default function ChannelsPage() {
           在 6 大社交渠道的真实表现。
         </p>
       </div>
+
+      {/* ═══ 投放效果对比 · 我方 vs 竞品（KPI 卡 + 平均互动率图） ═══ */}
+      {channels?.compare_unilever_vs_competitor && (
+        <section className="mb-8">
+          <h2 className="text-lg md:text-xl font-bold mb-1">
+            投放效果总结 · 我方 vs 竞品（B 站，{channels.compare_unilever_vs_competitor.unilever.videos + channels.compare_unilever_vs_competitor.competitor.videos} 个相关视频）
+          </h2>
+          <p className="text-xs text-neutral-500 mb-3">
+            数据：B 站近 30 天提到我方/竞品品牌的视频，经 LLM 相关性过滤 (L3 verifier)。每条视频含播放/点赞/评论/收藏。
+          </p>
+          {(() => {
+            const cmp = channels.compare_unilever_vs_competitor!;
+            const u = cmp.unilever; const c = cmp.competitor;
+            return (
+              <>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                  <Kpi
+                    label="视频数 我方 / 竞品"
+                    value={`${u.videos} / ${c.videos}`}
+                    sub={`比 ${(u.videos / Math.max(c.videos, 1) * 100).toFixed(0)}%`}
+                    hi={u.videos >= c.videos}
+                  />
+                  <Kpi
+                    label="均播放 我方 / 竞品"
+                    value={`${Math.round(u.avg_plays).toLocaleString()} / ${Math.round(c.avg_plays).toLocaleString()}`}
+                    sub={u.avg_plays >= c.avg_plays ? "我方 ≥ 竞品 ✓" : "我方落后 " + (((c.avg_plays - u.avg_plays) / c.avg_plays * 100).toFixed(0)) + "%"}
+                    bad={u.avg_plays < c.avg_plays * 0.7}
+                  />
+                  <Kpi
+                    label="均评论 我方 / 竞品"
+                    value={`${u.avg_comments.toFixed(1)} / ${c.avg_comments.toFixed(1)}`}
+                    sub={u.avg_comments >= c.avg_comments ? "互动好" : "互动弱"}
+                    bad={u.avg_comments < c.avg_comments}
+                  />
+                  <Kpi
+                    label="互动率 我方 / 竞品"
+                    value={`${(u.engagement_rate * 100).toFixed(2)}% / ${(c.engagement_rate * 100).toFixed(2)}%`}
+                    sub={u.engagement_rate >= c.engagement_rate ? "✓" : "✗"}
+                    bad={u.engagement_rate < c.engagement_rate * 0.7}
+                  />
+                </div>
+                {/* Bar chart 4 metric 对比 */}
+                <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-3 md:p-4">
+                  <ResponsiveContainer width="100%" height={260}>
+                    <BarChart data={[
+                      { name: "均播放", "我方": Math.round(u.avg_plays), "竞品": Math.round(c.avg_plays) },
+                      { name: "均点赞", "我方": Math.round(u.avg_likes), "竞品": Math.round(c.avg_likes) },
+                      { name: "均评论", "我方": Math.round(u.avg_comments * 10) / 10, "竞品": Math.round(c.avg_comments * 10) / 10 },
+                      { name: "互动率(‰)", "我方": Math.round(u.engagement_rate * 1000), "竞品": Math.round(c.engagement_rate * 1000) },
+                    ]} margin={{ left: 4, right: 16, top: 8, bottom: 4 }}>
+                      <CartesianGrid stroke="#222" strokeDasharray="3 3" />
+                      <XAxis dataKey="name" stroke="#ccc" fontSize={12} />
+                      <YAxis stroke="#666" fontSize={11} />
+                      <Tooltip
+                        cursor={{ fill: "#1a1a1a" }}
+                        contentStyle={{ background: "#111", border: "1px solid #333", color: "#fff" }}
+                        formatter={(v: unknown) => Number(v).toLocaleString()}
+                      />
+                      <Legend wrapperStyle={{ fontSize: 12, color: "#ccc" }} />
+                      <Bar dataKey="我方" fill="#00FF88" radius={[4, 4, 0, 0]} />
+                      <Bar dataKey="竞品" fill="#FFD166" radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+                <p className="text-xs text-neutral-500 mt-2">
+                  → CMO 解读：单条视频均互动率 = (赞+评+藏) ÷ 播放 × 1000。我方 vs 竞品 落差大就是优化空间。
+                </p>
+              </>
+            );
+          })()}
+        </section>
+      )}
+
+      {/* ═══ Top KOL · 投放潜力账号排行（CMO 关心的真问题）═══ */}
+      {channels?.top_kols && channels.top_kols.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-lg md:text-xl font-bold mb-1">Top KOL / 投放账号排行（B 站）</h2>
+          <p className="text-xs text-neutral-500 mb-3">
+            综合得分 = 总播放 + (赞+评+藏) × 30 ｜ 排序看哪些账号已经在覆盖我方/竞品品牌，**值得继续投或反向挖**。
+          </p>
+          <div className="rounded border border-neutral-800 bg-[#0F0F0F] overflow-x-auto">
+            <table className="w-full text-sm min-w-[860px]">
+              <thead className="border-b border-neutral-800 text-neutral-500 text-xs uppercase tracking-wider font-mono bg-[#0a0a0a]">
+                <tr>
+                  <th className="py-3 px-4 text-left">#</th>
+                  <th className="py-3 px-4 text-left">作者</th>
+                  <th className="py-3 px-4 text-right">视频</th>
+                  <th className="py-3 px-4 text-right">总播放</th>
+                  <th className="py-3 px-4 text-right">点赞</th>
+                  <th className="py-3 px-4 text-right">评论</th>
+                  <th className="py-3 px-4 text-right">收藏</th>
+                  <th className="py-3 px-4 text-left">覆盖我方</th>
+                  <th className="py-3 px-4 text-left">覆盖竞品</th>
+                </tr>
+              </thead>
+              <tbody>
+                {channels.top_kols.slice(0, 25).map((k, i) => (
+                  <tr key={k.author} className="border-b border-neutral-900 hover:bg-[#141414]">
+                    <td className="py-3 px-4 text-neutral-500">{i + 1}</td>
+                    <td className="py-3 px-4 font-bold text-neutral-100">{k.author}</td>
+                    <td className="py-3 px-4 text-right font-mono">{k.videos}</td>
+                    <td className="py-3 px-4 text-right font-mono text-[#00FF88] font-bold">
+                      {k.plays.toLocaleString()}
+                    </td>
+                    <td className="py-3 px-4 text-right font-mono text-neutral-300">{k.likes.toLocaleString()}</td>
+                    <td className="py-3 px-4 text-right font-mono text-neutral-300">{k.comments.toLocaleString()}</td>
+                    <td className="py-3 px-4 text-right font-mono text-neutral-300">{k.favorites.toLocaleString()}</td>
+                    <td className="py-3 px-4 text-xs">
+                      {k.brands_unilever.length > 0
+                        ? k.brands_unilever.map(b => <span key={b} className="text-[#00FF88] mr-1">{b}</span>)
+                        : <span className="text-neutral-700">—</span>}
+                    </td>
+                    <td className="py-3 px-4 text-xs">
+                      {k.brands_competitor.length > 0
+                        ? k.brands_competitor.map(b => <span key={b} className="text-[#FFD166] mr-1">{b}</span>)
+                        : <span className="text-neutral-700">—</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-neutral-500 mt-2">
+            <span className="text-[#00FF88]">绿</span>=覆盖我方（已有合作或自然提及）·
+            <span className="text-[#FFD166] mx-1">黄</span>=覆盖竞品（可能可挖）·
+            **三类机会**：① 高播+绿绿 = 持续投；② 高播+黄黄 = 找他换合作；③ 高播+无绿无黄 = 中立 KOL，新机会
+          </p>
+        </section>
+      )}
 
       {/* ═══ 本周亮点 — 我方 / 竞品 拆开看 ═══ */}
       {(movers.ours.length > 0 || movers.theirs.length > 0) && (
@@ -750,6 +906,23 @@ function BilibiliTab({ brands, topPosts }: {
 
 
 // ─────────────────────────────────────────────────────────────────────
+function Kpi({ label, value, sub, hi, bad }: {
+  label: string; value: string; sub?: string; hi?: boolean; bad?: boolean;
+}) {
+  const color = bad ? "text-red-400" : hi ? "text-[#00FF88]" : "text-neutral-100";
+  return (
+    <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-3 md:p-4">
+      <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-wider text-neutral-500">
+        {label}
+      </div>
+      <div className={`text-lg md:text-2xl font-bold mt-1 break-words ${color}`}>
+        {value}
+      </div>
+      {sub && <div className="text-[10px] md:text-xs text-neutral-500 mt-1">{sub}</div>}
+    </div>
+  );
+}
+
 function NotConnectedTab({ channelKey, aeo }: { channelKey: ChannelKey; aeo: number }) {
   const meta = CHANNELS.find((c) => c.key === channelKey)!;
   return (
