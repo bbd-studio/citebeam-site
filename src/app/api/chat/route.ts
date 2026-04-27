@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 // Static import — bundled at build time. Works on CF Pages edge runtime.
 import summary from "../../../../public/data/unilever-summary.json";
+import timeline from "../../../../public/data/unilever-timeline.json";
 import { AGENT_CASCADE, PROVIDER_ENDPOINTS, PROVIDER_ENV_VARS } from "@/lib/agent-config";
 
 export const runtime = "edge";
@@ -21,10 +22,34 @@ const SYSTEM_TEMPLATE = `你是 citebeam 的分析助手，帮客户理解他们
 5. **可以追问用户** —— 如果问题过宽（如"怎么办"），反问"你更想看哪个品类 / 哪个平台？"
 6. **中文回答，和图表看板一致**；数字统一保留 1 位小数
 
-## 当前数据（JSON 格式的品牌监测快照，来源：DB · 实时聚合）
+## 当前数据 1 — 主监测数据 (按品类聚合的 L1 层评分 + 品牌 SoV + 维度优劣)
 
 \`\`\`json
 {{REPORT_JSON}}
+\`\`\`
+
+## 当前数据 2 — 联网前/后 timeline 数据 (L1 vs L2 配对分析)
+
+下面这个 JSON 包含：
+- \`meta\` — L1 / L2 / 引用源 / 配对数 总览
+- \`timeline\` — 每天 L1 vs L2 sample 数（趋势）
+- \`by_platform\` — 每家平台的 L1 / L2 / 引用统计 + 是否接通 web_search (\`has_l2\`)
+- \`pairs\` — 同一条 prompt 在同一家平台两个层都跑了的 16 对答案，含：
+  - \`l1.excerpt\` / \`l2.excerpt\` — 双方答案前 600 字
+  - \`l1.brand_hits\` / \`l2.brand_hits\` — 命中的品牌列表
+  - \`diff.only_l1\` / \`diff.only_l2\` / \`diff.both\` — 品牌差异
+  - \`l2.citations\` — L2 拿到的真实 URL 引用列表 (含域名 + 标题 + position)
+  - 双方 cost / tokens / latency
+
+**用户问这类问题时直接从这里答**：
+- "联网前后差别多大" / "L2 比 L1 多推了什么" → meta + 遍历 \`pairs[].diff.only_l2\` 汇总
+- "豆包/GLM 联网后会推什么品牌而裸调用不会" → 平台 filter + \`diff.only_l2\`
+- "AI 联网时引用了哪些网站" → 遍历 \`pairs[].l2.citations\` 按 domain 聚合
+- "联网搜索值不值这个钱" → 比较 L1 vs L2 cost，再看 brand discovery 增量
+- "Africa AI VC 也在哪些站上被讨论" / 类似 site-source 问题 → 引用源域名分布
+
+\`\`\`json
+{{TIMELINE_JSON}}
 \`\`\`
 
 监测说明：
@@ -35,7 +60,10 @@ const SYSTEM_TEMPLATE = `你是 citebeam 的分析助手，帮客户理解他们
 - **客户**：联合利华（6 个自有品牌 · 17 个竞品）
 - **提及率计算**：品牌被提及的查询数 ÷ 该品类总查询数（包括错误调用，与 Profound 口径一致）
 - **"失守 prompt"**：该 prompt 在所有平台上都没推荐任何联合利华品牌
-- **数据时效性限制**：当前基于 LLM 训练数据，不含实时 web search（下一版接 Tavily 后补上）
+- **数据时效性 — 双层监测**：
+  - **L1 层 (训练数据视角)** — 8 家 AI 平台**裸调用**（无 web_search 工具）的回答，反映模型训练数据里"AI 默认会推什么"
+  - **L2 层 (实时联网视角)** — 豆包 + GLM 已经接通 native web_search，能拿到 2026 实时网页 + 真实 URL 引用
+  - 用户问"AI 实际会推什么"看 L1（覆盖广）；问"如果用户开了联网搜索 AI 会推什么"看 L2；问"两者差异"看下面的 \`timeline\` 字段
 - **回答禁忌**：**不要用英文字段代码**（如 \`intent=discovery\`、\`journey=awareness\`）答用户。看下面的翻译规则。
 
 ## 重要字段：\`strengths_weaknesses\`
@@ -77,54 +105,65 @@ export async function POST(req: NextRequest) {
   const { messages } = (await req.json()) as { messages: Msg[] };
 
   const reportJson = JSON.stringify(summary);
-  const systemContent = SYSTEM_TEMPLATE.replace("{{REPORT_JSON}}", reportJson);
+  const timelineJson = JSON.stringify(timeline);
+  const systemContent = SYSTEM_TEMPLATE
+    .replace("{{REPORT_JSON}}", reportJson)
+    .replace("{{TIMELINE_JSON}}", timelineJson);
 
-  // Pick first cascade entry whose env var is set. Avoids hardcoding —
-  // swap the primary by editing AGENT_CASCADE in src/lib/agent-config.ts.
-  let chosen: { key: string; model: string; displayName: string } | null = null;
-  let apiKey = "";
+  // Build provider candidate list: every cascade entry whose env var is set.
+  // Will try them in order; failover on upstream non-2xx or fetch error.
+  const candidates: { key: string; model: string; displayName: string; apiKey: string }[] = [];
   for (const entry of AGENT_CASCADE) {
     const envVar = PROVIDER_ENV_VARS[entry.key];
     const k = envVar ? process.env[envVar] : undefined;
-    if (k) {
-      chosen = entry;
-      apiKey = k;
-      break;
-    }
+    if (k) candidates.push({ ...entry, apiKey: k });
   }
-  if (!chosen) {
+  if (candidates.length === 0) {
     return new Response(
       "No LLM key configured. Need one of: " +
       AGENT_CASCADE.map((e) => PROVIDER_ENV_VARS[e.key]).join(" / "),
       { status: 500 }
     );
   }
-  const upstreamUrl = PROVIDER_ENDPOINTS[chosen.key];
-  const modelName = chosen.model;
 
-  const upstream = await fetch(upstreamUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: modelName,
-      messages: [
-        { role: "system", content: systemContent },
-        ...messages.map((m) => ({ role: m.role, content: m.content })),
-      ],
-      stream: true,
-      temperature: 0.4,
-      max_tokens: 2000,  // let the model answer fully
-    }),
-  });
-
-  if (!upstream.ok || !upstream.body) {
-    const detail = await upstream.text().catch(() => "");
+  // Try each candidate in order; first one with a 2xx + body wins.
+  let upstream: Response | null = null;
+  let chosen: typeof candidates[number] | null = null;
+  const tried: string[] = [];
+  for (const cand of candidates) {
+    const url = PROVIDER_ENDPOINTS[cand.key];
+    try {
+      const r = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${cand.apiKey}`,
+        },
+        body: JSON.stringify({
+          model: cand.model,
+          messages: [
+            { role: "system", content: systemContent },
+            ...messages.map((m) => ({ role: m.role, content: m.content })),
+          ],
+          stream: true,
+          temperature: 0.4,
+          max_tokens: 2000,
+        }),
+      });
+      if (r.ok && r.body) {
+        upstream = r;
+        chosen = cand;
+        break;
+      }
+      tried.push(`${cand.key}:${r.status}`);
+    } catch (e) {
+      tried.push(`${cand.key}:err(${String(e).slice(0, 40)})`);
+    }
+  }
+  if (!upstream || !chosen) {
     return new Response(
-      `Upstream ${upstream.status}: ${detail.slice(0, 400)}`,
-      { status: 500 }
+      `All providers failed. Tried: ${tried.join(" → ")}`,
+      { status: 502 }
     );
   }
 

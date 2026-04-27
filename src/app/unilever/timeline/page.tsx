@@ -41,10 +41,18 @@ export default function TimelinePage() {
     <main className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
       {/* Hero */}
       <div className="mb-6">
-        <div className="font-mono text-xs text-neutral-500 mb-2">
-          <Link href="/unilever" className="hover:text-[#00FF88]">← 主仪表盘</Link>
-          <span className="mx-2 text-neutral-700">/</span>
-          <span className="text-[#00FF88]">$</span> timeline · L1 vs L2 (web_search) 对比
+        <div className="font-mono text-xs text-neutral-500 mb-2 flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <Link href="/unilever" className="hover:text-[#00FF88]">← 主仪表盘</Link>
+            <span className="mx-2 text-neutral-700">/</span>
+            <span className="text-[#00FF88]">$</span> timeline · L1 vs L2 (web_search) 对比
+          </div>
+          <Link
+            href="/unilever/chat"
+            className="text-[#00FF88]/80 hover:text-[#00FF88] underline-offset-2 hover:underline"
+          >
+            → 问 Agent (含 timeline 数据)
+          </Link>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           联网前 vs 联网后 · 时间线对比
