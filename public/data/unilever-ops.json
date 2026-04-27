@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "generated_at": "2026-04-27T05:05:12.812354+00:00Z",
+    "customer": "unilever"
+  },
+  "totals": {
+    "samples": 1965,
+    "cost_cny": 1.0195,
+    "errors": 65,
+    "platforms": 8,
+    "input_tokens": 471224,
+    "output_tokens": 356809,
+    "overall_error_rate": 0.03307888040712468
+  },
+  "platforms": [
+    {
+      "platform": "DeepSeek",
+      "tiers": {
+        "L1": {
+          "samples": 453,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 2333,
+          "max_latency_ms": 3443,
+          "input_tokens": 31409,
+          "output_tokens": 58751,
+          "cost_cny": 0.446733
+        }
+      },
+      "total_samples": 453,
+      "total_cost_cny": 0.446733,
+      "total_input_tokens": 31409,
+      "total_output_tokens": 58751,
+      "total_errors": 0
+    },
+    {
+      "platform": "豆包",
+      "tiers": {
+        "L1": {
+          "samples": 115,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 16548,
+          "max_latency_ms": 31107,
+          "input_tokens": 1111,
+          "output_tokens": 4341,
+          "cost_cny": 0.009571
+        },
+        "L2": {
+          "samples": 54,
+          "errors": 5,
+          "error_rate": 0.09259259259259259,
+          "avg_latency_ms": 47747,
+          "max_latency_ms": 60519,
+          "input_tokens": 234243,
+          "output_tokens": 67207,
+          "cost_cny": 0.32181
+        }
+      },
+      "total_samples": 169,
+      "total_cost_cny": 0.331381,
+      "total_input_tokens": 235354,
+      "total_output_tokens": 71548,
+      "total_errors": 5
+    },
+    {
+      "platform": "文心",
+      "tiers": {
+        "L1": {
+          "samples": 93,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 6702,
+          "max_latency_ms": 8891,
+          "input_tokens": 5820,
+          "output_tokens": 9878,
+          "cost_cny": 0.181328
+        }
+      },
+      "total_samples": 93,
+      "total_cost_cny": 0.181328,
+      "total_input_tokens": 5820,
+      "total_output_tokens": 9878,
+      "total_errors": 0
+    },
+    {
+      "platform": "元宝",
+      "tiers": {
+        "L1": {
+          "samples": 158,
+          "errors": 60,
+          "error_rate": 0.379746835443038,
+          "avg_latency_ms": 2092,
+          "max_latency_ms": 4540,
+          "input_tokens": 7271,
+          "output_tokens": 12844,
+          "cost_cny": 0.060106
+        }
+      },
+      "total_samples": 158,
+      "total_cost_cny": 0.060106,
+      "total_input_tokens": 7271,
+      "total_output_tokens": 12844,
+      "total_errors": 60
+    },
+    {
+      "platform": "GLM",
+      "tiers": {
+        "L1": {
+          "samples": 255,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 10191,
+          "max_latency_ms": 60358,
+          "input_tokens": 11058,
+          "output_tokens": 54187,
+          "cost_cny": 0.0
+        },
+        "L2": {
+          "samples": 34,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 11643,
+          "max_latency_ms": 51538,
+          "input_tokens": 130573,
+          "output_tokens": 13619,
+          "cost_cny": 0.0
+        }
+      },
+      "total_samples": 289,
+      "total_cost_cny": 0.0,
+      "total_input_tokens": 141631,
+      "total_output_tokens": 67806,
+      "total_errors": 0
+    },
+    {
+      "platform": "Kimi",
+      "tiers": {
+        "L1": {
+          "samples": 105,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 31270,
+          "max_latency_ms": 60163,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cost_cny": 0.0
+        }
+      },
+      "total_samples": 105,
+      "total_cost_cny": 0.0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_errors": 0
+    },
+    {
+      "platform": "MiniMax",
+      "tiers": {
+        "L1": {
+          "samples": 255,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 7109,
+          "max_latency_ms": 11720,
+          "input_tokens": 11263,
+          "output_tokens": 50932,
+          "cost_cny": 0.0
+        }
+      },
+      "total_samples": 255,
+      "total_cost_cny": 0.0,
+      "total_input_tokens": 11263,
+      "total_output_tokens": 50932,
+      "total_errors": 0
+    },
+    {
+      "platform": "夸克",
+      "tiers": {
+        "L1": {
+          "samples": 443,
+          "errors": 0,
+          "error_rate": 0.0,
+          "avg_latency_ms": 5555,
+          "max_latency_ms": 8087,
+          "input_tokens": 38476,
+          "output_tokens": 85050,
+          "cost_cny": 0.0
+        }
+      },
+      "total_samples": 443,
+      "total_cost_cny": 0.0,
+      "total_input_tokens": 38476,
+      "total_output_tokens": 85050,
+      "total_errors": 0
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-04-23",
+      "cost_cny": 0.0,
+      "samples": 420
+    },
+    {
+      "date": "2026-04-24",
+      "cost_cny": 0.805,
+      "samples": 1502
+    },
+    {
+      "date": "2026-04-25",
+      "cost_cny": 0.0308,
+      "samples": 6
+    },
+    {
+      "date": "2026-04-27",
+      "cost_cny": 0.1838,
+      "samples": 37
+    }
+  ],
+  "chat_archive": {
+    "total_turns": 1,
+    "unique_sessions": 1,
+    "assistant_latency_ms": {
+      "p50": 0,
+      "p95": 0,
+      "mean": 0
+    },
+    "by_provider": []
+  }
+}

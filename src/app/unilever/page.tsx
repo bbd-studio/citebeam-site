@@ -33,12 +33,21 @@ export default function UnileverDashboard() {
           <div>
             <span className="text-[#00FF88]">$</span> demo/unilever/dashboard.md
           </div>
-          <Link
-            href="/unilever/timeline"
-            className="text-[#00FF88]/80 hover:text-[#00FF88] underline-offset-2 hover:underline"
-          >
-            → 联网前 vs 后 时间线
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/unilever/timeline"
+              className="text-[#00FF88]/80 hover:text-[#00FF88] underline-offset-2 hover:underline"
+            >
+              → AI 凭记忆 vs 实时联网
+            </Link>
+            <Link
+              href="/unilever/ops"
+              className="text-neutral-600 hover:text-neutral-300 text-[11px] underline-offset-2 hover:underline"
+              title="运维报表（内部）"
+            >
+              ops
+            </Link>
+          </div>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           联合利华 · AI 搜索可见度
