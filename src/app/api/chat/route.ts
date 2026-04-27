@@ -244,7 +244,7 @@ export async function POST(req: NextRequest) {
     async start(controller) {
       const reader = upstream.body!.getReader();
       let buf = "";
-      const finalize = (closeReason: "done" | "error" | "incomplete", err?: unknown) => {
+      const finalize = async (closeReason: "done" | "error" | "incomplete", err?: unknown) => {
         if (closeReason === "error") {
           controller.enqueue(
             encoder.encode(`event: error\ndata: ${JSON.stringify({ error: String(err) })}\n\n`)
@@ -252,10 +252,13 @@ export async function POST(req: NextRequest) {
         } else {
           controller.enqueue(encoder.encode("event: done\ndata: [DONE]\n\n"));
         }
-        controller.close();
-        // Best-effort archive of assistant turn (not awaited).
+        // Await the archive POST BEFORE closing the stream, otherwise CF
+        // edge runtime GCs the worker as soon as we close and the
+        // fire-and-forget fetch never actually leaves. The user already
+        // saw all the deltas before [DONE], so the extra ~50–200 ms
+        // before close doesn't affect the UX.
         if (assistantText && chosen) {
-          archiveTurn({
+          await archiveTurn({
             session_uid: sessionUid,
             customer_slug: "unilever",
             turn_no: turnNo,
@@ -270,6 +273,7 @@ export async function POST(req: NextRequest) {
             referer,
           });
         }
+        controller.close();
       };
       try {
         while (true) {
@@ -284,7 +288,7 @@ export async function POST(req: NextRequest) {
             if (!line.startsWith("data:")) continue;
             const payload = line.slice(5).trim();
             if (payload === "[DONE]") {
-              finalize("done");
+              await finalize("done");
               return;
             }
             try {
@@ -300,9 +304,9 @@ export async function POST(req: NextRequest) {
             }
           }
         }
-        finalize("done");
+        await finalize("done");
       } catch (e) {
-        finalize("error", e);
+        await finalize("error", e);
       }
     },
   });
