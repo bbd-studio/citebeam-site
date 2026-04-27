@@ -153,6 +153,36 @@ export default function ChannelsPage() {
       .sort((a, b) => b.latest - a.latest);
   }, [channels]);
 
+  // Weekly highlights — top mover + top performer per channel
+  const highlights = useMemo(() => {
+    if (!channels) return null;
+    type Mover = { brand: string; brand_type: string; channel: string; latest: number; mean: number; delta_pct: number };
+    const movers: Mover[] = [];
+    for (const series of channels.series.filter((s) => s.metric_type === "keyword_index" || s.metric_type === "total_plays")) {
+      const pts = series.points;
+      if (pts.length < 7) continue;
+      const lastWeek = pts.slice(-7);
+      const prevWeek = pts.slice(-14, -7);
+      if (prevWeek.length === 0) continue;
+      const lwSum = lastWeek.reduce((a, b) => a + b.value, 0);
+      const pwSum = prevWeek.reduce((a, b) => a + b.value, 0);
+      if (pwSum === 0) continue;
+      const delta_pct = ((lwSum - pwSum) / pwSum) * 100;
+      movers.push({
+        brand: series.brand, brand_type: series.brand_type, channel: series.channel,
+        latest: lastWeek[lastWeek.length - 1].value,
+        mean: lwSum / 7,
+        delta_pct,
+      });
+    }
+    movers.sort((a, b) => Math.abs(b.delta_pct) - Math.abs(a.delta_pct));
+    return {
+      gainers: movers.filter((m) => m.delta_pct > 5).slice(0, 5),
+      losers: movers.filter((m) => m.delta_pct < -5).slice(0, 5),
+      total: movers.length,
+    };
+  }, [channels]);
+
   if (err) return <div className="p-8 text-red-400">加载失败：{err}</div>;
   if (!report) return <div className="p-8 text-neutral-500 font-mono text-sm">loading...</div>;
 
@@ -185,6 +215,83 @@ export default function ChannelsPage() {
           覆盖 6 大社交渠道：微博 / 小红书 / 微信公众号 / 抖音 / 知乎 / B 站。
         </p>
       </div>
+
+      {/* Weekly highlights · CMO first-glance summary */}
+      {highlights && (highlights.gainers.length > 0 || highlights.losers.length > 0) && (
+        <section className="mb-8">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="rounded border border-[#00FF88]/30 bg-gradient-to-br from-[#0F0F0F] to-[#0a0a0a] p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#00FF88] text-lg">↑</span>
+                <h3 className="text-base font-bold">本周声量上涨 Top 5</h3>
+                <span className="text-[10px] text-neutral-500 font-mono ml-auto">vs 上周</span>
+              </div>
+              {highlights.gainers.length === 0 ? (
+                <p className="text-xs text-neutral-500">无明显上涨品牌</p>
+              ) : (
+                <ul className="space-y-2">
+                  {highlights.gainers.map((m, i) => (
+                    <li key={i} className="flex items-center justify-between text-sm">
+                      <span className="text-neutral-200">
+                        <span className={`mr-1.5 text-xs ${
+                          m.brand_type === "unilever" ? "text-[#00FF88]"
+                          : m.brand_type === "competitor" ? "text-[#FFD166]" : "text-neutral-500"
+                        }`}>●</span>
+                        {m.brand}
+                        <span className="text-[10px] text-neutral-500 ml-2 font-mono">
+                          [{m.channel}]
+                        </span>
+                      </span>
+                      <span className="font-mono text-[#00FF88] font-bold">
+                        +{m.delta_pct.toFixed(0)}%
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="text-[11px] text-neutral-600 mt-3 leading-relaxed">
+                → CMO 视角：这些品牌正在<b className="text-[#00FF88]">起势</b>，可能是新品 / 投放 / 节点活动驱动。
+                竞品起势看是否要跟进；自己起势确认是哪个 campaign 在拉。
+              </p>
+            </div>
+
+            <div className="rounded border border-orange-500/30 bg-gradient-to-br from-[#0F0F0F] to-[#0a0a0a] p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-orange-400 text-lg">↓</span>
+                <h3 className="text-base font-bold">本周声量下滑 Top 5</h3>
+                <span className="text-[10px] text-neutral-500 font-mono ml-auto">vs 上周</span>
+              </div>
+              {highlights.losers.length === 0 ? (
+                <p className="text-xs text-neutral-500">无明显下滑品牌</p>
+              ) : (
+                <ul className="space-y-2">
+                  {highlights.losers.map((m, i) => (
+                    <li key={i} className="flex items-center justify-between text-sm">
+                      <span className="text-neutral-200">
+                        <span className={`mr-1.5 text-xs ${
+                          m.brand_type === "unilever" ? "text-[#00FF88]"
+                          : m.brand_type === "competitor" ? "text-[#FFD166]" : "text-neutral-500"
+                        }`}>●</span>
+                        {m.brand}
+                        <span className="text-[10px] text-neutral-500 ml-2 font-mono">
+                          [{m.channel}]
+                        </span>
+                      </span>
+                      <span className="font-mono text-orange-400 font-bold">
+                        {m.delta_pct.toFixed(0)}%
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="text-[11px] text-neutral-600 mt-3 leading-relaxed">
+                → CMO 视角：自己掉表示<b className="text-orange-400">投放断档</b>或竞品抢声量；
+                竞品掉是<b className="text-[#00FF88]">投入空档</b>，你可以补位。
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 抖音 keyword index — REAL DATA ✓ */}
       {hasDouyinData && (
