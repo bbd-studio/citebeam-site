@@ -8,15 +8,18 @@
  */
 
 export type AgentProvider =
-  | { key: "deepseek"; model: "deepseek-chat"; displayName: "DeepSeek" }
+  | { key: "deepseek"; model: "deepseek-v4-flash"; displayName: "DeepSeek V4" }
   | { key: "zhipu"; model: "GLM-4.5-air"; displayName: "智谱 GLM-4.5-air" }
   | { key: "minimax"; model: "MiniMax-M2"; displayName: "MiniMax-M2" };
 
 export const AGENT_CASCADE: AgentProvider[] = [
   {
     key: "deepseek",
-    model: "deepseek-chat",   // V3.2/V4 non-thinking — clean stream, fast, cheap
-    displayName: "DeepSeek",
+    // V4 GA 2026-04-24. deepseek-chat / deepseek-reasoner retire 2026-07-24.
+    // v4-flash = non-thinking mode (matches the old deepseek-chat behavior).
+    // Use v4-pro if you want thinking mode (slower, more reasoning tokens).
+    model: "deepseek-v4-flash",
+    displayName: "DeepSeek V4",
   },
   {
     key: "zhipu",
