@@ -17,6 +17,16 @@ type TierStats = {
   output_tokens: number;
   cost_cny: number;
 };
+type QuotaWindow = {
+  model_label: string;
+  window: string;
+  used: number;
+  total: number;
+  remaining: number;
+  percent_used: number;
+  resets_at: string | null;
+  error?: string;
+};
 type PlatformStats = {
   platform: string;
   tiers: { L1?: TierStats; L2?: TierStats };
@@ -25,14 +35,22 @@ type PlatformStats = {
   total_input_tokens: number;
   total_output_tokens: number;
   total_errors: number;
-  // Adapter usage parsing completeness — 1.0 = every sample has parseable
-  // input_tokens, < 1 = some samples are missing usage data even though
-  // the call did consume tokens. Cost figures for low-completeness platforms
-  // are LOWER BOUNDS, not exact.
   samples_with_usage: number;
   samples_total: number;
   usage_completeness: number;
+  quota?: QuotaWindow[] | null;
 };
+
+function fmtResets(iso: string | null): string {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  const now = Date.now();
+  const diffH = (d.getTime() - now) / 3_600_000;
+  if (diffH < 0) return "已过";
+  if (diffH < 1) return `${Math.round(diffH * 60)} min 后`;
+  if (diffH < 48) return `${diffH.toFixed(1)}h 后`;
+  return `${(diffH / 24).toFixed(1)}d 后`;
+}
 type DailyPoint = { date: string; cost_cny: number; samples: number };
 type ChatArchiveStats = {
   total_turns: number;
@@ -276,6 +294,38 @@ export default function OpsPage() {
         </div>
       </section>
 
+      {/* Quota / codeplan status */}
+      <section className="mb-10">
+        <h2 className="text-lg md:text-xl font-bold mb-1">平台余量 · Codeplan / 余额</h2>
+        <p className="text-sm text-neutral-400 mb-4">
+          每家计费方式不同：<span className="text-[#FFD166]">codeplan</span> = 包月配额（窗口用满即降级 / 限速），
+          <span className="text-[#00FF88] ml-1">balance</span> = 充值余额（钱花完就停）。
+          实时拉自各家官方 API（每次刷 bundle 时调一次）。
+        </p>
+        <div className="grid md:grid-cols-2 gap-4">
+          {data.platforms
+            .filter((p) => p.quota && p.quota.length > 0)
+            .map((p) => (
+              <QuotaCard key={p.platform} platform={p.platform} quota={p.quota!} />
+            ))}
+          {data.platforms
+            .filter((p) => p.quota === null || p.quota === undefined || p.quota.length === 0)
+            .map((p) => (
+              <div key={p.platform} className="rounded border border-neutral-900 bg-[#0F0F0F]/50 p-4 opacity-60">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-neutral-300">{p.platform}</span>
+                  <span className="text-xs text-neutral-600 font-mono">无 quota API</span>
+                </div>
+                <p className="text-xs text-neutral-600 mt-2">
+                  {p.platform === "豆包" || p.platform === "元宝" || p.platform === "文心" || p.platform === "夸克"
+                    ? "需要云厂商 BSS 签名（task #97 实现 1/4，剩 3 家 待办）"
+                    : "该平台未提供 quota 端点"}
+                </p>
+              </div>
+            ))}
+        </div>
+      </section>
+
       {/* Chat archive */}
       <section className="mb-10">
         <h2 className="text-lg md:text-xl font-bold mb-1">客户 chat agent 使用情况</h2>
@@ -318,6 +368,84 @@ export default function OpsPage() {
         生产数据落地时点 → bundle 生成时点之间会有几小时延迟。
       </div>
     </main>
+  );
+}
+
+
+function QuotaCard({ platform, quota }: { platform: string; quota: QuotaWindow[] }) {
+  // DeepSeek surfaces a single "balance" pseudo-window with the human-readable
+  // model_label = "deepseek/* (CNY 余额 ¥9.30 / 充 ¥9.30 + 赠 ¥0.00)".
+  // Other platforms have proper used/total numbers per window.
+  const isBalance = quota.length === 1 && quota[0].window === "balance" || quota[0]?.window?.includes("balance");
+  const errored = quota.find((q) => q.error);
+
+  if (errored) {
+    return (
+      <div className="rounded border border-red-900/50 bg-[#0F0F0F] p-4">
+        <div className="font-bold text-neutral-200 mb-2">{platform}</div>
+        <p className="text-xs text-red-400 font-mono">quota fetch 失败：{errored.error}</p>
+      </div>
+    );
+  }
+
+  if (isBalance) {
+    const q = quota[0];
+    return (
+      <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-4">
+        <div className="flex items-center justify-between mb-3">
+          <span className="font-bold text-neutral-100">{platform}</span>
+          <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-[#00FF88]/10 text-[#00FF88] border border-[#00FF88]/30 font-mono">
+            充值余额
+          </span>
+        </div>
+        <p className="text-sm text-neutral-300 font-mono break-all">{q.model_label}</p>
+        <p className="text-xs text-neutral-500 mt-2">PAY-AS-YOU-GO · 实时按 token 扣费 · 余额耗尽即停服</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-4">
+      <div className="flex items-center justify-between mb-3">
+        <span className="font-bold text-neutral-100">{platform}</span>
+        <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-[#FFD166]/10 text-[#FFD166] border border-[#FFD166]/30 font-mono">
+          codeplan
+        </span>
+      </div>
+      <ul className="space-y-3 text-sm">
+        {quota.map((w, i) => {
+          if (w.total === 0) return (
+            <li key={i} className="text-xs text-neutral-600">
+              <span className="text-neutral-500">{w.model_label} · {w.window}</span>
+              <span className="ml-2 italic">无 quota 限制</span>
+            </li>
+          );
+          const pct = w.percent_used;
+          const barColor = pct > 80 ? "#EF476F" : pct > 50 ? "#FFD166" : "#00FF88";
+          return (
+            <li key={i}>
+              <div className="flex items-center justify-between text-xs mb-1">
+                <span className="text-neutral-300">
+                  <span className="font-mono text-neutral-500 mr-2">[{w.window}]</span>
+                  {w.model_label}
+                </span>
+                <span className="font-mono text-neutral-400">
+                  {w.used.toLocaleString()} / {w.total.toLocaleString()}
+                  <span className="text-neutral-600 ml-1">({pct.toFixed(1)}%)</span>
+                </span>
+              </div>
+              <div className="h-1.5 bg-neutral-900 rounded overflow-hidden">
+                <div className="h-full transition-all" style={{ width: `${Math.min(pct, 100)}%`, background: barColor }} />
+              </div>
+              <div className="flex items-center justify-between text-[10px] text-neutral-600 mt-1 font-mono">
+                <span>剩 {w.remaining.toLocaleString()}</span>
+                <span>重置 {fmtResets(w.resets_at)}</span>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 

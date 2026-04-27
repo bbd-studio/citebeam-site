@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T05:17:52.975910+00:00Z",
+    "generated_at": "2026-04-27T05:22:57.556087+00:00Z",
     "customer": "unilever"
   },
   "totals": {
@@ -34,7 +34,18 @@
       "total_errors": 0,
       "samples_with_usage": 453,
       "samples_total": 453,
-      "usage_completeness": 1.0
+      "usage_completeness": 1.0,
+      "quota": [
+        {
+          "model_label": "deepseek/* (CNY 余额 ¥9.30 / 充 ¥9.30 + 赠 ¥0.00)",
+          "window": "balance (CNY)",
+          "used": 0,
+          "total": 930,
+          "remaining": 930,
+          "percent_used": 0.0,
+          "resets_at": null
+        }
+      ]
     },
     {
       "platform": "豆包",
@@ -67,7 +78,8 @@
       "total_errors": 5,
       "samples_with_usage": 59,
       "samples_total": 169,
-      "usage_completeness": 0.34911242603550297
+      "usage_completeness": 0.34911242603550297,
+      "quota": null
     },
     {
       "platform": "文心",
@@ -90,7 +102,8 @@
       "total_errors": 0,
       "samples_with_usage": 93,
       "samples_total": 93,
-      "usage_completeness": 1.0
+      "usage_completeness": 1.0,
+      "quota": null
     },
     {
       "platform": "元宝",
@@ -113,7 +126,8 @@
       "total_errors": 60,
       "samples_with_usage": 98,
       "samples_total": 158,
-      "usage_completeness": 0.620253164556962
+      "usage_completeness": 0.620253164556962,
+      "quota": null
     },
     {
       "platform": "GLM",
@@ -146,7 +160,18 @@
       "total_errors": 0,
       "samples_with_usage": 184,
       "samples_total": 289,
-      "usage_completeness": 0.6366782006920415
+      "usage_completeness": 0.6366782006920415,
+      "quota": [
+        {
+          "model_label": "GLM (max)",
+          "window": "5h",
+          "used": 86,
+          "total": 4000,
+          "remaining": 3914,
+          "percent_used": 2.1,
+          "resets_at": "2026-05-12T05:49:54.998000+00:00"
+        }
+      ]
     },
     {
       "platform": "Kimi",
@@ -169,7 +194,27 @@
       "total_errors": 0,
       "samples_with_usage": 0,
       "samples_total": 105,
-      "usage_completeness": 0.0
+      "usage_completeness": 0.0,
+      "quota": [
+        {
+          "model_label": "Kimi (LEVEL_BASIC)",
+          "window": "5h",
+          "used": 0,
+          "total": 100,
+          "remaining": 100,
+          "percent_used": 0.0,
+          "resets_at": "2026-04-27T07:38:45.552409+00:00"
+        },
+        {
+          "model_label": "Kimi (LEVEL_BASIC)",
+          "window": "week",
+          "used": 11,
+          "total": 100,
+          "remaining": 89,
+          "percent_used": 11.0,
+          "resets_at": "2026-04-28T12:38:45.552409+00:00"
+        }
+      ]
     },
     {
       "platform": "MiniMax",
@@ -192,7 +237,63 @@
       "total_errors": 0,
       "samples_with_usage": 150,
       "samples_total": 255,
-      "usage_completeness": 0.5882352941176471
+      "usage_completeness": 0.5882352941176471,
+      "quota": [
+        {
+          "model_label": "MiniMax-M*",
+          "window": "5h",
+          "used": 0,
+          "total": 30000,
+          "remaining": 30000,
+          "percent_used": 0.0,
+          "resets_at": "2026-04-27T10:00:00+00:00"
+        },
+        {
+          "model_label": "MiniMax-M*",
+          "window": "week",
+          "used": 0,
+          "total": 0,
+          "remaining": 0,
+          "percent_used": 0.0,
+          "resets_at": "2026-05-04T00:00:00+00:00"
+        },
+        {
+          "model_label": "coding-plan-vlm",
+          "window": "5h",
+          "used": 0,
+          "total": 30000,
+          "remaining": 30000,
+          "percent_used": 0.0,
+          "resets_at": "2026-04-27T10:00:00+00:00"
+        },
+        {
+          "model_label": "coding-plan-vlm",
+          "window": "week",
+          "used": 0,
+          "total": 0,
+          "remaining": 0,
+          "percent_used": 0.0,
+          "resets_at": "2026-05-04T00:00:00+00:00"
+        },
+        {
+          "model_label": "coding-plan-search",
+          "window": "5h",
+          "used": 0,
+          "total": 30000,
+          "remaining": 30000,
+          "percent_used": 0.0,
+          "resets_at": "2026-04-27T10:00:00+00:00"
+        },
+        {
+          "model_label": "coding-plan-search",
+          "window": "week",
+          "used": 0,
+          "total": 0,
+          "remaining": 0,
+          "percent_used": 0.0,
+          "resets_at": "2026-05-04T00:00:00+00:00"
+        }
+      ]
     },
     {
       "platform": "夸克",
@@ -215,7 +316,8 @@
       "total_errors": 0,
       "samples_with_usage": 443,
       "samples_total": 443,
-      "usage_completeness": 1.0
+      "usage_completeness": 1.0,
+      "quota": null
     }
   ],
   "daily": [
