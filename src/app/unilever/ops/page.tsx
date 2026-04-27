@@ -79,8 +79,8 @@ export default function OpsPage() {
     if (!data) return [];
     return data.platforms.map((p) => ({
       name: p.platform,
-      L1: p.tiers.L1?.samples ?? 0,
-      L2: p.tiers.L2?.samples ?? 0,
+      非联网: p.tiers.L1?.samples ?? 0,
+      联网: p.tiers.L2?.samples ?? 0,
       cost: Number(p.total_cost_cny.toFixed(4)),
       err: p.total_errors,
     }));
@@ -160,8 +160,8 @@ export default function OpsPage() {
             <thead className="border-b border-neutral-800 text-neutral-500 text-xs uppercase tracking-wider font-mono bg-[#0a0a0a]">
               <tr>
                 <th className="py-3 px-4 text-left">平台</th>
-                <th className="py-3 px-4 text-right">L1 调用</th>
-                <th className="py-3 px-4 text-right">L2 调用</th>
+                <th className="py-3 px-4 text-right">非联网 调用</th>
+                <th className="py-3 px-4 text-right">联网 调用</th>
                 <th className="py-3 px-4 text-right">avg 延迟</th>
                 <th className="py-3 px-4 text-right">总 in→out token</th>
                 <th className="py-3 px-4 text-right">错误率</th>
@@ -231,7 +231,7 @@ export default function OpsPage() {
 
       {/* Platform call-count bar chart */}
       <section className="mb-10">
-        <h2 className="text-lg md:text-xl font-bold mb-3">平台调用量分布（L1 vs L2）</h2>
+        <h2 className="text-lg md:text-xl font-bold mb-3">平台调用量分布（非联网 vs 联网）</h2>
         <div className="rounded border border-neutral-800 bg-[#0F0F0F] p-3 md:p-4">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={platformBars} margin={{ left: 4, right: 24, top: 8, bottom: 4 }}>
@@ -243,8 +243,8 @@ export default function OpsPage() {
                 contentStyle={{ background: "#111", border: "1px solid #333", color: "#fff" }}
               />
               <Legend wrapperStyle={{ fontSize: 12, color: "#ccc" }} />
-              <Bar dataKey="L1" stackId="a" fill="#666" />
-              <Bar dataKey="L2" stackId="a" fill="#00FF88" />
+              <Bar dataKey="非联网" stackId="a" fill="#666" />
+              <Bar dataKey="联网" stackId="a" fill="#00FF88" />
             </BarChart>
           </ResponsiveContainer>
         </div>
