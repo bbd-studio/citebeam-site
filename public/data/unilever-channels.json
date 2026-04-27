@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T08:47:43.121450+00:00Z",
+    "generated_at": "2026-04-27T09:09:45.704622+00:00Z",
     "customer": "unilever",
-    "n_series": 92,
+    "n_series": 322,
     "n_brands": 23,
     "n_posts": 1750,
     "channels": [
@@ -250,6 +250,84 @@
       "brand": "多芬 Dove",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 24001.0
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3001195579272738
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.10440824590465672
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 17914.0
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.027628507843456548
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.25413049565947915
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -372,6 +450,174 @@
         {
           "date": "2026-04-26",
           "value": 19131.0
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 16227.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 20061.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 14610.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 14083.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 13473.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 14022.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 14793.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 16793.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 16502.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 16261.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 14902.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 42406.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 23332.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 19446.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 23044.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 19548.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 14504.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 16463.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 14625.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 15057.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 15026.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 17029.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 16450.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 13921.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 17591.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 15245.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 16912.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 17387.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 23585.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 19131.0
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 557488.0
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.040776892807306425
+        }
+      ]
+    },
+    {
+      "brand": "多芬 Dove",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.35387544563496304
         }
       ]
     },
@@ -694,6 +940,84 @@
       "brand": "力士 Lux",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 296769.0
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.06550602461547299
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.37374611741942054
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 310732.0
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.08519302362941698
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.5529048837269533
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -816,6 +1140,174 @@
         {
           "date": "2026-04-26",
           "value": 154311.0
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 180553.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 166511.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 138590.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 146213.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 144590.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 151082.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 151869.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 171842.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 180184.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 157251.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 153445.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 150197.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 141093.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 135325.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 256334.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 174352.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 202015.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 160218.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 162716.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 193528.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 186735.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 172969.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 178865.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 165450.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 156672.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 136535.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 139753.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 142948.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 154283.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 154311.0
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 4625893.0
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.13224296558417756
+        }
+      ]
+    },
+    {
+      "brand": "力士 Lux",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.5748916428379074
         }
       ]
     },
@@ -1090,6 +1582,84 @@
       "brand": "可悠然 Kuyura",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1159.0
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.053877551020408164
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.6579102715466352
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1351.0
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.3015414258188825
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2552370452039691
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -1212,6 +1782,174 @@
         {
           "date": "2026-04-26",
           "value": 1015.0
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 1016.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 1095.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 933.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 835.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 869.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 808.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 779.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 818.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 876.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 1028.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 1065.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 1132.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 2022.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 4363.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 2460.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 1528.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 1240.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 1175.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 1061.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 962.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 1195.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 1185.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 1157.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 1047.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 1069.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 912.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 952.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 961.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 924.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 1015.0
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 35833.0
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.148640851391204
+        }
+      ]
+    },
+    {
+      "brand": "可悠然 Kuyura",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.20108356372068134
         }
       ]
     },
@@ -1494,6 +2232,84 @@
       "brand": "清扬 Clear",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 78860.0
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.029598005039625033
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.19530125047366426
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 18182.0
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.16596126715403361
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.07135702080018856
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -1616,6 +2432,174 @@
         {
           "date": "2026-04-26",
           "value": 21557.0
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 20927.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 24047.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 19919.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 19928.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 22309.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 22666.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 21015.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 23577.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 20502.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 23669.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 25198.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 26368.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 22473.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 27471.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 26769.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 23030.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 24282.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 44120.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 26902.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 24775.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 25961.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 22528.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 22971.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 20285.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 21025.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 19923.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 24270.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 18578.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 22253.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 21557.0
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 650911.0
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.09733351084041282
+        }
+      ]
+    },
+    {
+      "brand": "清扬 Clear",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.12110637843461126
         }
       ]
     },
@@ -1914,6 +2898,84 @@
       "brand": "夏士莲 Sunsilk",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 252.0
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.45664739884393063
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.4230769230769231
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 198.0
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.1290322580645162
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.6923076923076923
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -2036,6 +3098,174 @@
         {
           "date": "2026-04-26",
           "value": 514.0
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 323.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 401.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 361.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 975.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 340.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 316.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 375.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 357.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 387.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 451.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 374.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 328.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 328.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 353.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 418.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 450.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 417.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 415.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 531.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 326.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 308.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 436.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 425.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 384.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 388.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 382.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 332.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 1119.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 680.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 514.0
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 13378.0
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.38804731272048143
+        }
+      ]
+    },
+    {
+      "brand": "夏士莲 Sunsilk",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.6622763419483101
         }
       ]
     },
@@ -2370,6 +3600,84 @@
       "brand": "凡士林 Vaseline",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 41321.0
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.06475468975468976
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.29270296639906884
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 26373.0
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.0279466791393826
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.539392563354699
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -2492,6 +3800,174 @@
         {
           "date": "2026-04-26",
           "value": 23471.0
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 18086.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 20330.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 15831.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 16159.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 16050.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 15569.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 16625.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 17706.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 19033.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 20075.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 18042.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 17732.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 16838.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 17738.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 18913.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 19980.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 17081.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 19392.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 19290.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 18011.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 17656.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 23452.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 23037.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 18705.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 20290.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 18805.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 22899.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 24993.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 27653.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 23471.0
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 544469.0
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.09117631348774478
+        }
+      ]
+    },
+    {
+      "brand": "凡士林 Vaseline",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.22007946093842787
         }
       ]
     },
@@ -2698,6 +4174,84 @@
       "brand": "欧舒丹 L'Occitane",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 12746.0
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.4242932171192312
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3962103268593084
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 3866.0
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.0814920408648135
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.17551716783962465
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -2820,6 +4374,174 @@
         {
           "date": "2026-04-26",
           "value": 4982.0
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 6791.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 5744.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 5312.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 5166.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 5677.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 4815.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 4848.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 4840.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 5082.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 5069.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 5068.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 5212.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 4765.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 4528.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 5013.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 5390.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 4796.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 6060.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 6006.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 4802.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 4417.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 4575.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 5171.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 4645.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 4548.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 4391.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 4355.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 4336.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 4638.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 4982.0
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 145025.0
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.34149287345674806
+        }
+      ]
+    },
+    {
+      "brand": "欧舒丹 L'Occitane",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.11158961290362103
         }
       ]
     },
@@ -3166,6 +4888,84 @@
       "brand": "伊索 Aesop",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 12776.0
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2935972575472741
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3465964302153122
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 11531.0
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3272854559243918
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.29459975300325586
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -3288,6 +5088,174 @@
         {
           "date": "2026-04-26",
           "value": 10914.0
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 13101.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 14618.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 8382.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 8872.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7826.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 7708.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 10082.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 12661.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 12890.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 16969.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 7841.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 6872.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 7471.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 8305.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 11752.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 13945.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 7843.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 7780.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 7368.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 7025.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 7681.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 12709.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 14626.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 8256.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 7823.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 7758.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 6517.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 6860.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 9101.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 10914.0
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 283998.0
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2729930370673766
+        }
+      ]
+    },
+    {
+      "brand": "伊索 Aesop",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.22077218683104222
         }
       ]
     },
@@ -3566,6 +5534,84 @@
       "brand": "薇姿 VICHY",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 3869.0
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.37354274611398963
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.7831521129918171
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1775.0
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.7300194931773879
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.22926617455492834
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -3688,6 +5734,174 @@
         {
           "date": "2026-04-26",
           "value": 4437.0
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 5232.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 5455.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 4709.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 4480.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 5037.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 5347.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 4887.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 6429.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 6754.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 7010.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 5619.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 5303.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 4452.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 4355.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 4690.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 5097.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 4449.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 4566.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 4964.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 4162.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 3775.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 3958.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 4453.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 5168.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 6440.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 4172.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 4390.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 3945.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 4384.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 4437.0
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 153367.0
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.25563369686027265
+        }
+      ]
+    },
+    {
+      "brand": "薇姿 VICHY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.16306773843240618
         }
       ]
     },
@@ -3986,6 +6200,84 @@
       "brand": "卡诗 KERASTASE",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 29805.0
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.22388875869072727
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.7290288896623738
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 18868.0
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.2663937176991744
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.1637614678899082
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -4108,6 +6400,174 @@
         {
           "date": "2026-04-26",
           "value": 15554.0
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 15345.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 16460.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 14054.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 13892.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 13466.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 14116.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 13477.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 14737.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 15454.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 17265.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 15655.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 19055.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 18666.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 45512.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 21766.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 20685.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 18051.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 16113.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 16378.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 16816.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 15932.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 17298.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 17589.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 15080.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 14740.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 14359.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 14209.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 13284.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 14134.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 15554.0
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 489534.0
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.20729529154771525
+        }
+      ]
+    },
+    {
+      "brand": "卡诗 KERASTASE",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.31966939118807824
         }
       ]
     },
@@ -4382,6 +6842,84 @@
       "brand": "丝塔芙 Cetaphil",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 23549.0
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.11801498127340825
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.3719782433521355
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 2500.0
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.10229276895943562
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.16931711880261927
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -4504,6 +7042,174 @@
         {
           "date": "2026-04-26",
           "value": 21783.0
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 25722.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 22034.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 21720.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 23216.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 21294.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 24996.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 19334.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 20617.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 20835.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 21841.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 23147.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 23743.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 23414.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 27648.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 30310.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 24697.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 21449.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 21073.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 22619.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 18297.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 18803.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 29665.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 22615.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 49843.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 29877.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 21025.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 40499.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 34980.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 24209.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 21783.0
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 785035.0
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.24056112775030375
+        }
+      ]
+    },
+    {
+      "brand": "丝塔芙 Cetaphil",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.8637482698777104
         }
       ]
     },
@@ -4730,6 +7436,84 @@
       "brand": "玉兰油 OLAY",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1394.0
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.018309859154929577
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3153241650294695
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1198.0
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.08269525267993874
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.274818401937046
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -4852,6 +7636,174 @@
         {
           "date": "2026-04-26",
           "value": 4076.0
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 6548.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 5192.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 4548.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 5258.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3919.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 3922.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 3551.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 3686.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 3794.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 4098.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 4145.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 4043.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 4102.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 4376.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 5145.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 4832.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 4351.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 4324.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 4307.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 4281.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 4593.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 5284.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 6004.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 4698.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 4364.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 4020.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 3883.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 4294.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 4175.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 4076.0
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 139687.0
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.32706259815587396
+        }
+      ]
+    },
+    {
+      "brand": "玉兰油 OLAY",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.020146044795488184
         }
       ]
     },
@@ -5102,6 +8054,84 @@
       "brand": "阿道夫 Adolph",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 13934.0
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.13491028745266034
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.22356866877414822
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 19209.0
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.5083691646191646
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3786712381938155
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -5224,6 +8254,174 @@
         {
           "date": "2026-04-26",
           "value": 9447.0
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 9539.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 10586.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 9516.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 8366.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7233.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 6740.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 7280.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 7672.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 7212.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 10821.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 10945.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 8862.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 8448.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 12707.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 14262.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 10495.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 9752.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 11820.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 10717.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 8745.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 9773.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 12394.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 11862.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 9720.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 10486.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 8934.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 8870.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 8629.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 11990.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 9447.0
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 279200.0
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.047394836415993666
+        }
+      ]
+    },
+    {
+      "brand": "阿道夫 Adolph",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.5601600393392789
         }
       ]
     },
@@ -5522,6 +8720,84 @@
       "brand": "海飞丝 Head & Shoulders",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 21250.0
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.5886884484360483
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.4655298171483186
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 4621.0
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.0645748987854251
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2962229667986598
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -5644,6 +8920,174 @@
         {
           "date": "2026-04-26",
           "value": 9548.0
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 9961.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 10499.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 8875.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 9485.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7881.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 7298.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 8362.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 7606.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 8820.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 9137.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 9336.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 8408.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 9568.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 7418.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 7885.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 9357.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 9280.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 8152.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 8374.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 7624.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 8917.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 8044.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 8782.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 7497.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 7469.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 7170.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 7294.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 7325.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 7450.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 9548.0
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 254131.0
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.27319916375190545
+        }
+      ]
+    },
+    {
+      "brand": "海飞丝 Head & Shoulders",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.17572362702232833
         }
       ]
     },
@@ -5822,6 +9266,84 @@
       "brand": "阿迪达斯 Adidas",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 225019.0
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.15928519121844784
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.221751579778831
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 105811.0
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.21276132404181183
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.0900112588144666
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -5944,6 +9466,174 @@
         {
           "date": "2026-04-26",
           "value": 304153.0
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 340181.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 365385.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 227922.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 246230.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 236928.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 240995.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 271477.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 362131.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 365533.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 308079.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 208397.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 190405.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 194593.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 227452.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 313773.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 313161.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 243477.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 221331.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 216126.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 200538.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 232216.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 332428.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 313696.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 198674.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 190021.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 196986.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 184559.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 216143.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 290544.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 304153.0
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 7909907.0
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.03423641633275599
+        }
+      ]
+    },
+    {
+      "brand": "阿迪达斯 Adidas",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.7217660782409308
         }
       ]
     },
@@ -6290,6 +9980,84 @@
       "brand": "吕 Ryo",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 96289.0
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.07260153909869302
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.49670442250296626
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 18384.0
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.0541888869774643
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.14065893156294595
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -6412,6 +10180,174 @@
         {
           "date": "2026-04-26",
           "value": 102051.0
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 80972.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 71763.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 65432.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 70811.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 84910.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 94424.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 81801.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 88348.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 79497.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 82360.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 65691.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 95993.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 156082.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 138922.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 99279.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 104529.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 81871.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 163282.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 174822.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 105177.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 75907.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 86502.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 117569.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 83812.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 84434.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 83072.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 138189.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 71368.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 96005.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 102051.0
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 3009073.0
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.1353565759472489
+        }
+      ]
+    },
+    {
+      "brand": "吕 Ryo",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.13726277810701867
         }
       ]
     },
@@ -6622,6 +10558,84 @@
       "brand": "妮维雅 Nivea",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 10824.0
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.5494130380484555
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.3220593761743705
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 6771.0
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.1484056987788331
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.19291754756871035
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -6744,6 +10758,174 @@
         {
           "date": "2026-04-26",
           "value": 18129.0
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 14300.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 17313.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 13085.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 12911.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 12037.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 11748.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 11004.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 12930.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 13670.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 14313.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 12566.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 12788.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 14108.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 13936.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 16718.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 18058.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 13943.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 13740.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 14039.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 12658.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 12125.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 14546.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 15505.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 12532.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 12973.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 13548.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 11273.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 14667.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 15724.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 18129.0
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 426004.0
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.32602408571121194
+        }
+      ]
+    },
+    {
+      "brand": "妮维雅 Nivea",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.019797287268931905
         }
       ]
     },
@@ -7018,6 +11200,84 @@
       "brand": "舒肤佳 Safeguard",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 106197.0
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.19432510852695742
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.059015347181363996
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 10948.0
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.16928334935383957
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.17986852031468908
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -7140,6 +11400,174 @@
         {
           "date": "2026-04-26",
           "value": 46948.0
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 69291.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 49113.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 43139.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 28606.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 18421.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 18285.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 48041.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 28895.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 30116.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 24687.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 24182.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 21734.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 31351.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 39204.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 32642.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 41881.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 21955.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 21973.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 23776.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 30799.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 53154.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 68262.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 54768.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 34303.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 56604.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 36336.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 27474.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 42016.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 40103.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 46948.0
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1071817.0
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.375483971977429
+        }
+      ]
+    },
+    {
+      "brand": "舒肤佳 Safeguard",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.06490835933192347
         }
       ]
     },
@@ -7498,6 +11926,84 @@
       "brand": "六神 Liushen",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 65002.0
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.245940156174418
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.07965679333975194
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 19812.0
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.4426088028603132
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.48068152031454786
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -7620,6 +12126,174 @@
         {
           "date": "2026-04-26",
           "value": 22140.0
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 23769.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 28963.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 23740.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 22042.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 19082.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 16211.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 21044.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 18343.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 18346.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 18896.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 18142.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 17738.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 30411.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 23089.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 20739.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 21152.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 31534.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 20960.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 19418.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 22338.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 24329.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 23889.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 27241.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 24259.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 20630.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 45803.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 53286.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 21044.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 20359.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 22140.0
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 679361.0
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.0171889567856145
+        }
+      ]
+    },
+    {
+      "brand": "六神 Liushen",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.3571097536127081
         }
       ]
     },
@@ -7946,6 +12620,84 @@
       "brand": "蒂花之秀 Teenmix",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 3328.0
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.27557683935568134
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1.140192926045016
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 2833.0
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.17600664176006642
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.40929941618015014
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -8068,6 +12820,174 @@
         {
           "date": "2026-04-26",
           "value": 1554.0
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 1693.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 2226.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 2411.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 2826.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 2503.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 1821.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 1609.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 1564.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 1961.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 2203.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 1940.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 1665.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 1614.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 1518.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 1614.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 1750.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 1635.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 2805.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 1511.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 1470.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 1420.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 1417.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 1585.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 1484.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 1534.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 1442.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 1374.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 1415.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 1483.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 1554.0
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 50595.0
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.05378616446297993
+        }
+      ]
+    },
+    {
+      "brand": "蒂花之秀 Teenmix",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.11152670951427668
         }
       ]
     },
@@ -8318,6 +13238,84 @@
       "brand": "蜂花 Bee & Flower",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 23452.0
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.4208166727250697
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.25559481743227325
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 9248.0
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.12164948453608247
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.06698950766747377
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -8440,6 +13438,174 @@
         {
           "date": "2026-04-26",
           "value": 7935.0
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 7763.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 8441.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 7569.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 6999.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7396.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 7438.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 7035.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 7501.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 8370.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 8955.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 7904.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 7467.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 7639.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 7433.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 8634.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 9417.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 7995.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 7691.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 7508.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 7314.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 6881.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 7213.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 8623.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 7621.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 7136.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 7926.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 7127.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 6270.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 6676.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 7935.0
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 211379.0
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.1818526646617356
+        }
+      ]
+    },
+    {
+      "brand": "蜂花 Bee & Flower",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.45726500115541635
         }
       ]
     },
@@ -8702,6 +13868,84 @@
       "brand": "美加净 Maxam",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 1044.0
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2526843235504653
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.5646371976647206
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 2519.0
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.1708360763660303
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.022321428571428572
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -8824,6 +14068,174 @@
         {
           "date": "2026-04-26",
           "value": 900.0
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 984.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 1022.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 1032.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 964.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1004.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 887.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 849.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 998.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 950.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 978.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 996.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 1187.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 1007.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 982.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 957.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 1019.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 1832.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 1436.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 1105.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 1042.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 964.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 919.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 953.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 1014.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 1081.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 922.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 909.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 939.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 900.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 900.0
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 29839.0
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.2601656253099276
+        }
+      ]
+    },
+    {
+      "brand": "美加净 Maxam",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.30809720354310627
         }
       ]
     },
@@ -9166,6 +14578,84 @@
       "brand": "隆力奇 Longrich",
       "brand_type": "competitor",
       "channel": "抖音",
+      "metric_type": "consume_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 3983.0
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 0.2644444444444444
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "consume_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.7312234293811998
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 10231.0
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.00727731418591112
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "content_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.7947725266789698
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
       "points": [
@@ -9290,6 +14780,174 @@
           "value": 1987.0
         }
       ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-03-28",
+          "value": 2132.0
+        },
+        {
+          "date": "2026-03-29",
+          "value": 2183.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 2212.0
+        },
+        {
+          "date": "2026-03-31",
+          "value": 2167.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 2101.0
+        },
+        {
+          "date": "2026-04-02",
+          "value": 2041.0
+        },
+        {
+          "date": "2026-04-03",
+          "value": 1917.0
+        },
+        {
+          "date": "2026-04-04",
+          "value": 1965.0
+        },
+        {
+          "date": "2026-04-05",
+          "value": 1885.0
+        },
+        {
+          "date": "2026-04-06",
+          "value": 2051.0
+        },
+        {
+          "date": "2026-04-07",
+          "value": 2166.0
+        },
+        {
+          "date": "2026-04-08",
+          "value": 2279.0
+        },
+        {
+          "date": "2026-04-09",
+          "value": 2518.0
+        },
+        {
+          "date": "2026-04-10",
+          "value": 2230.0
+        },
+        {
+          "date": "2026-04-11",
+          "value": 2268.0
+        },
+        {
+          "date": "2026-04-12",
+          "value": 2132.0
+        },
+        {
+          "date": "2026-04-13",
+          "value": 2238.0
+        },
+        {
+          "date": "2026-04-14",
+          "value": 2381.0
+        },
+        {
+          "date": "2026-04-15",
+          "value": 2210.0
+        },
+        {
+          "date": "2026-04-16",
+          "value": 2170.0
+        },
+        {
+          "date": "2026-04-17",
+          "value": 2133.0
+        },
+        {
+          "date": "2026-04-18",
+          "value": 2107.0
+        },
+        {
+          "date": "2026-04-19",
+          "value": 2103.0
+        },
+        {
+          "date": "2026-04-20",
+          "value": 2093.0
+        },
+        {
+          "date": "2026-04-21",
+          "value": 2041.0
+        },
+        {
+          "date": "2026-04-22",
+          "value": 2100.0
+        },
+        {
+          "date": "2026-04-23",
+          "value": 2057.0
+        },
+        {
+          "date": "2026-04-24",
+          "value": 2200.0
+        },
+        {
+          "date": "2026-04-25",
+          "value": 1991.0
+        },
+        {
+          "date": "2026-04-26",
+          "value": 1987.0
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_period",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": 54283.0
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_wow",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.1634612421020188
+        }
+      ]
+    },
+    {
+      "brand": "隆力奇 Longrich",
+      "brand_type": "competitor",
+      "channel": "抖音",
+      "metric_type": "search_index_yoy",
+      "source": "douyin_trendinsight_playwright",
+      "points": [
+        {
+          "date": "2026-04-26",
+          "value": -0.43861626764569006
+        }
+      ]
     }
   ],
   "per_brand": [
@@ -9318,12 +14976,82 @@
           "peak": 8.0,
           "n_points": 18
         },
+        "抖音.consume_index_period": {
+          "latest": 24001.0,
+          "latest_date": "2026-04-26",
+          "mean": 24001.0,
+          "peak": 24001.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.3001195579272738,
+          "latest_date": "2026-04-26",
+          "mean": -0.3001195579272738,
+          "peak": -0.3001195579272738,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.10440824590465672,
+          "latest_date": "2026-04-26",
+          "mean": 0.10440824590465672,
+          "peak": 0.10440824590465672,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 17914.0,
+          "latest_date": "2026-04-26",
+          "mean": 17914.0,
+          "peak": 17914.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.027628507843456548,
+          "latest_date": "2026-04-26",
+          "mean": -0.027628507843456548,
+          "peak": -0.027628507843456548,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.25413049565947915,
+          "latest_date": "2026-04-26",
+          "mean": 0.25413049565947915,
+          "peak": 0.25413049565947915,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 19131.0,
           "latest_date": "2026-04-26",
           "mean": 17747.633333333335,
           "peak": 42406.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 19131.0,
+          "latest_date": "2026-04-26",
+          "mean": 17747.633333333335,
+          "peak": 42406.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 557488.0,
+          "latest_date": "2026-04-26",
+          "mean": 557488.0,
+          "peak": 557488.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.040776892807306425,
+          "latest_date": "2026-04-26",
+          "mean": -0.040776892807306425,
+          "peak": -0.040776892807306425,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.35387544563496304,
+          "latest_date": "2026-04-26",
+          "mean": 0.35387544563496304,
+          "peak": 0.35387544563496304,
+          "n_points": 1
         }
       }
     },
@@ -9352,12 +15080,82 @@
           "peak": 23.0,
           "n_points": 24
         },
+        "抖音.consume_index_period": {
+          "latest": 296769.0,
+          "latest_date": "2026-04-26",
+          "mean": 296769.0,
+          "peak": 296769.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.06550602461547299,
+          "latest_date": "2026-04-26",
+          "mean": 0.06550602461547299,
+          "peak": 0.06550602461547299,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.37374611741942054,
+          "latest_date": "2026-04-26",
+          "mean": 0.37374611741942054,
+          "peak": 0.37374611741942054,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 310732.0,
+          "latest_date": "2026-04-26",
+          "mean": 310732.0,
+          "peak": 310732.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.08519302362941698,
+          "latest_date": "2026-04-26",
+          "mean": 0.08519302362941698,
+          "peak": 0.08519302362941698,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.5529048837269533,
+          "latest_date": "2026-04-26",
+          "mean": -0.5529048837269533,
+          "peak": -0.5529048837269533,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 154311.0,
           "latest_date": "2026-04-26",
           "mean": 163547.63333333333,
           "peak": 256334.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 154311.0,
+          "latest_date": "2026-04-26",
+          "mean": 163547.63333333333,
+          "peak": 256334.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 4625893.0,
+          "latest_date": "2026-04-26",
+          "mean": 4625893.0,
+          "peak": 4625893.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.13224296558417756,
+          "latest_date": "2026-04-26",
+          "mean": -0.13224296558417756,
+          "peak": -0.13224296558417756,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.5748916428379074,
+          "latest_date": "2026-04-26",
+          "mean": 0.5748916428379074,
+          "peak": 0.5748916428379074,
+          "n_points": 1
         }
       }
     },
@@ -9386,12 +15184,82 @@
           "peak": 34.0,
           "n_points": 22
         },
+        "抖音.consume_index_period": {
+          "latest": 1159.0,
+          "latest_date": "2026-04-26",
+          "mean": 1159.0,
+          "peak": 1159.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.053877551020408164,
+          "latest_date": "2026-04-26",
+          "mean": -0.053877551020408164,
+          "peak": -0.053877551020408164,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.6579102715466352,
+          "latest_date": "2026-04-26",
+          "mean": -0.6579102715466352,
+          "peak": -0.6579102715466352,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 1351.0,
+          "latest_date": "2026-04-26",
+          "mean": 1351.0,
+          "peak": 1351.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.3015414258188825,
+          "latest_date": "2026-04-26",
+          "mean": 0.3015414258188825,
+          "peak": 0.3015414258188825,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.2552370452039691,
+          "latest_date": "2026-04-26",
+          "mean": -0.2552370452039691,
+          "peak": -0.2552370452039691,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 1015.0,
           "latest_date": "2026-04-26",
           "mean": 1216.0666666666666,
           "peak": 4363.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 1015.0,
+          "latest_date": "2026-04-26",
+          "mean": 1216.0666666666666,
+          "peak": 4363.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 35833.0,
+          "latest_date": "2026-04-26",
+          "mean": 35833.0,
+          "peak": 35833.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": 0.148640851391204,
+          "latest_date": "2026-04-26",
+          "mean": 0.148640851391204,
+          "peak": 0.148640851391204,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.20108356372068134,
+          "latest_date": "2026-04-26",
+          "mean": -0.20108356372068134,
+          "peak": -0.20108356372068134,
+          "n_points": 1
         }
       }
     },
@@ -9420,12 +15288,82 @@
           "peak": 12.0,
           "n_points": 21
         },
+        "抖音.consume_index_period": {
+          "latest": 78860.0,
+          "latest_date": "2026-04-26",
+          "mean": 78860.0,
+          "peak": 78860.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.029598005039625033,
+          "latest_date": "2026-04-26",
+          "mean": 0.029598005039625033,
+          "peak": 0.029598005039625033,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.19530125047366426,
+          "latest_date": "2026-04-26",
+          "mean": 0.19530125047366426,
+          "peak": 0.19530125047366426,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 18182.0,
+          "latest_date": "2026-04-26",
+          "mean": 18182.0,
+          "peak": 18182.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.16596126715403361,
+          "latest_date": "2026-04-26",
+          "mean": 0.16596126715403361,
+          "peak": 0.16596126715403361,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.07135702080018856,
+          "latest_date": "2026-04-26",
+          "mean": 0.07135702080018856,
+          "peak": 0.07135702080018856,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 21557.0,
           "latest_date": "2026-04-26",
           "mean": 23643.266666666666,
           "peak": 44120.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 21557.0,
+          "latest_date": "2026-04-26",
+          "mean": 23643.266666666666,
+          "peak": 44120.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 650911.0,
+          "latest_date": "2026-04-26",
+          "mean": 650911.0,
+          "peak": 650911.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.09733351084041282,
+          "latest_date": "2026-04-26",
+          "mean": -0.09733351084041282,
+          "peak": -0.09733351084041282,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.12110637843461126,
+          "latest_date": "2026-04-26",
+          "mean": 0.12110637843461126,
+          "peak": 0.12110637843461126,
+          "n_points": 1
         }
       }
     },
@@ -9454,12 +15392,82 @@
           "peak": 7.0,
           "n_points": 22
         },
+        "抖音.consume_index_period": {
+          "latest": 252.0,
+          "latest_date": "2026-04-26",
+          "mean": 252.0,
+          "peak": 252.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.45664739884393063,
+          "latest_date": "2026-04-26",
+          "mean": 0.45664739884393063,
+          "peak": 0.45664739884393063,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 1.4230769230769231,
+          "latest_date": "2026-04-26",
+          "mean": 1.4230769230769231,
+          "peak": 1.4230769230769231,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 198.0,
+          "latest_date": "2026-04-26",
+          "mean": 198.0,
+          "peak": 198.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 1.1290322580645162,
+          "latest_date": "2026-04-26",
+          "mean": 1.1290322580645162,
+          "peak": 1.1290322580645162,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.6923076923076923,
+          "latest_date": "2026-04-26",
+          "mean": 0.6923076923076923,
+          "peak": 0.6923076923076923,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 514.0,
           "latest_date": "2026-04-26",
           "mean": 439.8,
           "peak": 1119.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 514.0,
+          "latest_date": "2026-04-26",
+          "mean": 439.8,
+          "peak": 1119.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 13378.0,
+          "latest_date": "2026-04-26",
+          "mean": 13378.0,
+          "peak": 13378.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": 0.38804731272048143,
+          "latest_date": "2026-04-26",
+          "mean": 0.38804731272048143,
+          "peak": 0.38804731272048143,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.6622763419483101,
+          "latest_date": "2026-04-26",
+          "mean": 0.6622763419483101,
+          "peak": 0.6622763419483101,
+          "n_points": 1
         }
       }
     },
@@ -9488,12 +15496,82 @@
           "peak": 13.0,
           "n_points": 25
         },
+        "抖音.consume_index_period": {
+          "latest": 41321.0,
+          "latest_date": "2026-04-26",
+          "mean": 41321.0,
+          "peak": 41321.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.06475468975468976,
+          "latest_date": "2026-04-26",
+          "mean": 0.06475468975468976,
+          "peak": 0.06475468975468976,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.29270296639906884,
+          "latest_date": "2026-04-26",
+          "mean": -0.29270296639906884,
+          "peak": -0.29270296639906884,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 26373.0,
+          "latest_date": "2026-04-26",
+          "mean": 26373.0,
+          "peak": 26373.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.0279466791393826,
+          "latest_date": "2026-04-26",
+          "mean": 0.0279466791393826,
+          "peak": 0.0279466791393826,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.539392563354699,
+          "latest_date": "2026-04-26",
+          "mean": -0.539392563354699,
+          "peak": -0.539392563354699,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 23471.0,
           "latest_date": "2026-04-26",
           "mean": 19314.733333333334,
           "peak": 27653.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 23471.0,
+          "latest_date": "2026-04-26",
+          "mean": 19314.733333333334,
+          "peak": 27653.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 544469.0,
+          "latest_date": "2026-04-26",
+          "mean": 544469.0,
+          "peak": 544469.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.09117631348774478,
+          "latest_date": "2026-04-26",
+          "mean": -0.09117631348774478,
+          "peak": -0.09117631348774478,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.22007946093842787,
+          "latest_date": "2026-04-26",
+          "mean": 0.22007946093842787,
+          "peak": 0.22007946093842787,
+          "n_points": 1
         }
       }
     },
@@ -9522,12 +15600,82 @@
           "peak": 20.0,
           "n_points": 15
         },
+        "抖音.consume_index_period": {
+          "latest": 12746.0,
+          "latest_date": "2026-04-26",
+          "mean": 12746.0,
+          "peak": 12746.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.4242932171192312,
+          "latest_date": "2026-04-26",
+          "mean": 0.4242932171192312,
+          "peak": 0.4242932171192312,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.3962103268593084,
+          "latest_date": "2026-04-26",
+          "mean": -0.3962103268593084,
+          "peak": -0.3962103268593084,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 3866.0,
+          "latest_date": "2026-04-26",
+          "mean": 3866.0,
+          "peak": 3866.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.0814920408648135,
+          "latest_date": "2026-04-26",
+          "mean": -0.0814920408648135,
+          "peak": -0.0814920408648135,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.17551716783962465,
+          "latest_date": "2026-04-26",
+          "mean": -0.17551716783962465,
+          "peak": -0.17551716783962465,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 4982.0,
           "latest_date": "2026-04-26",
           "mean": 5034.733333333334,
           "peak": 6791.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 4982.0,
+          "latest_date": "2026-04-26",
+          "mean": 5034.733333333334,
+          "peak": 6791.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 145025.0,
+          "latest_date": "2026-04-26",
+          "mean": 145025.0,
+          "peak": 145025.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.34149287345674806,
+          "latest_date": "2026-04-26",
+          "mean": -0.34149287345674806,
+          "peak": -0.34149287345674806,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.11158961290362103,
+          "latest_date": "2026-04-26",
+          "mean": -0.11158961290362103,
+          "peak": -0.11158961290362103,
+          "n_points": 1
         }
       }
     },
@@ -9556,12 +15704,82 @@
           "peak": 9.0,
           "n_points": 26
         },
+        "抖音.consume_index_period": {
+          "latest": 12776.0,
+          "latest_date": "2026-04-26",
+          "mean": 12776.0,
+          "peak": 12776.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.2935972575472741,
+          "latest_date": "2026-04-26",
+          "mean": -0.2935972575472741,
+          "peak": -0.2935972575472741,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.3465964302153122,
+          "latest_date": "2026-04-26",
+          "mean": -0.3465964302153122,
+          "peak": -0.3465964302153122,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 11531.0,
+          "latest_date": "2026-04-26",
+          "mean": 11531.0,
+          "peak": 11531.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.3272854559243918,
+          "latest_date": "2026-04-26",
+          "mean": -0.3272854559243918,
+          "peak": -0.3272854559243918,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.29459975300325586,
+          "latest_date": "2026-04-26",
+          "mean": 0.29459975300325586,
+          "peak": 0.29459975300325586,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 10914.0,
           "latest_date": "2026-04-26",
           "mean": 9718.533333333333,
           "peak": 16969.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 10914.0,
+          "latest_date": "2026-04-26",
+          "mean": 9718.533333333333,
+          "peak": 16969.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 283998.0,
+          "latest_date": "2026-04-26",
+          "mean": 283998.0,
+          "peak": 283998.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.2729930370673766,
+          "latest_date": "2026-04-26",
+          "mean": -0.2729930370673766,
+          "peak": -0.2729930370673766,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.22077218683104222,
+          "latest_date": "2026-04-26",
+          "mean": 0.22077218683104222,
+          "peak": 0.22077218683104222,
+          "n_points": 1
         }
       }
     },
@@ -9590,12 +15808,82 @@
           "peak": 14.0,
           "n_points": 23
         },
+        "抖音.consume_index_period": {
+          "latest": 3869.0,
+          "latest_date": "2026-04-26",
+          "mean": 3869.0,
+          "peak": 3869.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.37354274611398963,
+          "latest_date": "2026-04-26",
+          "mean": -0.37354274611398963,
+          "peak": -0.37354274611398963,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.7831521129918171,
+          "latest_date": "2026-04-26",
+          "mean": -0.7831521129918171,
+          "peak": -0.7831521129918171,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 1775.0,
+          "latest_date": "2026-04-26",
+          "mean": 1775.0,
+          "peak": 1775.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.7300194931773879,
+          "latest_date": "2026-04-26",
+          "mean": 0.7300194931773879,
+          "peak": 0.7300194931773879,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.22926617455492834,
+          "latest_date": "2026-04-26",
+          "mean": -0.22926617455492834,
+          "peak": -0.22926617455492834,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 4437.0,
           "latest_date": "2026-04-26",
           "mean": 4937.3,
           "peak": 7010.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 4437.0,
+          "latest_date": "2026-04-26",
+          "mean": 4937.3,
+          "peak": 7010.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 153367.0,
+          "latest_date": "2026-04-26",
+          "mean": 153367.0,
+          "peak": 153367.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.25563369686027265,
+          "latest_date": "2026-04-26",
+          "mean": -0.25563369686027265,
+          "peak": -0.25563369686027265,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.16306773843240618,
+          "latest_date": "2026-04-26",
+          "mean": -0.16306773843240618,
+          "peak": -0.16306773843240618,
+          "n_points": 1
         }
       }
     },
@@ -9624,12 +15912,82 @@
           "peak": 21.0,
           "n_points": 25
         },
+        "抖音.consume_index_period": {
+          "latest": 29805.0,
+          "latest_date": "2026-04-26",
+          "mean": 29805.0,
+          "peak": 29805.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.22388875869072727,
+          "latest_date": "2026-04-26",
+          "mean": -0.22388875869072727,
+          "peak": -0.22388875869072727,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.7290288896623738,
+          "latest_date": "2026-04-26",
+          "mean": 0.7290288896623738,
+          "peak": 0.7290288896623738,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 18868.0,
+          "latest_date": "2026-04-26",
+          "mean": 18868.0,
+          "peak": 18868.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.2663937176991744,
+          "latest_date": "2026-04-26",
+          "mean": 0.2663937176991744,
+          "peak": 0.2663937176991744,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 1.1637614678899082,
+          "latest_date": "2026-04-26",
+          "mean": 1.1637614678899082,
+          "peak": 1.1637614678899082,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 15554.0,
           "latest_date": "2026-04-26",
           "mean": 16971.4,
           "peak": 45512.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 15554.0,
+          "latest_date": "2026-04-26",
+          "mean": 16971.4,
+          "peak": 45512.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 489534.0,
+          "latest_date": "2026-04-26",
+          "mean": 489534.0,
+          "peak": 489534.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.20729529154771525,
+          "latest_date": "2026-04-26",
+          "mean": -0.20729529154771525,
+          "peak": -0.20729529154771525,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.31966939118807824,
+          "latest_date": "2026-04-26",
+          "mean": 0.31966939118807824,
+          "peak": 0.31966939118807824,
+          "n_points": 1
         }
       }
     },
@@ -9658,12 +16016,82 @@
           "peak": 15.0,
           "n_points": 23
         },
+        "抖音.consume_index_period": {
+          "latest": 23549.0,
+          "latest_date": "2026-04-26",
+          "mean": 23549.0,
+          "peak": 23549.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.11801498127340825,
+          "latest_date": "2026-04-26",
+          "mean": -0.11801498127340825,
+          "peak": -0.11801498127340825,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 1.3719782433521355,
+          "latest_date": "2026-04-26",
+          "mean": 1.3719782433521355,
+          "peak": 1.3719782433521355,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 2500.0,
+          "latest_date": "2026-04-26",
+          "mean": 2500.0,
+          "peak": 2500.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.10229276895943562,
+          "latest_date": "2026-04-26",
+          "mean": 0.10229276895943562,
+          "peak": 0.10229276895943562,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.16931711880261927,
+          "latest_date": "2026-04-26",
+          "mean": 0.16931711880261927,
+          "peak": 0.16931711880261927,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 21783.0,
           "latest_date": "2026-04-26",
           "mean": 25043.5,
           "peak": 49843.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 21783.0,
+          "latest_date": "2026-04-26",
+          "mean": 25043.5,
+          "peak": 49843.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 785035.0,
+          "latest_date": "2026-04-26",
+          "mean": 785035.0,
+          "peak": 785035.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.24056112775030375,
+          "latest_date": "2026-04-26",
+          "mean": -0.24056112775030375,
+          "peak": -0.24056112775030375,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.8637482698777104,
+          "latest_date": "2026-04-26",
+          "mean": 0.8637482698777104,
+          "peak": 0.8637482698777104,
+          "n_points": 1
         }
       }
     },
@@ -9692,12 +16120,82 @@
           "peak": 15.0,
           "n_points": 16
         },
+        "抖音.consume_index_period": {
+          "latest": 1394.0,
+          "latest_date": "2026-04-26",
+          "mean": 1394.0,
+          "peak": 1394.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.018309859154929577,
+          "latest_date": "2026-04-26",
+          "mean": -0.018309859154929577,
+          "peak": -0.018309859154929577,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.3153241650294695,
+          "latest_date": "2026-04-26",
+          "mean": -0.3153241650294695,
+          "peak": -0.3153241650294695,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 1198.0,
+          "latest_date": "2026-04-26",
+          "mean": 1198.0,
+          "peak": 1198.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.08269525267993874,
+          "latest_date": "2026-04-26",
+          "mean": -0.08269525267993874,
+          "peak": -0.08269525267993874,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.274818401937046,
+          "latest_date": "2026-04-26",
+          "mean": -0.274818401937046,
+          "peak": -0.274818401937046,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 4076.0,
           "latest_date": "2026-04-26",
           "mean": 4460.433333333333,
           "peak": 6548.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 4076.0,
+          "latest_date": "2026-04-26",
+          "mean": 4460.433333333333,
+          "peak": 6548.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 139687.0,
+          "latest_date": "2026-04-26",
+          "mean": 139687.0,
+          "peak": 139687.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.32706259815587396,
+          "latest_date": "2026-04-26",
+          "mean": -0.32706259815587396,
+          "peak": -0.32706259815587396,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.020146044795488184,
+          "latest_date": "2026-04-26",
+          "mean": -0.020146044795488184,
+          "peak": -0.020146044795488184,
+          "n_points": 1
         }
       }
     },
@@ -9726,12 +16224,82 @@
           "peak": 9.0,
           "n_points": 19
         },
+        "抖音.consume_index_period": {
+          "latest": 13934.0,
+          "latest_date": "2026-04-26",
+          "mean": 13934.0,
+          "peak": 13934.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.13491028745266034,
+          "latest_date": "2026-04-26",
+          "mean": -0.13491028745266034,
+          "peak": -0.13491028745266034,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.22356866877414822,
+          "latest_date": "2026-04-26",
+          "mean": 0.22356866877414822,
+          "peak": 0.22356866877414822,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 19209.0,
+          "latest_date": "2026-04-26",
+          "mean": 19209.0,
+          "peak": 19209.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.5083691646191646,
+          "latest_date": "2026-04-26",
+          "mean": -0.5083691646191646,
+          "peak": -0.5083691646191646,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.3786712381938155,
+          "latest_date": "2026-04-26",
+          "mean": -0.3786712381938155,
+          "peak": -0.3786712381938155,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 9447.0,
           "latest_date": "2026-04-26",
           "mean": 9794.1,
           "peak": 14262.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 9447.0,
+          "latest_date": "2026-04-26",
+          "mean": 9794.1,
+          "peak": 14262.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 279200.0,
+          "latest_date": "2026-04-26",
+          "mean": 279200.0,
+          "peak": 279200.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.047394836415993666,
+          "latest_date": "2026-04-26",
+          "mean": -0.047394836415993666,
+          "peak": -0.047394836415993666,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.5601600393392789,
+          "latest_date": "2026-04-26",
+          "mean": 0.5601600393392789,
+          "peak": 0.5601600393392789,
+          "n_points": 1
         }
       }
     },
@@ -9760,12 +16328,82 @@
           "peak": 10.0,
           "n_points": 23
         },
+        "抖音.consume_index_period": {
+          "latest": 21250.0,
+          "latest_date": "2026-04-26",
+          "mean": 21250.0,
+          "peak": 21250.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.5886884484360483,
+          "latest_date": "2026-04-26",
+          "mean": -0.5886884484360483,
+          "peak": -0.5886884484360483,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.4655298171483186,
+          "latest_date": "2026-04-26",
+          "mean": -0.4655298171483186,
+          "peak": -0.4655298171483186,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 4621.0,
+          "latest_date": "2026-04-26",
+          "mean": 4621.0,
+          "peak": 4621.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.0645748987854251,
+          "latest_date": "2026-04-26",
+          "mean": -0.0645748987854251,
+          "peak": -0.0645748987854251,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.2962229667986598,
+          "latest_date": "2026-04-26",
+          "mean": -0.2962229667986598,
+          "peak": -0.2962229667986598,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 9548.0,
           "latest_date": "2026-04-26",
           "mean": 8427.4,
           "peak": 10499.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 9548.0,
+          "latest_date": "2026-04-26",
+          "mean": 8427.4,
+          "peak": 10499.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 254131.0,
+          "latest_date": "2026-04-26",
+          "mean": 254131.0,
+          "peak": 254131.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.27319916375190545,
+          "latest_date": "2026-04-26",
+          "mean": -0.27319916375190545,
+          "peak": -0.27319916375190545,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.17572362702232833,
+          "latest_date": "2026-04-26",
+          "mean": -0.17572362702232833,
+          "peak": -0.17572362702232833,
+          "n_points": 1
         }
       }
     },
@@ -9794,12 +16432,82 @@
           "peak": 85.0,
           "n_points": 12
         },
+        "抖音.consume_index_period": {
+          "latest": 225019.0,
+          "latest_date": "2026-04-26",
+          "mean": 225019.0,
+          "peak": 225019.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.15928519121844784,
+          "latest_date": "2026-04-26",
+          "mean": -0.15928519121844784,
+          "peak": -0.15928519121844784,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 1.221751579778831,
+          "latest_date": "2026-04-26",
+          "mean": 1.221751579778831,
+          "peak": 1.221751579778831,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 105811.0,
+          "latest_date": "2026-04-26",
+          "mean": 105811.0,
+          "peak": 105811.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.21276132404181183,
+          "latest_date": "2026-04-26",
+          "mean": 0.21276132404181183,
+          "peak": 0.21276132404181183,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 1.0900112588144666,
+          "latest_date": "2026-04-26",
+          "mean": 1.0900112588144666,
+          "peak": 1.0900112588144666,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 304153.0,
           "latest_date": "2026-04-26",
           "mean": 258451.13333333333,
           "peak": 365533.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 304153.0,
+          "latest_date": "2026-04-26",
+          "mean": 258451.13333333333,
+          "peak": 365533.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 7909907.0,
+          "latest_date": "2026-04-26",
+          "mean": 7909907.0,
+          "peak": 7909907.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.03423641633275599,
+          "latest_date": "2026-04-26",
+          "mean": -0.03423641633275599,
+          "peak": -0.03423641633275599,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.7217660782409308,
+          "latest_date": "2026-04-26",
+          "mean": 0.7217660782409308,
+          "peak": 0.7217660782409308,
+          "n_points": 1
         }
       }
     },
@@ -9828,12 +16536,82 @@
           "peak": 41.0,
           "n_points": 26
         },
+        "抖音.consume_index_period": {
+          "latest": 96289.0,
+          "latest_date": "2026-04-26",
+          "mean": 96289.0,
+          "peak": 96289.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.07260153909869302,
+          "latest_date": "2026-04-26",
+          "mean": -0.07260153909869302,
+          "peak": -0.07260153909869302,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.49670442250296626,
+          "latest_date": "2026-04-26",
+          "mean": -0.49670442250296626,
+          "peak": -0.49670442250296626,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 18384.0,
+          "latest_date": "2026-04-26",
+          "mean": 18384.0,
+          "peak": 18384.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.0541888869774643,
+          "latest_date": "2026-04-26",
+          "mean": 0.0541888869774643,
+          "peak": 0.0541888869774643,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.14065893156294595,
+          "latest_date": "2026-04-26",
+          "mean": 0.14065893156294595,
+          "peak": 0.14065893156294595,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 102051.0,
           "latest_date": "2026-04-26",
           "mean": 97495.83333333333,
           "peak": 174822.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 102051.0,
+          "latest_date": "2026-04-26",
+          "mean": 97495.83333333333,
+          "peak": 174822.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 3009073.0,
+          "latest_date": "2026-04-26",
+          "mean": 3009073.0,
+          "peak": 3009073.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": 0.1353565759472489,
+          "latest_date": "2026-04-26",
+          "mean": 0.1353565759472489,
+          "peak": 0.1353565759472489,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.13726277810701867,
+          "latest_date": "2026-04-26",
+          "mean": -0.13726277810701867,
+          "peak": -0.13726277810701867,
+          "n_points": 1
         }
       }
     },
@@ -9862,12 +16640,82 @@
           "peak": 67.0,
           "n_points": 16
         },
+        "抖音.consume_index_period": {
+          "latest": 10824.0,
+          "latest_date": "2026-04-26",
+          "mean": 10824.0,
+          "peak": 10824.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.5494130380484555,
+          "latest_date": "2026-04-26",
+          "mean": -0.5494130380484555,
+          "peak": -0.5494130380484555,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.3220593761743705,
+          "latest_date": "2026-04-26",
+          "mean": -0.3220593761743705,
+          "peak": -0.3220593761743705,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 6771.0,
+          "latest_date": "2026-04-26",
+          "mean": 6771.0,
+          "peak": 6771.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.1484056987788331,
+          "latest_date": "2026-04-26",
+          "mean": 0.1484056987788331,
+          "peak": 0.1484056987788331,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.19291754756871035,
+          "latest_date": "2026-04-26",
+          "mean": 0.19291754756871035,
+          "peak": 0.19291754756871035,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 18129.0,
           "latest_date": "2026-04-26",
           "mean": 13896.233333333334,
           "peak": 18129.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 18129.0,
+          "latest_date": "2026-04-26",
+          "mean": 13896.233333333334,
+          "peak": 18129.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 426004.0,
+          "latest_date": "2026-04-26",
+          "mean": 426004.0,
+          "peak": 426004.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.32602408571121194,
+          "latest_date": "2026-04-26",
+          "mean": -0.32602408571121194,
+          "peak": -0.32602408571121194,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.019797287268931905,
+          "latest_date": "2026-04-26",
+          "mean": 0.019797287268931905,
+          "peak": 0.019797287268931905,
+          "n_points": 1
         }
       }
     },
@@ -9896,12 +16744,82 @@
           "peak": 73.0,
           "n_points": 20
         },
+        "抖音.consume_index_period": {
+          "latest": 106197.0,
+          "latest_date": "2026-04-26",
+          "mean": 106197.0,
+          "peak": 106197.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.19432510852695742,
+          "latest_date": "2026-04-26",
+          "mean": 0.19432510852695742,
+          "peak": 0.19432510852695742,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.059015347181363996,
+          "latest_date": "2026-04-26",
+          "mean": 0.059015347181363996,
+          "peak": 0.059015347181363996,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 10948.0,
+          "latest_date": "2026-04-26",
+          "mean": 10948.0,
+          "peak": 10948.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.16928334935383957,
+          "latest_date": "2026-04-26",
+          "mean": 0.16928334935383957,
+          "peak": 0.16928334935383957,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.17986852031468908,
+          "latest_date": "2026-04-26",
+          "mean": 0.17986852031468908,
+          "peak": 0.17986852031468908,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 46948.0,
           "latest_date": "2026-04-26",
           "mean": 36935.3,
           "peak": 69291.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 46948.0,
+          "latest_date": "2026-04-26",
+          "mean": 36935.3,
+          "peak": 69291.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 1071817.0,
+          "latest_date": "2026-04-26",
+          "mean": 1071817.0,
+          "peak": 1071817.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": 0.375483971977429,
+          "latest_date": "2026-04-26",
+          "mean": 0.375483971977429,
+          "peak": 0.375483971977429,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.06490835933192347,
+          "latest_date": "2026-04-26",
+          "mean": -0.06490835933192347,
+          "peak": -0.06490835933192347,
+          "n_points": 1
         }
       }
     },
@@ -9930,12 +16848,82 @@
           "peak": 7.0,
           "n_points": 27
         },
+        "抖音.consume_index_period": {
+          "latest": 65002.0,
+          "latest_date": "2026-04-26",
+          "mean": 65002.0,
+          "peak": 65002.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 1.245940156174418,
+          "latest_date": "2026-04-26",
+          "mean": 1.245940156174418,
+          "peak": 1.245940156174418,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.07965679333975194,
+          "latest_date": "2026-04-26",
+          "mean": -0.07965679333975194,
+          "peak": -0.07965679333975194,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 19812.0,
+          "latest_date": "2026-04-26",
+          "mean": 19812.0,
+          "peak": 19812.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 1.4426088028603132,
+          "latest_date": "2026-04-26",
+          "mean": 1.4426088028603132,
+          "peak": 1.4426088028603132,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.48068152031454786,
+          "latest_date": "2026-04-26",
+          "mean": -0.48068152031454786,
+          "peak": -0.48068152031454786,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 22140.0,
           "latest_date": "2026-04-26",
           "mean": 23964.566666666666,
           "peak": 53286.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 22140.0,
+          "latest_date": "2026-04-26",
+          "mean": 23964.566666666666,
+          "peak": 53286.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 679361.0,
+          "latest_date": "2026-04-26",
+          "mean": 679361.0,
+          "peak": 679361.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": 1.0171889567856145,
+          "latest_date": "2026-04-26",
+          "mean": 1.0171889567856145,
+          "peak": 1.0171889567856145,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": 0.3571097536127081,
+          "latest_date": "2026-04-26",
+          "mean": 0.3571097536127081,
+          "peak": 0.3571097536127081,
+          "n_points": 1
         }
       }
     },
@@ -9964,12 +16952,82 @@
           "peak": 4.0,
           "n_points": 25
         },
+        "抖音.consume_index_period": {
+          "latest": 3328.0,
+          "latest_date": "2026-04-26",
+          "mean": 3328.0,
+          "peak": 3328.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.27557683935568134,
+          "latest_date": "2026-04-26",
+          "mean": -0.27557683935568134,
+          "peak": -0.27557683935568134,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 1.140192926045016,
+          "latest_date": "2026-04-26",
+          "mean": 1.140192926045016,
+          "peak": 1.140192926045016,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 2833.0,
+          "latest_date": "2026-04-26",
+          "mean": 2833.0,
+          "peak": 2833.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.17600664176006642,
+          "latest_date": "2026-04-26",
+          "mean": 0.17600664176006642,
+          "peak": 0.17600664176006642,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.40929941618015014,
+          "latest_date": "2026-04-26",
+          "mean": -0.40929941618015014,
+          "peak": -0.40929941618015014,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 1554.0,
           "latest_date": "2026-04-26",
           "mean": 1768.2333333333333,
           "peak": 2826.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 1554.0,
+          "latest_date": "2026-04-26",
+          "mean": 1768.2333333333333,
+          "peak": 2826.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 50595.0,
+          "latest_date": "2026-04-26",
+          "mean": 50595.0,
+          "peak": 50595.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.05378616446297993,
+          "latest_date": "2026-04-26",
+          "mean": -0.05378616446297993,
+          "peak": -0.05378616446297993,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.11152670951427668,
+          "latest_date": "2026-04-26",
+          "mean": -0.11152670951427668,
+          "peak": -0.11152670951427668,
+          "n_points": 1
         }
       }
     },
@@ -9998,12 +17056,82 @@
           "peak": 5.0,
           "n_points": 20
         },
+        "抖音.consume_index_period": {
+          "latest": 23452.0,
+          "latest_date": "2026-04-26",
+          "mean": 23452.0,
+          "peak": 23452.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.4208166727250697,
+          "latest_date": "2026-04-26",
+          "mean": 0.4208166727250697,
+          "peak": 0.4208166727250697,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": 0.25559481743227325,
+          "latest_date": "2026-04-26",
+          "mean": 0.25559481743227325,
+          "peak": 0.25559481743227325,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 9248.0,
+          "latest_date": "2026-04-26",
+          "mean": 9248.0,
+          "peak": 9248.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": 0.12164948453608247,
+          "latest_date": "2026-04-26",
+          "mean": 0.12164948453608247,
+          "peak": 0.12164948453608247,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.06698950766747377,
+          "latest_date": "2026-04-26",
+          "mean": -0.06698950766747377,
+          "peak": -0.06698950766747377,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 7935.0,
           "latest_date": "2026-04-26",
           "mean": 7662.566666666667,
           "peak": 9417.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 7935.0,
+          "latest_date": "2026-04-26",
+          "mean": 7662.566666666667,
+          "peak": 9417.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 211379.0,
+          "latest_date": "2026-04-26",
+          "mean": 211379.0,
+          "peak": 211379.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.1818526646617356,
+          "latest_date": "2026-04-26",
+          "mean": -0.1818526646617356,
+          "peak": -0.1818526646617356,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.45726500115541635,
+          "latest_date": "2026-04-26",
+          "mean": -0.45726500115541635,
+          "peak": -0.45726500115541635,
+          "n_points": 1
         }
       }
     },
@@ -10032,12 +17160,82 @@
           "peak": 4.0,
           "n_points": 21
         },
+        "抖音.consume_index_period": {
+          "latest": 1044.0,
+          "latest_date": "2026-04-26",
+          "mean": 1044.0,
+          "peak": 1044.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": -0.2526843235504653,
+          "latest_date": "2026-04-26",
+          "mean": -0.2526843235504653,
+          "peak": -0.2526843235504653,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.5646371976647206,
+          "latest_date": "2026-04-26",
+          "mean": -0.5646371976647206,
+          "peak": -0.5646371976647206,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 2519.0,
+          "latest_date": "2026-04-26",
+          "mean": 2519.0,
+          "peak": 2519.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.1708360763660303,
+          "latest_date": "2026-04-26",
+          "mean": -0.1708360763660303,
+          "peak": -0.1708360763660303,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": 0.022321428571428572,
+          "latest_date": "2026-04-26",
+          "mean": 0.022321428571428572,
+          "peak": 0.022321428571428572,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 900.0,
           "latest_date": "2026-04-26",
           "mean": 1024.4,
           "peak": 1832.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 900.0,
+          "latest_date": "2026-04-26",
+          "mean": 1024.4,
+          "peak": 1832.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 29839.0,
+          "latest_date": "2026-04-26",
+          "mean": 29839.0,
+          "peak": 29839.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.2601656253099276,
+          "latest_date": "2026-04-26",
+          "mean": -0.2601656253099276,
+          "peak": -0.2601656253099276,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.30809720354310627,
+          "latest_date": "2026-04-26",
+          "mean": -0.30809720354310627,
+          "peak": -0.30809720354310627,
+          "n_points": 1
         }
       }
     },
@@ -10066,12 +17264,82 @@
           "peak": 22.0,
           "n_points": 29
         },
+        "抖音.consume_index_period": {
+          "latest": 3983.0,
+          "latest_date": "2026-04-26",
+          "mean": 3983.0,
+          "peak": 3983.0,
+          "n_points": 1
+        },
+        "抖音.consume_index_wow": {
+          "latest": 0.2644444444444444,
+          "latest_date": "2026-04-26",
+          "mean": 0.2644444444444444,
+          "peak": 0.2644444444444444,
+          "n_points": 1
+        },
+        "抖音.consume_index_yoy": {
+          "latest": -0.7312234293811998,
+          "latest_date": "2026-04-26",
+          "mean": -0.7312234293811998,
+          "peak": -0.7312234293811998,
+          "n_points": 1
+        },
+        "抖音.content_index_period": {
+          "latest": 10231.0,
+          "latest_date": "2026-04-26",
+          "mean": 10231.0,
+          "peak": 10231.0,
+          "n_points": 1
+        },
+        "抖音.content_index_wow": {
+          "latest": -0.00727731418591112,
+          "latest_date": "2026-04-26",
+          "mean": -0.00727731418591112,
+          "peak": -0.00727731418591112,
+          "n_points": 1
+        },
+        "抖音.content_index_yoy": {
+          "latest": -0.7947725266789698,
+          "latest_date": "2026-04-26",
+          "mean": -0.7947725266789698,
+          "peak": -0.7947725266789698,
+          "n_points": 1
+        },
         "抖音.keyword_index": {
           "latest": 1987.0,
           "latest_date": "2026-04-26",
           "mean": 2135.266666666667,
           "peak": 2518.0,
           "n_points": 30
+        },
+        "抖音.search_index": {
+          "latest": 1987.0,
+          "latest_date": "2026-04-26",
+          "mean": 2135.266666666667,
+          "peak": 2518.0,
+          "n_points": 30
+        },
+        "抖音.search_index_period": {
+          "latest": 54283.0,
+          "latest_date": "2026-04-26",
+          "mean": 54283.0,
+          "peak": 54283.0,
+          "n_points": 1
+        },
+        "抖音.search_index_wow": {
+          "latest": -0.1634612421020188,
+          "latest_date": "2026-04-26",
+          "mean": -0.1634612421020188,
+          "peak": -0.1634612421020188,
+          "n_points": 1
+        },
+        "抖音.search_index_yoy": {
+          "latest": -0.43861626764569006,
+          "latest_date": "2026-04-26",
+          "mean": -0.43861626764569006,
+          "peak": -0.43861626764569006,
+          "n_points": 1
         }
       }
     }
@@ -10087,8 +17355,8 @@
     },
     "抖音": {
       "n_brands": 23,
-      "n_metrics": 1,
-      "n_points": 690,
+      "n_metrics": 11,
+      "n_points": 1587,
       "sources": [
         "douyin_trendinsight_playwright"
       ]

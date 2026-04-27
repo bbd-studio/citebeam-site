@@ -33,7 +33,13 @@ export default function UnileverDashboard() {
           <div>
             <span className="text-[#00FF88]">$</span> demo/unilever/dashboard.md
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-wrap">
+            <Link
+              href="/unilever/channels"
+              className="px-2 py-1 rounded bg-[#FE2C55]/10 text-[#FE2C55] border border-[#FE2C55]/30 hover:bg-[#FE2C55]/20 underline-offset-2"
+            >
+              → CMO 渠道看板 (NEW)
+            </Link>
             <Link
               href="/unilever/timeline"
               className="text-[#00FF88]/80 hover:text-[#00FF88] underline-offset-2 hover:underline"
