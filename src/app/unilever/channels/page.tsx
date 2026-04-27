@@ -54,12 +54,31 @@ type TopPost = {
   danmaku: number | null;
   cover_url: string | null;
 };
+type CategoryQuery = {
+  date: string | null;
+  query: string;
+  brand: string | null;
+  is_tracked: boolean;
+};
+type CategoryVideo = {
+  date: string | null;
+  item_id: string;
+  title: string | null;
+  url: string | null;
+};
+type CategoryOverview = {
+  category: string;
+  top_videos: CategoryVideo[];
+  top_queries: CategoryQuery[];
+  dark_horses: { brand: string; mentions: number }[];
+};
 type ChannelsBundle = {
   meta: { generated_at: string; n_series: number; n_brands: number; channels: string[]; n_posts?: number };
   series: ChannelSeries[];
   per_brand: { brand: string; brand_type: string; channels: Record<string, { latest: number; latest_date: string; mean: number; peak: number; n_points: number }> }[];
   per_channel: Record<string, { n_brands: number; n_metrics: number; n_points: number; sources: string[] }>;
   top_posts?: { brand: string; channel: string; posts: TopPost[] }[];
+  category_overview?: CategoryOverview[];
 };
 
 function fmtN(n: number | null | undefined): string {
@@ -421,6 +440,91 @@ export default function ChannelsPage() {
           <NotConnectedTab channelKey={activeTab} aeo={aeoSignal.find((a) => a.name === activeTab)?.AEO信号 ?? 0} />
         )}
       </section>
+
+      {/* ═══ 抖音品类概览 — top 视频 + top 搜索 + 黑马品牌 ═══ */}
+      {channels?.category_overview && channels.category_overview.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-lg md:text-xl font-bold mb-1">抖音品类概览 · 黑马品牌发现</h2>
+          <p className="text-sm text-neutral-400 mb-4">
+            按 3 个监测品类（沐浴露 / 洗发水 / 身体乳）拉抖音指数后台的<b>每日 Top 视频 + Top 搜索 query</b>，
+            LLM 从 query 里抽出品牌名，<b className="text-orange-300">不在 17 个跟踪竞品里的就标为"黑马"</b>。
+            意义：揭露你监测之外正在抢声量的对手。
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            {channels.category_overview.map((cat) => (
+              <div key={cat.category} className="rounded border border-neutral-800 bg-[#0F0F0F] p-4">
+                <h3 className="text-base font-bold text-[#FE2C55] mb-3">
+                  {cat.category}
+                </h3>
+
+                {cat.dark_horses.length > 0 && (
+                  <div className="mb-4">
+                    <div className="font-mono text-[10px] uppercase tracking-wider text-orange-300 mb-2">
+                      🔥 黑马品牌（未跟踪）
+                    </div>
+                    <ul className="space-y-1.5 text-sm">
+                      {cat.dark_horses.map((dh) => (
+                        <li key={dh.brand} className="flex items-center justify-between">
+                          <span className="text-neutral-100">
+                            <span className="text-orange-400 mr-1.5">●</span>
+                            {dh.brand}
+                          </span>
+                          <span className="text-xs font-mono text-neutral-500">×{dh.mentions}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {cat.top_queries.length > 0 && (
+                  <div className="mb-4">
+                    <div className="font-mono text-[10px] uppercase tracking-wider text-neutral-500 mb-2">
+                      Top 搜索 query
+                    </div>
+                    <ul className="space-y-1 text-xs">
+                      {cat.top_queries.slice(0, 8).map((q, i) => (
+                        <li key={i} className="text-neutral-300 truncate">
+                          <span className={`mr-1 ${
+                            q.brand && q.is_tracked ? "text-[#00FF88]"
+                            : q.brand ? "text-orange-400"
+                            : "text-neutral-600"
+                          }`}>●</span>
+                          {q.query}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {cat.top_videos.length > 0 && (
+                  <div>
+                    <div className="font-mono text-[10px] uppercase tracking-wider text-neutral-500 mb-2">
+                      Top 视频 (近 30 天)
+                    </div>
+                    <ul className="space-y-1 text-xs">
+                      {cat.top_videos.slice(0, 5).map((v) => (
+                        <li key={v.item_id} className="text-neutral-300">
+                          <a href={v.url || "#"} target="_blank" rel="noopener"
+                             className="hover:text-[#FE2C55] line-clamp-1 underline-offset-2 hover:underline">
+                            {v.title || "(无标题)"}
+                          </a>
+                          <span className="text-[9px] text-neutral-600 ml-1">{v.date}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <p className="text-[11px] text-neutral-500 mt-3">
+            <span className="text-[#00FF88]">●</span> 已跟踪品牌 ·
+            <span className="text-orange-400 mx-1">●</span> 黑马（未跟踪）·
+            <span className="text-neutral-600 mx-1">●</span> 通用词
+            ｜ 数据：抖音指数 top_point_list + L3 LLM 品牌抽取
+          </p>
+        </section>
+      )}
 
       {/* AEO signal — derived from existing citation data */}
       <section className="mb-10">
