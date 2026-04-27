@@ -100,9 +100,58 @@ const SYSTEM_TEMPLATE = `你是 citebeam 的分析助手，帮客户理解他们
 `;
 
 type Msg = { role: "user" | "assistant"; content: string };
+type ChatBody = {
+  messages: Msg[];
+  // Optional client-provided session UID. When omitted we generate one.
+  session_uid?: string;
+};
+
+// Best-effort archive POST. Never throws — failure must not affect the
+// user-facing chat. Reads CHAT_ARCHIVE_URL + CHAT_ARCHIVE_SECRET env at
+// runtime; if either is missing this is a no-op.
+async function archiveTurn(payload: {
+  session_uid: string; customer_slug: string; turn_no: number;
+  role: "user" | "assistant"; content: string;
+  agent_provider?: string; agent_model?: string; agent_display?: string;
+  latency_ms?: number;
+  user_agent?: string; ip_country?: string; referer?: string;
+}): Promise<void> {
+  const url = process.env.CHAT_ARCHIVE_URL;
+  const secret = process.env.CHAT_ARCHIVE_SECRET;
+  if (!url || !secret) return;
+  try {
+    await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Archive-Secret": secret,
+      },
+      body: JSON.stringify(payload),
+      // Edge runtime: keepalive helps the request survive after we return
+      // the streaming response to the browser.
+      keepalive: true,
+    });
+  } catch {
+    // swallow — archiving must never break the user
+  }
+}
 
 export async function POST(req: NextRequest) {
-  const { messages } = (await req.json()) as { messages: Msg[] };
+  const body = (await req.json()) as ChatBody;
+  const { messages } = body;
+  // Stable session id for grouping a multi-turn conversation. Client may pass
+  // its own (so a refresh doesn't break the session), else we synthesize.
+  const sessionUid = (body.session_uid && body.session_uid.length >= 8)
+    ? body.session_uid
+    : crypto.randomUUID();
+
+  // Pull anonymised request context for archive
+  const userAgent = req.headers.get("user-agent")?.slice(0, 280) || undefined;
+  const referer = req.headers.get("referer")?.slice(0, 280) || undefined;
+  const ipCountry = req.headers.get("cf-ipcountry") || undefined;
+
+  const turnNo = messages.length;          // last message is this turn's user msg
+  const lastUserMsg = messages[messages.length - 1];
 
   const reportJson = JSON.stringify(summary);
   const timelineJson = JSON.stringify(timeline);
@@ -167,14 +216,61 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Fire user-turn archive (don't await — let it race the response).
+  if (lastUserMsg && lastUserMsg.role === "user") {
+    archiveTurn({
+      session_uid: sessionUid,
+      customer_slug: "unilever",
+      turn_no: turnNo,
+      role: "user",
+      content: lastUserMsg.content,
+      user_agent: userAgent,
+      ip_country: ipCountry,
+      referer,
+    });
+  }
+
+  const startedAt = Date.now();
+
   // Transform upstream OpenAI-compat stream to plain text SSE that frontend can consume.
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
+
+  // Capture full assistant text + final usage as the stream goes by, so we can
+  // archive once the upstream completes.
+  let assistantText = "";
 
   const stream = new ReadableStream({
     async start(controller) {
       const reader = upstream.body!.getReader();
       let buf = "";
+      const finalize = (closeReason: "done" | "error" | "incomplete", err?: unknown) => {
+        if (closeReason === "error") {
+          controller.enqueue(
+            encoder.encode(`event: error\ndata: ${JSON.stringify({ error: String(err) })}\n\n`)
+          );
+        } else {
+          controller.enqueue(encoder.encode("event: done\ndata: [DONE]\n\n"));
+        }
+        controller.close();
+        // Best-effort archive of assistant turn (not awaited).
+        if (assistantText && chosen) {
+          archiveTurn({
+            session_uid: sessionUid,
+            customer_slug: "unilever",
+            turn_no: turnNo,
+            role: "assistant",
+            content: assistantText,
+            agent_provider: chosen.key,
+            agent_model: chosen.model,
+            agent_display: chosen.displayName,
+            latency_ms: Date.now() - startedAt,
+            user_agent: userAgent,
+            ip_country: ipCountry,
+            referer,
+          });
+        }
+      };
       try {
         while (true) {
           const { done, value } = await reader.read();
@@ -188,14 +284,14 @@ export async function POST(req: NextRequest) {
             if (!line.startsWith("data:")) continue;
             const payload = line.slice(5).trim();
             if (payload === "[DONE]") {
-              controller.enqueue(encoder.encode("event: done\ndata: [DONE]\n\n"));
-              controller.close();
+              finalize("done");
               return;
             }
             try {
               const obj = JSON.parse(payload);
               const delta = obj?.choices?.[0]?.delta?.content;
               if (delta) {
+                assistantText += delta;
                 // Forward as a plain-text-delta SSE
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify({ delta })}\n\n`));
               }
@@ -204,13 +300,9 @@ export async function POST(req: NextRequest) {
             }
           }
         }
-        controller.enqueue(encoder.encode("event: done\ndata: [DONE]\n\n"));
-        controller.close();
+        finalize("done");
       } catch (e) {
-        controller.enqueue(
-          encoder.encode(`event: error\ndata: ${JSON.stringify({ error: String(e) })}\n\n`)
-        );
-        controller.close();
+        finalize("error", e);
       }
     },
   });
@@ -225,6 +317,8 @@ export async function POST(req: NextRequest) {
       "X-Agent-Provider": chosen.key,
       "X-Agent-Model": chosen.model,
       "X-Agent-Display": chosen.displayName,
+      // Echo the session uid so the client can pin it for follow-ups.
+      "X-Session-Uid": sessionUid,
     },
   });
 }

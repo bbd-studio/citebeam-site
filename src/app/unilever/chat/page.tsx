@@ -35,7 +35,20 @@ export default function UnileverChatPage() {
   const [error, setError] = useState<string | null>(null);
   // Track what model actually answered (from X-Agent-Display response header).
   const [agentLabel, setAgentLabel] = useState<string>("");
+  // Stable session UID for grouping a multi-turn convo. Persist across reloads
+  // in localStorage so refresh keeps the thread linked in the archive.
+  const [sessionUid, setSessionUid] = useState<string>("");
   const endRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let uid = "";
+    try { uid = localStorage.getItem("citebeam_chat_uid") || ""; } catch {}
+    if (!uid) {
+      uid = crypto.randomUUID();
+      try { localStorage.setItem("citebeam_chat_uid", uid); } catch {}
+    }
+    setSessionUid(uid);
+  }, []);
 
   // Load platform list from bundle once on mount; update greeting when known.
   useEffect(() => {
@@ -73,6 +86,7 @@ export default function UnileverChatPage() {
         body: JSON.stringify({
           // Strip the greeting (first assistant message) from server-side context
           messages: nextMsgs.slice(1),
+          session_uid: sessionUid || undefined,
         }),
       });
       if (!res.ok || !res.body) {
