@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 // Static import — bundled at build time. Works on CF Pages edge runtime.
 import summary from "../../../../public/data/unilever-summary.json";
 import timeline from "../../../../public/data/unilever-timeline.json";
+import channels from "../../../../public/data/unilever-channels-slim.json";
 import { AGENT_CASCADE, PROVIDER_ENDPOINTS, PROVIDER_ENV_VARS } from "@/lib/agent-config";
 
 export const runtime = "edge";
@@ -27,6 +28,33 @@ const SYSTEM_TEMPLATE = `你是 citebeam 的分析助手，帮客户理解他们
 \`\`\`json
 {{REPORT_JSON}}
 \`\`\`
+
+## 当前数据 3 — 【真实社交渠道数据 · CMO 视角】
+
+下面 JSON 是 CMO 看板数据，覆盖 6 大社交渠道（抖音 / B 站 / 微博 / 小红书 / 微信公众号 / 知乎），目前已接通**抖音 + B 站**。
+
+字段结构：
+- \`series[].metric_type\` — 指标名称：
+  - **抖音**：\`search_index\` (30 天搜索指数 daily) · \`search_index_period\` (30 天搜索指数 total) · \`consume_index_period\` · \`content_index_period\` · \`*_wow\` (周环比，0.05 = +5%) · \`*_yoy\` (同比)
+  - **B 站**：\`video_count\` (该日视频数) · \`total_plays\` (该日播放总和) · \`total_likes\`
+- \`per_brand[]\` — 每品牌跨渠道汇总：latest / mean / peak / n_points
+- \`top_posts[]\` — 各品牌 Top 3 视频（B 站，含播放/赞/评等真实数据）
+
+**CMO 关心的问题你直接从这里答**：
+- "我品牌哪个渠道最弱 / 最强" → 比 \`per_brand[].channels\` 里同一品牌跨渠道值
+- "下个 ¥10w 投哪个渠道" → 看哪个渠道我方品牌弱 + 对应渠道竞品强（机会窗口）
+- "竞品本周在做什么" → 找 \`metric_type\` 含 \`_wow\` 且 brand_type=\`competitor\` 且 value > 0.1 的（涨 10%+）
+- "B 站上多芬最热的视频" → \`top_posts\` 里 brand=多芬 channel=B 站
+- "抖音搜索 vs 消费指数差异" → 搜索高消费低 = 用户主动搜但不看视频；反过来 = 被动曝光多但搜索少
+
+\`\`\`json
+{{CHANNELS_JSON}}
+\`\`\`
+
+数据声明：
+- 抖音指数走 creator.douyin.com Playwright 抓取，**周更新**
+- B 站走 bilibili-api 公开搜索，**周更新**
+- 微博 / 小红书 / 微信公众号 / 知乎 当前**未接入**（需要 SaaS 采购或 API 审核）— 用户问这些时要明说"目前未接入"，不要瞎编
 
 ## 当前数据 2 — 【非联网 vs 联网】配对分析数据
 
@@ -153,9 +181,11 @@ export async function POST(req: NextRequest) {
 
   const reportJson = JSON.stringify(summary);
   const timelineJson = JSON.stringify(timeline);
+  const channelsJson = JSON.stringify(channels);
   const systemContent = SYSTEM_TEMPLATE
     .replace("{{REPORT_JSON}}", reportJson)
-    .replace("{{TIMELINE_JSON}}", timelineJson);
+    .replace("{{TIMELINE_JSON}}", timelineJson)
+    .replace("{{CHANNELS_JSON}}", channelsJson);
 
   // Build provider candidate list: every cascade entry whose env var is set.
   // Will try them in order; failover on upstream non-2xx or fetch error.
