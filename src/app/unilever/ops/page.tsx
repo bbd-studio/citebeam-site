@@ -194,7 +194,8 @@ export default function OpsPage() {
                 <th className="py-3 px-4 text-left">平台</th>
                 <th className="py-3 px-4 text-right">非联网 调用</th>
                 <th className="py-3 px-4 text-right">联网 调用</th>
-                <th className="py-3 px-4 text-right">avg 延迟</th>
+                <th className="py-3 px-4 text-right">非联网 延迟</th>
+                <th className="py-3 px-4 text-right">联网 延迟</th>
                 <th className="py-3 px-4 text-right">usage 完整度</th>
                 <th className="py-3 px-4 text-right">总 in→out token</th>
                 <th className="py-3 px-4 text-right">错误率</th>
@@ -206,9 +207,6 @@ export default function OpsPage() {
                 const l1 = p.tiers.L1;
                 const l2 = p.tiers.L2;
                 const totalSamples = (l1?.samples ?? 0) + (l2?.samples ?? 0);
-                const wAvgMs = totalSamples
-                  ? Math.round((((l1?.avg_latency_ms ?? 0) * (l1?.samples ?? 0)) + ((l2?.avg_latency_ms ?? 0) * (l2?.samples ?? 0))) / totalSamples)
-                  : 0;
                 const errRate = totalSamples ? p.total_errors / totalSamples : 0;
                 const isFree = p.total_cost_cny === 0;
                 return (
@@ -221,7 +219,10 @@ export default function OpsPage() {
                       {l2 ? <span className="text-[#00FF88]">{l2.samples}</span> : <span className="text-neutral-700">—</span>}
                     </td>
                     <td className="py-3 px-4 text-right font-mono text-neutral-300">
-                      {fmtMs(wAvgMs)}
+                      {l1 ? fmtMs(l1.avg_latency_ms) : <span className="text-neutral-700">—</span>}
+                    </td>
+                    <td className="py-3 px-4 text-right font-mono">
+                      {l2 ? <span className="text-[#00FF88]">{fmtMs(l2.avg_latency_ms)}</span> : <span className="text-neutral-700">—</span>}
                     </td>
                     <td className={`py-3 px-4 text-right font-mono text-xs ${p.usage_completeness >= 0.95 ? "text-[#00FF88]" : p.usage_completeness >= 0.5 ? "text-orange-300" : "text-red-400"}`}>
                       {(p.usage_completeness * 100).toFixed(0)}%
@@ -247,7 +248,7 @@ export default function OpsPage() {
                 <td className="py-3 px-4 text-right font-mono text-[#00FF88]">
                   {data.platforms.reduce((s, p) => s + (p.tiers.L2?.samples ?? 0), 0)}
                 </td>
-                <td className="py-3 px-4 text-right font-mono text-neutral-500">—</td>
+                <td className="py-3 px-4 text-right font-mono text-neutral-500" colSpan={2}>—</td>
                 <td className="py-3 px-4 text-right font-mono text-orange-300 text-xs">
                   {(() => {
                     const totU = data.platforms.reduce((s,p)=>s+p.samples_with_usage, 0);
