@@ -39,12 +39,40 @@ type ChannelSeries = {
   source: string;
   points: { date: string; value: number }[];
 };
+type TopPost = {
+  post_id: string;
+  url: string | null;
+  title: string | null;
+  author: string | null;
+  pubdate: string | null;
+  duration_s: number | null;
+  plays: number | null;
+  likes: number | null;
+  comments: number | null;
+  shares: number | null;
+  favorites: number | null;
+  danmaku: number | null;
+  cover_url: string | null;
+};
 type ChannelsBundle = {
-  meta: { generated_at: string; n_series: number; n_brands: number; channels: string[] };
+  meta: { generated_at: string; n_series: number; n_brands: number; channels: string[]; n_posts?: number };
   series: ChannelSeries[];
   per_brand: { brand: string; brand_type: string; channels: Record<string, { latest: number; latest_date: string; mean: number; peak: number; n_points: number }> }[];
   per_channel: Record<string, { n_brands: number; n_metrics: number; n_points: number; sources: string[] }>;
+  top_posts?: { brand: string; channel: string; posts: TopPost[] }[];
 };
+
+function fmtN(n: number | null | undefined): string {
+  if (n == null) return "—";
+  if (n >= 10_000) return `${(n / 10_000).toFixed(1)}万`;
+  return n.toLocaleString();
+}
+function fmtDur(s: number | null | undefined): string {
+  if (!s) return "";
+  const m = Math.floor(s / 60);
+  const r = s % 60;
+  return `${m}:${String(r).padStart(2, "0")}`;
+}
 
 // Color palette per brand for time-series chart (cycle if more brands than colors)
 const BRAND_COLORS = [
@@ -244,6 +272,74 @@ export default function ChannelsPage() {
               <span className="text-[#FFD166] mx-1">●</span> 已知竞品 ·
               排序：最新指数从高到低
             </p>
+          </div>
+        </section>
+      )}
+
+      {/* B 站 top videos per brand */}
+      {channels?.top_posts && channels.top_posts.filter((tp) => tp.channel === "B 站").length > 0 && (
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-1">
+            <h2 className="text-lg md:text-xl font-bold">B 站 · 品牌相关热门视频 (最近 30 天)</h2>
+            <span className="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[#00A1D6]/15 text-[#00A1D6] border border-[#00A1D6]/30 font-mono">
+              ✓ 真实数据
+            </span>
+          </div>
+          <p className="text-sm text-neutral-400 mb-4">
+            每个品牌过去 30 天 B 站搜索结果中播放量最高的视频。点击标题跳转 B 站。
+            数据源：bilibili-api 公开搜索 · 每周自动刷新。
+          </p>
+          <div className="space-y-6">
+            {channels.top_posts
+              .filter((tp) => tp.channel === "B 站" && tp.posts.length > 0)
+              .map((tp) => (
+                <div key={`${tp.brand}-${tp.channel}`} className="rounded border border-neutral-800 bg-[#0F0F0F] p-4">
+                  <h3 className="font-bold mb-3 text-neutral-100">
+                    <span className="text-[#00A1D6] mr-2">B 站</span> {tp.brand}
+                    <span className="text-xs text-neutral-500 ml-2 font-normal">
+                      Top {tp.posts.length} 视频
+                    </span>
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {tp.posts.slice(0, 6).map((p) => (
+                      <a
+                        key={p.post_id}
+                        href={p.url || "#"}
+                        target="_blank"
+                        rel="noopener"
+                        className="flex gap-3 p-2 rounded border border-neutral-900 hover:border-[#00A1D6]/40 hover:bg-[#141414] transition-colors"
+                      >
+                        {p.cover_url && (
+                          <img
+                            src={p.cover_url.startsWith("//") ? `https:${p.cover_url}` : p.cover_url}
+                            alt=""
+                            className="w-24 h-16 object-cover rounded flex-shrink-0 bg-neutral-900"
+                            loading="lazy"
+                          />
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-neutral-200 line-clamp-2 mb-1">
+                            {p.title || "(无标题)"}
+                          </div>
+                          <div className="text-[10px] text-neutral-500 font-mono">
+                            <span>{p.author || "?"}</span>
+                            <span className="mx-1">·</span>
+                            <span>{p.pubdate || "?"}</span>
+                            {p.duration_s ? <span className="ml-1">· {fmtDur(p.duration_s)}</span> : null}
+                          </div>
+                          <div className="text-[10px] mt-1 flex gap-3 font-mono text-neutral-400">
+                            <span>▶ {fmtN(p.plays)}</span>
+                            <span>👍 {fmtN(p.likes)}</span>
+                            <span>💬 {fmtN(p.comments)}</span>
+                            <span>★ {fmtN(p.favorites)}</span>
+                            {p.danmaku ? <span>弹 {fmtN(p.danmaku)}</span> : null}
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
           </div>
         </section>
       )}
