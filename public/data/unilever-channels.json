@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T09:21:27.487741+00:00Z",
+    "generated_at": "2026-04-27T09:29:47.763053+00:00Z",
     "customer": "unilever",
     "n_series": 322,
     "n_brands": 23,
-    "n_posts": 1750,
+    "n_posts": 1451,
     "channels": [
       "B 站",
       "抖音"
@@ -13,7 +13,7 @@
   "series": [
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -86,7 +86,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -167,7 +167,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -248,7 +248,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -261,7 +261,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -274,7 +274,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -287,7 +287,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -300,7 +300,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -313,7 +313,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -326,7 +326,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -455,7 +455,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -584,7 +584,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -597,7 +597,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -610,7 +610,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -623,7 +623,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -728,7 +728,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -833,7 +833,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -938,7 +938,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -951,7 +951,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -964,7 +964,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -977,7 +977,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -990,7 +990,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -1003,7 +1003,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -1016,7 +1016,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -1145,7 +1145,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -1274,7 +1274,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -1287,7 +1287,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -1300,7 +1300,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -1313,7 +1313,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -1390,7 +1390,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -1483,7 +1483,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -1580,7 +1580,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -1593,7 +1593,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -1606,7 +1606,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -1619,7 +1619,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -1632,7 +1632,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -1645,7 +1645,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -1658,7 +1658,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -1787,7 +1787,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -1916,7 +1916,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -1929,7 +1929,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -1942,7 +1942,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -1955,7 +1955,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -2044,7 +2044,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -2137,7 +2137,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -2230,7 +2230,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -2243,7 +2243,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -2256,7 +2256,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -2269,7 +2269,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -2282,7 +2282,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -2295,7 +2295,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -2308,7 +2308,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -2437,7 +2437,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -2566,7 +2566,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -2579,7 +2579,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -2592,7 +2592,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -2605,7 +2605,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -2702,7 +2702,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -2799,7 +2799,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -2896,7 +2896,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -2909,7 +2909,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -2922,7 +2922,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -2935,7 +2935,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -2948,7 +2948,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -2961,7 +2961,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -2974,7 +2974,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -3103,7 +3103,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -3232,7 +3232,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -3245,7 +3245,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -3258,7 +3258,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -3271,7 +3271,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "source": "bilibili_search_api",
@@ -3380,7 +3380,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "source": "bilibili_search_api",
@@ -3489,7 +3489,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "source": "bilibili_search_api",
@@ -3598,7 +3598,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -3611,7 +3611,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -3624,7 +3624,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -3637,7 +3637,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -3650,7 +3650,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -3663,7 +3663,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -3676,7 +3676,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "source": "douyin_trendinsight_playwright",
@@ -3805,7 +3805,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "source": "douyin_trendinsight_playwright",
@@ -3934,7 +3934,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "source": "douyin_trendinsight_playwright",
@@ -3947,7 +3947,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "source": "douyin_trendinsight_playwright",
@@ -3960,7 +3960,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "source": "douyin_trendinsight_playwright",
@@ -14953,7 +14953,7 @@
   "per_brand": [
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 5.0,
@@ -15057,7 +15057,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 188.0,
@@ -15161,7 +15161,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 2583.0,
@@ -15265,7 +15265,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 10.0,
@@ -15369,7 +15369,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 36.0,
@@ -15473,7 +15473,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 19.0,
@@ -17524,66 +17524,6 @@
           "cover_url": "//i1.hdslb.com/bfs/archive/281d390b708cbb1156b0cbde8e6be4f070a6f67b.jpg"
         },
         {
-          "post_id": "BV1PkZcBdEt4",
-          "url": "http://www.bilibili.com/video/av116470033943603",
-          "title": "机哥再战中药风味海力士",
-          "author": "小飞机DIY",
-          "pubdate": "2026-04-26",
-          "duration_s": 408,
-          "plays": 8421,
-          "likes": 639,
-          "comments": 95,
-          "shares": null,
-          "favorites": 77,
-          "danmaku": 76,
-          "cover_url": "//i2.hdslb.com/bfs/archive/9cdcb028ff174393b3ac06d8bd1481b271737008.jpg"
-        },
-        {
-          "post_id": "BV1mbo3BHE3t",
-          "url": "http://www.bilibili.com/video/av116456595456738",
-          "title": "“小力士”张呈雷淞然丨13部喜人合集",
-          "author": "喜人2观影厅",
-          "pubdate": "2026-04-23",
-          "duration_s": 14300,
-          "plays": 5801,
-          "likes": 42,
-          "comments": 2,
-          "shares": null,
-          "favorites": 40,
-          "danmaku": 4,
-          "cover_url": "//i0.hdslb.com/bfs/archive/5d62bad1d155e429440ad980729fff84c96844c9.jpg"
-        },
-        {
-          "post_id": "BV16goBBJErC",
-          "url": "http://www.bilibili.com/video/av116474027050869",
-          "title": "瘦弱妹子辅助大力士卧推，下一秒脖子爆压，当场悲剧了",
-          "author": "安全事故记录",
-          "pubdate": "2026-04-27",
-          "duration_s": 504,
-          "plays": 4526,
-          "likes": 169,
-          "comments": 27,
-          "shares": null,
-          "favorites": 13,
-          "danmaku": 42,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e5a5ecba2d7bcd8ce83dce362436424e0f14a2dc.jpg"
-        },
-        {
-          "post_id": "BV1bLZFBxEHw",
-          "url": "http://www.bilibili.com/video/av116470654834647",
-          "title": "蛋仔派对神奇艾比：紧急快速收获抓捕隐藏异色力士牛！",
-          "author": "奈奈吧唧",
-          "pubdate": "2026-04-26",
-          "duration_s": 481,
-          "plays": 3846,
-          "likes": 87,
-          "comments": 22,
-          "shares": null,
-          "favorites": 64,
-          "danmaku": 105,
-          "cover_url": "//i1.hdslb.com/bfs/archive/247de906ece9608720b5de15830d4f0a5c182bf6.jpg"
-        },
-        {
           "post_id": "BV1dgXrB3EGj",
           "url": "http://www.bilibili.com/video/av116323686288419",
           "title": "重生级水准！Marvel Legends 幻影猫&amp;钢力士 惊世绝俗X战警 孩之宝漫威传奇6寸可动人偶开箱评测【AtoZ】",
@@ -17612,6 +17552,66 @@
           "favorites": 56,
           "danmaku": 0,
           "cover_url": "//i1.hdslb.com/bfs/archive/e76a378267f81c6b07e88e32353c7a468f1f93b0.jpg"
+        },
+        {
+          "post_id": "BV1BooSB2EEN",
+          "url": "http://www.bilibili.com/video/av116464145203934",
+          "title": "体验丰田雅力士GR，一切为了性能，我唯一想买的三缸车",
+          "author": "苑叔聊车",
+          "pubdate": "2026-04-25",
+          "duration_s": 273,
+          "plays": 3015,
+          "likes": 72,
+          "comments": 11,
+          "shares": null,
+          "favorites": 11,
+          "danmaku": 5,
+          "cover_url": "//i0.hdslb.com/bfs/archive/f57f4cce557eb8bd93fd941aea22659aef3f732a.jpg"
+        },
+        {
+          "post_id": "BV1XKXvBSETz",
+          "url": "http://www.bilibili.com/video/av116318804117139",
+          "title": "【开箱简评1280】升级重制！孩之宝Marvel Legends 惊异X战警 幻影猫&amp;钢力士 双人套",
+          "author": "Toyhunter",
+          "pubdate": "2026-03-30",
+          "duration_s": 1132,
+          "plays": 2175,
+          "likes": 126,
+          "comments": 28,
+          "shares": null,
+          "favorites": 25,
+          "danmaku": 1,
+          "cover_url": "//i0.hdslb.com/bfs/archive/55f507512526a8dab89f38d598f47d7a9b06788d.jpg"
+        },
+        {
+          "post_id": "BV1zWoYBNEVV",
+          "url": "http://www.bilibili.com/video/av116453273570068",
+          "title": "浓缩美容液，缩的啥？LDK高分洗发水：花王Segreta测评",
+          "author": "洗头研究所",
+          "pubdate": "2026-04-23",
+          "duration_s": 205,
+          "plays": 1915,
+          "likes": 127,
+          "comments": 19,
+          "shares": null,
+          "favorites": 18,
+          "danmaku": 2,
+          "cover_url": "//i1.hdslb.com/bfs/archive/d767e2109eed508698fa6d9ef76596371305522f.jpg"
+        },
+        {
+          "post_id": "BV19rX9BzEYL",
+          "url": "http://www.bilibili.com/video/av116313116840980",
+          "title": "钢铁力士（海格力斯：传奇之始）国语配音剪辑版",
+          "author": "萌礼傻果仁",
+          "pubdate": "2026-03-29",
+          "duration_s": 7614,
+          "plays": 1286,
+          "likes": 11,
+          "comments": 1,
+          "shares": null,
+          "favorites": 57,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/506403d7a7083c7ecd77b8bc5a20a1310d14e197.jpg"
         }
       ]
     },
@@ -17836,21 +17836,6 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/199418db581e1d0a0ac71b758415a1141e795ea7.jpg"
         },
         {
-          "post_id": "BV15CojB7EYj",
-          "url": "http://www.bilibili.com/video/av116459531469835",
-          "title": "行业巨头 当年属违法广告案例之一 飘柔洗发水广告 空姐发质篇 张庭代言 1994-1997年播出",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "duration_s": 30,
-          "plays": 17412,
-          "likes": 108,
-          "comments": 32,
-          "shares": null,
-          "favorites": 64,
-          "danmaku": 1,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e751318eaa1cc9f316e5b6480b992f2ed90f3af2.jpg"
-        },
-        {
           "post_id": "BV1HfodBzERH",
           "url": "http://www.bilibili.com/video/av116468507214928",
           "title": "4.26，沉冤昭雪大仇得报！",
@@ -17864,6 +17849,21 @@
           "favorites": 133,
           "danmaku": 160,
           "cover_url": "//i2.hdslb.com/bfs/archive/d37f607052878a22fb9c49182dd5cd48f29b3b10.jpg"
+        },
+        {
+          "post_id": "BV1THoXBuErk",
+          "url": "http://www.bilibili.com/video/av116464514436310",
+          "title": "【2026年4月洗发水推荐】全程无广，热门洗发水评价从夯到很普通，看看你的洗发水有没有入选？海飞丝/清扬/吕/卡诗/欧莱雅/EHD二硫化硒洗发/海洋至尊洗发水",
+          "author": "洗护用品推荐",
+          "pubdate": "2026-04-25",
+          "duration_s": 90,
+          "plays": 9322,
+          "likes": 143,
+          "comments": 67,
+          "shares": null,
+          "favorites": 36,
+          "danmaku": 79,
+          "cover_url": "//i1.hdslb.com/bfs/archive/536fe88251c3131c2644ce7b3a9ecf2bccfbad79.jpg"
         }
       ]
     },
@@ -17885,21 +17885,6 @@
           "favorites": 5237,
           "danmaku": 231,
           "cover_url": "//i0.hdslb.com/bfs/archive/199418db581e1d0a0ac71b758415a1141e795ea7.jpg"
-        },
-        {
-          "post_id": "BV15CojB7EYj",
-          "url": "http://www.bilibili.com/video/av116459531469835",
-          "title": "行业巨头 当年属违法广告案例之一 飘柔洗发水广告 空姐发质篇 张庭代言 1994-1997年播出",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "duration_s": 30,
-          "plays": 17412,
-          "likes": 108,
-          "comments": 32,
-          "shares": null,
-          "favorites": 64,
-          "danmaku": 1,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e751318eaa1cc9f316e5b6480b992f2ed90f3af2.jpg"
         },
         {
           "post_id": "BV1igdqBiEMu",
@@ -17990,6 +17975,21 @@
           "favorites": 25,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/aa4706650fbec3f3205d302233979e86678db1ff.jpg"
+        },
+        {
+          "post_id": "BV1P9dfB2Erk",
+          "url": "http://www.bilibili.com/video/av116431983221354",
+          "title": "第138瓶洗发水实测，迷珂宝香氛洗发水罗勒花园测评，实际体验如何？适合干性发质使用吗？",
+          "author": "岸上评测",
+          "pubdate": "2026-04-19",
+          "duration_s": 118,
+          "plays": 1126,
+          "likes": 33,
+          "comments": 4,
+          "shares": null,
+          "favorites": 4,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/ec81b012a018124c9bc24eefdfd5af5f852b63ce.jpg"
         }
       ]
     },
@@ -18043,21 +18043,6 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/165440377bfd4a09d412bf4c9fcfb1f968b21454.jpg"
         },
         {
-          "post_id": "BV1u5oUB4EKR",
-          "url": "http://www.bilibili.com/video/av116462920405438",
-          "title": "【有材曲博士】把水冻成玻璃，让生命显形",
-          "author": "有材曲博士",
-          "pubdate": "2026-04-25",
-          "duration_s": 153,
-          "plays": 70739,
-          "likes": 5562,
-          "comments": 91,
-          "shares": null,
-          "favorites": 909,
-          "danmaku": 21,
-          "cover_url": "//i1.hdslb.com/bfs/archive/a590eb7adf310eb209e713f6c2d27f6b4022f383.jpg"
-        },
-        {
           "post_id": "BV1CNo7BwEoE",
           "url": "http://www.bilibili.com/video/av116459363633963",
           "title": "越喝越美? 外卖能买到的邪修变美小饮料分享!",
@@ -18073,36 +18058,6 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/37d48714093e73f48f13182af6154b0084e7afba.jpg"
         },
         {
-          "post_id": "BV16FouBYEnf",
-          "url": "http://www.bilibili.com/video/av116453927819206",
-          "title": "你熬夜吗？",
-          "author": "Yuri尤栗",
-          "pubdate": "2026-04-23",
-          "duration_s": 178,
-          "plays": 18623,
-          "likes": 880,
-          "comments": 169,
-          "shares": null,
-          "favorites": 329,
-          "danmaku": 73,
-          "cover_url": "//i0.hdslb.com/bfs/archive/c9845194dd9a793567c5606178267bb41de7cb45.jpg"
-        },
-        {
-          "post_id": "BV1UdojBME5t",
-          "url": "http://www.bilibili.com/video/av116459128752920",
-          "title": "实验一镜到底，看看甲硝唑对螨虫的有效性",
-          "author": "恨自己没有钱",
-          "pubdate": "2026-04-24",
-          "duration_s": 80,
-          "plays": 5333,
-          "likes": 10,
-          "comments": 29,
-          "shares": null,
-          "favorites": 4,
-          "danmaku": 39,
-          "cover_url": "//i1.hdslb.com/bfs/archive/9a7963c43e06fa4d4f51ae0ae306e51de0206a71.jpg"
-        },
-        {
           "post_id": "BV1DyoZBoECv",
           "url": "http://www.bilibili.com/video/av116469832682441",
           "title": "被顾客当成“修面界清流”是种什么体验？就是踏实做事的人被看见了！",
@@ -18116,6 +18071,51 @@
           "favorites": 81,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/237d0a2c3d3912e4281eb11a06ddad90c0c95dfe.jpg"
+        },
+        {
+          "post_id": "BV1PdQwB5E1J",
+          "url": "http://www.bilibili.com/video/av116379822851248",
+          "title": "低至29.9￥纯自用男生护肤心得装备分享！绿色无广还你一张干净帅气的脸蛋！性价比氨基酸洗面奶！洗的干净不拔干！祛痘黑头水杨酸精华！去头屑洗发水！大宝美白润肤乳",
+          "author": "海森Geark",
+          "pubdate": "2026-04-12",
+          "duration_s": 191,
+          "plays": 2888,
+          "likes": 104,
+          "comments": 39,
+          "shares": null,
+          "favorites": 96,
+          "danmaku": 8,
+          "cover_url": "//i2.hdslb.com/bfs/archive/72b1337e2f124b723c5e70ddb7880f61a45d1acc.jpg"
+        },
+        {
+          "post_id": "BV13BoYBRE1b",
+          "url": "http://www.bilibili.com/video/av116453441275555",
+          "title": "【喜叔怎么样？】敏肌集合！一大波热门护肤品席卷大叔，快来听听怎么说！",
+          "author": "喜宝大叔",
+          "pubdate": "2026-04-25",
+          "duration_s": 2101,
+          "plays": 2063,
+          "likes": 97,
+          "comments": 51,
+          "shares": null,
+          "favorites": 20,
+          "danmaku": 2,
+          "cover_url": "//i1.hdslb.com/bfs/archive/33b7a87443eb49c8b356a25d222cb4bb286fdec6.jpg"
+        },
+        {
+          "post_id": "BV1b9ZFBbE76",
+          "url": "http://www.bilibili.com/video/av116470570811594",
+          "title": "找到了！姐姐们的「变美秘诀」普通人也能抄！",
+          "author": "_直白说_",
+          "pubdate": "2026-04-26",
+          "duration_s": 1127,
+          "plays": 1575,
+          "likes": 38,
+          "comments": 21,
+          "shares": null,
+          "favorites": 12,
+          "danmaku": 14,
+          "cover_url": "//i1.hdslb.com/bfs/archive/49398465f1a032a5311e9aed4e4c28589631b4a2.jpg"
         }
       ]
     },
@@ -18250,21 +18250,6 @@
       "channel": "B 站",
       "posts": [
         {
-          "post_id": "BV1x9oWBXEgV",
-          "url": "http://www.bilibili.com/video/av116448106122102",
-          "title": "电竞系列IDV-ES（IdentityV E-Sports）【奇珍时装】机械师-差速器游戏内效果展示来啦~",
-          "author": "网易第五人格手游",
-          "pubdate": "2026-04-22",
-          "duration_s": 111,
-          "plays": 273576,
-          "likes": 10904,
-          "comments": 1966,
-          "shares": null,
-          "favorites": 1292,
-          "danmaku": 347,
-          "cover_url": "//i1.hdslb.com/bfs/archive/0c98e5d8f0219c5ceca2903a42537de858b3e293.jpg"
-        },
-        {
           "post_id": "BV1Y6QwBsESZ",
           "url": "http://www.bilibili.com/video/av116379655149523",
           "title": "这些香型1瓶就毕业！的香水合集",
@@ -18278,36 +18263,6 @@
           "favorites": 1008,
           "danmaku": 57,
           "cover_url": "//i1.hdslb.com/bfs/archive/0adb272aa2ec79ea989936170859807a5e92db95.jpg"
-        },
-        {
-          "post_id": "BV1t1dLBAE9L",
-          "url": "http://www.bilibili.com/video/av116420927030496",
-          "title": "知性沉稳教授的爱人竟是视觉系亚比机车手！",
-          "author": "草履虫non",
-          "pubdate": "2026-04-17",
-          "duration_s": 17,
-          "plays": 31374,
-          "likes": 9143,
-          "comments": 233,
-          "shares": null,
-          "favorites": 1918,
-          "danmaku": 7,
-          "cover_url": "//i1.hdslb.com/bfs/archive/a8b35f51582e0e29427e30d43cacf96e519e9955.jpg"
-        },
-        {
-          "post_id": "BV157osBTEby",
-          "url": "http://www.bilibili.com/video/av116447854462008",
-          "title": "伊索尔德cos眼妆过程分享",
-          "author": "叫我袅袅Ya",
-          "pubdate": "2026-04-22",
-          "duration_s": 45,
-          "plays": 14762,
-          "likes": 2277,
-          "comments": 34,
-          "shares": null,
-          "favorites": 1154,
-          "danmaku": 9,
-          "cover_url": "//i2.hdslb.com/bfs/archive/29167edb57da43d31f0d3f0bfb489f51a0eba93b.jpg"
         },
         {
           "post_id": "BV1kpoxBQEtm",
@@ -18355,19 +18310,64 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/c05c07b5f5dd18c4f5e2a2697d0fece8fc2994c2.jpg"
         },
         {
-          "post_id": "BV1pHo5B9EBw",
-          "url": "http://www.bilibili.com/video/av116458659054647",
-          "title": "儿童故事《伊索寓言》86集",
-          "author": "生椰美式吖",
-          "pubdate": "2026-04-24",
-          "duration_s": 14638,
-          "plays": 6973,
-          "likes": 24,
-          "comments": 1,
+          "post_id": "BV1bAoYBSES6",
+          "url": "http://www.bilibili.com/video/av116453491803964",
+          "title": "COACH 6支高分香水测评，职场/旅行/约会全承包！",
+          "author": "香水时代APP",
+          "pubdate": "2026-04-23",
+          "duration_s": 211,
+          "plays": 5860,
+          "likes": 58,
+          "comments": 5,
           "shares": null,
-          "favorites": 44,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/284e2e23205ceffba54051a6df3dc4b657df85de.jpg"
+          "favorites": 27,
+          "danmaku": 2,
+          "cover_url": "//i2.hdslb.com/bfs/archive/1895012534f94f9ad77ecdd22b46d9872ac6343e.jpg"
+        },
+        {
+          "post_id": "BV13Uo5BKEkB",
+          "url": "http://www.bilibili.com/video/av116458373846272",
+          "title": "气质抬咖！春夏让人好感度拉满的作弊香水！",
+          "author": "是有南呐",
+          "pubdate": "2026-04-24",
+          "duration_s": 255,
+          "plays": 3796,
+          "likes": 171,
+          "comments": 14,
+          "shares": null,
+          "favorites": 85,
+          "danmaku": 45,
+          "cover_url": "//i2.hdslb.com/bfs/archive/a95ed8d7bd36873839048f53440a08c88b951d10.jpg"
+        },
+        {
+          "post_id": "BV1GSoDB3ER9",
+          "url": "http://www.bilibili.com/video/av116463641887397",
+          "title": "EP香水全系列测评❗好原料➕好调香，平价有段位❗",
+          "author": "小空试香水",
+          "pubdate": "2026-04-25",
+          "duration_s": 335,
+          "plays": 3398,
+          "likes": 223,
+          "comments": 37,
+          "shares": null,
+          "favorites": 101,
+          "danmaku": 5,
+          "cover_url": "//i2.hdslb.com/bfs/archive/389bcb75b6262affab4e8e75683da9085c72d7a9.jpg"
+        },
+        {
+          "post_id": "BV13BoYBRE1b",
+          "url": "http://www.bilibili.com/video/av116453441275555",
+          "title": "【喜叔怎么样？】敏肌集合！一大波热门护肤品席卷大叔，快来听听怎么说！",
+          "author": "喜宝大叔",
+          "pubdate": "2026-04-25",
+          "duration_s": 2101,
+          "plays": 2063,
+          "likes": 97,
+          "comments": 51,
+          "shares": null,
+          "favorites": 20,
+          "danmaku": 2,
+          "cover_url": "//i1.hdslb.com/bfs/archive/33b7a87443eb49c8b356a25d222cb4bb286fdec6.jpg"
         }
       ]
     },
@@ -18895,21 +18895,6 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/cf6dbedf3c229439ca4b41be45f6b04829ddfa62.jpg"
         },
         {
-          "post_id": "BV1V9dZBZECh",
-          "url": "http://www.bilibili.com/video/av116430221745069",
-          "title": "【奥地利内战】&quot;不要再说空话&quot;——Schluss mit Phrasen",
-          "author": "Nachtkord",
-          "pubdate": "2026-04-19",
-          "duration_s": 100,
-          "plays": 1244,
-          "likes": 83,
-          "comments": 5,
-          "shares": null,
-          "favorites": 73,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/8216bc3ab8ce81f764ff5c665e37d3d0a354183b.jpg"
-        },
-        {
           "post_id": "BV1nRoQBdEas",
           "url": "http://www.bilibili.com/video/av116464799449845",
           "title": "【终极锐评】从夯到夯排名，盘点热门洗发水，看看你用的洗发水在里面吗？高性价比洗发水男生推荐！去屑/控油/防脱/二硫化硒洗发水全都有！脱发、头屑多必看！建议收藏",
@@ -18940,21 +18925,6 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/d3177bd61e8a2bbb1cdd2f6fa835d24a7c905b42.jpg"
         },
         {
-          "post_id": "BV1x3QiBGE1R",
-          "url": "http://www.bilibili.com/video/av116401532570874",
-          "title": "阿道夫・科林 优雅圆舞曲，作品十一 Adolph Kölling Valse gracieuse Op.11",
-          "author": "Betty的音乐世界",
-          "pubdate": "2026-04-14",
-          "duration_s": 391,
-          "plays": 190,
-          "likes": 12,
-          "comments": 0,
-          "shares": null,
-          "favorites": 16,
-          "danmaku": 0,
-          "cover_url": "//i0.hdslb.com/bfs/archive/8cc470c54b00de959a84808cc3327ea526314525.jpg"
-        },
-        {
           "post_id": "BV1EDoLBXESn",
           "url": "http://www.bilibili.com/video/av116460168940799",
           "title": "【oc/配音】阿道夫",
@@ -18970,34 +18940,64 @@
           "cover_url": "//i1.hdslb.com/bfs/archive/861e5c3ddaedc9e6de6296f7d9771482b5f84241.jpg"
         },
         {
-          "post_id": "BV1WAZcBpECy",
-          "url": "http://www.bilibili.com/video/av116470134604912",
-          "title": "阿道夫·希特勒的战争 EP06 End",
-          "author": "基腐戴蓝帽",
-          "pubdate": "2026-04-26",
-          "duration_s": 3119,
-          "plays": 150,
-          "likes": 14,
-          "comments": 0,
+          "post_id": "BV1LFdkBUEqy",
+          "url": "http://www.bilibili.com/video/av116438442448316",
+          "title": "洗完自带体香阿道夫这瓶我能回购一辈子",
+          "author": "严选好物-董枫鳳",
+          "pubdate": "2026-04-20",
+          "duration_s": 76,
+          "plays": 30,
+          "likes": 1,
+          "comments": 2,
           "shares": null,
-          "favorites": 1,
+          "favorites": 0,
           "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/7d8123b8077edfd4ea6d4438b581881cde22e55c.jpg"
+          "cover_url": "//i0.hdslb.com/bfs/archive/27c71ea9cc73ce9815399c6d5fe603e185ef0931.jpg"
         },
         {
-          "post_id": "BV1qqojBJEcW",
-          "url": "http://www.bilibili.com/video/av116459598775298",
-          "title": "《洛克王国:世界》全流程实况第92期:帮助万事通，击败NPC伊古、凯尔赛、艾勒、阿道夫、阿尔贝特、阿瑞安、微特、汉默、凯丽、萨默塞特、哈维、欧洛丝、卡森",
-          "author": "由云转变",
-          "pubdate": "2026-04-24",
-          "duration_s": 5127,
-          "plays": 134,
-          "likes": 3,
+          "post_id": "BV134dnBDE69",
+          "url": "http://www.bilibili.com/video/av116424014039941",
+          "title": "阿道夫·希特勒",
+          "author": "寒洵ovo陵",
+          "pubdate": "2026-04-18",
+          "duration_s": 34,
+          "plays": 22,
+          "likes": 6,
           "comments": 0,
           "shares": null,
           "favorites": 0,
           "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/4c62957c4b78441e1ac05cddbaeeb14238732aa4.jpg"
+          "cover_url": "//i1.hdslb.com/bfs/archive/b2d37307918278f55d11067489b2d76cbdc51458.jpg"
+        },
+        {
+          "post_id": "BV1F5oKB4ErA",
+          "url": "http://www.bilibili.com/video/av116436143969496",
+          "title": "想不到阿道夫洗发水也有活动了！",
+          "author": "挖宝小能手-孟夢固",
+          "pubdate": "2026-04-20",
+          "duration_s": 67,
+          "plays": 19,
+          "likes": 1,
+          "comments": 1,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/cd762c8bd451549aa86868fd27e7e7456dc92500.jpg"
+        },
+        {
+          "post_id": "BV1E9oSBUEfD",
+          "url": "http://www.bilibili.com/video/av116463977367200",
+          "title": "父母收到了吗爱死了发快手地理生物阿道夫开始上课啊客服收到了奥斯卡啊对卡死了到了回来地方了吗我到了唉呀妈呀暗淡",
+          "author": "gdcq7758991",
+          "pubdate": "2026-04-25",
+          "duration_s": 343,
+          "plays": 13,
+          "likes": 1,
+          "comments": 0,
+          "shares": null,
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/e80eaa1ad0bafa7d7e8bc47a399f63ef58ae2ed7.jpg"
         }
       ]
     },
@@ -19096,21 +19096,6 @@
           "cover_url": "//i0.hdslb.com/bfs/archive/403cc42893c4dfe33c265aa96a4c692f50130802.jpg"
         },
         {
-          "post_id": "BV1cbojBoEyy",
-          "url": "http://www.bilibili.com/video/av116459481073534",
-          "title": "行业巨头 海飞丝薄荷洗发水广告明星篇 郑伊健代言 1994年",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "duration_s": 30,
-          "plays": 347,
-          "likes": 9,
-          "comments": 0,
-          "shares": null,
-          "favorites": 5,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/5f05138a8c067ca082c5ed3e2f5f9b6647edf906.jpg"
-        },
-        {
           "post_id": "BV1wFSoBWEpQ",
           "url": "http://www.bilibili.com/video/av116355210677301",
           "title": "《放送文化》2005CCTV7农业节目海飞丝去头屑测试卡ID",
@@ -19124,6 +19109,21 @@
           "favorites": 2,
           "danmaku": 0,
           "cover_url": "//i0.hdslb.com/bfs/archive/ec658bca338a48526768401ed51242691f924559.jpg"
+        },
+        {
+          "post_id": "BV1BFdvBvEwi",
+          "url": "http://www.bilibili.com/video/av116415189224320",
+          "title": "【泉州公交】10米海飞丝“眯眯眼”的科技冲撞？",
+          "author": "易微文创",
+          "pubdate": "2026-04-16",
+          "duration_s": 22,
+          "plays": 249,
+          "likes": 13,
+          "comments": 5,
+          "shares": null,
+          "favorites": 3,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/7ccf2be526eea1c6f290510774a71ce01b28b003.jpg"
         }
       ]
     },
@@ -19258,124 +19258,34 @@
       "channel": "B 站",
       "posts": [
         {
-          "post_id": "BV1FkDSBvEnW",
-          "url": "http://www.bilibili.com/video/av116389654298852",
-          "title": "挑战读野史笑了就吃柠檬2",
-          "author": "混饭达人",
-          "pubdate": "2026-04-12",
-          "duration_s": 239,
-          "plays": 1967065,
-          "likes": 143429,
-          "comments": 2607,
+          "post_id": "BV1vLooBZECY",
+          "url": "http://www.bilibili.com/video/av116468322735207",
+          "title": "吕（Ryo）香氛吕首尔落日香氛洗发水580ml 东方花香调控油蓬松持久留香",
+          "author": "孟慶稳",
+          "pubdate": "2026-04-26",
+          "duration_s": 21,
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
           "shares": null,
-          "favorites": 43959,
-          "danmaku": 6641,
-          "cover_url": "//i0.hdslb.com/bfs/archive/f43f147e6f1b1b11b65c0555848da57031f84dca.jpg"
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/e404456ee38cd3f3726de848662495e785827473.jpg"
         },
         {
-          "post_id": "BV1okXZBWEvB",
-          "url": "http://www.bilibili.com/video/av116334037833510",
-          "title": "【秦国/手书】自助便当组的谁 是 卧 底 23.0",
-          "author": "大魏高祖文皇帝",
-          "pubdate": "2026-04-03",
-          "duration_s": 219,
-          "plays": 641611,
-          "likes": 59438,
-          "comments": 453,
+          "post_id": "BV1xdoZBJEhV",
+          "url": "http://www.bilibili.com/video/av116469379630638",
+          "title": "吕（Ryo）紫吕洗发水400ml 2 控油防脱蓬松深层清洁油性头皮 韩国进口1",
+          "author": "黄妍轩388525",
+          "pubdate": "2026-04-26",
+          "duration_s": 36,
+          "plays": 0,
+          "likes": 1,
+          "comments": 1,
           "shares": null,
-          "favorites": 9888,
-          "danmaku": 711,
-          "cover_url": "//i0.hdslb.com/bfs/archive/47707b099ed900995c46cf49c2842981376c14d7.jpg"
-        },
-        {
-          "post_id": "BV1yEDEBSEGL",
-          "url": "http://www.bilibili.com/video/av116369068659880",
-          "title": "和闺蜜装傻子点黄护",
-          "author": "小只芋",
-          "pubdate": "2026-04-09",
-          "duration_s": 426,
-          "plays": 408656,
-          "likes": 24707,
-          "comments": 361,
-          "shares": null,
-          "favorites": 2445,
-          "danmaku": 423,
-          "cover_url": "//i0.hdslb.com/bfs/archive/274848b87dc01b4e07048e2a175b1e2bb9a15ced.jpg"
-        },
-        {
-          "post_id": "BV1WpSZB4EPR",
-          "url": "http://www.bilibili.com/video/av116356116650130",
-          "title": "跟着张津瑜小姐姐学口语 oh yeah ！go on！",
-          "author": "麻迷er",
-          "pubdate": "2026-04-06",
-          "duration_s": 61,
-          "plays": 378833,
-          "likes": 3887,
-          "comments": 1984,
-          "shares": null,
-          "favorites": 2379,
-          "danmaku": 315,
-          "cover_url": "//i2.hdslb.com/bfs/archive/3e9f0869f230ea44fcfee0f8356723a1842d27dc.jpg"
-        },
-        {
-          "post_id": "BV1mnDsBkEtR",
-          "url": "http://www.bilibili.com/video/av116373699167464",
-          "title": "古早的国产之光",
-          "author": "二朋19岁",
-          "pubdate": "2026-04-09",
-          "duration_s": 164,
-          "plays": 349270,
-          "likes": 2225,
-          "comments": 342,
-          "shares": null,
-          "favorites": 5783,
-          "danmaku": 88,
-          "cover_url": "//i1.hdslb.com/bfs/archive/17869c074d93722249c580b3e47903f86deab5b2.jpg"
-        },
-        {
-          "post_id": "BV1JTopBKEME",
-          "url": "http://www.bilibili.com/video/av116445321105717",
-          "title": "万字解析曹仁，骑兵的皇，野战的王，攻坚的神，守城的天人，正所谓曹魏逆境看辽神，曹魏绝境放曹仁",
-          "author": "凉州经略使",
-          "pubdate": "2026-04-21",
-          "duration_s": 1080,
-          "plays": 142708,
-          "likes": 6742,
-          "comments": 1151,
-          "shares": null,
-          "favorites": 1363,
-          "danmaku": 736,
-          "cover_url": "//i0.hdslb.com/bfs/archive/d0c85a41c81ff1a37630d7aac3ffef924319b7b8.jpg"
-        },
-        {
-          "post_id": "BV1TfoDBNEes",
-          "url": "http://www.bilibili.com/video/av116465353165853",
-          "title": "【FGO·1080P】希波吕忒（CV：关根明良） 宝具+EX+技能",
-          "author": "莉莎娜",
-          "pubdate": "2026-04-25",
-          "duration_s": 214,
-          "plays": 104228,
-          "likes": 1832,
-          "comments": 319,
-          "shares": null,
-          "favorites": 353,
-          "danmaku": 80,
-          "cover_url": "//i0.hdslb.com/bfs/archive/c7d6c2a7747234a721edb2bcdfb3eebca353ce5d.jpg"
-        },
-        {
-          "post_id": "BV1vRDKBqEUz",
-          "url": "http://www.bilibili.com/video/av116344406219487",
-          "title": "大学时期的张津瑜小姐姐 太他妈纯了",
-          "author": "麻迷er",
-          "pubdate": "2026-04-04",
-          "duration_s": 31,
-          "plays": 101107,
-          "likes": 1148,
-          "comments": 268,
-          "shares": null,
-          "favorites": 936,
-          "danmaku": 9,
-          "cover_url": "//i0.hdslb.com/bfs/archive/96872b1933775fd953a4097d1a661e01e1eeaa66.jpg"
+          "favorites": 0,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/12e1d6528abaa14201c9383087ec6700f1ed1390.jpg"
         }
       ]
     },
@@ -19636,124 +19546,124 @@
       "channel": "B 站",
       "posts": [
         {
-          "post_id": "BV1YiDjB8EK9",
-          "url": "http://www.bilibili.com/video/av116368045245523",
-          "title": "【原神一条龙全收集】蒙德月之六(成就数222/技忆团块30/摩拉70)风息山+空之神殿/宝箱/摩拉堆/玉帛/摹忆因子/风之印/探索度/原神月之六一条龙",
-          "author": "你的影月月",
-          "pubdate": "2026-04-08",
-          "duration_s": 11018,
-          "plays": 8463550,
-          "likes": 79088,
-          "comments": 5473,
+          "post_id": "BV1H9oQB4ELV",
+          "url": "http://www.bilibili.com/video/av116464749118188",
+          "title": "先斩后奏有点太犯规了！",
+          "author": "神游的莲蛙",
+          "pubdate": "2026-04-25",
+          "duration_s": 31,
+          "plays": 11786,
+          "likes": 961,
+          "comments": 55,
           "shares": null,
-          "favorites": 72243,
-          "danmaku": 30353,
-          "cover_url": "//i0.hdslb.com/bfs/archive/12bce1756f114373b6702afbde5c7fecb72724d5.jpg"
+          "favorites": 532,
+          "danmaku": 1,
+          "cover_url": "//i2.hdslb.com/bfs/archive/472e6d8773571914879538234e8f097ea4a626fe.jpg"
         },
         {
-          "post_id": "BV1hZDfBLE2r",
-          "url": "http://www.bilibili.com/video/av116379621530897",
-          "title": "“神性宗教感歌曲合集：神明神明张开嘴 让我知道我是谁.”",
-          "author": "星空上-音符",
-          "pubdate": "2026-04-10",
-          "duration_s": 2040,
-          "plays": 1915284,
-          "likes": 62098,
-          "comments": 332,
-          "shares": null,
-          "favorites": 189276,
-          "danmaku": 338,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e445021e65ab62b3a2fd4683c7e4da0566ddb69a.jpg"
-        },
-        {
-          "post_id": "BV17iDCBLEtW",
-          "url": "http://www.bilibili.com/video/av116385141293306",
-          "title": "列神争鸣：命途争锋战歌！#星神二创",
-          "author": "复利大叔",
-          "pubdate": "2026-04-11",
-          "duration_s": 286,
-          "plays": 916557,
-          "likes": 126421,
-          "comments": 11226,
-          "shares": null,
-          "favorites": 77373,
-          "danmaku": 1246,
-          "cover_url": "//i1.hdslb.com/bfs/archive/8cc64698acf5c8b446af0b7b278a99de52ac905d.jpg"
-        },
-        {
-          "post_id": "BV1aSZFBwENj",
-          "url": "http://www.bilibili.com/video/av116470621149317",
-          "title": "当初所有人都以为这只是个普通的解密",
-          "author": "伊甸之伊",
-          "pubdate": "2026-04-26",
-          "duration_s": 160,
-          "plays": 331334,
-          "likes": 12253,
-          "comments": 508,
-          "shares": null,
-          "favorites": 2258,
-          "danmaku": 386,
-          "cover_url": "//i0.hdslb.com/bfs/archive/f19642ebba19ae3f6e19a2e6a239a63fb634d40c.jpg"
-        },
-        {
-          "post_id": "BV12joxBdEim",
-          "url": "http://www.bilibili.com/video/av116447535700763",
-          "title": "——太好了孩子们！这下至冬真的要来了！",
-          "author": "钱钱子RICH_呆呆",
-          "pubdate": "2026-04-22",
-          "duration_s": 61,
-          "plays": 193974,
-          "likes": 7545,
-          "comments": 382,
-          "shares": null,
-          "favorites": 2212,
-          "danmaku": 84,
-          "cover_url": "//i2.hdslb.com/bfs/archive/bf2489f28c0a5396759038460793963129c667a9.jpg"
-        },
-        {
-          "post_id": "BV1AaoEBeEsD",
-          "url": "http://www.bilibili.com/video/av116460286580862",
-          "title": "引发众怒！百万粉丝乐评人提米锐评河南说唱之神《工厂》",
-          "author": "街头社区",
+          "post_id": "BV1aTo5BPEnD",
+          "url": "http://www.bilibili.com/video/av116458893939198",
+          "title": "【六神合体.雷霆王】机甲变形合体.战机变形分离",
+          "author": "爱打麻将的麻将",
           "pubdate": "2026-04-24",
-          "duration_s": 665,
-          "plays": 188472,
-          "likes": 1421,
-          "comments": 1022,
+          "duration_s": 296,
+          "plays": 5134,
+          "likes": 92,
+          "comments": 18,
           "shares": null,
-          "favorites": 285,
-          "danmaku": 262,
-          "cover_url": "//i0.hdslb.com/bfs/archive/bfdd1738d1e03bcbd3357cc58c0ad92fc0d27904.jpg"
+          "favorites": 61,
+          "danmaku": 2,
+          "cover_url": "//i2.hdslb.com/bfs/archive/726746e3ff1b31f16d59cfac43205fdcbe12621c.jpg"
         },
         {
-          "post_id": "BV12UQFB3ELv",
-          "url": "http://www.bilibili.com/video/av116379000900447",
-          "title": "《煌篇》双月女神这一块",
-          "author": "混子の大王",
-          "pubdate": "2026-04-10",
-          "duration_s": 255,
-          "plays": 140855,
-          "likes": 5115,
-          "comments": 28,
+          "post_id": "BV138DyBuEUj",
+          "url": "http://www.bilibili.com/video/av116386634531009",
+          "title": "小六壬课堂开课了-六神临六宫详解",
+          "author": "一个臭算卦的",
+          "pubdate": "2026-04-11",
+          "duration_s": 1096,
+          "plays": 2853,
+          "likes": 198,
+          "comments": 51,
           "shares": null,
-          "favorites": 14747,
-          "danmaku": 18,
-          "cover_url": "//i2.hdslb.com/bfs/archive/90dd99717fa0ea32dcd3288ac693ab17155fc52f.jpg"
+          "favorites": 103,
+          "danmaku": 0,
+          "cover_url": "//i0.hdslb.com/bfs/archive/67f2adde6984fc8e6c5ea09148ace4c4f0df94d0.jpg"
         },
         {
-          "post_id": "BV1V29EBGE5t",
-          "url": "http://www.bilibili.com/video/av116329457653840",
-          "title": "原神：月之六版本，4个up角色，别乱抽，抽错又多个仓管！",
-          "author": "拾柒酱紫吖",
-          "pubdate": "2026-04-01",
-          "duration_s": 384,
-          "plays": 104911,
-          "likes": 1406,
-          "comments": 747,
+          "post_id": "BV17oDHBHEdY",
+          "url": "http://www.bilibili.com/video/av116373195915907",
+          "title": "刮皂｜六神｜最近好爱绿色呀",
+          "author": "李干嘛Soap-time",
+          "pubdate": "2026-04-09",
+          "duration_s": 151,
+          "plays": 2666,
+          "likes": 165,
+          "comments": 4,
           "shares": null,
-          "favorites": 291,
-          "danmaku": 200,
-          "cover_url": "//i2.hdslb.com/bfs/archive/11b3bc37d186999713f79cd1f1f4db184711420d.jpg"
+          "favorites": 25,
+          "danmaku": 2,
+          "cover_url": "//i0.hdslb.com/bfs/archive/408be8a268151c8e90726a0cd25b65e9db2aeb18.jpg"
+        },
+        {
+          "post_id": "BV1T7D3BMEZg",
+          "url": "http://www.bilibili.com/video/av116347912585853",
+          "title": "六神合体雷霆王",
+          "author": "小雪爸爸喵",
+          "pubdate": "2026-04-04",
+          "duration_s": 21,
+          "plays": 1785,
+          "likes": 30,
+          "comments": 11,
+          "shares": null,
+          "favorites": 14,
+          "danmaku": 1,
+          "cover_url": "//i1.hdslb.com/bfs/archive/ab8bfe298af35afb2499e4a773f3fe9798a36963.jpg"
+        },
+        {
+          "post_id": "BV1fZdRB4Emm",
+          "url": "http://www.bilibili.com/video/av116429936398741",
+          "title": "*六神装私设",
+          "author": "这个氧气瓶是贵",
+          "pubdate": "2026-04-19",
+          "duration_s": 473,
+          "plays": 1454,
+          "likes": 33,
+          "comments": 21,
+          "shares": null,
+          "favorites": 13,
+          "danmaku": 1,
+          "cover_url": "//i2.hdslb.com/bfs/archive/bc5f90ad19cff017d3ca56741f3b3ba00064778a.jpg"
+        },
+        {
+          "post_id": "BV1Wud1BgEjn",
+          "url": "http://www.bilibili.com/video/av116440673943627",
+          "title": "驱蚊液花露水全测评！8 款热门款横评，户外 / 日常 / 宝宝 / 敏感肌一站式抄作业，户外长效、宝宝专用、敏感肌温和，驱蚊产品到底该怎么选？测评选购攻略推荐",
+          "author": "缘缘测评",
+          "pubdate": "2026-04-21",
+          "duration_s": 351,
+          "plays": 1398,
+          "likes": 11,
+          "comments": 15,
+          "shares": null,
+          "favorites": 13,
+          "danmaku": 21,
+          "cover_url": "//i2.hdslb.com/bfs/archive/09d293b22e42e8740537600ebff2e5944eb66868.jpg"
+        },
+        {
+          "post_id": "BV1aBoYBREPU",
+          "url": "http://www.bilibili.com/video/av116453441340560",
+          "title": "疑似六神MV流出",
+          "author": "美食鉴赏频道",
+          "pubdate": "2026-04-23",
+          "duration_s": 91,
+          "plays": 1303,
+          "likes": 21,
+          "comments": 4,
+          "shares": null,
+          "favorites": 2,
+          "danmaku": 1,
+          "cover_url": "//i1.hdslb.com/bfs/archive/081e47814beca692f30e0b0554dba81e7b71659c.jpg"
         }
       ]
     },
@@ -19775,21 +19685,6 @@
           "favorites": 5237,
           "danmaku": 231,
           "cover_url": "//i0.hdslb.com/bfs/archive/199418db581e1d0a0ac71b758415a1141e795ea7.jpg"
-        },
-        {
-          "post_id": "BV15CojB7EYj",
-          "url": "http://www.bilibili.com/video/av116459531469835",
-          "title": "行业巨头 当年属违法广告案例之一 飘柔洗发水广告 空姐发质篇 张庭代言 1994-1997年播出",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "duration_s": 30,
-          "plays": 17429,
-          "likes": 108,
-          "comments": 33,
-          "shares": null,
-          "favorites": 64,
-          "danmaku": 1,
-          "cover_url": "//i0.hdslb.com/bfs/archive/e751318eaa1cc9f316e5b6480b992f2ed90f3af2.jpg"
         },
         {
           "post_id": "BV1FfdVB2E6Q",
@@ -19837,36 +19732,6 @@
           "cover_url": "//i2.hdslb.com/bfs/archive/a5486d1e0d416440a6c807ad5ebce6604b86226d.jpg"
         },
         {
-          "post_id": "BV1btdDBaExP",
-          "url": "http://www.bilibili.com/video/av116443626668061",
-          "title": "梅花网广告合集2010（1）",
-          "author": "梅花网mhw",
-          "pubdate": "2026-04-21",
-          "duration_s": 2404,
-          "plays": 3130,
-          "likes": 21,
-          "comments": 26,
-          "shares": null,
-          "favorites": 31,
-          "danmaku": 0,
-          "cover_url": "//i1.hdslb.com/bfs/archive/2b2f791c625306956ef3646e2ce19950475dba82.jpg"
-        },
-        {
-          "post_id": "BV1mzoKBuEkx",
-          "url": "http://www.bilibili.com/video/av116435875536248",
-          "title": "【电视购物】七星购物科技广告集锦（2007-2010）",
-          "author": "bili_65135202482",
-          "pubdate": "2026-04-20",
-          "duration_s": 5289,
-          "plays": 1775,
-          "likes": 20,
-          "comments": 3,
-          "shares": null,
-          "favorites": 21,
-          "danmaku": 0,
-          "cover_url": "//i2.hdslb.com/bfs/archive/e69bb74c2218b05d560571c95b4391ee75117f86.jpg"
-        },
-        {
           "post_id": "BV1oio5BVENr",
           "url": "http://www.bilibili.com/video/av116458776429285",
           "title": "朵唯女性手机历年广告（2009——2017）[不完整]",
@@ -19880,6 +19745,51 @@
           "favorites": 16,
           "danmaku": 0,
           "cover_url": "//i2.hdslb.com/bfs/archive/2130ef4b8901c7d70637dc7fdf2acf3102b94a44.jpg"
+        },
+        {
+          "post_id": "BV1P6dDBWEn3",
+          "url": "http://www.bilibili.com/video/av116443760826128",
+          "title": "皮宝2003年广告",
+          "author": "一得阁老墨",
+          "pubdate": "2026-04-21",
+          "duration_s": 74,
+          "plays": 1083,
+          "likes": 9,
+          "comments": 6,
+          "shares": null,
+          "favorites": 8,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/3001e6a3d8d11b49dd6f67167100e945788b7dce.jpg"
+        },
+        {
+          "post_id": "BV11TdVBnEgR",
+          "url": "http://www.bilibili.com/video/av116420306272386",
+          "title": "【放送文化】拉芳美化股份有限公司历年logo版权页合集（1997——）",
+          "author": "全国电视投屏",
+          "pubdate": "2026-04-19",
+          "duration_s": 223,
+          "plays": 1069,
+          "likes": 6,
+          "comments": 7,
+          "shares": null,
+          "favorites": 11,
+          "danmaku": 0,
+          "cover_url": "//i2.hdslb.com/bfs/archive/df859c1f78a8fb746ed6fc0430b60dd9f2d5b832.jpg"
+        },
+        {
+          "post_id": "BV1g2oGBfEFB",
+          "url": "http://www.bilibili.com/video/av116457618872542",
+          "title": "亮荘珍珠活性洗发露 亮出真我 你更行 还有丽彤动感香氛洗发露 15s（陈楚生）",
+          "author": "相约新世界",
+          "pubdate": "2026-04-24",
+          "duration_s": 15,
+          "plays": 767,
+          "likes": 16,
+          "comments": 9,
+          "shares": null,
+          "favorites": 10,
+          "danmaku": 0,
+          "cover_url": "//i1.hdslb.com/bfs/archive/8cdd3f7b0d78e2a0a7a36a86208d997c16aa62eb.jpg"
         }
       ]
     },
@@ -20215,21 +20125,6 @@
           "cover_url": "//i1.hdslb.com/bfs/archive/53fa519d1ad0f975aa87b8f162995ad3075edef4.jpg"
         },
         {
-          "post_id": "BV1K7dkBTEtD",
-          "url": "http://www.bilibili.com/video/av116438257894452",
-          "title": "赛文凯做客最新节目《提米秀》！",
-          "author": "MAZE嘻哈频道",
-          "pubdate": "2026-04-20",
-          "duration_s": 2537,
-          "plays": 32348,
-          "likes": 100,
-          "comments": 111,
-          "shares": null,
-          "favorites": 58,
-          "danmaku": 76,
-          "cover_url": "//i1.hdslb.com/bfs/archive/73783e35e7d0755b1cd11ac2aa199520b5eaec8d.jpg"
-        },
-        {
           "post_id": "BV1PFSfBwEDP",
           "url": "http://www.bilibili.com/video/av116358129912773",
           "title": "假如《硬核巨星》播出是原词",
@@ -20258,6 +20153,21 @@
           "favorites": 5237,
           "danmaku": 231,
           "cover_url": "//i0.hdslb.com/bfs/archive/199418db581e1d0a0ac71b758415a1141e795ea7.jpg"
+        },
+        {
+          "post_id": "BV1qLdCB4EY5",
+          "url": "http://www.bilibili.com/video/av116437687471173",
+          "title": "爆了爆了！这就是赛文凯想要的感觉吧！",
+          "author": "慢慢升空-",
+          "pubdate": "2026-04-20",
+          "duration_s": 42,
+          "plays": 21096,
+          "likes": 190,
+          "comments": 75,
+          "shares": null,
+          "favorites": 70,
+          "danmaku": 2,
+          "cover_url": "//i2.hdslb.com/bfs/archive/d6ba682c8dd348adcd053a3c440384696471daaf.jpg"
         }
       ]
     }

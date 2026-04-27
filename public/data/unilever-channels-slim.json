@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T09:21:27.487741+00:00Z",
+    "generated_at": "2026-04-27T09:29:47.763053+00:00Z",
     "customer": "unilever",
     "n_series": 322,
     "n_brands": 23,
-    "n_posts": 1750,
+    "n_posts": 1451,
     "channels": [
       "B 站",
       "抖音"
@@ -13,7 +13,7 @@
   "series": [
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -49,7 +49,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -85,7 +85,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -121,7 +121,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -133,7 +133,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -145,7 +145,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -157,7 +157,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -169,7 +169,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -181,7 +181,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -193,7 +193,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -229,7 +229,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -265,7 +265,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -277,7 +277,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -289,7 +289,7 @@
     },
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -301,7 +301,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -337,7 +337,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -373,7 +373,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -409,7 +409,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -421,7 +421,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -433,7 +433,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -445,7 +445,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -457,7 +457,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -469,7 +469,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -481,7 +481,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -517,7 +517,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -553,7 +553,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -565,7 +565,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -577,7 +577,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -589,7 +589,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -625,7 +625,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -661,7 +661,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -697,7 +697,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -709,7 +709,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -721,7 +721,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -733,7 +733,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -745,7 +745,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -757,7 +757,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -769,7 +769,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -805,7 +805,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -841,7 +841,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -853,7 +853,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -865,7 +865,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -877,7 +877,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -913,7 +913,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -949,7 +949,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -985,7 +985,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -997,7 +997,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -1009,7 +1009,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -1021,7 +1021,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -1033,7 +1033,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -1045,7 +1045,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -1057,7 +1057,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -1093,7 +1093,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -1129,7 +1129,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -1141,7 +1141,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -1153,7 +1153,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -1165,7 +1165,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -1201,7 +1201,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -1237,7 +1237,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -1273,7 +1273,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -1285,7 +1285,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -1297,7 +1297,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -1309,7 +1309,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -1321,7 +1321,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -1333,7 +1333,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -1345,7 +1345,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -1381,7 +1381,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -1417,7 +1417,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -1429,7 +1429,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -1441,7 +1441,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -1453,7 +1453,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_likes",
       "points": [
@@ -1489,7 +1489,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "total_plays",
       "points": [
@@ -1525,7 +1525,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "B 站",
       "metric_type": "video_count",
       "points": [
@@ -1561,7 +1561,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_period",
       "points": [
@@ -1573,7 +1573,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_wow",
       "points": [
@@ -1585,7 +1585,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "consume_index_yoy",
       "points": [
@@ -1597,7 +1597,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_period",
       "points": [
@@ -1609,7 +1609,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_wow",
       "points": [
@@ -1621,7 +1621,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "content_index_yoy",
       "points": [
@@ -1633,7 +1633,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "keyword_index",
       "points": [
@@ -1669,7 +1669,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index",
       "points": [
@@ -1705,7 +1705,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_period",
       "points": [
@@ -1717,7 +1717,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_wow",
       "points": [
@@ -1729,7 +1729,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channel": "抖音",
       "metric_type": "search_index_yoy",
       "points": [
@@ -6639,7 +6639,7 @@
   "per_brand": [
     {
       "brand": "多芬 Dove",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 5.0,
@@ -6743,7 +6743,7 @@
     },
     {
       "brand": "力士 Lux",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 188.0,
@@ -6847,7 +6847,7 @@
     },
     {
       "brand": "可悠然 Kuyura",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 2583.0,
@@ -6951,7 +6951,7 @@
     },
     {
       "brand": "清扬 Clear",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 10.0,
@@ -7055,7 +7055,7 @@
     },
     {
       "brand": "夏士莲 Sunsilk",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 36.0,
@@ -7159,7 +7159,7 @@
     },
     {
       "brand": "凡士林 Vaseline",
-      "brand_type": "competitor",
+      "brand_type": "unilever",
       "channels": {
         "B 站.total_likes": {
           "latest": 19.0,
@@ -9115,15 +9115,15 @@
           "url": "http://www.bilibili.com/video/av116330044857681"
         },
         {
-          "title": "机哥再战中药风味海力士",
-          "author": "小飞机DIY",
-          "pubdate": "2026-04-26",
-          "plays": 8421,
-          "likes": 639,
-          "comments": 95,
+          "title": "重生级水准！Marvel Legends 幻影猫&amp;钢力士 惊世绝俗X战警 孩之宝漫威传奇6寸可动人偶开箱评测【AtoZ】",
+          "author": "模玩童AaronZ",
+          "pubdate": "2026-03-31",
+          "plays": 3812,
+          "likes": 222,
+          "comments": 17,
           "shares": null,
-          "favorites": 77,
-          "url": "http://www.bilibili.com/video/av116470033943603"
+          "favorites": 37,
+          "url": "http://www.bilibili.com/video/av116323686288419"
         }
       ]
     },
@@ -9221,17 +9221,6 @@
           "url": "http://www.bilibili.com/video/av116340413175008"
         },
         {
-          "title": "行业巨头 当年属违法广告案例之一 飘柔洗发水广告 空姐发质篇 张庭代言 1994-1997年播出",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "plays": 17412,
-          "likes": 108,
-          "comments": 32,
-          "shares": null,
-          "favorites": 64,
-          "url": "http://www.bilibili.com/video/av116459531469835"
-        },
-        {
           "title": "2005年刘亦菲全新潘婷日光护理系列阳光篇广告",
           "author": "爱凯四叶草怡儿",
           "pubdate": "2026-04-17",
@@ -9241,6 +9230,17 @@
           "shares": null,
           "favorites": 37,
           "url": "http://www.bilibili.com/video/av116418259458694"
+        },
+        {
+          "title": "刮皂｜夏士莲｜美丽！",
+          "author": "李干嘛Soap-time",
+          "pubdate": "2026-04-11",
+          "plays": 2365,
+          "likes": 126,
+          "comments": 2,
+          "shares": null,
+          "favorites": 25,
+          "url": "http://www.bilibili.com/video/av116384872795330"
         }
       ]
     },
@@ -9327,17 +9327,6 @@
       "channel": "B 站",
       "posts": [
         {
-          "title": "电竞系列IDV-ES（IdentityV E-Sports）【奇珍时装】机械师-差速器游戏内效果展示来啦~",
-          "author": "网易第五人格手游",
-          "pubdate": "2026-04-22",
-          "plays": 273576,
-          "likes": 10904,
-          "comments": 1966,
-          "shares": null,
-          "favorites": 1292,
-          "url": "http://www.bilibili.com/video/av116448106122102"
-        },
-        {
           "title": "这些香型1瓶就毕业！的香水合集",
           "author": "香你个鬼",
           "pubdate": "2026-04-10",
@@ -9349,15 +9338,26 @@
           "url": "http://www.bilibili.com/video/av116379655149523"
         },
         {
-          "title": "知性沉稳教授的爱人竟是视觉系亚比机车手！",
-          "author": "草履虫non",
-          "pubdate": "2026-04-17",
-          "plays": 31374,
-          "likes": 9143,
-          "comments": 233,
+          "title": "2026第一季度空瓶记来啦！和大家分享近来用完的护肤护发好物！",
+          "author": "舟叶叶舟",
+          "pubdate": "2026-04-22",
+          "plays": 11688,
+          "likes": 591,
+          "comments": 122,
           "shares": null,
-          "favorites": 1918,
-          "url": "http://www.bilibili.com/video/av116420927030496"
+          "favorites": 121,
+          "url": "http://www.bilibili.com/video/av116447468588027"
+        },
+        {
+          "title": "这个夏天☀用点不一样的香水",
+          "author": "小空试香水",
+          "pubdate": "2026-04-14",
+          "plays": 9390,
+          "likes": 603,
+          "comments": 113,
+          "shares": null,
+          "favorites": 302,
+          "url": "http://www.bilibili.com/video/av116403193646184"
         }
       ]
     },
@@ -9533,17 +9533,6 @@
           "url": "http://www.bilibili.com/video/av116464145208356"
         },
         {
-          "title": "【奥地利内战】&quot;不要再说空话&quot;——Schluss mit Phrasen",
-          "author": "Nachtkord",
-          "pubdate": "2026-04-19",
-          "plays": 1244,
-          "likes": 83,
-          "comments": 5,
-          "shares": null,
-          "favorites": 73,
-          "url": "http://www.bilibili.com/video/av116430221745069"
-        },
-        {
           "title": "【终极锐评】从夯到夯排名，盘点热门洗发水，看看你用的洗发水在里面吗？高性价比洗发水男生推荐！去屑/控油/防脱/二硫化硒洗发水全都有！脱发、头屑多必看！建议收藏",
           "author": "洗护测评局",
           "pubdate": "2026-04-25",
@@ -9553,6 +9542,17 @@
           "shares": null,
           "favorites": 2,
           "url": "http://www.bilibili.com/video/av116464799449845"
+        },
+        {
+          "title": "【洛克王国】飘飘然的阿道夫，白嫖神奇的蛋",
+          "author": "-龍五-",
+          "pubdate": "2026-04-02",
+          "plays": 484,
+          "likes": 5,
+          "comments": 1,
+          "shares": null,
+          "favorites": 3,
+          "url": "http://www.bilibili.com/video/av116333433853963"
         }
       ]
     },
@@ -9639,37 +9639,26 @@
       "channel": "B 站",
       "posts": [
         {
-          "title": "挑战读野史笑了就吃柠檬2",
-          "author": "混饭达人",
-          "pubdate": "2026-04-12",
-          "plays": 1967065,
-          "likes": 143429,
-          "comments": 2607,
+          "title": "吕（Ryo）香氛吕首尔落日香氛洗发水580ml 东方花香调控油蓬松持久留香",
+          "author": "孟慶稳",
+          "pubdate": "2026-04-26",
+          "plays": 0,
+          "likes": 0,
+          "comments": 1,
           "shares": null,
-          "favorites": 43959,
-          "url": "http://www.bilibili.com/video/av116389654298852"
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116468322735207"
         },
         {
-          "title": "【秦国/手书】自助便当组的谁 是 卧 底 23.0",
-          "author": "大魏高祖文皇帝",
-          "pubdate": "2026-04-03",
-          "plays": 641611,
-          "likes": 59438,
-          "comments": 453,
+          "title": "吕（Ryo）紫吕洗发水400ml 2 控油防脱蓬松深层清洁油性头皮 韩国进口1",
+          "author": "黄妍轩388525",
+          "pubdate": "2026-04-26",
+          "plays": 0,
+          "likes": 1,
+          "comments": 1,
           "shares": null,
-          "favorites": 9888,
-          "url": "http://www.bilibili.com/video/av116334037833510"
-        },
-        {
-          "title": "和闺蜜装傻子点黄护",
-          "author": "小只芋",
-          "pubdate": "2026-04-09",
-          "plays": 408656,
-          "likes": 24707,
-          "comments": 361,
-          "shares": null,
-          "favorites": 2445,
-          "url": "http://www.bilibili.com/video/av116369068659880"
+          "favorites": 0,
+          "url": "http://www.bilibili.com/video/av116469379630638"
         }
       ]
     },
@@ -9756,37 +9745,37 @@
       "channel": "B 站",
       "posts": [
         {
-          "title": "【原神一条龙全收集】蒙德月之六(成就数222/技忆团块30/摩拉70)风息山+空之神殿/宝箱/摩拉堆/玉帛/摹忆因子/风之印/探索度/原神月之六一条龙",
-          "author": "你的影月月",
-          "pubdate": "2026-04-08",
-          "plays": 8463550,
-          "likes": 79088,
-          "comments": 5473,
+          "title": "先斩后奏有点太犯规了！",
+          "author": "神游的莲蛙",
+          "pubdate": "2026-04-25",
+          "plays": 11786,
+          "likes": 961,
+          "comments": 55,
           "shares": null,
-          "favorites": 72243,
-          "url": "http://www.bilibili.com/video/av116368045245523"
+          "favorites": 532,
+          "url": "http://www.bilibili.com/video/av116464749118188"
         },
         {
-          "title": "“神性宗教感歌曲合集：神明神明张开嘴 让我知道我是谁.”",
-          "author": "星空上-音符",
-          "pubdate": "2026-04-10",
-          "plays": 1915284,
-          "likes": 62098,
-          "comments": 332,
+          "title": "【六神合体.雷霆王】机甲变形合体.战机变形分离",
+          "author": "爱打麻将的麻将",
+          "pubdate": "2026-04-24",
+          "plays": 5134,
+          "likes": 92,
+          "comments": 18,
           "shares": null,
-          "favorites": 189276,
-          "url": "http://www.bilibili.com/video/av116379621530897"
+          "favorites": 61,
+          "url": "http://www.bilibili.com/video/av116458893939198"
         },
         {
-          "title": "列神争鸣：命途争锋战歌！#星神二创",
-          "author": "复利大叔",
+          "title": "小六壬课堂开课了-六神临六宫详解",
+          "author": "一个臭算卦的",
           "pubdate": "2026-04-11",
-          "plays": 916557,
-          "likes": 126421,
-          "comments": 11226,
+          "plays": 2853,
+          "likes": 198,
+          "comments": 51,
           "shares": null,
-          "favorites": 77373,
-          "url": "http://www.bilibili.com/video/av116385141293306"
+          "favorites": 103,
+          "url": "http://www.bilibili.com/video/av116386634531009"
         }
       ]
     },
@@ -9806,17 +9795,6 @@
           "url": "http://www.bilibili.com/video/av116340413175008"
         },
         {
-          "title": "行业巨头 当年属违法广告案例之一 飘柔洗发水广告 空姐发质篇 张庭代言 1994-1997年播出",
-          "author": "Sony廉力宏",
-          "pubdate": "2026-04-24",
-          "plays": 17429,
-          "likes": 108,
-          "comments": 33,
-          "shares": null,
-          "favorites": 64,
-          "url": "http://www.bilibili.com/video/av116459531469835"
-        },
-        {
           "title": "【洗发水红黑榜】2026全价位洗发水选购指南，20-500全价位覆盖，无广带刺优缺点照讲绝不恰饭，建议收藏！控油/去屑/防脱/EHD二硫化硒洗发水/海洋至尊",
           "author": "挑剔测评家木木",
           "pubdate": "2026-04-17",
@@ -9826,6 +9804,17 @@
           "shares": null,
           "favorites": 2032,
           "url": "http://www.bilibili.com/video/av116419668870939"
+        },
+        {
+          "title": "两个漂亮丰厚秀发互相洗头",
+          "author": "江门刘一手",
+          "pubdate": "2026-04-17",
+          "plays": 3520,
+          "likes": 46,
+          "comments": 5,
+          "shares": null,
+          "favorites": 162,
+          "url": "http://www.bilibili.com/video/av116418410514333"
         }
       ]
     },

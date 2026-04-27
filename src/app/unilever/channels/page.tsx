@@ -658,19 +658,11 @@ function NotConnectedTab({ channelKey, aeo }: { channelKey: ChannelKey; aeo: num
         </span>
       </div>
       <p className="text-sm text-neutral-400 mb-4">{meta.desc}</p>
-      <p className="text-xs text-neutral-500 mb-2">数据源：<span className="font-mono text-neutral-400">{meta.source}</span></p>
       {aeo > 0 && (
         <p className="text-xs text-neutral-500">
-          → 现有 AEO 信号：AI 联网回答里引用此渠道 <b className="text-[#00FF88]">{aeo}</b> 次
+          → AI 联网回答里引用此渠道 <b className="text-[#00FF88]">{aeo}</b> 次（来自现有 AEO 监测）
         </p>
       )}
-      <div className="mt-6 text-xs text-neutral-600 max-w-md mx-auto">
-        路线：
-        {channelKey === "微博" && "申请微博开放平台 API（实名审核 1-3d）→ 接入"}
-        {channelKey === "小红书" && "购买千瓜 SaaS（¥3-10w/年，7d 免费试用）→ 接入"}
-        {channelKey === "微信公众号" && "购买新榜 SaaS（¥5-30w/年，30d 试用）→ 接入"}
-        {channelKey === "知乎" && "Playwright 收集器已写 + 需要登录态 cookie → 测试"}
-      </div>
     </div>
   );
 }
