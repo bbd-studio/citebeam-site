@@ -29,8 +29,16 @@ export default function UnileverDashboard() {
     <main className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
       {/* Hero */}
       <div className="mb-8">
-        <div className="font-mono text-xs text-neutral-500 mb-2">
-          <span className="text-[#00FF88]">$</span> demo/unilever/dashboard.md
+        <div className="font-mono text-xs text-neutral-500 mb-2 flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <span className="text-[#00FF88]">$</span> demo/unilever/dashboard.md
+          </div>
+          <Link
+            href="/unilever/timeline"
+            className="text-[#00FF88]/80 hover:text-[#00FF88] underline-offset-2 hover:underline"
+          >
+            → 联网前 vs 后 时间线
+          </Link>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           联合利华 · AI 搜索可见度

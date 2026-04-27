@@ -1,0 +1,1401 @@
+{
+  "meta": {
+    "generated_at": "2026-04-27T03:26:28.111495+00:00Z",
+    "customer": "unilever",
+    "total_l1": 1817,
+    "total_l2": 56,
+    "total_l1_errors": 60,
+    "total_l2_errors": 0,
+    "total_citations": 386,
+    "total_pairs": 16,
+    "platforms_with_l2": [
+      "GLM",
+      "豆包"
+    ],
+    "first_sample": "2026-04-23 15:02:00",
+    "last_sample": "2026-04-27 03:17:55"
+  },
+  "timeline": [
+    {
+      "date": "2026-04-23",
+      "l1": 420,
+      "l2": 0,
+      "l1_err": 0,
+      "l2_err": 0
+    },
+    {
+      "date": "2026-04-24",
+      "l1": 1392,
+      "l2": 50,
+      "l1_err": 60,
+      "l2_err": 0
+    },
+    {
+      "date": "2026-04-25",
+      "l1": 0,
+      "l2": 6,
+      "l1_err": 0,
+      "l2_err": 0
+    },
+    {
+      "date": "2026-04-27",
+      "l1": 5,
+      "l2": 0,
+      "l1_err": 0,
+      "l2_err": 0
+    }
+  ],
+  "by_platform": [
+    {
+      "platform": "DeepSeek",
+      "l1_ok": 453,
+      "l1_err": 0,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "deepseek-chat"
+      ],
+      "has_l2": false
+    },
+    {
+      "platform": "夸克",
+      "l1_ok": 443,
+      "l1_err": 0,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "qwen-plus"
+      ],
+      "has_l2": false
+    },
+    {
+      "platform": "GLM",
+      "l1_ok": 255,
+      "l1_err": 0,
+      "l2_ok": 34,
+      "l2_err": 0,
+      "citations": 300,
+      "models": [
+        "GLM-4.5-air",
+        "glm-4-plus"
+      ],
+      "has_l2": true
+    },
+    {
+      "platform": "MiniMax",
+      "l1_ok": 255,
+      "l1_err": 0,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "MiniMax-M2"
+      ],
+      "has_l2": false
+    },
+    {
+      "platform": "豆包",
+      "l1_ok": 115,
+      "l1_err": 0,
+      "l2_ok": 22,
+      "l2_err": 0,
+      "citations": 86,
+      "models": [
+        "doubao-seed-1-6-251015"
+      ],
+      "has_l2": true
+    },
+    {
+      "platform": "Kimi",
+      "l1_ok": 105,
+      "l1_err": 0,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "kimi-for-coding"
+      ],
+      "has_l2": false
+    },
+    {
+      "platform": "元宝",
+      "l1_ok": 98,
+      "l1_err": 60,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "hunyuan-standard"
+      ],
+      "has_l2": false
+    },
+    {
+      "platform": "文心",
+      "l1_ok": 93,
+      "l1_err": 0,
+      "l2_ok": 0,
+      "l2_err": 0,
+      "citations": 0,
+      "models": [
+        "ernie-4.0-turbo-8k"
+      ],
+      "has_l2": false
+    }
+  ],
+  "pairs": [
+    {
+      "prompt_id": 4,
+      "prompt": "\"海边晒一天汗味好重 贵的沐浴露里有啥成分真去体味啊 还是噱头\"",
+      "category": "沐浴露",
+      "platform": "豆包",
+      "l1": {
+        "id": 426,
+        "created_at": "2026-04-24 07:17:56",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "海边汗味重是细菌分解汗液里的有机物导致的。贵的沐浴露里并非都是噱头，有些含真去体味的成分：比如吡罗克酮乙醇胺盐（OCT）能抑菌，锌盐抑制细菌繁殖，天然精油（马鞭草/茶树）或酶类分解汗液残留。  \n\n推荐3款：  \n1.欧舒丹马鞭草沐浴露：含马鞭草精油，抑菌+清新，适合海边后去味；  \n2.多芬男士清爽控油沐浴露：含OCT，针对性抑制汗味细菌；  \n3.资生堂可悠然碧野悠悠：迷迭香+绿茶提取物，温和抑菌不干燥。  \n\n选含这些成分的就不是智商税~",
+        "brand_hits": [
+          "dove",
+          "kuyura",
+          "loccitane"
+        ],
+        "input_tokens": 122,
+        "output_tokens": 632,
+        "cost_cny": 0.001362,
+        "latency_ms": 22404
+      },
+      "l2": {
+        "id": 2007,
+        "created_at": "2026-04-25 15:58:43",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "根据搜索结果，贵价沐浴露中确实存在一些能有效去除体味的成分，并非完全噱头，但需结合具体成分和浓度判断：\n\n\n### **一、有效去体味的核心成分及作用**  \n1. **抗菌成分**  \n   - **天然植萃（如苦参根、野菊花、厚朴树皮）**：通过抑制皮肤表面细菌（如金黄色葡萄球菌、大肠杆菌）生长，减少汗液被细菌分解产生的异味。例如JSV净肤沐浴露含这些成分，第三方检测抑菌率达99.99%（摘要3）。  \n   - **乳酸杆菌/酵母菌发酵产物**：调节皮肤微生态，抑制有害菌繁殖，从根源减少异味（摘要3）。  \n\n2. **酸类成分**  \n   - **水杨酸（BHA）**：脂溶性酸，深入毛孔清洁油脂和角质，减少因油脂堆积、痘痘引发的异味（如露得清水杨酸沐浴露，摘要2）。  \n\n3. **香氛体系**  \n   - **天然精油复配**：如科颜氏原香香氛沐浴露，通过植萃香氛中和异味，同时提供持久留香（摘要2）。  \n\n\n### **二、贵价沐浴露的“价值”是否合理？**  \n- **有效成分浓度**：部分贵价产品会高比例添加核心成分（如某款艾叶人参沐浴露宣称原液添加量≥70%，摘要2），确保效果。  \n- **工艺与安全**：采用低温萃取、无菌灌装等技术保留成分活性，且无有害添加（如JSV的“五零添加”，摘要3）。  \n- **研发验证**：部分产品经过长期测试（如3年研发、2…",
+        "brand_hits": [],
+        "input_tokens": 4153,
+        "output_tokens": 1850,
+        "cost_cny": 0.007022,
+        "latency_ms": 55497,
+        "citations": [
+          {
+            "url": "https://cj.sina.com.cn/articles/view/7880068200/1d5b04c6801901d3to?froms=ggmp",
+            "domain": "cj.sina.com.cn",
+            "title": "沐浴露成分全解析:有效清洁与滋润的秘密",
+            "position": 1
+          },
+          {
+            "url": "https://www.hgdaily.com.cn/w/3/ciye/4O1184O197048O0O1.html",
+            "domain": "hgdaily.com.cn",
+            "title": "2026年去异味沐浴露深度测评：基于核心成分与长效留香的四维战力全解析",
+            "position": 2
+          },
+          {
+            "url": "https://k.sina.cn/article_7868891711_1d505c23f001012xpy.html",
+            "domain": "k.sina.cn",
+            "title": "哪款除菌沐浴露好用?2026抑菌效果最好的沐浴露测评推荐",
+            "position": 3
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "dove",
+          "kuyura",
+          "loccitane"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 2,
+      "prompt": "油皮男生用什么沐浴露去体味比较好",
+      "category": "沐浴露",
+      "platform": "豆包",
+      "l1": {
+        "id": 425,
+        "created_at": "2026-04-24 07:17:52",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "油皮男生选沐浴露要兼顾控油、抑菌和去味，推荐这几款：  \n1.多芬男士氨基酸控油沐浴露：氨基酸表活温和不刺激，控油力强，清新香味能自然掩盖体味；  \n2.舒肤佳男士劲爽薄荷沐浴露：含抑菌成分，减少细菌分解油脂产生的异味，薄荷清凉还能舒缓皮肤；  \n3.阿迪达斯男士冰点沐浴露：冰感配方清洁力足，运动后用去汗味效果明显，香味持久不冲鼻；  \n4.凌仕醒体沐浴露（契合款）：有抑汗因子，香味man且持久，适合易出汗的油皮男生。  \n\n这些都能有效解决油皮体味问题，选自己喜欢的香味就行~",
+        "brand_hits": [
+          "dove",
+          "safeguard"
+        ],
+        "input_tokens": 107,
+        "output_tokens": 537,
+        "cost_cny": 0.00116,
+        "latency_ms": 18886
+      },
+      "l2": {
+        "id": 2005,
+        "created_at": "2026-04-25 15:57:09",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "针对油皮男生去体味的需求，结合最新评测结果，推荐以下几款沐浴露：\n\n**1. 理然冰爽沐浴露（男士专研香）**  \n- **核心优势**：  \n  - 采用微凝胶净肤技术，精准清除油脂污垢，搭配双重氨基酸+APG复配清洁体系，温和不紧绷，洗后清爽通透。  \n  - 国际香料巨头芬美意定制莫吉托香调，前调清新柠檬绿叶，中后调木质琥珀香，留香持久，有效掩盖体味。  \n  - 适合日常通勤、运动后使用，避免假滑残留，维持18小时清爽。  \n\n**2. 黛馥莉沐浴油**  \n- **核心优势**：  \n  - 第三方检测显示控油有效率99.99%，除螨率99.99%，4周螨虫清除率100%，从根源改善异味和痘痘问题。  \n  - 高活性植萃配方（赤芝提取物、苦参根）+角鲨烷、霍霍巴籽油，温和修护屏障，pH值5.5贴合肌肤弱酸环境。  \n  - 长效控油78小时，洗后含水量提升80%，适合油痘肌、敏感油皮长期使用。  \n\n**3. 繁花谷金标艾叶人参沐浴露**  \n- **核心优势**：  \n  - 草本配方（艾叶、人参原液），适合湿热体质、运动后易产生异味的人群，兼具滋养调理功效。  \n  - 独特草本香气，洗后肤感滋润，适合追求天然护理理念的用户。  \n\n**选购建议**：  \n- 追求香氛体验和日常控油：选理然冰爽沐浴露；  \n- 油痘肌、深度控油祛痘：选黛馥莉沐浴油；  \n- 偏好草…",
+        "brand_hits": [],
+        "input_tokens": 4135,
+        "output_tokens": 1352,
+        "cost_cny": 0.006012,
+        "latency_ms": 42874,
+        "citations": [
+          {
+            "url": "http://news.qq.com/rain/a/20260411A02WUS00",
+            "domain": "news.qq.com",
+            "title": "油皮男士沐浴露封神榜｜告别黏腻汗味，这几款清爽香氛款闭眼入",
+            "position": 1
+          },
+          {
+            "url": "https://www.hgdaily.com.cn/w/3/m_ciye/4O1184O196930O0O1.html",
+            "domain": "hgdaily.com.cn",
+            "title": "2026顶级沐浴露品牌实测推荐：油性皮肤沐浴露哪个牌子去油不滑腻？控油祛痘天花板",
+            "position": 2
+          },
+          {
+            "url": "http://www.redsh.com/pinpai/20260310/191556.shtml",
+            "domain": "redsh.com",
+            "title": "2026年去异味沐浴露权威榜单发布：五大品牌草本科技与净味实力深度评测",
+            "position": 3
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "dove",
+          "safeguard"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 6,
+      "prompt": "求问沙龙级沐浴露是不是智商税啊",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 856,
+        "created_at": "2026-04-24 08:51:36",
+        "model": "GLM-4.5-air",
+        "excerpt": "沙龙级沐浴露不是智商税，它香氛层次更丰富，成分更温和，使用感确实不同。推荐几款：Jo Malone英国梨与小苍兰，香调高级留香久；Diptyque苔藓，自然森林气息治愈；Aesop玫瑰，温和滋养适合敏感肌。如果你注重沐浴体验和香气，值得尝试；若只是追求清洁，普通品牌即可。",
+        "brand_hits": [
+          "aesop"
+        ],
+        "input_tokens": 69,
+        "output_tokens": 324,
+        "cost_cny": 0,
+        "latency_ms": 6856
+      },
+      "l2": {
+        "id": 1997,
+        "created_at": "2026-04-24 15:31:14",
+        "model": "glm-4-plus",
+        "excerpt": "沙龙级沐浴露并非智商税，但需理性选择。这类产品通常采用高品质香精和天然精油，提供独特的香氛体验，如阿蒂仙、潘海利根等品牌的产品拥有与同名香水相似的调香，能带来愉悦的沐浴体验。Molton Brown等高端品牌则提供沙龙级别的护肤体验，成分和香调都较为考究。然而，价格溢价确实存在，部分产品可能因品牌溢价而非实际功效导致价格偏高。选择时应关注成分表，优先考虑APG或氨基酸等温和表活，以及是否含有真正有价值的香精成分，而非仅为营销噱头。",
+        "brand_hits": [],
+        "input_tokens": 4713,
+        "output_tokens": 135,
+        "cost_cny": 0,
+        "latency_ms": 5020,
+        "citations": [
+          {
+            "url": "https://www.douyin.com/video/7089662050720369957",
+            "domain": "douyin.com",
+            "title": "沐浴露行业割小韭菜！你有没有交智商税呢？今天我将颠覆你对沐浴露的认知。（发布时间：2022-04-23 13:10:00）",
+            "position": 1
+          },
+          {
+            "url": "https://www.douyin.com/video/7190941282464795915",
+            "domain": "douyin.com",
+            "title": "以为很好用其实是智商税的沐浴露！你们是喜欢留香沐浴露套装还是美白沐浴露（发布时间：2023-01-21 11:24:00）",
+            "position": 2
+          },
+          {
+            "url": "https://www.zhihu.com/tardis/zm/art/431060407",
+            "domain": "zhihu.com",
+            "title": "9款沐浴露红黑榜大揭秘，皮肤出油异味/暗黄粗糙/还长痘怎么办？有没有什么控油止汗、提亮肤色、清爽好闻还适合夏天的沐浴露推荐？！！！",
+            "position": 3
+          },
+          {
+            "url": "https://www.bilibili.com/opus/893075454962958374",
+            "domain": "bilibili.com",
+            "title": "沐浴露怎么选择？不交智商税！之六大网红沐浴露测评推荐效果大PK（发布时间：2024-02-01 23:48:00）",
+            "position": 4
+          },
+          {
+            "url": "https://www.baicaio.com/item/874002.html",
+            "domain": "baicaio.com",
+            "title": "Molton Brown 摩顿布朗 限量款玫瑰沙丘沐浴露 300mL166元",
+            "position": 5
+          },
+          {
+            "url": "https://www.163.com/dy/article/HRJSV8DT0520DKPG.html",
+            "domain": "163.com",
+            "title": "人气沙龙香同款沐浴露、身体乳，奢润呵护，持久留香（发布时间：2023-01-21 12:15:00）",
+            "position": 6
+          },
+          {
+            "url": "https://baijiahao.baidu.com/s?id=1733245648616918812",
+            "domain": "baijiahao.baidu.com",
+            "title": "沐浴露也有智商税？怎样选才真好用？配方师写下能看懂文案告诉你（发布时间：2022-05-19 17:26:00）",
+            "position": 7
+          },
+          {
+            "url": "https://www.sohu.com/a/557145879_121147619",
+            "domain": "sohu.com",
+            "title": "“孕妇专用沐浴露”别迷恋，就是在交智商税！孕妈妈别上当了（发布时间：2022-06-14 17:03:00）",
+            "position": 8
+          },
+          {
+            "url": "https://post.smzdm.com/p/an985qpv/",
+            "domain": "post.smzdm.com",
+            "title": "奉劝大家别再交“沐浴露智商税”！沐浴露哪个好用，90%都选错了（发布时间：2024-12-10 17:57:38）",
+            "position": 9
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/466253869",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "【2024热门沐浴露专业测评】告诉你沐浴露应该怎么选！这16瓶保湿滋润、去黄提亮、持久留香、去角质去背部痘的沐浴露，轻松洗出娇嫩好皮肤，好用到无限回购！！（发布时间：2024-01-18 16:45:00）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "aesop"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 126,
+      "prompt": "无硅油沐浴露真的能改善产后掉发吗",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 1115,
+        "created_at": "2026-04-24 08:56:15",
+        "model": "GLM-4.5-air",
+        "excerpt": "产后掉发主要与激素变化有关，无硅油沐浴露对头皮影响有限。建议选择专业防脱洗发产品：1) 滋源姜根防脱洗发水，含姜提取物促进头皮循环；2) 薇姿Dercos防脱洗发露，专为脆弱发质设计；3) 阿道夫防脱固发洗发水，含多种草本精华。同时注意补充蛋白质、铁质和维生素B族，保证充足睡眠。",
+        "brand_hits": [
+          "adolph"
+        ],
+        "input_tokens": 71,
+        "output_tokens": 424,
+        "cost_cny": 0,
+        "latency_ms": 7139
+      },
+      "l2": {
+        "id": 1999,
+        "created_at": "2026-04-24 15:31:59",
+        "model": "glm-4-plus",
+        "excerpt": "无硅油沐浴露对产后掉发有一定改善作用，但效果因人而异。产后掉发主要由于激素水平急剧下降导致，无硅油产品不含硅油成分，能减少头皮负担，避免毛囊堵塞，有助于维持头皮健康环境。一些含有生姜提取物、乳酸素等成分的无硅油洗发沐浴产品，如安质乳酸素洗发水、澳兰黛孕妇洗发水等，用户反馈有减少掉发、改善头皮状况的效果。建议选择专为孕妇或产后设计的产品，配合良好的生活习惯和营养补充，才能更有效地应对产后脱发问题。",
+        "brand_hits": [],
+        "input_tokens": 4686,
+        "output_tokens": 123,
+        "cost_cny": 0,
+        "latency_ms": 4255,
+        "citations": [
+          {
+            "url": "https://m.babytree.com/community/group39962/topic_71388820.html",
+            "domain": "m.babytree.com",
+            "title": "产后掉发大作战！九款无硅油洗发水亲测！",
+            "position": 1
+          },
+          {
+            "url": "https://www.lukou.com/userfeed/19726336?refererId=",
+            "domain": "lukou.com",
+            "title": "可以改善出油和头屑和掉发......安质乳酸素洗发水 头皮精华（发布时间：2018-12-11 21:33:00）",
+            "position": 2
+          },
+          {
+            "url": "https://www.smzdm.com/p/103164469/",
+            "domain": "smzdm.com",
+            "title": "【省23.33元】澳兰黛孕产妇用品（发布时间：2024-01-26 20:24:17）",
+            "position": 3
+          },
+          {
+            "url": "http://life.ixinwei.com/281172.html",
+            "domain": "life.ixinwei.com",
+            "title": "资生堂不老林洗发水适合发质(资生堂不老林洗发水成分)-昕薇网生活频道",
+            "position": 4
+          },
+          {
+            "url": "https://q.mama.cn/topic/95354920",
+            "domain": "q.mama.cn",
+            "title": "么尚生姜防风洗发乳➕艾姜沐浴露很多孕妈问我洗发水沐",
+            "position": 5
+          },
+          {
+            "url": "http://life.ixinwei.com/372948.html",
+            "domain": "life.ixinwei.com",
+            "title": "无硅油洗发水推荐(男士无硅油洗发水推荐)-昕薇网生活频道（发布时间：2022-10-11 16:21:00）",
+            "position": 6
+          },
+          {
+            "url": "https://m.baiqiang.cn/index.php?g=Home&m=Forum&a=detailForWenda&topicId=81884",
+            "domain": "m.baiqiang.cn",
+            "title": "无硅油洗发水哪个牌子好？资生堂无硅油洗发水好吗？适宜什么发质-百强排行-百强网",
+            "position": 7
+          },
+          {
+            "url": "https://jingyan.baidu.com/article/22a299b5d687a09e19376aaa.html",
+            "domain": "jingyan.baidu.com",
+            "title": "告别季节性脱发，从无硅油头皮护理开始！",
+            "position": 8
+          },
+          {
+            "url": "https://www.duoxiwa.com/articles/chwsmh.html",
+            "domain": "duoxiwa.com",
+            "title": "产后为什么会脱发？怎么改善产后脱发？-深圳多喜娃",
+            "position": 9
+          },
+          {
+            "url": "http://care.39.net/a/231027/w7iimqn.html",
+            "domain": "care.39.net",
+            "title": "掉发头油适合的洗发水推荐（发布时间：2023-10-27 02:55:48）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "adolph"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 5,
+      "prompt": "头皮屑突然变多还掉得满肩都是，皮肤也敏感，有没有好用不刺激的沐浴露啊",
+      "category": "沐浴露",
+      "platform": "豆包",
+      "l1": {
+        "id": 423,
+        "created_at": "2026-04-24 07:17:49",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "推荐3款温和不刺激的沐浴露：  \n1.玉泽皮肤屏障修护沐浴露：含神经酰胺，修护受损屏障，无香精酒精，适合敏感肌，也能缓解头皮干燥引起的头屑；  \n2.多芬氨基酸温和沐浴露：氨基酸表活，泡沫绵密，清洁力适中，洗完不紧绷，温和不刺激；  \n3.珂润润浸保湿沐浴露：无香料色素，含神经酰胺，舒缓干燥敏感，适合脆弱肌肤。  \n这些产品都能减少刺激，帮助改善皮肤敏感问题。",
+        "brand_hits": [
+          "dove"
+        ],
+        "input_tokens": 120,
+        "output_tokens": 412,
+        "cost_cny": 0.00092,
+        "latency_ms": 15078
+      },
+      "l2": {
+        "id": 2008,
+        "created_at": "2026-04-25 15:59:26",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "根据你的情况（头皮屑增多+皮肤敏感），结合最新测评结果，推荐以下温和不刺激且兼顾清洁力的沐浴产品：\n\n\n### **1. 蔚海棠柔砂氨基酸沐浴露**  \n- **核心优势**：  \n  - 2026年4月敏感肌实测中唯一全票通过（12位不同类型敏感肌无不良反应），pH值5.5与皮肤完全匹配，不破坏屏障；  \n  - 无皂基、酒精、工业香精，含4重氨基酸表活+天然植萃，清洁同时保湿修护；  \n  - 适合重度敏感肌（如激素脸），洗后皮肤柔软不泛红。  \n\n- **参考来源**：亳州新闻网2026年4月测评（摘要1/3）。\n\n\n### **2. JSV净肤沐浴露**  \n- **核心优势**：  \n  - 全成分0酒精/香精/防腐剂/色素，通过Intertek温和认证，过敏率＜0.1%；  \n  - 添加复活草提取物+水解透明质酸钠，清洁后深层保湿，同时兼顾除螨（91%清除率）、控油（62%减少率），对头皮屑增多可能有缓解作用；  \n  - 适合全家使用（3岁+儿童可用），性价比高。  \n\n- **参考来源**：新浪风尚2026年1月选购指南（摘要2）。\n\n\n### **3. 冷杉植萃沐浴油**  \n- **核心优势**：  \n  - 无皂基、酒精、香精、防腐剂，成分极简；  \n  - 以油溶油方式清洁，适合干燥敏感肌，洗后不紧绷；  \n  - 2026年测评中所有敏感肌志愿者无不良反…",
+        "brand_hits": [],
+        "input_tokens": 4281,
+        "output_tokens": 1422,
+        "cost_cny": 0.006269,
+        "latency_ms": 43201,
+        "citations": [
+          {
+            "url": "http://www.bozhou.cn/p/354982.html",
+            "domain": "bozhou.cn",
+            "title": "敏感肌实测！6 款无添加沐浴露，哪款最温和不刺激",
+            "position": 1
+          },
+          {
+            "url": "https://k.sina.cn/article_7880068200_1d5b04c6801901bqli.html",
+            "domain": "k.sina.cn",
+            "title": "2025温和无刺激沐浴露热销榜选购指南!5款敏感肌可用,新手闭眼入不踩雷",
+            "position": 2
+          },
+          {
+            "url": "http://www.bozhou.cn/p/354982.html",
+            "domain": "bozhou.cn",
+            "title": "敏感肌实测！6 款无添加沐浴露，哪款最温和不刺激",
+            "position": 3
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "dove"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 1,
+      "prompt": "出国玩10天带小样够用吗会不会不够洗",
+      "category": "沐浴露",
+      "platform": "豆包",
+      "l1": {
+        "id": 424,
+        "created_at": "2026-04-24 07:17:52",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "要看小样容量和个人用量：若洗发水/沐浴露小样是10ml左右，每天用1次刚好够10天；5ml的就可能不够。建议优先选10ml以上的小样，或用分装瓶灌常用款更稳妥。\n\n推荐：1.资生堂旅行套装（洗/护/沐各20ml，足量且温和）；2.欧舒丹乳木果沐浴露小样（10ml/支，2支够10天，滋润不紧绷）；3.无印良品分装瓶（50ml容量，可灌自己常用的洗护品，卫生又适配个人习惯）。这样10天洗护完全没问题~",
+        "brand_hits": [
+          "loccitane"
+        ],
+        "input_tokens": 109,
+        "output_tokens": 485,
+        "cost_cny": 0.001057,
+        "latency_ms": 18497
+      },
+      "l2": {
+        "id": 2004,
+        "created_at": "2026-04-25 15:56:26",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "出国玩10天带小样是否够用，需根据个人使用习惯和小样容量综合判断，结合搜索信息整理如下：\n\n\n### **1. 核心用量参考（以中长发、每日清洁为例）**  \n- **洗发水**：20ml≈4次使用（摘要2），10天需约50ml（即2-3个20ml小样）；  \n- **沐浴露**：30ml≈5次全身清洁（摘要2），10天需约60ml（即2个30ml小样）；  \n- **其他清洁类**（如洗面奶、卸妆）：若每日使用，建议按“每次1-2ml”估算，10天需10-20ml（1-2个小样即可）。  \n\n\n### **2. 关键注意事项**  \n- **酒店补充**：多数酒店提供基础洗发水/沐浴露，若对品质要求不高，可减少自带小样数量（摘要2）；  \n- **小样变质风险**：需检查小样是否密封、有无变色/异味，避免使用过期产品（摘要1、4）；  \n- **分装替代**：若小样不足，可使用可重复封口硅胶袋/真空分装瓶（10-30ml）分装正装，更灵活经济（摘要2）。  \n\n\n### **结论**  \n若合理规划用量（如中长发带3个20ml洗发水小样+2个30ml沐浴露小样），且酒店不提供或需自备特殊清洁品，10天带小样基本够用。建议优先选择容量适配的小样，或结合分装瓶使用，避免浪费或不足。  \n\n（信息来源：新浪文旅指南、淘宝美妆网等）",
+        "brand_hits": [],
+        "input_tokens": 4157,
+        "output_tokens": 1177,
+        "cost_cny": 0.00568,
+        "latency_ms": 35550,
+        "citations": [
+          {
+            "url": "https://k.sina.cn/article_7879922979_1d5ae152301901lm98.html",
+            "domain": "k.sina.cn",
+            "title": "旅行护肤指南.doc,收藏这一篇就够了",
+            "position": 1
+          },
+          {
+            "url": "https://beaut.taobao.com/topic/toufahuli_260/ffcf35ecf8e89fc9b5bc6ec3a0a391bd.html",
+            "domain": "beaut.taobao.com",
+            "title": "旅行洗漱套装怎么选不踩雷？便携装小样避坑指南来了！",
+            "position": 2
+          },
+          {
+            "url": "https://beaut.taobao.com/topic/xiangshui_28/f8d1738d79255c22427fd90a1c36c7a7.html",
+            "domain": "beaut.taobao.com",
+            "title": "谁说小样不值得买？Gucci古驰花悦香水中小样使用全攻略来了！",
+            "position": 3
+          },
+          {
+            "url": "https://m.qyer.com/guide/page/5nhmkv5-Z14/",
+            "domain": "m.qyer.com",
+            "title": "旅行护肤指南 - 出行准备",
+            "position": 4
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [
+          "loccitane"
+        ],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 704,
+      "prompt": "冬天洗完头浑身都痒…我干性发质，有没有高端带仪式感的洗发水能缓解呀？",
+      "category": "洗发水",
+      "platform": "GLM",
+      "l1": {
+        "id": 262,
+        "created_at": "2026-04-23 15:25:00",
+        "model": "GLM-4.5-air",
+        "excerpt": "\n用户的问题是关于冬天洗完头后浑身痒，特别是干性发质，想要推荐一款高端带仪式感的洗发水来缓解这个问题。\n\n首先，我需要分析问题的核心：\n1. 冬天洗完头后浑身痒\n2. 干性发质\n3. 希望找到高端带仪式感的洗发水\n\n冬天洗完头痒可能与以下因素有关：\n- 洗发水清洁力过强，过度去除头皮油脂\n- 水质较硬，刺激头皮\n- 干性发质缺乏天然油脂保护\n- 洗发水中含有刺激性成分\n\n针对干性发质和缓解头皮痒的高端洗发水推荐，我可以考虑以下几个因素：\n- 温和清洁成分\n- 补充天然油脂\n- 舒缓头皮的成分\n- 高端品牌的产品\n- 使用感受有仪式感\n\n具体推荐可以包括：\n\n1. 资生堂TSUBAKI（椿）洗发水\n   - 高端品牌，包装有仪式感\n   - 含有山茶花精油，滋润干性发质\n   - 温和清洁配方，不会过度去除油脂\n\n2. 欧莱雅(L'Oréal)Absolut Repair Gold洗发水\n   - 金色包装高端感强\n   - 含有黄金微粒，修复干损发质\n   - 温和清洁，舒缓头皮\n\n3. 爱马仕(Hermès)花园系列洗发水\n   - 顶级奢侈品牌，包装极具仪式感\n   - 精致植物成分，温和滋养\n   - 适合敏感头皮和干性发质\n\n4. 阿玛尼(Armani)Mei粉红泡泡洗发水\n   - 包装优雅高端\n   - 温和清洁，保湿配方\n   - 适合干性受损发质\n\n5. 茱莉蔻(J…",
+        "brand_hits": [],
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_cny": 0,
+        "latency_ms": 6835
+      },
+      "l2": {
+        "id": 2000,
+        "created_at": "2026-04-24 15:32:07",
+        "model": "glm-4-plus",
+        "excerpt": "针对干性发质冬季头皮瘙痒问题，推荐以下高端洗发水：\n\n1. 卡诗黄色瓶焗油护理洗发水 - 专为干性发质设计，富含滋养成分，能深层补水并形成保护膜，减少冬季头皮干燥瘙痒。建议配合卡诗护发素使用，洗后吹至7成干最佳。\n\n2. 欧舒丹乳木果滋润洗发露 - 含有乳木果油等天然滋养成分，温和清洁同时提供长效保湿，特别适合冬季干性头皮。使用时建议配合欧舒丹护发霜效果更佳。\n\n3. 花诉妍专研去屑净爽洗发乳 - 虽主打去屑，但其温和配方含有茶子提取物和虎耳草成分，能舒缓干性头皮瘙痒问题，同时不会过度清洁导致头皮更加干燥。\n\n4. 沙宣修护水养洗发水 - 沙龙级护理产品，专为干性发质设计，能深层滋养发丝，缓解冬季头皮干燥瘙痒问题。目前有59.9元两大瓶的优惠装。\n\n使用建议：每周进行1-2次焗油护理，避免频繁洗头（冬季每周1-2次即可），洗头后可进行头皮按摩促进血液循环，使用吹风机时选择低温档并保持距离。",
+        "brand_hits": [
+          "kerastase"
+        ],
+        "input_tokens": 4253,
+        "output_tokens": 281,
+        "cost_cny": 0,
+        "latency_ms": 8269,
+        "citations": [
+          {
+            "url": "https://wenwen.sogou.com/z/q661360346.htm",
+            "domain": "wenwen.sogou.com",
+            "title": "干性头发用什么类型的洗发水比较好?（发布时间：2022-06-27 00:00:00）",
+            "position": 1
+          },
+          {
+            "url": "https://www.zhihu.com/question/39057281",
+            "domain": "zhihu.com",
+            "title": "干性发质冬天容易有头皮屑 请问用什么洗发水比较好呢 有推荐的牌子吗？",
+            "position": 2
+          },
+          {
+            "url": "https://jingyan.baidu.com/article/7f766dafbcf8f24100e1d074.html",
+            "domain": "jingyan.baidu.com",
+            "title": "各种类型的头发如何选择洗发用品",
+            "position": 3
+          },
+          {
+            "url": "https://wenwen.sogou.com/z/q254863385.htm",
+            "domain": "wenwen.sogou.com",
+            "title": "冬天头发干燥怎么办 头发很干燥怎么办（发布时间：2011-01-06 00:00:00）",
+            "position": 4
+          },
+          {
+            "url": "https://www.sohu.com/a/954961397_121123772",
+            "domain": "sohu.com",
+            "title": "沙宣爆款直降，59.9元两大瓶，洗后蓬松无屑超清爽！（发布时间：2025-11-16 15:46:00）",
+            "position": 5
+          },
+          {
+            "url": "https://www.zhihu.com/question/29988495",
+            "domain": "zhihu.com",
+            "title": "干性头发用什么洗发水？（发布时间：2021-06-02 11:58:00）",
+            "position": 6
+          },
+          {
+            "url": "https://jingyan.baidu.com/article/597a0643ba48af712b524394.html",
+            "domain": "jingyan.baidu.com",
+            "title": "你的洗发水选对了吗？阿道夫帮你解答",
+            "position": 7
+          },
+          {
+            "url": "https://www.hunlipic.com/meirong/5457464.html",
+            "domain": "hunlipic.com",
+            "title": "干性头发用什么洗发水好",
+            "position": 8
+          },
+          {
+            "url": "https://www.sohu.com/a/861387885_120846717",
+            "domain": "sohu.com",
+            "title": "干性发质有头屑用什么洗发水？好用的去头屑护头皮洗发水介绍（发布时间：2025-02-20 12:16:00）",
+            "position": 9
+          },
+          {
+            "url": "http://m.easyfang.com/a/2023/0626/014553676.html",
+            "domain": "m.easyfang.com",
+            "title": "头发干枯用什么洗发水好，适合干枯发质的洗发水品牌（发布时间：2023-06-26 13:19:00）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [
+          "kerastase"
+        ],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 194,
+      "prompt": "洗完澡皮肤干痒咋办",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 122,
+        "created_at": "2026-04-23 15:25:00",
+        "model": "GLM-4.5-air",
+        "excerpt": "洗完澡皮肤干痒建议用温和保湿产品。推荐丝塔芙保湿润肤露，适合敏感肌，修复屏障；CeraVe修复沐浴露，含神经酰胺，温和清洁；凡士林倍护润肤露，价格亲民锁水效果好。洗澡水温别太高，时间控制在10分钟内，洗完3分钟内涂身体乳效果最佳。",
+        "brand_hits": [],
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_cny": 0,
+        "latency_ms": 33299
+      },
+      "l2": {
+        "id": 2001,
+        "created_at": "2026-04-24 15:32:34",
+        "model": "glm-4-plus",
+        "excerpt": "别担心，洗完澡后皮肤干痒是一个非常普遍的问题，很多人都遇到过。这通常是由于洗澡时皮肤上的天然油脂（皮脂膜）被过度洗掉，导致皮肤屏障受损，水分流失加快引起的。\n\n别急，我们可以从**“立刻缓解”**和**“长期调理”**两个方面来解决这个问题。\n\n---\n\n### **一、 立刻缓解：让皮肤“冷静”下来**\n\n如果现在就感觉皮肤干痒难忍，可以试试以下几个方法：\n\n1.  **调整水温，避免刺激：**\n    *   立即用**温水或偏凉的水**冲洗身体，避免用过热的水，因为热水会带走更多油脂，加重干燥和瘙痒。\n\n2.  **轻轻拍干，不要用力擦：**\n    *   洗完澡后，用柔软的毛巾**轻轻拍干**身上的水分，而不是来回摩擦。皮肤上保留一点点水分（微湿状态）是最好的，这样后续涂抹保湿霜效果最好。\n\n3.  **立即涂抹保湿霜（黄金法则）：**\n    *   这是最关键的一步！在**洗澡后3-5分钟内**，当皮肤还微微湿润时，立即涂抹保湿产品。这个时机能“锁住”皮肤刚吸收的水分。\n    *   **选择产品：** 选择质地**厚重、滋润**的**身体乳、身体霜或软膏**。如果皮肤已经发红、发痒，可以选择**无香料、无色素、无酒精**的舒缓型产品。\n    *   **成分参考：** 寻找含有**神经酰胺、透明质酸、甘油、凡士林、尿素**等成分的保湿霜，它们能帮助修复皮肤屏障和…",
+        "brand_hits": [],
+        "input_tokens": 17,
+        "output_tokens": 1203,
+        "cost_cny": 0,
+        "latency_ms": 27127,
+        "citations": []
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 1489,
+      "prompt": "旅程awareness：刚开始了解，问\"真的值得吗\"、\"差很多吗\"",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 126,
+        "created_at": "2026-04-23 15:25:00",
+        "model": "GLM-4.5-air",
+        "excerpt": "作为消费者，评估\"值不值\"要看实际需求。建议从三方面比较：1)核心功能是否满足你基本需求；2)价格与预期使用寿命的性价比；3)售后服务差异。比如买手机，不必追求最新款，上一代旗舰可能性能足够，省下30-50%预算，而拍照、续航体验差距不大。关键是明确自己的使用场景，不盲目追求\"最好\"，找到\"最适合\"的选项。",
+        "brand_hits": [],
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_cny": 0,
+        "latency_ms": 12840
+      },
+      "l2": {
+        "id": 1988,
+        "created_at": "2026-04-24 15:25:40",
+        "model": "glm-4-plus",
+        "excerpt": "这是一个非常棒的问题，它触及了“旅程”这个词在个人成长、学习或职业发展中的核心阶段。你描述的“刚开始了解”时，心中充满的“真的值得吗？”和“差很多吗？”的疑问，是这个阶段最典型、也最真实的心理写照。\n\n我们可以把这个阶段命名为 **“认知觉醒与价值评估期”**。\n\n下面我将为你详细拆解这个阶段的心理状态、核心问题，以及如何走过这个阶段。\n\n---\n\n### **阶段一：认知觉醒与价值评估期 (Awareness & Valuation)**\n\n**核心特征：**\n你刚刚接触到一个新的领域、一项新技能或一个新目标。最初的兴奋感（“哇，这个好酷！”）过后，现实的差距感扑面而来。你从一个“门外汉”开始，看到了自己与“门内人”之间的巨大鸿沟。\n\n#### **你提出的两个核心问题：**\n\n#### **问题一：“真的值得吗？” (Is it really worth it?)**\n\n这个问题背后，是你正在进行的 **“成本效益分析”**。\n\n*   **成本方面，你看到的是：**\n    *   **时间成本：** “我要花多少小时/天/月/年才能学会？”\n    *   **精力成本：** “这个过程会很痛苦、很枯燥吗？”\n    *   **机会成本：** “我花时间在这个上，是不是就不能做别的事情了？”\n    *   **金钱成本：** “课程、书籍、设备要花多少钱？”\n    *…",
+        "brand_hits": [],
+        "input_tokens": 26,
+        "output_tokens": 1441,
+        "cost_cny": 0,
+        "latency_ms": 38489,
+        "citations": []
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 10,
+      "prompt": "敏感皮用这个沐浴露真的没问题吗",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 867,
+        "created_at": "2026-04-24 08:51:45",
+        "model": "GLM-4.5-air",
+        "excerpt": "敏感肌建议选无香精、无色素、pH值温和的产品。推荐：1. 丝塔芙大白罐，无刺激成分，极度敏感肌适用；2. CeraVe修复款，含神经酰胺修复屏障；3. 理肤泉温泉水款，舒缓效果佳。使用前先在手腕内侧测试，无不适再全身使用。",
+        "brand_hits": [],
+        "input_tokens": 68,
+        "output_tokens": 352,
+        "cost_cny": 0,
+        "latency_ms": 7312
+      },
+      "l2": {
+        "id": 1994,
+        "created_at": "2026-04-24 15:30:46",
+        "model": "glm-4-plus",
+        "excerpt": "根据最新权威测评，敏感肌使用以下几款沐浴露是安全可靠的：\n\n1. 姿碧婷茶树无患子氨基酸沐浴露：采用12.34%高活性氨基酸表活，含六重天然植物提取物，通过敏感肌实测，无刺激性成分。\n\n2. JSV净肤沐浴露：全肤质适配，刺激指数仅0.2，通过北京协和、上海华山等三甲医院500人90天临床测试，敏感肌泛红改善率达94%。\n\n3. 梵玢FBCY沐浴精华油：0香精、0风险防腐剂，pH值5.5贴合皮肤弱酸环境，300名敏感肌实测无刺痛反馈。\n\n4. 长青泉沐浴露：纯草本零添加配方，通过万级敏感肌人群长期实测验证，21味道地草本精华协同舒缓。\n\n5. 珂润润浸保湿沐浴露：不含香精，弱酸性配方，采用脱脂力低的月桂醇聚醚硫酸酯铵为主要清洁成分，温和不刺激。\n\n这些产品均经过权威认证和临床测试，敏感肌可以放心使用。",
+        "brand_hits": [],
+        "input_tokens": 5139,
+        "output_tokens": 243,
+        "cost_cny": 0,
+        "latency_ms": 7121,
+        "citations": [
+          {
+            "url": "https://www.sohu.com/a/975083740_121117075",
+            "domain": "sohu.com",
+            "title": "沐浴露哪个牌子成分安全？十款温和沐浴露品牌推荐敏感肌闭眼入（发布时间：2026-01-12 10:50:00）",
+            "position": 1
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/674878586",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "沐浴露哪个牌子好用香味持久？8款适合敏感肌的沐浴露推荐（发布时间：2023-12-27 20:31:36）",
+            "position": 2
+          },
+          {
+            "url": "https://c.m.163.com/news/a/K9R8KO3N051998G8.html",
+            "domain": "c.m.163.com",
+            "title": "敏感肌/干皮/痘肌通用！2025全新沐浴露选购单：口碑+临床实测+销量（发布时间：2025-09-19 17:18:03）",
+            "position": 3
+          },
+          {
+            "url": "https://www.sohu.com/a/977609114_121117075",
+            "domain": "sohu.com",
+            "title": "敏感肌沐浴露选哪个牌子好？十款安全温和沐浴露品牌推荐，闭眼入不踩雷（发布时间：2026-01-19 13:40:00）",
+            "position": 4
+          },
+          {
+            "url": "https://m.chongwunet.com/pp/zumido/zs/70974",
+            "domain": "m.chongwunet.com",
+            "title": "敏感肌毛孩专属！Zumido 沐浴露，用天然温和筑牢安心防线-宠物网（发布时间：2025-08-27 09:42:00）",
+            "position": 5
+          },
+          {
+            "url": "https://www.sohu.com/a/981310206_100024676",
+            "domain": "sohu.com",
+            "title": "敏感肌闭眼入！2026十大温和沐浴露品牌权威测评，沐浴露哪个牌子好？姿碧婷无激素更安全（发布时间：2026-01-29 10:17:00）",
+            "position": 6
+          },
+          {
+            "url": "https://www.sohu.com/a/937367806_121300363",
+            "domain": "sohu.com",
+            "title": "全场景洗护适配！2025 年 10 款沐浴露解决快节奏家庭 / 敏感肌 / 亲子难题（发布时间：2025-09-22 12:05:00）",
+            "position": 7
+          },
+          {
+            "url": "https://www.sohu.com/a/974314328_121117075",
+            "domain": "sohu.com",
+            "title": "母婴 / 敏感肌 / 油皮通吃！2026 实测控油沐浴露，梵玢 FBCY 成家庭首选（发布时间：2026-01-09 16:10:00）",
+            "position": 8
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/693291527",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "2024年温和低敏沐浴露型号推荐榜（发布时间：2024-04-19 00:20:24）",
+            "position": 9
+          },
+          {
+            "url": "https://www.sohu.com/a/973141969_121117075",
+            "domain": "sohu.com",
+            "title": "2025滋润保湿沐浴产品全攻略：6款高口碑沐浴露实测，干皮、敏感肌闭眼入（发布时间：2026-01-06 16:44:00）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 46,
+      "prompt": "想要沙龙SPA质感的沐浴露，国货有值得入手的吗",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 944,
+        "created_at": "2026-04-24 08:52:58",
+        "model": "GLM-4.5-air",
+        "excerpt": "推荐佰草集太极系列，中草药精华滋养肌肤，香味高级持久；林清轩山茶花沐浴露，泡沫丰富细腻，天然成分温和保湿，洗后肌肤不紧绷。两款包装精美，能媲美国外沙龙品牌性价比。",
+        "brand_hits": [],
+        "input_tokens": 73,
+        "output_tokens": 367,
+        "cost_cny": 0,
+        "latency_ms": 8496
+      },
+      "l2": {
+        "id": 1998,
+        "created_at": "2026-04-24 15:31:55",
+        "model": "glm-4-plus",
+        "excerpt": "当然有！近几年国货美妆个护领域“内卷”非常严重，尤其是在沙龙香氛和高级肤感方面，涌现出了一大批能媲美甚至超越国际大牌的宝藏产品。想要沙龙SPA质感的沐浴露，国货现在完全可以闭眼入。\n\n“沙龙SPA质感”通常意味着以下几个特点：\n*   **高级香氛**：不是那种廉价的工业香精味，而是有前中后调、层次丰富的天然香氛。\n*   **绵密泡沫**：泡沫细腻丰盈，包裹感强，洗浴过程像在做SPA。\n*   **温和滋润**：清洁力足够但不过度，洗后皮肤柔软不紧绷，留有淡淡余香。\n*   **高级肤感**：液体质地丝滑，涂抹顺滑，使用体验愉悦。\n\n下面我为你推荐几个在“沙龙SPA”路上做得非常出色的国货品牌，并附上具体产品，你可以根据自己的喜好选择。\n\n---\n\n### **一、 滋源 | “头皮护理专家”跨界做身体，香氛绝了**\n\n滋源虽然是做洗发水起家的，但它的身体护理线绝对是国货中的“卷王”，香氛和肤感都做到了极致，是追求沙龙感的首选。\n\n#### **1. 滋源「山茶花」身体磨砂膏 & 沐浴露**\n\n*   **香氛**：**山茶花与白麝香**。非常清冷高级的木质花香调，前调是清新的山茶花，中调带着一丝奶感的白麝香，后调是沉稳的雪松和琥珀。味道不甜腻，非常有高级沙龙感，留香持久且高级。\n*   **肤感**：\n    *   **磨砂膏**：质地是慕斯+膏体的混合感，颗粒细腻但磨砂感十…",
+        "brand_hits": [],
+        "input_tokens": 23,
+        "output_tokens": 1809,
+        "cost_cny": 0,
+        "latency_ms": 41067,
+        "citations": [
+          {
+            "url": "https://www.sohu.com/a/601563525_121124329",
+            "domain": "sohu.com",
+            "title": "奶油质地/高级沙龙香氛 ，是我目前用过最神奇的沐浴露（发布时间：2022-11-01 09:59:00）",
+            "position": 1
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzI2MDk3MjI1MA==&mid=2247506157&idx=5&sn=4c5bc4d8157c471125842187bf545132",
+            "domain": "mp.weixin.qq.com",
+            "title": "「正品优选团」日本Onsensou温泉藻沐浴露 ，骨折价只需59/瓶300ml装，用完自带高级体香！Spa级沐浴露",
+            "position": 2
+          },
+          {
+            "url": "https://m.163.com/dy/article/HRJSV8DT0520DKPG.html",
+            "domain": "m.163.com",
+            "title": "人气沙龙香同款沐浴露、身体乳，奢润呵护，持久留香（发布时间：2023-01-21 12:15:00）",
+            "position": 3
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/625821707",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "超滋润的械字号沐浴露，洁净养肤二合一，“拯救”你“干渴”的肌肤（发布时间：2023-05-03 05:54:55）",
+            "position": 4
+          },
+          {
+            "url": "https://m.zol.com.cn/article/9516303.html",
+            "domain": "m.zol.com.cn",
+            "title": "力士植萃精油香氛沐浴露套装樱花香型促销-中关村在线",
+            "position": 5
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzkzNTMyODQ5Nw==&mid=2247581932&idx=5&sn=e19093fa9a69138f0d150ba07b217d9c",
+            "domain": "mp.weixin.qq.com",
+            "title": "【团品⑤】SPA级养肤沐浴！dropbeat心跳节拍奶盖慕斯沐浴露",
+            "position": 6
+          },
+          {
+            "url": "http://m.shadafang.com/a/202306/5432484.html",
+            "domain": "m.shadafang.com",
+            "title": "10款良心国货沐浴露 沐浴露排行榜前十名",
+            "position": 7
+          },
+          {
+            "url": "https://www.zhihu.com/question/414716988",
+            "domain": "zhihu.com",
+            "title": "有什么平价好用的沐浴露推荐吗？",
+            "position": 8
+          },
+          {
+            "url": "https://www.mxhaitao.com/gonglue/9230.html",
+            "domain": "mxhaitao.com",
+            "title": "2024年高质感沐浴露推荐",
+            "position": 9
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/693291116",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "2024年国货沐浴露型号推荐榜（发布时间：2024-04-19 00:17:29）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 45,
+      "prompt": "岁小孩用的沐浴露哪种温和无泪啊",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 949,
+        "created_at": "2026-04-24 08:52:59",
+        "model": "GLM-4.5-air",
+        "excerpt": "推荐强生婴儿舒柔无泪洗发沐浴露，温和无泪配方不刺激眼睛，pH值平衡适合儿童肌肤。其次是艾惟诺天然燕麦婴儿洗发沐浴露，含燕麦成分舒缓敏感肌肤，无香料色素添加。这两款都经过皮肤科测试，适合5岁儿童日常使用，能有效清洁又不带走过多皮肤水分。",
+        "brand_hits": [],
+        "input_tokens": 69,
+        "output_tokens": 443,
+        "cost_cny": 0,
+        "latency_ms": 10602
+      },
+      "l2": {
+        "id": 1993,
+        "created_at": "2026-04-24 15:30:39",
+        "model": "glm-4-plus",
+        "excerpt": "对于3岁小孩使用的温和无泪沐浴露，以下是一些推荐选择：\n\n1. Bubchen宝比珊儿童洗发水沐浴露无泪2合1：德国原装，PH中性配方，含小麦蛋白质和维他命原B5，植物为原料的清洁成分，通过欧洲Dermatologically测试，适合2岁以上儿童。\n\n2. Chicco智高儿童洗发沐浴二合一：意大利原装进口，萃取洋甘菊温和呵护宝宝肌肤，舒缓敏感修复镇静，温和无泪配方。\n\n3. 艾惟诺(Aveeno)儿童洗发沐浴露二合一：含有天然燕麦精华，无泪配方，温和不刺激，适合敏感肌肤，能构建健康皮肤屏障。\n\n4. Kneipp克奈圃海公主儿童二合一洗发沐浴露：温和无泪配方，含有天然蔓越莓、荷荷巴油、金盏花成分，不含防腐剂、石蜡油等有害成分。\n\n5. 启初儿童沐浴液：上海家化品牌，专为新生儿设计的敏感肌肤配方，含有天然植物成分如甘油和芦荟提取物。\n\n6. 青蛙王子儿童洗发水沐浴露：无硅油温和无泪易冲洗，多种维生素营养成分提升肌肤保护力。\n\n这些产品都具有温和无泪的特点，适合3岁儿童的娇嫩肌肤，您可以根据孩子的具体肤质和需求选择合适的产品。",
+        "brand_hits": [],
+        "input_tokens": 4526,
+        "output_tokens": 292,
+        "cost_cny": 0,
+        "latency_ms": 9644,
+        "citations": [
+          {
+            "url": "http://www.zk71.com/s0somypg/product/148081184.html",
+            "domain": "zk71.com",
+            "title": "现货批发德国原装Bubchen宝比珊/儿童洗发水沐浴露无泪熊猫200ml",
+            "position": 1
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/659735544",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "2023儿童沐浴露Top牌子推荐：儿童沐浴露牌子有哪些？（发布时间：2023-11-06 16:34:40）",
+            "position": 2
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzAxNDUzODg0NA==&mid=2651173307&idx=2&sn=6884dd4b661485c35143109ccb8a6210",
+            "domain": "mp.weixin.qq.com",
+            "title": "日本bandai万代儿童洗护二合一​ 温和无泪0刺激",
+            "position": 3
+          },
+          {
+            "url": "https://www.qqqnm.com/zhiyou/discountapotheke/article-161394.html",
+            "domain": "qqqnm.com",
+            "title": "Kneipp 克奈圃 海公主儿童二合一洗发沐浴露 200ml 温和无泪配方 三岁以上儿童-全球去哪买（发布时间：2018-09-18 10:29:48）",
+            "position": 4
+          },
+          {
+            "url": "https://www.860029.com/s/231985.html",
+            "domain": "860029.com",
+            "title": "chicco智高儿童洗发沐浴二合一沐浴露",
+            "position": 5
+          },
+          {
+            "url": "https://zhuanlan.zhihu.com/p/682615791",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "2024儿童沐浴露Top5牌子推荐：儿童沐浴露牌子有哪些（发布时间：2024-02-20 09:42:52）",
+            "position": 6
+          },
+          {
+            "url": "https://www.tongzhilu.com/post/%25E5%25A9%25B4%25E5%25B9%25BC%25E5%2584%25BF%25E6%25B2%2590%25E6%25B5%25B4%25E9%259C%25B2%25E6%259C%2589%25E5%2595%25A5%25E6%258E%25A8%25E8%258D%2590.html",
+            "domain": "tongzhilu.com",
+            "title": "婴幼儿沐浴露有啥推荐（发布时间：2024-09-28 12:03:41）",
+            "position": 7
+          },
+          {
+            "url": null,
+            "domain": null,
+            "title": "超级 88 节捡漏-0415（发布时间：2026-04-15 13:18:27）",
+            "position": 8
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzI2MDk3MjI1MA==&mid=2247507357&idx=6&sn=9e4647cba321dfad3098232362da0fa0",
+            "domain": "mp.weixin.qq.com",
+            "title": "「正品优选团」艾惟诺燕麦儿童洗发沐浴露二合一236ml~原价79一瓶，特价59元两瓶！效期至24年8月！",
+            "position": 9
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzkwNDQyMjI2MQ==&mid=2247490283&idx=3&sn=71dc2cf4b9693e76e749263a7b22dc87",
+            "domain": "mp.weixin.qq.com",
+            "title": "儿童沐浴露品牌热卖款排行榜前十名，儿童沐浴露十大品牌排名",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 73,
+      "prompt": "秋季换皮干敏还起屑，小众宝藏沐浴露真的能缓解吗？",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 1016,
+        "created_at": "2026-04-24 08:54:09",
+        "model": "GLM-4.5-air",
+        "excerpt": "是的，小众沐浴露通常配方更温和，对干敏肌有帮助。推荐：\n1. Vanicose 薇霓丝：含神经酰胺，修复皮肤屏障\n2. Youth to the People：添加绿茶和透明质酸，舒缓保湿\n3. Apivita 蜂宝：天然成分，温和清洁不紧绷\n\n选无皂基、pH值弱酸性的产品，洗后立即保湿效果更佳。",
+        "brand_hits": [],
+        "input_tokens": 78,
+        "output_tokens": 385,
+        "cost_cny": 0,
+        "latency_ms": 8671
+      },
+      "l2": {
+        "id": 1996,
+        "created_at": "2026-04-24 15:31:09",
+        "model": "glm-4-plus",
+        "excerpt": "秋季换季皮肤干燥、敏感、起屑问题确实可以通过选择合适的沐浴露得到缓解。小众宝藏沐浴露通常含有温和保湿成分，如植物精华、神经酰胺等，能够有效缓解干燥敏感问题。例如含有绿茶茶多酚、洋甘菊精华的弱酸性沐浴露，或添加枸杞、蜂蜜等滋养成分的产品，都能在清洁的同时保护肌肤屏障，减少水分流失。选择时应避免强碱性产品，优先考虑pH值接近皮肤弱酸性的配方，这样既能清洁到位又不会过度去除皮肤天然油脂，从而改善秋季干燥、敏感和起屑问题。",
+        "brand_hits": [],
+        "input_tokens": 4218,
+        "output_tokens": 127,
+        "cost_cny": 0,
+        "latency_ms": 4833,
+        "citations": [
+          {
+            "url": null,
+            "domain": null,
+            "title": "洗去一天的尘，留下海洋的香，让皮肤在爱里变得柔软（发布时间：2026-04-02 09:51:18）",
+            "position": 1
+          },
+          {
+            "url": "http://m5.dcpfb.com/news/19551/1389.html",
+            "domain": "m5.dcpfb.com",
+            "title": "秋季皮肤干燥可能是沐浴露惹的祸 正确洗出水嫩肌肤（发布时间：2016-10-06 09:54:00）",
+            "position": 2
+          },
+          {
+            "url": "https://post.smzdm.com/talk/p/avxql4w7/",
+            "domain": "post.smzdm.com",
+            "title": "六神沐浴露怎么样好用吗 我的换季必备沐浴露，六神茗茶植萃沐浴露。（发布时间：2022-10-13 16:15:06）",
+            "position": 3
+          },
+          {
+            "url": "https://www.hunlipic.com/meirong/6118426.html",
+            "domain": "hunlipic.com",
+            "title": "秋季皮肤干燥，求推荐一个滋润宽的沐浴乳2024年",
+            "position": 4
+          },
+          {
+            "url": "http://www.weather.com.cn/anhui/tqyw/10/2598842.shtml",
+            "domain": "weather.com.cn",
+            "title": "秋季皮肤干燥或是沐浴露惹祸 正确洗澡洗出水嫩肌肤（发布时间：2016-10-05 09:24:42）",
+            "position": 5
+          },
+          {
+            "url": "https://www.cqcb.com/health/keephealth/2019-09-06/1844931.html",
+            "domain": "cqcb.com",
+            "title": "秋季肌肤干燥？弱酸性沐浴露更温和（发布时间：2019-09-08 21:16:00）",
+            "position": 6
+          },
+          {
+            "url": "https://yangsheng.eastday.com/jibing/R0EZVPzgn41y6DlK.html",
+            "domain": "yangsheng.eastday.com",
+            "title": "皮肤干燥用什么沐浴露好 最适合干性皮肤的沐浴露",
+            "position": 7
+          },
+          {
+            "url": "https://baijiahao.baidu.com/s?id=1778483431935625595",
+            "domain": "baijiahao.baidu.com",
+            "title": "秋冬皮肤容易干燥？沐浴产品别选错！这几款沐浴油堪称换季救星（发布时间：2023-10-01 01:13:21）",
+            "position": 8
+          },
+          {
+            "url": "https://jingyan.baidu.com/article/3052f5a10e9b4d97f31f86ae.html",
+            "domain": "jingyan.baidu.com",
+            "title": "秋季皮肤干燥要谨防这些坏习惯",
+            "position": 9
+          },
+          {
+            "url": "https://sqjrc.com/article/165395.html",
+            "domain": "sqjrc.com",
+            "title": "秋季皮肤干燥起皮，大家都有什么好方法推荐一下？-万思特网（发布时间：2022-04-07 16:27:17）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 74,
+      "prompt": "无泪配方清洁力够不够啊",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 1018,
+        "created_at": "2026-04-24 08:54:10",
+        "model": "GLM-4.5-air",
+        "excerpt": "无泪配方清洁力通常适中，日常清洁足够，但重度污垢可能效果有限。推荐强生婴儿洗发水，温和不刺激，清洁力适中；贝德玛温和洁面乳，无泪配方同时兼顾清洁力；亲润无泪洗发水，专为敏感肌设计，清洁力与温和性平衡。这三款都能满足日常清洁需求，且不会刺激眼睛。",
+        "brand_hits": [],
+        "input_tokens": 67,
+        "output_tokens": 334,
+        "cost_cny": 0,
+        "latency_ms": 8036
+      },
+      "l2": {
+        "id": 1995,
+        "created_at": "2026-04-24 15:31:04",
+        "model": "glm-4-plus",
+        "excerpt": "无泪配方的清洁力是足够的，但相比强清洁力的产品更为温和。无泪配方主要通过以下方式实现清洁效果：\n\n1. 采用低刺激性表面活性剂，如椰油酰胺丙基甜菜碱、烷基糖苷、氨基酸类表面活性剂等，这些成分既能有效清洁污垢，又不会过度刺激皮肤和眼睛。\n\n2. 通过多种表面活性剂复配，在降低刺激性的同时保持良好的清洁能力。\n\n3. 无泪配方通常呈弱酸性，接近人体皮肤pH值，能够温和去除污垢和多余油脂，同时保护皮肤屏障。\n\n4. 一些无泪配方产品还会添加植物提取物等成分，增强清洁效果的同时提供额外滋养。\n\n无泪配方特别适合敏感肌肤、婴幼儿以及追求温和清洁的人群，能够有效清洁皮肤而不造成紧绷感或刺激反应。",
+        "brand_hits": [],
+        "input_tokens": 4173,
+        "output_tokens": 176,
+        "cost_cny": 0,
+        "latency_ms": 17882,
+        "citations": [
+          {
+            "url": "https://wenwen.sogou.com/z/q228901256.htm",
+            "domain": "wenwen.sogou.com",
+            "title": "“无泪配方”是什么？",
+            "position": 1
+          },
+          {
+            "url": "https://wenwen.sogou.com/z/q855774239.htm",
+            "domain": "wenwen.sogou.com",
+            "title": "无泪配方是什么意思？（发布时间：2022-02-25 00:00:00）",
+            "position": 2
+          },
+          {
+            "url": "https://wenwen.sogou.com/z/q714149070.htm",
+            "domain": "wenwen.sogou.com",
+            "title": "洗发水无泪配方是什么意思？（发布时间：2016-12-30 00:00:00）",
+            "position": 3
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzg2OTcyNzQyMA==&mid=2247493722&idx=1&sn=9522dd8eba59c60de40e40d65a34e1b1",
+            "domain": "mp.weixin.qq.com",
+            "title": "Aveeno 艾维诺 纯天然燕麦婴幼儿沐浴洗发二合一，无泪配方，彻底清洁，滋润肌肤不干燥，质地温和，适合初生婴儿及所有肤质儿童~",
+            "position": 4
+          },
+          {
+            "url": "http://www.face100.net/zs229773.html",
+            "domain": "face100.net",
+            "title": "face100化妆品网www.face100.net（发布时间：2024-09-14 15:55:00）",
+            "position": 5
+          },
+          {
+            "url": "https://m.11467.com/product/d11929691.htm",
+            "domain": "m.11467.com",
+            "title": "ISOV素瑞施洁面系列，疏通毛孔，洁净肌肤（发布时间：2021-07-24 13:37:00）",
+            "position": 6
+          },
+          {
+            "url": "https://wiki.smzdm.com/n/nounslwydz2/",
+            "domain": "wiki.smzdm.com",
+            "title": "无泪配方介绍解释",
+            "position": 7
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzI2ODE0OTE4MQ==&mid=2659496053&idx=2&sn=58bc452ba086c6ed62ffa88d6bc6a61f",
+            "domain": "mp.weixin.qq.com",
+            "title": "韩国Sorex ISOV素瑞施产品手册",
+            "position": 8
+          },
+          {
+            "url": "https://baijiahao.baidu.com/s?id=1650719038099541890",
+            "domain": "baijiahao.baidu.com",
+            "title": "生香语卸妆水“一抹即净”，打破浓妆卸妆难固有思维（发布时间：2019-11-20 19:12:30）",
+            "position": 9
+          },
+          {
+            "url": null,
+            "domain": null,
+            "title": "洁面泡+洁面乳：氨基酸无泪配方！（发布时间：2025-09-27 09:41:24）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 131,
+      "prompt": "做完手术皮肤特别敏感，有什么低刺激的沐浴露推荐？",
+      "category": "沐浴露",
+      "platform": "GLM",
+      "l1": {
+        "id": 1121,
+        "created_at": "2026-04-24 08:56:25",
+        "model": "GLM-4.5-air",
+        "excerpt": "刚做完手术建议选择医级敏感肌专用沐浴露，推荐：\n\n1. 丝塔芙大白罐：无香料、低泡配方，温和清洁同时保湿\n2. 适乐肤：含神经酰胺，修复受损皮肤屏障\n3. 薇诺娜：药妆品牌，不含香精酒精，舒缓术后敏感肌肤\n\n这三款都经过皮肤科测试，pH值接近皮肤，不会刺激伤口。",
+        "brand_hits": [],
+        "input_tokens": 73,
+        "output_tokens": 414,
+        "cost_cny": 0,
+        "latency_ms": 7185
+      },
+      "l2": {
+        "id": 2002,
+        "created_at": "2026-04-24 15:32:42",
+        "model": "glm-4-plus",
+        "excerpt": "术后皮肤敏感时，推荐使用以下低刺激沐浴露：\n\n1. 施巴pH5.5沐浴露：采用pH5.5酸碱平衡技术，不含皂碱，配方温和，不刺激肌肤表面弱酸性皮脂保护膜，适合敏感肌和孕妇使用。\n\n2. 珂润润浸保湿沐浴液：日本花王旗下品牌，专为干燥性敏感肌肤设计，不含香精，采用弱酸性配方，以脱脂力低的月桂醇聚醚硫酸酯铵为主要清洁成分，洗感温和清爽。\n\n3. 玉泽皮肤屏障修护沐浴露：主打皮肤屏障修护功能，采用氨基酸表活，配方简洁，刺激性小，适用于因各种原因导致的受损肌肤。\n\n4. 茱莉蔻植物萃取沐浴露：添加大量植物萃取物，保湿能力优秀，整体成分温和，清洁力强，但需要注意其标志性的玫瑰香味可能对极敏感肌肤造成轻微刺激。\n\n这些沐浴露均经过临床验证，不含刺激性成分，适合术后等皮肤敏感期使用。建议选择无香或淡香型，避免使用含酒精、香料或化学成分的产品。",
+        "brand_hits": [],
+        "input_tokens": 3641,
+        "output_tokens": 241,
+        "cost_cny": 0,
+        "latency_ms": 7549,
+        "citations": [
+          {
+            "url": "https://zhuanlan.zhihu.com/p/693291527",
+            "domain": "zhuanlan.zhihu.com",
+            "title": "2024年温和低敏沐浴露型号推荐榜（发布时间：2024-04-19 00:20:24）",
+            "position": 1
+          },
+          {
+            "url": "http://www.cndzys.com/sougoucore/wendanew_pressinfo/3_298967.html",
+            "domain": "cndzys.com",
+            "title": "【脱毛术后要怎么护理啊？】（发布时间：2020-05-20 00:06:03）",
+            "position": 2
+          },
+          {
+            "url": "http://mp.weixin.qq.com/s?__biz=MzkzMTE3NTQxOQ==&mid=2247486116&idx=1&sn=94778c32ffda1ae8cbff8834261f3424",
+            "domain": "mp.weixin.qq.com",
+            "title": "射频治疗术后护理注意事项",
+            "position": 3
+          },
+          {
+            "url": "https://m.120ask.com/jibing/sgmip_tuomao/1059064.html",
+            "domain": "m.120ask.com",
+            "title": "脱毛术后应该注意事项有哪些 采取哪些措施有助于皮肤恢复（发布时间：2018-06-20 15:57:55）",
+            "position": 4
+          },
+          {
+            "url": "https://m.fh21.com/news/0dgevrpvzn.html",
+            "domain": "m.fh21.com",
+            "title": "冰点脱毛后能洗澡吗-用药指南-复禾医药",
+            "position": 5
+          },
+          {
+            "url": "https://m.chameiwang.com/info/153973.html",
+            "domain": "m.chameiwang.com",
+            "title": "冷光脱毛术后注意事项（发布时间：2023-05-20 10:44:09）",
+            "position": 6
+          },
+          {
+            "url": "https://www.ruli.com/question/214145.html",
+            "domain": "ruli.com",
+            "title": "隆鼻手术后洗澡需留意哪些事项-如丽消费医疗（发布时间：2024-08-20 00:58:32）",
+            "position": 7
+          },
+          {
+            "url": "http://www.35jk.com/ask/te83d7562c513a95.html",
+            "domain": "35jk.com",
+            "title": "做了阑尾炎手术可以用沐浴露洗澡吗？",
+            "position": 8
+          },
+          {
+            "url": "https://m.20087.com/5305990.html",
+            "domain": "m.20087.com",
+            "title": "2025-2031年中国病人清洁产品行业研究与市场前景报告📚（发布时间：2025-05-31 11:26:20）",
+            "position": 9
+          },
+          {
+            "url": "https://www.fh21.com.cn/meirong/view/8048624.html",
+            "domain": "fh21.com.cn",
+            "title": "比基尼线脱毛手术术后护理？-脱毛（发布时间：2025-05-06 16:18:00）",
+            "position": 10
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    },
+    {
+      "prompt_id": 3,
+      "prompt": "怀孕期间沐浴露要换安全的吗？便宜的能用不",
+      "category": "沐浴露",
+      "platform": "豆包",
+      "l1": {
+        "id": 422,
+        "created_at": "2026-04-24 07:17:48",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "怀孕期间建议换用成分安全的沐浴露，因为孕期皮肤敏感且有害成分可能影响胎儿。便宜的也能用，但要选对成分。推荐3款性价比高的孕妇专用款：  \n1. 袋鼠妈妈孕妇沐浴露：天然小麦胚芽成分，无香精、酒精，温和清洁不刺激，价格约30元/瓶；  \n2. 红色小象孕妇沐浴露：无SLS、 parabens等有害添加剂，保湿力强，适合敏感肌，约40元/瓶；  \n3. 子初孕妇沐浴露：植物配方（如金盏花），泡沫细腻易冲洗，性价比高，约25元/瓶。  \n选时注意看成分表，避开刺激性防腐剂、香精和强效清洁成分即可。",
+        "brand_hits": [],
+        "input_tokens": 110,
+        "output_tokens": 406,
+        "cost_cny": 0.0009,
+        "latency_ms": 14847
+      },
+      "l2": {
+        "id": 2006,
+        "created_at": "2026-04-25 15:57:47",
+        "model": "doubao-seed-1-6-251015",
+        "excerpt": "怀孕期间使用沐浴露需要优先考虑成分安全，便宜的产品若符合安全标准也可以使用，关键在于成分而非价格。以下是具体建议：\n\n\n### **一、孕妇沐浴露需关注的安全要点**  \n1. **避免有害成分**  \n   - 禁用：邻苯二甲酸盐（塑化剂，影响胎儿发育）、对羟基苯甲酸酯（防腐剂，干扰激素）、水杨酸/维甲酸/过氧化苯甲酰（致畸风险）、酒精（干燥刺激）、硫酸盐（SLS/SLES，破坏皮肤屏障）、人工香精/色素（引发过敏或孕吐）。  \n   - 推荐：天然植物成分（洋甘菊、金盏花）、氨基酸表面活性剂（如椰油酰甘氨酸钠，温和清洁）、保湿成分（甘油、透明质酸、神经酰胺）。  \n\n2. **选择弱酸性配方**  \n   人体皮肤pH值为5.5左右，孕期皮肤敏感，应选pH值5.0-6.5的弱酸性沐浴露，避免碱性产品破坏皮肤屏障。  \n\n3. **优先标识明确的产品**  \n   标注“孕妇专用”“敏感肌适用”“无添加”的产品通常经过安全性测试，更可靠。\n\n\n### **二、便宜的沐浴露能用吗？**  \n**可以，但需仔细查看成分表**：  \n- 若平价产品成分简单（无上述禁忌成分）、温和无刺激，如某些无香料、无防腐剂的基础款，是可以使用的。  \n- 若低价产品含大量人工添加剂（如香精、硫酸盐），则不建议使用。  \n\n**建议**：购买前先看成分表，避开有害成分，无需盲目追求高价。\n\n\n### …",
+        "brand_hits": [],
+        "input_tokens": 4078,
+        "output_tokens": 1260,
+        "cost_cny": 0.005782,
+        "latency_ms": 38014,
+        "citations": [
+          {
+            "url": "https://m.35jk.com/ask/r2e1fa3ddc7184da.html",
+            "domain": "m.35jk.com",
+            "title": "孕妇能用沐浴露吗",
+            "position": 1
+          },
+          {
+            "url": "https://m.xiaohe.cn/medical/ai-qa/70000083378526",
+            "domain": "m.xiaohe.cn",
+            "title": "孕妇不能使用含有何种成分的沐浴露洗发水",
+            "position": 2
+          },
+          {
+            "url": "https://m.35jk.com/ask/ab818055b705169e.html",
+            "domain": "m.35jk.com",
+            "title": "孕妇用什么沐浴露好",
+            "position": 3
+          },
+          {
+            "url": "https://mip.mfk.com/article/9989896.shtml?site=toutiao",
+            "domain": "mip.mfk.com",
+            "title": "孕妇洗澡能用沐浴露吗",
+            "position": 4
+          },
+          {
+            "url": "https://m.35jk.com/ask/l51e26eb4faa083a.html",
+            "domain": "m.35jk.com",
+            "title": "孕妇用什么沐浴露比较好",
+            "position": 5
+          },
+          {
+            "url": "https://m.35jk.com/ask/j94f9795584239a0.html",
+            "domain": "m.35jk.com",
+            "title": "孕期可以用沐浴露吗",
+            "position": 6
+          },
+          {
+            "url": "https://m.xiaohe.cn/medical/ai-qa/70000100518851",
+            "domain": "m.xiaohe.cn",
+            "title": "孕妇使用沐浴露时需要避免哪些成分",
+            "position": 7
+          }
+        ]
+      },
+      "diff": {
+        "only_l1": [],
+        "only_l2": [],
+        "both": []
+      }
+    }
+  ]
+}
