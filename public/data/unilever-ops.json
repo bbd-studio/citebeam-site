@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T05:05:12.812354+00:00Z",
+    "generated_at": "2026-04-27T05:17:52.975910+00:00Z",
     "customer": "unilever"
   },
   "totals": {
@@ -31,7 +31,10 @@
       "total_cost_cny": 0.446733,
       "total_input_tokens": 31409,
       "total_output_tokens": 58751,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 453,
+      "samples_total": 453,
+      "usage_completeness": 1.0
     },
     {
       "platform": "豆包",
@@ -61,7 +64,10 @@
       "total_cost_cny": 0.331381,
       "total_input_tokens": 235354,
       "total_output_tokens": 71548,
-      "total_errors": 5
+      "total_errors": 5,
+      "samples_with_usage": 59,
+      "samples_total": 169,
+      "usage_completeness": 0.34911242603550297
     },
     {
       "platform": "文心",
@@ -81,7 +87,10 @@
       "total_cost_cny": 0.181328,
       "total_input_tokens": 5820,
       "total_output_tokens": 9878,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 93,
+      "samples_total": 93,
+      "usage_completeness": 1.0
     },
     {
       "platform": "元宝",
@@ -101,7 +110,10 @@
       "total_cost_cny": 0.060106,
       "total_input_tokens": 7271,
       "total_output_tokens": 12844,
-      "total_errors": 60
+      "total_errors": 60,
+      "samples_with_usage": 98,
+      "samples_total": 158,
+      "usage_completeness": 0.620253164556962
     },
     {
       "platform": "GLM",
@@ -131,7 +143,10 @@
       "total_cost_cny": 0.0,
       "total_input_tokens": 141631,
       "total_output_tokens": 67806,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 184,
+      "samples_total": 289,
+      "usage_completeness": 0.6366782006920415
     },
     {
       "platform": "Kimi",
@@ -151,7 +166,10 @@
       "total_cost_cny": 0.0,
       "total_input_tokens": 0,
       "total_output_tokens": 0,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 0,
+      "samples_total": 105,
+      "usage_completeness": 0.0
     },
     {
       "platform": "MiniMax",
@@ -171,7 +189,10 @@
       "total_cost_cny": 0.0,
       "total_input_tokens": 11263,
       "total_output_tokens": 50932,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 150,
+      "samples_total": 255,
+      "usage_completeness": 0.5882352941176471
     },
     {
       "platform": "夸克",
@@ -191,7 +212,10 @@
       "total_cost_cny": 0.0,
       "total_input_tokens": 38476,
       "total_output_tokens": 85050,
-      "total_errors": 0
+      "total_errors": 0,
+      "samples_with_usage": 443,
+      "samples_total": 443,
+      "usage_completeness": 1.0
     }
   ],
   "daily": [
@@ -217,13 +241,19 @@
     }
   ],
   "chat_archive": {
-    "total_turns": 1,
-    "unique_sessions": 1,
+    "total_turns": 3,
+    "unique_sessions": 2,
     "assistant_latency_ms": {
-      "p50": 0,
-      "p95": 0,
-      "mean": 0
+      "p50": 4423,
+      "p95": 4423,
+      "mean": 4423
     },
-    "by_provider": []
+    "by_provider": [
+      {
+        "provider": "deepseek",
+        "answers": 1,
+        "avg_latency_ms": 4423
+      }
+    ]
   }
 }

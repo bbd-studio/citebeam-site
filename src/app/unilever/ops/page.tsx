@@ -25,6 +25,13 @@ type PlatformStats = {
   total_input_tokens: number;
   total_output_tokens: number;
   total_errors: number;
+  // Adapter usage parsing completeness — 1.0 = every sample has parseable
+  // input_tokens, < 1 = some samples are missing usage data even though
+  // the call did consume tokens. Cost figures for low-completeness platforms
+  // are LOWER BOUNDS, not exact.
+  samples_with_usage: number;
+  samples_total: number;
+  usage_completeness: number;
 };
 type DailyPoint = { date: string; cost_cny: number; samples: number };
 type ChatArchiveStats = {
@@ -114,13 +121,20 @@ export default function OpsPage() {
       </div>
 
       {/* Totals */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
         <Kpi label="累计调用" value={t.samples.toLocaleString()} sub={`${t.platforms} 平台`} />
-        <Kpi label="累计花费" value={`¥${t.cost_cny.toFixed(2)}`} sub={`真实扣费 ${data.platforms.filter(p => p.total_cost_cny > 0).length} 家`} hi />
-        <Kpi label="累计 token" value={`${fmtTokens(t.input_tokens + t.output_tokens)}`}
+        <Kpi label="累计花费 (下限)" value={`¥${t.cost_cny.toFixed(2)}`} sub={`真实扣费 ${data.platforms.filter(p => p.total_cost_cny > 0).length} 家`} hi />
+        <Kpi label="累计 token (下限)" value={`${fmtTokens(t.input_tokens + t.output_tokens)}`}
              sub={`in ${fmtTokens(t.input_tokens)} / out ${fmtTokens(t.output_tokens)}`} />
         <Kpi label="错误率" value={`${(t.overall_error_rate * 100).toFixed(2)}%`}
              sub={`${t.errors} / ${t.samples} 错`} bad={t.overall_error_rate > 0.05} />
+      </div>
+      {/* Data quality banner */}
+      <div className="mb-8 rounded border border-orange-900/50 bg-orange-950/20 px-4 py-3 text-xs text-orange-300/90 leading-relaxed">
+        <span className="font-bold text-orange-300">⚠ 数据完整度提示</span>
+        ：4 家平台（Kimi / 豆包 / MiniMax / GLM）的 SDK adapter 没解析 usage 字段，部分 sample 没拿到 token 数据 → 这些 sample 即便实际烧了 token 也记 0。
+        所以"累计花费"和"累计 token"都是 <b>下限</b>，不是精确值。下面表格"usage 完整度"列标了每家的 token 解析覆盖率。
+        修这些 adapter 在 #120。
       </div>
 
       {/* Daily cost trend */}
@@ -163,6 +177,7 @@ export default function OpsPage() {
                 <th className="py-3 px-4 text-right">非联网 调用</th>
                 <th className="py-3 px-4 text-right">联网 调用</th>
                 <th className="py-3 px-4 text-right">avg 延迟</th>
+                <th className="py-3 px-4 text-right">usage 完整度</th>
                 <th className="py-3 px-4 text-right">总 in→out token</th>
                 <th className="py-3 px-4 text-right">错误率</th>
                 <th className="py-3 px-4 text-right">累计 ¥</th>
@@ -190,6 +205,10 @@ export default function OpsPage() {
                     <td className="py-3 px-4 text-right font-mono text-neutral-300">
                       {fmtMs(wAvgMs)}
                     </td>
+                    <td className={`py-3 px-4 text-right font-mono text-xs ${p.usage_completeness >= 0.95 ? "text-[#00FF88]" : p.usage_completeness >= 0.5 ? "text-orange-300" : "text-red-400"}`}>
+                      {(p.usage_completeness * 100).toFixed(0)}%
+                      <span className="text-neutral-600 ml-1">({p.samples_with_usage}/{p.samples_total})</span>
+                    </td>
                     <td className="py-3 px-4 text-right font-mono text-neutral-300 text-xs">
                       {fmtTokens(p.total_input_tokens)} → {fmtTokens(p.total_output_tokens)}
                     </td>
@@ -211,6 +230,13 @@ export default function OpsPage() {
                   {data.platforms.reduce((s, p) => s + (p.tiers.L2?.samples ?? 0), 0)}
                 </td>
                 <td className="py-3 px-4 text-right font-mono text-neutral-500">—</td>
+                <td className="py-3 px-4 text-right font-mono text-orange-300 text-xs">
+                  {(() => {
+                    const totU = data.platforms.reduce((s,p)=>s+p.samples_with_usage, 0);
+                    const totS = data.platforms.reduce((s,p)=>s+p.samples_total, 0);
+                    return `${totS ? Math.round(totU/totS*100) : 0}% (${totU}/${totS})`;
+                  })()}
+                </td>
                 <td className="py-3 px-4 text-right font-mono text-neutral-300 text-xs">
                   {fmtTokens(t.input_tokens)} → {fmtTokens(t.output_tokens)}
                 </td>
