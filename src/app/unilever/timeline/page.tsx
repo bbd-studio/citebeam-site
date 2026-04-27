@@ -354,11 +354,47 @@ export default function TimelinePage() {
       {citationStats.total > 0 && (
         <section className="mb-10">
           <h2 className="text-lg md:text-xl font-bold mb-1">AI 实时联网时引用了哪些网页</h2>
-          <p className="text-sm text-neutral-400 mb-4">
+          <p className="text-sm text-neutral-400 mb-3">
             AI 在"实时联网"模式下回答前会去网上搜内容、抓真实 URL 当依据。
             这里聚合了所有联网答案引用过的网页，按出现次数排前 12 名。
-            <span className="text-neutral-500 ml-1">→ 想让 AI 推你的品牌，就要让你的内容能被这些网站收录。</span>
           </p>
+
+          {/* 注释 / explainer block */}
+          <div className="mb-5 rounded border border-neutral-800 bg-[#0a0a0a] p-4 text-xs text-neutral-300 leading-relaxed">
+            <div className="font-mono text-[10px] uppercase tracking-wider text-[#00FF88] mb-2">
+              ▸ 怎么读这张图 · 这数据告诉你什么
+            </div>
+            <ul className="space-y-1.5 list-none pl-0">
+              <li>
+                <span className="text-[#00FF88] mr-2">①</span>
+                <b className="text-neutral-100">"AI 引用"是什么</b> ——
+                AI 联网搜索时，每条答案背后都附带一组真实 URL（就像论文的 reference 一样），
+                标注"我是从这些网页学到的"。我们把所有联网答案的引用 URL 收下来，按域名聚合排名。
+              </li>
+              <li>
+                <span className="text-[#00FF88] mr-2">②</span>
+                <b className="text-neutral-100">为什么重要</b> ——
+                出现在 Top 引用网站上 ≈ 直接进入 AI 联网答案的"信息源池"。
+                AI 看哪些网站，就更可能推哪些品牌。这是<b className="text-[#00FF88]">"AEO" (Answer Engine Optimization)</b> 的入口。
+              </li>
+              <li>
+                <span className="text-[#00FF88] mr-2">③</span>
+                <b className="text-neutral-100">怎么用</b> ——
+                看左侧<b>内容类型</b>分布判断你品牌该往哪类阵地铺：
+                如果"媒体 / 资讯"占比高，做 PR 投稿；"UGC / 社区"占比高，做小红书 / 知乎；
+                "电商"占比高，优化天猫 / 京东 商详。
+                看右侧<b>具体网站</b>找精确投放对象（如知乎专栏、什么值得买、搜狐号）。
+              </li>
+              <li>
+                <span className="text-neutral-500 mr-2">④</span>
+                <span className="text-neutral-400">
+                  <b>数据范围</b>：仅 <span className="text-[#00FF88]">2 家平台</span>（豆包 + GLM）目前接通了 native 联网搜索能拿到 URL，
+                  其余 6 家 AI 平台（Kimi / DeepSeek / 夸克 / 文心 / 元宝 / MiniMax）暂不返回引用。所以这张图反映的是
+                  豆包 + GLM 联网时引用的网站偏好，不代表全行业。
+                </span>
+              </li>
+            </ul>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-4">
             {/* Source-type breakdown (left col, 1/3) */}
