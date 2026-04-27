@@ -49,6 +49,103 @@ const SOURCE_COLOR: Record<SourceType, string> = {
   other: "#666",
 };
 
+// Friendly Chinese name for known domains. If absent we fall back to the
+// raw domain. Cover the most common Chinese content sites we've seen so
+// the bar chart's y-axis isn't a wall of unfamiliar URLs.
+const DOMAIN_NAMES: Record<string, string> = {
+  // 媒体 / 资讯
+  "mp.weixin.qq.com": "微信公众号",
+  "sohu.com": "搜狐",
+  "m.sohu.com": "搜狐 (移动)",
+  "163.com": "网易",
+  "news.qq.com": "腾讯新闻",
+  "news.sina.com.cn": "新浪新闻",
+  "k.sina.cn": "新浪 K 频道",
+  "sina.com.cn": "新浪",
+  "ifeng.com": "凤凰网",
+  "thepaper.cn": "澎湃新闻",
+  "jiemian.com": "界面新闻",
+  "36kr.com": "36 氪",
+  "huanqiu.com": "环球网",
+  "people.cn": "人民网",
+  "chinanews.com": "中国新闻网",
+  "chinanews.com.cn": "中国新闻网",
+  "cnr.cn": "央广网",
+  "gmw.cn": "光明网",
+  "cls.cn": "财联社",
+  "caixin.com": "财新网",
+  "toutiao.com": "今日头条",
+  "baidu.com": "百度",
+  "jingyan.baidu.com": "百度经验",
+  "baike.baidu.com": "百度百科",
+  "szb.xnnews.com.cn": "新农新闻",
+  "bozhou.cn": "亳州网",
+  // UGC / 社区
+  "zhuanlan.zhihu.com": "知乎专栏",
+  "zhihu.com": "知乎",
+  "wenwen.sogou.com": "搜狗问问",
+  "xiaohongshu.com": "小红书",
+  "weibo.com": "微博",
+  "douyin.com": "抖音",
+  "bilibili.com": "B 站",
+  "douban.com": "豆瓣",
+  "jianshu.com": "简书",
+  // 电商
+  "taobao.com": "淘宝",
+  "tmall.com": "天猫",
+  "beaut.taobao.com": "淘宝美妆",
+  "jd.com": "京东",
+  "pinduoduo.com": "拼多多",
+  // 评测 / 比价
+  "smzdm.com": "什么值得买",
+  "post.m.smzdm.com": "什么值得买 · 文章",
+  "zhizhizhi.com": "之之之 (评测)",
+  "m.zol.com.cn": "中关村在线",
+  "zol.com.cn": "中关村在线",
+  "pcbaby.com.cn": "太平洋亲子",
+  // 健康 / 行业
+  "m.35jk.com": "三五健康网",
+  "quefukang.com": "缺福康 (健康)",
+  "wikipedia.org": "维基百科",
+};
+
+function describeDomain(domain: string): string {
+  if (DOMAIN_NAMES[domain]) return DOMAIN_NAMES[domain];
+  // strip common subdomain prefixes for second look
+  const stripped = domain.replace(/^(www|m|mobile|wap|post)\./, "");
+  if (DOMAIN_NAMES[stripped]) return DOMAIN_NAMES[stripped];
+  return "";
+}
+
+// Custom recharts y-axis tick: top line = 中文名 (bold light), bottom line = domain (small grey)
+// Recharts types `x` as `string | number`; coerce defensively.
+function DomainTick(props: unknown) {
+  const p = props as { x?: number | string; y?: number | string; payload?: { value?: string } };
+  const x = typeof p.x === "number" ? p.x : Number(p.x ?? 0);
+  const y = typeof p.y === "number" ? p.y : Number(p.y ?? 0);
+  const domain = p.payload?.value || "";
+  const name = describeDomain(domain);
+  if (!name) {
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text x={-6} y={4} textAnchor="end" fill="#ccc" fontSize={12} fontFamily="ui-monospace, monospace">
+          {domain}
+        </text>
+      </g>
+    );
+  }
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text x={-6} y={-2} textAnchor="end" fill="#fafaf7" fontSize={12} fontWeight={600}>
+        {name}
+      </text>
+      <text x={-6} y={11} textAnchor="end" fill="#666" fontSize={10} fontFamily="ui-monospace, monospace">
+        {domain}
+      </text>
+    </g>
+  );
+}
+
 function buildBrandIndex(report: UnileverReport): BrandIndex {
   const idx: BrandIndex = {};
   for (const cat of Object.values(report.categories)) {
@@ -359,42 +456,6 @@ export default function TimelinePage() {
             这里聚合了所有联网答案引用过的网页，按出现次数排前 12 名。
           </p>
 
-          {/* 注释 / explainer block */}
-          <div className="mb-5 rounded border border-neutral-800 bg-[#0a0a0a] p-4 text-xs text-neutral-300 leading-relaxed">
-            <div className="font-mono text-[10px] uppercase tracking-wider text-[#00FF88] mb-2">
-              ▸ 怎么读这张图 · 这数据告诉你什么
-            </div>
-            <ul className="space-y-1.5 list-none pl-0">
-              <li>
-                <span className="text-[#00FF88] mr-2">①</span>
-                <b className="text-neutral-100">"AI 引用"是什么</b> ——
-                AI 联网搜索时，每条答案背后都附带一组真实 URL（就像论文的 reference 一样），
-                标注"我是从这些网页学到的"。我们把所有联网答案的引用 URL 收下来，按域名聚合排名。
-              </li>
-              <li>
-                <span className="text-[#00FF88] mr-2">②</span>
-                <b className="text-neutral-100">为什么重要</b> ——
-                出现在 Top 引用网站上 ≈ 直接进入 AI 联网答案的"信息源池"。
-                AI 看哪些网站，就更可能推哪些品牌。这是<b className="text-[#00FF88]">"AEO" (Answer Engine Optimization)</b> 的入口。
-              </li>
-              <li>
-                <span className="text-[#00FF88] mr-2">③</span>
-                <b className="text-neutral-100">怎么用</b> ——
-                看左侧<b>内容类型</b>分布判断你品牌该往哪类阵地铺：
-                如果"媒体 / 资讯"占比高，做 PR 投稿；"UGC / 社区"占比高，做小红书 / 知乎；
-                "电商"占比高，优化天猫 / 京东 商详。
-                看右侧<b>具体网站</b>找精确投放对象（如知乎专栏、什么值得买、搜狐号）。
-              </li>
-              <li>
-                <span className="text-neutral-500 mr-2">④</span>
-                <span className="text-neutral-400">
-                  <b>数据范围</b>：仅 <span className="text-[#00FF88]">2 家平台</span>（豆包 + GLM）目前接通了 native 联网搜索能拿到 URL，
-                  其余 6 家 AI 平台（Kimi / DeepSeek / 夸克 / 文心 / 元宝 / MiniMax）暂不返回引用。所以这张图反映的是
-                  豆包 + GLM 联网时引用的网站偏好，不代表全行业。
-                </span>
-              </li>
-            </ul>
-          </div>
 
           <div className="grid md:grid-cols-3 gap-4">
             {/* Source-type breakdown (left col, 1/3) */}
@@ -439,7 +500,7 @@ export default function TimelinePage() {
               <div className="font-mono text-xs uppercase tracking-wider text-neutral-500 mb-3">
                 Top 12 引用网站
               </div>
-              <ResponsiveContainer width="100%" height={Math.max(280, 32 * citationStats.topDomains.length)}>
+              <ResponsiveContainer width="100%" height={Math.max(320, 38 * citationStats.topDomains.length)}>
                 <BarChart
                   data={citationStats.topDomains}
                   layout="vertical"
@@ -452,8 +513,9 @@ export default function TimelinePage() {
                     type="category"
                     stroke="#ccc"
                     fontSize={12}
-                    width={155}
-                    tick={{ fill: "#ccc" }}
+                    width={210}
+                    tick={DomainTick}
+                    interval={0}
                   />
                   <Tooltip
                     cursor={{ fill: "#1a1a1a" }}
@@ -471,7 +533,8 @@ export default function TimelinePage() {
                 </BarChart>
               </ResponsiveContainer>
               <p className="text-[11px] text-neutral-500 mt-2">
-                颜色对应左侧的内容类型分类。点击右侧"配对答案证据"展开看具体引用 URL。
+                每条 y 轴：上行 = 网站中文名 · 下行 = 域名（灰）。颜色对应左侧的内容类型分类。
+                未识别的域名显示原文。点击下方"配对答案证据"展开看具体引用 URL。
               </p>
             </div>
           </div>
